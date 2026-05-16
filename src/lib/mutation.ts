@@ -7,7 +7,11 @@
 // - they break pattern expectation without destroying coherence
 // - they feel like a real brand occasionally surprising itself
 
-import { ANGLES, AESTHETICS, COMPOSITIONS, PHRASE_DENSITIES, DENSITY_WEIGHTS } from "./data";
+import { ANGLES, AESTHETICS, COMPOSITIONS, PHRASE_DENSITIES, DENSITY_WEIGHTS, CONTRAST_COMBOS } from "./data";
+
+/** For testability — replace with a deterministic function */
+export let randomFn: () => number = Math.random;
+export function setRandomFn(fn: () => number) { randomFn = fn; }
 
 export type MutationType =
   | "composition_mismatch"  // composition doesn't match angle's natural fit
@@ -82,11 +86,11 @@ export interface MutationResult {
 }
 
 function roll(rate: number): boolean {
-  return Math.random() < rate;
+  return randomFn() < rate;
 }
 
 function randomItem<T>(arr: T[]): T {
-  return arr[Math.floor(Math.random() * arr.length)];
+  return arr[Math.floor(randomFn() * arr.length)];
 }
 
 // 1. Composition Mismatch — force a composition that doesn't fit the angle
@@ -107,8 +111,8 @@ function applyCompositionMismatch(angle: string): MutationResult | null {
 
 // 2. Archetype Inversion — pair animal with a tone that contradicts its archetype
 // capybara (zen/calm) + chaotic gremlin, crow (cryptic/intelligent) + cozy lifestyle
-function applyArchetypeInversion(animalKey: string, angle: string, archetypes: Record<string, {tone: string}>): MutationResult | null {
-  if (!roll(0.06)) return null;
+function applyArchetypeInversion(animalKey: string, angle: string, cfg: MutationConfig): MutationResult | null {
+  if (!roll(cfg.archetypeInversionRate)) return null;
 
   const INVERSION_PAIRS: Array<[string[], string[]]> = [
     [["capybara"], ["Chaotic little gremlin energy", "Mildly chaotic humor"]],
@@ -119,7 +123,7 @@ function applyArchetypeInversion(animalKey: string, angle: string, archetypes: R
     [["axolotl"], ["Mildly chaotic humor", "Chaotic little gremlin energy"]],
     [["bat"], ["Cozy lifestyle", "Cottagecore pet aesthetic"]],
     [["pigeon"], ["Sarcastic pet humor", "Chaotic little gremlin energy"]],
-    [["dog_chi"], ["Cozy lifestyle", "Burnt-out but thriving"]],
+    [["chihuahua"], ["Cozy lifestyle", "Burnt-out but thriving"]],
     [["cat_fold"], ["Mildly chaotic humor", "Chaotic little gremlin energy"]],
   ];
 
@@ -142,8 +146,8 @@ function applyArchetypeInversion(animalKey: string, angle: string, archetypes: R
 }
 
 // 3. Density Violation — pick against the weighted distribution
-function applyDensityViolation(): MutationResult | null {
-  if (!roll(0.07)) return null;
+function applyDensityViolation(cfg: MutationConfig): MutationResult | null {
+  if (!roll(cfg.densityViolationRate)) return null;
 
   // Force a density that the weights would rarely produce
   // If Sparse was last picked (rare under weights), go to Conversational
@@ -163,36 +167,34 @@ function applyDensityViolation(): MutationResult | null {
 
 // 4. Aesthetic Corruption — pull aesthetic from outside angle's natural orbit
 // Don't pick from angle-fit aesthetics; pick from the ones that don't match
-function applyAestheticCorruption(angle: string): MutationResult | null {
-  if (!roll(0.08)) return null;
+const CORRUPT_AESTHETICS = [
+  "Old school tattoo flash",
+  "Bold clean silhouette art",
+  "Woodblock print aesthetic",
+  "National park poster style",
+  "Simplified engraved mascot",
+];
+
+function applyAestheticCorruption(angle: string, cfg: MutationConfig): MutationResult | null {
+  if (!roll(cfg.aestheticCorruptionRate)) return null;
 
   // Find aesthetics that DON'T naturally pair with this angle
-  // Build exclusion list from COMPOSITIONS fits
-  const naturallyFits = COMPOSITIONS
-    .filter(c => (c.fits as readonly string[]).includes(angle))
-    .map(c => COMPOSITIONS.indexOf(c));
-
-  // These aesthetics are "safe" (associated with angle's compositions)
-  const safeAesthetics = new Set(
-    COMPOSITIONS.filter(c => (c.fits as readonly string[]).includes(angle))
-      .map(() => null) // placeholder
+  // Use CONTRAST_COMBOS as the source of truth for angle-aesthetic pairs
+  const fitting = new Set(
+    CONTRAST_COMBOS
+      .filter(c => c.angle === angle)
+      .map(c => c.aesthetic)
   );
-
-  // Just pick a random aesthetic and call it "corruption" — the point is it's unexpected
-  // Use a different subset that isn't in the normal flow
-  const CORRUPT_AESTHETICS = [
-    "Old school tattoo flash",
-    "Bold clean silhouette art",
-    "Woodblock print aesthetic",
-    "National park poster style",
-    "Simplified engraved mascot",
-  ];
+  // CORRUPT_AESTHETICS already defined as the anti-fitting set
+  // Pick from CORRUPT_AESTHETICS that aren't in the fitting set
+  const antiFitting = CORRUPT_AESTHETICS.filter(a => !fitting.has(a));
+  const pool = antiFitting.length > 0 ? antiFitting : CORRUPT_AESTHETICS;
 
   return {
     mutated: true,
     type: "aesthetic_corruption",
     reason: `Aesthetic corruption: pulling from outside angle's natural orbit`,
-    aestheticOverride: randomItem(CORRUPT_AESTHETICS),
+    aestheticOverride: randomItem(pool),
   };
 }
 
@@ -220,8 +222,8 @@ function applyContrastBreak(angle: string, currentAesthetic: string): MutationRe
 }
 
 // 6. Pairing Anomaly — animal+angle combo that's genuinely unusual
-function applyPairingAnomaly(): MutationResult | null {
-  if (!roll(0.05)) return null;
+function applyPairingAnomaly(cfg: MutationConfig): MutationResult | null {
+  if (!roll(cfg.pairingAnomalyRate)) return null;
 
   const anomaly = randomItem(PAIRING_ANOMALIES);
   const [animals, angles] = anomaly;
@@ -230,7 +232,7 @@ function applyPairingAnomaly(): MutationResult | null {
     mutated: true,
     type: "pairing_anomaly",
     reason: `Pairing anomaly: ${randomItem(animals)} + unusual angle context`,
-    // The actual anomaly is applied by the seed engine picking from these pools
+    angleOverride: randomItem(angles),
   };
 }
 
@@ -249,11 +251,11 @@ export function applyMutation(args: {
 
   // Try mutations in order of impact — only one fires per call
   const mutations: Array<() => MutationResult | null> = [
-    () => applyPairingAnomaly(),
-    () => applyArchetypeInversion(args.animalKey, args.angle, args.archetypeMap),
+    () => applyPairingAnomaly(cfg),
+    () => applyArchetypeInversion(args.animalKey, args.angle, cfg),
     () => applyCompositionMismatch(args.angle),
-    () => applyDensityViolation(),
-    () => applyAestheticCorruption(args.angle),
+    () => applyDensityViolation(cfg),
+    () => applyAestheticCorruption(args.angle, cfg),
     () => applyContrastBreak(args.angle, args.aesthetic),
   ];
 

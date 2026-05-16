@@ -148,13 +148,10 @@ export function generateSeed(
       mutationType = formatMutationLabel(mutationResult);
 
       if (mutationResult.angleOverride) {
-        track(memory.angles, angle); // un-track old angle
-        // Remove old angle from memory's recent list, replace
+        // Remove old angle, track new angle (handles unshift + trim via MAX_MEMORY)
         const idx = memory.angles.indexOf(angle);
         if (idx !== -1) memory.angles.splice(idx, 1);
-        memory.angles.unshift(mutationResult.angleOverride);
-        // Keep within max
-        if (memory.angles.length > 5) memory.angles.pop();
+        track(memory.angles, mutationResult.angleOverride);
       }
       if (mutationResult.aestheticOverride) {
         const idx = memory.aesthetics.indexOf(aesthetic);
@@ -188,15 +185,16 @@ export function generateSeed(
 
   // ── Density ───────────────────────────────────────────────────────────
   let density = pickDensity();
-  const restraintResult = applyRestraint({ animalKey, trend, contrastNote: finalContrastNote });
+  const mutationFired = mutationResult.mutated;
+  const restraintResult = applyRestraint({ animalKey, trend, contrastNote: finalContrastNote, mutationFired });
   let restraintApplied: string | undefined;
   if (restraintResult.forSparse) {
     density = { label: "Sparse", hint: "2–4 words", example: `"${finalAngle.split(' ')[0]} Mode"` } as unknown as DataDensity;
     restraintApplied = restraintResult.reason;
   }
 
-  // Mutation density override (fires AFTER restraint)
-  if (mutationResult.densityOverride) {
+  // Mutation density override (fires AFTER restraint, but only if restraint didn't force sparse)
+  if (mutationResult.densityOverride && !restraintResult.forSparse) {
     density = mutationResult.densityOverride as unknown as DataDensity;
     if (!mutationApplied) mutationApplied = mutationResult.reason;
     if (!mutationType) mutationType = formatMutationLabel(mutationResult);
