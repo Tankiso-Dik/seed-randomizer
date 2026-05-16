@@ -10,6 +10,9 @@ interface SeedCardProps {
 }
 
 export function SeedCard({ seed, seedText, onCopy, copied }: SeedCardProps) {
+  const hasMutation = !!seed.mutationApplied;
+  const mutationLabel = seed.mutationType ?? "Mutation";
+
   return (
     <div
       style={{
@@ -23,6 +26,14 @@ export function SeedCard({ seed, seedText, onCopy, copied }: SeedCardProps) {
         minHeight: "260px",
         position: "relative",
         animation: "fadeIn 0.3s ease",
+        borderColor: seed.contrastNote
+          ? "var(--purple)"
+          : seed.trend
+          ? "var(--teal)"
+          : hasMutation
+          ? "#7c5fc2"
+          : undefined,
+        boxShadow: hasMutation ? "0 0 0 1px #7c5fc2, 0 4px 20px rgba(124,95,194,0.15)" : undefined,
       }}
     >
       {/* Top accent bar */}
@@ -36,6 +47,8 @@ export function SeedCard({ seed, seedText, onCopy, copied }: SeedCardProps) {
             ? "var(--purple)"
             : seed.trend
             ? "var(--teal)"
+            : hasMutation
+            ? "#7c5fc2"
             : "var(--orange)",
           transition: "background 0.3s",
         }}
@@ -78,6 +91,8 @@ export function SeedCard({ seed, seedText, onCopy, copied }: SeedCardProps) {
           <span style={{ fontSize: "0.7rem" }}>
             {seed.contrastNote ? (
               <span className="badge badge-contrast" style={badgeStyle}>CONTRAST</span>
+            ) : hasMutation ? (
+              <span style={{ color: "#7c5fc2", fontWeight: 600 }}>{mutationLabel}</span>
             ) : (
               <span style={{ color: "var(--muted)" }}>HARMONY</span>
             )}
@@ -136,6 +151,17 @@ export function SeedCard({ seed, seedText, onCopy, copied }: SeedCardProps) {
         <OutputBlock
           label="Contrast Logic"
           value={<em style={{ fontSize: "0.72rem", color: "#c084fc" }}>{seed.contrastNote}</em>}
+        />
+      )}
+
+      {seed.mutationApplied && (
+        <OutputBlock
+          label="Mutation"
+          value={
+            <span style={{ fontSize: "0.72rem", color: "#7c5fc2", fontStyle: "italic" }}>
+              {seed.mutationApplied}
+            </span>
+          }
         />
       )}
 
