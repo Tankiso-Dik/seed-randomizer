@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T-Shirt Seed Randomizer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  .collection-panel {
+    width: 100%;
+    max-width: 640px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.2rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    transition: all 0.25s ease;
+  }
+
+  .collection-panel.active {
+    border-color: var(--orange);
+    box-shadow: 0 0 0 1px var(--orange), 0 4px 20px rgba(232,98,42,0.12);
+  }
+
+  .collection-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .collection-title {
+    font-size: 0.65rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .collection-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .toggle-track {
+    width: 32px;
+    height: 16px;
+    background: var(--border);
+    border-radius: 8px;
+    position: relative;
+    transition: background 0.2s;
+  }
+
+  .toggle-track.on { background: var(--orange); }
+
+  .toggle-thumb {
+    position: absolute;
+    top: 2px; left: 2px;
+    width: 12px; height: 12px;
+    background: var(--cream);
+    border-radius: 50%;
+    transition: left 0.2s;
+  }
+
+  .toggle-track.on .toggle-thumb { left: 18px; }
+
+  .toggle-label {
+    font-size: 0.62rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .toggle-track.on ~ .toggle-label { color: var(--orange); }
+
+  .collection-settings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  .collection-settings.open { max-height: 200px; }
+
+  .collection-field { display: flex; flex-direction: column; gap: 0.3rem; }
+
+  .collection-field label {
+    font-size: 0.56rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .collection-field select {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--cream);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    padding: 0.45rem 0.6rem;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+
+  .collection-field select:hover { border-color: var(--orange); }
+
+  .collection-controls {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+  }
+
+  .btn-collection {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0.5rem 0.9rem;
+    background: transparent;
+    color: var(--cream);
+    transition: all 0.15s;
+  }
+
+  .btn-collection:hover { border-color: var(--orange); color: var(--orange); }
+
+  .collection-count {
+    font-size: 0.62rem;
+    color: var(--muted);
+  }
+
+  .collection-count span { color: var(--orange); font-weight: 600; }
+
+  .collection-preview {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .collection-item {
+    font-size: 0.6rem;
+    padding: 0.18rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    color: var(--muted);
+    animation: fadeIn 0.3s ease;
+  }
+
+  .collection-item .animal-name { color: var(--cream); font-weight: 600; }
+</style>
+
+  .title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    letter-spacing: 0.08em;
+    color: var(--orange);
+    text-align: center;
+    line-height: 1;
+  }
+
+  .subtitle {
+    font-size: 0.68rem;
+    color: var(--muted);
+    text-align: center;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-top: -1rem;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 640px;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    min-height: 260px;
+    position: relative;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--orange);
+    border-radius: 4px 4px 0 0;
+    transition: background 0.3s;
+  }
+
+  .card.contrast-active::before { background: var(--purple); }
+  .card.trend-active::before    { background: var(--teal); }
+
+  .placeholder {
+    color: var(--muted);
+    font-size: 0.78rem;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 0.06em;
+    line-height: 1.9;
+  }
+
+  .seed-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .seed-item { display: flex; flex-direction: column; gap: 0.3rem; }
+
+  .seed-label {
+    font-size: 0.58rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+  }
+
+  .seed-value {
+    font-size: 0.88rem;
+    color: var(--cream);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .divider { border: none; border-top: 1px solid var(--border); }
+
+  .output-block { display: flex; flex-direction: column; gap: 0.6rem; }
+
+  .output-label {
+    font-size: 0.58rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+  }
+
+  .output-text {
+    font-size: 0.76rem;
+    color: var(--cream);
+    line-height: 1.8;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 1rem;
+    word-break: break-word;
+    white-space: pre-wrap;
+    user-select: all;
+  }
+
+  .badge-row { display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; }
+
+  .badge {
+    display: inline-block;
+    font-size: 0.58rem;
+    padding: 0.18rem 0.5rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+
+  .badge-dog      { background: #3a2f1a; color: #e8a44a; }
+  .badge-cat      { background: #1a1f3a; color: #6a9ee8; }
+  .badge-creature { background: #1a2f1e; color: #4aad6a; }
+  .badge-contrast { background: #2a1a3a; color: #c084fc; }
+  .badge-trend    { background: #0e2626; color: #5eead4; }
+
+  .actions {
+    display: flex;
+    gap: 0.8rem;
+    width: 100%;
+    max-width: 640px;
+  }
+
+  button {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0.85rem 1.2rem;
+    transition: all 0.15s ease;
+  }
+
+  .btn-primary              { background: var(--orange); color: #0f0e0c; flex: 1; }
+  .btn-primary:hover        { background: #ff7340; transform: translateY(-1px); }
+  .btn-primary:active       { transform: translateY(0); }
+  .btn-secondary            { background: transparent; color: var(--cream); border: 1px solid var(--border); flex: 0 0 auto; }
+  .btn-secondary:hover      { border-color: var(--cream); }
+  .btn-secondary:disabled   { opacity: 0.3; cursor: not-allowed; }
+  .copied                   { background: var(--green) !important; color: #fff !important; }
+
+  .prompt-section {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .prompt-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .prompt-label {
+    font-size: 0.58rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+  }
+
+  .prompt-text {
+    font-size: 0.72rem;
+    color: var(--muted);
+    line-height: 1.6;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 1rem;
+    white-space: pre-wrap;
+    user-select: all;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .btn-copy-prompt {
+    background: var(--purple);
+    color: #fff;
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .btn-copy-prompt:hover { background: #7c5fc2; }
+  .btn-copy-prompt.copied { background: var(--green) !important; }
+</style>
+</head>
+<body>
+
+<div class="title">SEED RANDOMIZER</div>
+<div class="subtitle">TeePublic T-Shirt Design · Prompt Seed Generator</div>
+
+<div class="card" id="card">
+  <div class="placeholder" id="placeholder">
+    Hit RANDOMIZE to generate a design seed.<br>
+    <span style="font-size:0.65rem;color:#4a4238;">Every roll blends evergreen, novelty, and wild animals with smart defaults.</span>
+  </div>
+  <div id="result" style="display:none; flex-direction:column; gap:1.4rem;"></div>
+</div>
+
+<div class="actions">
+  <button class="btn-primary" onclick="randomize()">&#x27F3; &nbsp;Randomize</button>
+  <button class="btn-secondary" id="copyBtn" onclick="copySeed()" disabled>Copy Seed</button>
+</div>
+
+<div class="collection-panel" id="collectionPanel">
+    <div class="collection-header">
+      <span class="collection-title">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="flex-shrink:0">
+          <rect x="1" y="1" width="4" height="4" rx="1" fill="currentColor" opacity="0.6"/>
+          <rect x="7" y="1" width="4" height="4" rx="1" fill="currentColor"/>
+          <rect x="1" y="7" width="4" height="4" rx="1" fill="currentColor"/>
+          <rect x="7" y="7" width="4" height="4" rx="1" fill="currentColor" opacity="0.6"/>
+        </svg>
+        Collection Mode
+      </span>
+      <div class="collection-toggle" onclick="toggleCollection()">
+        <div class="toggle-track" id="toggleTrack"><div class="toggle-thumb"></div></div>
+        <span class="toggle-label" id="toggleLabel">Off</span>
+      </div>
+    </div>
+    <div class="collection-settings" id="collectionSettings">
+      <div class="collection-field">
+        <label>Palette</label>
+        <select id="colPalette">
+          <option value="warmearth">Warm Earth · Orange / Cream / Charcoal</option>
+          <option value="forest">Forest · Rustic Green / Cream / Burnt Sienna</option>
+          <option value="coastal">Coastal · Faded Teal / Warm Beige / Black</option>
+          <option value="mono">Mono · Black / Muted Orange / Warm Beige</option>
+          <option value="dusty">Dusty · Dusty Red / Muted Mustard / Black</option>
+          <option value="midnight">Midnight · Deep Plum / Dusty Rose / Off-white</option>
+        </select>
+      </div>
+      <div class="collection-field">
+        <label>Composition</label>
+        <select id="colComposition">
+          <option value="circular">Circular Badge</option>
+          <option value="vertical">Vertical Stacked</option>
+          <option value="facecrop">Oversized Face Crop</option>
+          <option value="chest">Small Chest Emblem</option>
+          <option value="banner">Wide Retro Banner</option>
+          <option value="crest">Crest / Shield</option>
+          <option value="bottomheavy">Bottom-heavy Mascot</option>
+          <option value="diagonal">Diagonal Motion</option>
+        </select>
+      </div>
+      <div class="collection-field">
+        <label>Typography</label>
+        <select id="colTypography">
+          <option value="retro">Distressed Retro Serif</option>
+          <option value="badge">Bold Curved Vintage Badge</option>
+          <option value="western">Worn Western Slab Serif</option>
+          <option value="handlettered">Rustic Hand-lettered Caps</option>
+          <option value="condensed">Vintage Condensed Block</option>
+          <option value="cracked">Cracked Retro Display</option>
+          <option value="woodblock">Rough Woodblock Print</option>
+        </select>
+      </div>
+      <div class="collection-field">
+        <label>Range</label>
+        <select id="colRange">
+          <option value="3">3 designs</option>
+          <option value="5">5 designs</option>
+          <option value="8">8 designs</option>
+          <option value="12">12 designs</option>
+        </select>
+      </div>
+    </div>
+    <div class="collection-controls" id="collectionControls" style="display:none;">
+      <button class="btn-collection" onclick="generateCollection()">&#x27F3; Generate Line</button>
+      <button class="btn-collection" onclick="shuffleCollection()">Shuffle</button>
+      <span class="collection-count" id="collectionCount"></span>
+    </div>
+    <div class="collection-preview" id="collectionPreview"></div>
+  </div>
+
+  <div class="prompt-section">
+  <div class="prompt-section-header">
+    <span class="prompt-label">Prompt Generator (for ChatGPT)</span>
+    <button class="btn-copy-prompt" id="copyPromptBtn" onclick="copyPromptGenerator()">Copy Prompt Generator</button>
+  </div>
+  <div class="prompt-text" id="promptText"></div>
+</div>
+
+<script>
+const PROMPT_GENERATOR = `You are a TeePublic t-shirt design prompt generator. The user will paste a seed from a randomizer tool. Your only job is to read that seed and output a single production-ready image generation prompt. Do not generate an image. Do not explain your choices. Do not add commentary. Output the prompt only.
+
+---
+
+WHAT THE SEED GIVES YOU:
+
+The seed will always include:
+- Animal (e.g. Possum, Corgi, Axolotl)
+- Emotional Angle (e.g. Tired millennial humor, Quiet feral lifestyle)
+- Visual Aesthetic (e.g. Worn screenprint graphic, Rustic vintage badge emblem)
+- Composition (e.g. Oversized face crop — Head fills most of the canvas, phrase small below or above)
+- Phrase Density (e.g. Sparse 2–4 words / Medium 5–8 words / Conversational 9–14 words)
+- Color Palette (e.g. Dusty red, Muted mustard, Black)
+
+It may also include:
+- Trend Injector (a micro-culture label like "Cozy doom" or "Rural cryptid")
+- Contrast Note (a logic note like "soft energy / hard visual" — use this to intentionally mismatch the mood of the phrase against the weight of the visual style)
+- Animal Archetype (e.g. "survival / deadpan / low energy" — use this to calibrate phrase tone)
+- Restraint Applied (a note that density was forced sparse to prevent over-layering — honor it in phrase length)
+
+---
+
+WHAT YOU DO WITH THE SEED:
+
+1. IDENTITY FIRST — Before thinking about visuals, define who wears this shirt.
+   Ask yourself: what kind of person does this animal + angle signal?
+   Example: Possum + Tired millennial humor = someone who relates to being nocturnal, underestimated, and surviving on spite.
+   That identity becomes the emotional core of the design.
+
+2. GENERATE THE PHRASE — Write one wearable phrase that captures that identity.
+   Use the Phrase Density field to control length:
+   - Sparse (2–4 words): stripped-back, punchy, typographic weight carries the meaning. e.g. "Emotionally Nocturnal", "Professionally Tired"
+   - Medium (5–8 words): one complete thought, conversational but tight. e.g. "I'm Trying My Best, Unfortunately"
+   - Conversational (9–14 words): a full sentence someone might actually say out loud. e.g. "I Cancel Plans Professionally And Recreationally"
+   The phrase must feel:
+   - Like a wearable personal flag, not a caption
+   - Specific and real, not generic
+   - Funny, comforting, or quietly unhinged depending on the angle
+   If a Contrast Note is present: make the phrase feel emotionally mismatched from the visual weight on purpose.
+   If a Trend Injector is present: let it flavor the phrase and mascot vibe without making it a costume.
+   Avoid: forced puns, generic pet slogans, "Live Laugh Love" energy, childish humor, gibberish, filler text, decorative fake words.
+
+3. DESCRIBE THE MASCOT — One sentence describing the animal mascot.
+   The mascot must:
+   - Have ONE strong expressive pose or attitude that matches the identity
+   - Feel graphic, simplified, and charming — not realistic
+   - Use bold simplified shapes with clean outlines
+   - Have readable silhouette even at small size
+   - Avoid realistic fur, hair strands, painterly detail, photorealism
+
+4. APPLY THE COMPOSITION ARCHETYPE — Use the Composition field from the seed to describe the layout behavior in the prompt:
+   - Circular badge → mascot centered inside a circular ring or badge frame, text arcing around the outside
+   - Vertical stacked → mascot on top, phrase stacked beneath, tight vertical column layout
+   - Oversized face crop → animal head fills most of the canvas, phrase in small text below or above
+   - Small chest emblem → tight compact lockup, small scale, designed for left-chest placement
+   - Wide retro banner → horizontal mascot with text banner above and below
+   - Crest / shield structure → heraldic shield or formal crest framing the mascot
+   - Bottom-heavy mascot → mascot anchors the lower half, large bold text dominates the top
+   - Diagonal motion → mascot tilted or mid-action, phrase set on a diagonal slant
+
+5. ASSEMBLE THE FULL IMAGE PROMPT using the structure below.
+
+---
+
+IMAGE PROMPT STRUCTURE (fill every bracket — output this and nothing else):
+
+A flat screenprint-style t-shirt graphic of a [MASCOT DESCRIPTION — animal, expression, pose, one key attitude detail], designed as a [VISUAL AESTHETIC] with a [COMPOSITION ARCHETYPE] layout. The design features the phrase "[PHRASE]" in [TYPOGRAPHY STYLE] lettering, integrated naturally into the composition. Color palette: [LIST COLORS FROM SEED]. Flat colors only, no gradients, no shading, no glossy rendering. Bold simplified shapes, clean outlines, strong silhouette readability, restrained linework with vintage engraving influence. [COMPOSITION-SPECIFIC LAYOUT INSTRUCTION — describe where mascot sits, where text sits, how space is used]. Strong contrast, mascot-first hierarchy with text supporting — not competing. Minimal decorative elements only. Transparent background, no mockup, no shirt shown, no scenery, isolated graphic only. Portrait orientation, optimized for print at 4500 x 5400 pixels. Avoid photorealism, 3D rendering, anime style, watercolor, cinematic lighting, cluttered composition, extra limbs, malformed anatomy, AI artifacting, gibberish text, decorative fake lettering.
+
+---
+
+TYPOGRAPHY STYLE POOL (pick one that fits the emotional angle, aesthetic, and phrase density):
+
+- Distressed retro serif (good for medium + conversational phrases)
+- Bold curved vintage badge text (good for circular badge compositions)
+- Worn western slab serif (good for western identity + banner layouts)
+- Rustic hand-lettered caps (good for sparse phrases, cottagecore, cozy angles)
+- Vintage condensed block type (good for bottom-heavy + vertical stacked layouts)
+- Cracked retro display lettering (good for spooky, chaotic, gremlin angles)
+- Rough woodblock print type (good for national park, retro outdoors aesthetics)
+
+---
+
+IMPORTANT OUTPUT RULES:
+
+- Output the image prompt only
+- No intro sentence, no label, no explanation before or after
+- Do not wrap the output in quotes
+- Do not add a title or header
+- The phrase inside the prompt must be a real meaningful sentence — never placeholder text, never gibberish
+- Every word in the design must be intentional and readable
+- The prompt should be paste-ready with zero editing needed`;
+
+document.getElementById('promptText').textContent = PROMPT_GENERATOR;
+
+// Animals — single merged pool with combined weights
+// Evergreen tier: high weights (dogs + cats dominate)
+// Novelty tier: medium weights (axolotl, capybara, crow, possum, etc.)
+// Wild tier: low but non-zero weights (shrimp, vulture, goat, gecko)
+const ANIMALS = {
+  dog_french:    { label:"French Bulldog",   group:"dog",     tag:"badge-dog",      weight:14 },
+  dog_golden:    { label:"Golden Retriever", group:"dog",     tag:"badge-dog",      weight:13 },
+  dog_dachshund: { label:"Dachshund",        group:"dog",     tag:"badge-dog",      weight:12 },
+  dog_corgi:     { label:"Corgi",            group:"dog",     tag:"badge-dog",      weight:11 },
+  dog_gsd:       { label:"German Shepherd",  group:"dog",     tag:"badge-dog",      weight:10 },
+  dog_lab:       { label:"Labrador",         group:"dog",     tag:"badge-dog",      weight:10 },
+  dog_pit:       { label:"Pitbull",          group:"dog",     tag:"badge-dog",      weight:9 },
+  dog_chi:       { label:"Chihuahua",        group:"dog",     tag:"badge-dog",      weight:9 },
+  cat_black:     { label:"Black Cat",        group:"cat",     tag:"badge-cat",      weight:12 },
+  cat_orange:    { label:"Orange Tabby",     group:"cat",     tag:"badge-cat",      weight:11 },
+  cat_siamese:   { label:"Siamese Cat",      group:"cat",     tag:"badge-cat",      weight:9 },
+  cat_tuxedo:    { label:"Tuxedo Cat",       group:"cat",     tag:"badge-cat",      weight:9 },
+  cat_fold:      { label:"Scottish Fold",    group:"cat",     tag:"badge-cat",      weight:8 },
+  rabbit:        { label:"Rabbit",           group:"creature",tag:"badge-creature", weight:10 },
+  guinea_pig:    { label:"Guinea Pig",       group:"creature",tag:"badge-creature", weight:8 },
+  axolotl:       { label:"Axolotl",          group:"creature",tag:"badge-creature", weight:8 },
+  capybara:      { label:"Capybara",         group:"creature",tag:"badge-creature", weight:6 },
+  crow:          { label:"Crow",             group:"creature",tag:"badge-creature", weight:6 },
+  possum:        { label:"Possum",           group:"creature",tag:"badge-creature", weight:5 },
+  frog:          { label:"Frog",             group:"creature",tag:"badge-creature", weight:5 },
+  raccoon:       { label:"Raccoon",          group:"creature",tag:"badge-creature", weight:5 },
+  bat:           { label:"Bat",              group:"creature",tag:"badge-creature", weight:4 },
+  moth:          { label:"Moth",             group:"creature",tag:"badge-creature", weight:4 },
+  pigeon:        { label:"Pigeon",           group:"creature",tag:"badge-creature", weight:3 },
+  goat:          { label:"Goat",             group:"creature",tag:"badge-creature", weight:2 },
+  gecko:         { label:"Gecko",            group:"creature",tag:"badge-creature", weight:2 },
+  vulture:       { label:"Vulture",          group:"creature",tag:"badge-creature", weight:1 },
+  shrimp:        { label:"Shrimp",           group:"creature",tag:"badge-creature", weight:1 },
+};
+
+const ANGLES = [
+  "Sarcastic pet humor","Tired millennial humor","Introvert humor",
+  "Cozy lifestyle","Cottagecore pet aesthetic","Spooky gothic pet vibes",
+  "Western country pet identity","Retro outdoors aesthetic",
+  "Mildly chaotic humor","Pet obsession identity",
+  "Burnt-out but thriving","Creature solidarity",
+  "Chaotic little gremlin energy","Quiet feral lifestyle"
+];
+
+const AESTHETICS = [
+  "Retro vintage graphic tee","Distressed mascot design",
+  "Folk-art influenced sticker illustration","Rustic vintage badge emblem",
+  "Simplified engraved mascot","Bold clean silhouette art",
+  "Worn screenprint graphic","Vintage western emblem",
+  "National park poster style","Old school tattoo flash",
+  "Woodblock print aesthetic"
+];
+
+const CONTRAST_COMBOS = [
+  {angle:"Introvert humor",               aesthetic:"Vintage western emblem",                    note:"fragile phrase / tough layout"},
+  {angle:"Tired millennial humor",         aesthetic:"National park poster style",                note:"burnout / wholesome wrapper"},
+  {angle:"Cottagecore pet aesthetic",      aesthetic:"Old school tattoo flash",                   note:"soft energy / hard visual"},
+  {angle:"Spooky gothic pet vibes",        aesthetic:"Folk-art influenced sticker illustration",  note:"dark angle / cute format"},
+  {angle:"Cozy lifestyle",                 aesthetic:"Bold clean silhouette art",                 note:"warm feeling / cold geometry"},
+  {angle:"Chaotic little gremlin energy",  aesthetic:"Rustic vintage badge emblem",               note:"chaos / formal crest"},
+  {angle:"Quiet feral lifestyle",          aesthetic:"Retro vintage graphic tee",                 note:"feral energy / nostalgic shell"},
+  {angle:"Burnt-out but thriving",         aesthetic:"Woodblock print aesthetic",                 note:"exhaustion / artisan prestige"},
+];
+
+const TRENDS = [
+  "2006 mall goth","National park nostalgia","Burnt-out office humor",
+  "Cozy doom","Rural cryptid","Gas station occultism",
+  "Bookstore employee energy","Goblincore forager",
+  "Sad snack era","Cottage witch lifestyle",
+  "Feral academia","Chronic overthinker"
+];
+
+const PALETTES = [
+  ["Muted orange","Cream","Charcoal"],
+  ["Faded teal","Warm beige","Black"],
+  ["Dusty red","Off-white","Rustic green"],
+  ["Muted mustard","Burnt sienna","Cream"],
+  ["Black","Muted orange","Warm beige"],
+  ["Charcoal","Faded teal","Off-white"],
+  ["Dusty red","Muted mustard","Black"],
+  ["Rustic green","Cream","Burnt sienna"],
+  ["Deep plum","Dusty rose","Off-white"],
+  ["Midnight navy","Muted orange","Cream"]
+];
+
+const COMPOSITIONS = [
+  { label:"Circular badge",           hint:"Mascot centered inside a ring or badge frame",               fits:["Western country pet identity","Retro outdoors aesthetic","Burnt-out but thriving"] },
+  { label:"Vertical stacked",         hint:"Mascot on top, phrase beneath, tight column",                fits:["Introvert humor","Cozy lifestyle","Cottagecore pet aesthetic","Quiet feral lifestyle"] },
+  { label:"Oversized face crop",      hint:"Head fills most of the canvas, phrase small below or above", fits:["Sarcastic pet humor","Tired millennial humor","Mildly chaotic humor","Chaotic little gremlin energy"] },
+  { label:"Small chest emblem",       hint:"Tight compact lockup, meant for left-chest placement",       fits:["Pet obsession identity","Cozy lifestyle","Creature solidarity"] },
+  { label:"Wide retro banner",        hint:"Horizontal mascot with banner text above and below",         fits:["Retro outdoors aesthetic","Western country pet identity","National park nostalgia"] },
+  { label:"Crest / shield structure", hint:"Heraldic-style formal frame around mascot",                  fits:["Western country pet identity","Creature solidarity","Burnt-out but thriving"] },
+  { label:"Bottom-heavy mascot",      hint:"Mascot anchors bottom, large text dominates top",            fits:["Tired millennial humor","Introvert humor","Quiet feral lifestyle"] },
+  { label:"Diagonal motion",          hint:"Mascot tilted or mid-action, phrase on a slant",             fits:["Mildly chaotic humor","Chaotic little gremlin energy","Spooky gothic pet vibes"] },
+];
+
+const PHRASE_DENSITIES = [
+  { label:"Sparse",       hint:"2–4 words",    example:'"Emotionally Nocturnal"' },
+  { label:"Medium",       hint:"5–8 words",    example:'"I\'m Trying My Best, Unfortunately"' },
+  { label:"Conversational",hint:"9–14 words",  example:'"I Cancel Plans Professionally And Recreationally"' },
+];
+
+// Phrase density weights: 30% Sparse, 45% Medium, 25% Conversational
+const DENSITY_WEIGHTS = [0.30, 0.45, 0.25];
+
+// ── ANTI-REPEAT MEMORY ────────────────────────────────────────────
+// Keeps a rolling window of recently used values to prevent convergence loops
+const recentAnimals   = [];   // animal keys
+const recentAngles    = [];   // angle strings
+const recentTrends    = [];   // trend strings
+const recentAesthetics= [];   // aesthetic strings
+const MAX_MEMORY = 5;         // keep last N of each
+
+// Count occurrences in array (for weighting reduction)
+function countOccurrences(arr, val) {
+  return arr.filter(x => x === val).length;
+}
+
+// Penalize a value by count of recent occurrences — higher count = higher penalty
+function antiRepeatWeight(baseWeight, recentList) {
+  const hits = countOccurrences(recentList, null); // placeholder
+  return baseWeight;
+}
+
+// Pick from array, penalizing recently used entries
+function pickWithMemory(pool, recentList, weightKey = null) {
+  // Compute effective weights: penalize each item by how recently it appeared
+  const now = recentList; // the list to check against
+  let best = null;
+  let bestScore = -1;
+
+  // Try multiple times to find a good non-repeated pick
+  for (let attempt = 0; attempt < 10; attempt++) {
+    const candidate = pool[Math.floor(Math.random() * pool.length)];
+    const key = weightKey ? candidate[weightKey] : candidate;
+    const hitCount = countOccurrences(now, key);
+    // Lower hit count = higher effective score; add tiny random to break ties
+    const score = Math.random() - hitCount * 0.4;
+    if (score > bestScore) {
+      bestScore = score;
+      best = candidate;
+    }
+  }
+  return best;
+}
+
+// Track a value in the recent memory (move to front / add to end)
+function trackMemory(list, value, max = MAX_MEMORY) {
+  // Remove if already present
+  const idx = list.indexOf(value);
+  if (idx !== -1) list.splice(idx, 1);
+  // Add at front (most recent first)
+  list.unshift(value);
+  // Trim to max
+  if (list.length > max) list.pop();
+}
+
+// ── COMMERCIAL RESTRAINT LOGIC ────────────────────────────────────
+// Limits simultaneous novelty layers to preserve readability
+// Wild animal + trend + contrast = too many novelty layers → force sparse density
+function applyRestraint(seed) {
+  const wildAnimals = ['vulture','shrimp','goat','gecko','bat','moth','pigeon'];
+  const isWild = wildAnimals.includes(seed.animalKey);
+  const hasTrend = !!seed.trend;
+  const hasContrast = !!seed.contrastNote;
+
+  // Count active novelty layers
+  let layers = 0;
+  if (isWild) layers++;
+  if (hasTrend) layers++;
+  if (hasContrast) layers++;
+
+  // If 2+ novelty layers, force sparse density to preserve readability
+  if (layers >= 2) {
+    seed.density = { label:"Sparse", hint:"2–4 words", example:'"' + seed.angle.split(' ')[0] + ' Mode"' };
+    seed.restraintApplied = `Sparse density: ${layers} novelty layers (${isWild?'wild animal':''}${hasTrend?' + trend':''}${hasContrast?' + contrast':'').replace(/^ \+ /, '')}`;
+  }
+  return seed;
+}
+
+// ── ANIMAL ARCHETYPE WEIGHTS ──────────────────────────────────────
+// Maps animal to its strongest emotional read for phrase-tone consistency
+const ANIMAL_ARCHETYPES = {
+  possum:    { humor:"survival",     tone:"deadpan",      energy:"low" },
+  capybara:  { humor:"neutral",      tone:"zen",          energy:"low" },
+  crow:      { humor:"cryptic",      tone:"intelligent",  energy:"medium" },
+  chihuahua: { humor:"unstable",     tone:"confident",    energy:"high" },
+  frog:      { humor:"existential",   tone:"soft",        energy:"low" },
+  vulture:   { humor:"resilient",    tone:"exhausted",    energy:"low" },
+  moth:      { humor:"obsessive",    tone:"driven",       energy:"high" },
+  gecko:     { humor:"adaptive",     tone:"calm",         energy:"medium" },
+  goat:      { humor:"chaotic",      tone:"sturdy",       energy:"medium" },
+  pigeon:    { humor:"underdog",     tone:"resilient",    energy:"low" },
+  raccoon:   { humor:"trickster",    tone:"clever",       energy:"medium" },
+  bat:       { humor:"dark",         tone:"mysterious",   energy:"medium" },
+  rabbit:    { humor:"anxious",      tone:"soft",         energy:"high" },
+  axolotl:   { humor:"melancholy",   tone:"calm",         energy:"low" },
+  guinea_pig:{ humor:"sweet",        tone:"cozy",         energy:"low" },
+  // Dogs and cats default to warmer, more familiar humor
+  dog:       { humor:"loyal",        tone:"warm",         energy:"medium" },
+  cat:       { humor:"ironic",       tone:"cool",         energy:"medium" },
+};
+
+function getArchetype(animalKey) {
+  // Normalize: dog_french → dog, cat_black → cat, etc.
+  const base = animalKey.replace(/_[a-z]+$/, '');
+  return ANIMAL_ARCHETYPES[base] || { humor:"generic", tone:"neutral", energy:"medium" };
+}
+
+// ── COLLECTION MODE STATE ───────────────────────────────────────────
+let collectionMode = false;
+let collectionItems = [];
+
+const COLLECTION_PALETTES = {
+  warmearth:  ["Muted orange","Cream","Charcoal"],
+  forest:     ["Rustic green","Cream","Burnt sienna"],
+  coastal:    ["Faded teal","Warm beige","Black"],
+  mono:       ["Black","Muted orange","Warm beige"],
+  dusty:      ["Dusty red","Muted mustard","Black"],
+  midnight:   ["Deep plum","Dusty rose","Off-white"],
+};
+
+const COLLECTION_COMPOSITIONS = {
+  circular:   { label:"Circular badge",           hint:"Mascot centered inside a ring or badge frame",               fits:["Western country pet identity","Retro outdoors aesthetic","Burnt-out but thriving"] },
+  vertical:   { label:"Vertical stacked",         hint:"Mascot on top, phrase beneath, tight column",                fits:["Introvert humor","Cozy lifestyle","Cottagecore pet aesthetic","Quiet feral lifestyle"] },
+  facecrop:   { label:"Oversized face crop",      hint:"Head fills most of the canvas, phrase small below or above", fits:["Sarcastic pet humor","Tired millennial humor","Mildly chaotic humor","Chaotic little gremlin energy"] },
+  chest:      { label:"Small chest emblem",       hint:"Tight compact lockup, meant for left-chest placement",       fits:["Pet obsession identity","Cozy lifestyle","Creature solidarity"] },
+  banner:     { label:"Wide retro banner",        hint:"Horizontal mascot with banner text above and below",         fits:["Retro outdoors aesthetic","Western country pet identity","National park nostalgia"] },
+  crest:      { label:"Crest / shield structure", hint:"Heraldic-style formal frame around mascot",                  fits:["Western country pet identity","Creature solidarity","Burnt-out but thriving"] },
+  bottomheavy:{ label:"Bottom-heavy mascot",      hint:"Mascot anchors bottom, large text dominates top",            fits:["Tired millennial humor","Introvert humor","Quiet feral lifestyle"] },
+  diagonal:   { label:"Diagonal motion",          hint:"Mascot tilted or mid-action, phrase on a slant",             fits:["Mildly chaotic humor","Chaotic little gremlin energy","Spooky gothic pet vibes"] },
+};
+
+const COLLECTION_TYPOGRAPHY = {
+  retro:      "Distressed retro serif",
+  badge:      "Bold curved vintage badge text",
+  western:    "Worn western slab serif",
+  handlettered:"Rustic hand-lettered caps",
+  condensed:  "Vintage condensed block type",
+  cracked:    "Cracked retro display lettering",
+  woodblock:  "Rough woodblock print type",
+};
+
+function toggleCollection() {
+  collectionMode = !collectionMode;
+  const track = document.getElementById('toggleTrack');
+  const label = document.getElementById('toggleLabel');
+  const panel = document.getElementById('collectionPanel');
+  const settings = document.getElementById('collectionSettings');
+  const controls = document.getElementById('collectionControls');
+
+  track.classList.toggle('on', collectionMode);
+  label.textContent = collectionMode ? "On" : "Off";
+  panel.classList.toggle('active', collectionMode);
+  settings.classList.toggle('open', collectionMode);
+  controls.style.display = collectionMode ? "flex" : "none";
+
+  if (!collectionMode) {
+    collectionItems = [];
+    document.getElementById('collectionCount').textContent = '';
+    document.getElementById('collectionPreview').innerHTML = '';
+  }
+}
+
+function generateCollection() {
+  const paletteKey   = document.getElementById('colPalette').value;
+  const compositionKey = document.getElementById('colComposition').value;
+  const typographyKey = document.getElementById('colTypography').value;
+  const range = parseInt(document.getElementById('colRange').value);
+
+  const fixedPalette   = COLLECTION_PALETTES[paletteKey];
+  const fixedComposition = COLLECTION_COMPOSITIONS[compositionKey];
+  const fixedTypography  = COLLECTION_TYPOGRAPHY[typographyKey];
+
+  collectionItems = [];
+  const preview = document.getElementById('collectionPreview');
+  preview.innerHTML = '';
+
+  for (let i = 0; i < range; i++) {
+    // Generate seed with memory and restraint applied
+    const seed = generateSingleSeed({ fixedPalette, fixedComposition });
+
+    // Apply fixed collection values
+    seed.collectionPalette    = fixedPalette.join(', ');
+    seed.collectionComposition = fixedComposition.label;
+    seed.collectionTypography = fixedTypography;
+
+    collectionItems.push(seed);
+
+    // Show in preview
+    const item = document.createElement('div');
+    item.className = 'collection-item';
+    item.innerHTML = `<span class="animal-name">${seed.animal.label}</span> · ${seed.angle}`;
+    preview.appendChild(item);
+  }
+
+  document.getElementById('collectionCount').innerHTML =
+    `Line: <span>${collectionItems.length}</span> designs · <span>${fixedPalette[0]}</span> · <span>${fixedComposition.label}</span>`;
+}
+
+function shuffleCollection() {
+  if (!collectionItems.length) return;
+  const preview = document.getElementById('collectionPreview');
+  preview.innerHTML = '';
+
+  collectionItems = collectionItems.map(() => {
+    const fixedPalette   = COLLECTION_PALETTES[document.getElementById('colPalette').value];
+    const fixedComposition = COLLECTION_COMPOSITIONS[document.getElementById('colComposition').value];
+    const seed = generateSingleSeed({ fixedPalette, fixedComposition });
+    seed.collectionPalette    = fixedPalette.join(', ');
+    seed.collectionComposition = fixedComposition.label;
+    seed.collectionTypography = COLLECTION_TYPOGRAPHY[document.getElementById('colTypography').value];
+    return seed;
+  });
+
+  collectionItems.forEach(seed => {
+    const item = document.createElement('div');
+    item.className = 'collection-item';
+    item.innerHTML = `<span class="animal-name">${seed.animal.label}</span> · ${seed.angle}`;
+    preview.appendChild(item);
+  });
+}
+
+// ── SEED GENERATION ─────────────────────────────────────────────────
+
+let lastAnimalKey = null;
+let currentSeedText = "";
+
+function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+// Weighted pick from ANIMALS using merged weight pool
+function pickAnimal() {
+  const keys  = Object.keys(ANIMALS);
+  const total  = keys.reduce((s,k) => s + ANIMALS[k].weight, 0);
+
+  // Build weighted pool with memory penalty
+  let bestKey = null;
+  let bestScore = -1;
+
+  for (let attempt = 0; attempt < 15; attempt++) {
+    let r = Math.random() * total;
+    let selectedKey = keys[keys.length - 1];
+    for (const k of keys) {
+      r -= ANIMALS[k].weight;
+      if (r <= 0) { selectedKey = k; break; }
+    }
+    // Penalize if recently used
+    const hitCount = countOccurrences(recentAnimals, selectedKey);
+    const score = Math.random() - hitCount * 0.5;
+    if (score > bestScore) {
+      bestScore = score;
+      bestKey = selectedKey;
+    }
+  }
+  return bestKey;
+}
+
+// Pick angle with memory penalty
+function pickAngleWithMemory() {
+  // Build a scored list of angles (penalize recently used)
+  let best = null;
+  let bestScore = -1;
+  for (let attempt = 0; attempt < 12; attempt++) {
+    const candidate = pick(ANGLES);
+    const hitCount = countOccurrences(recentAngles, candidate);
+    const score = Math.random() - hitCount * 0.5;
+    if (score > bestScore) {
+      bestScore = score;
+      best = candidate;
+    }
+  }
+  return best;
+}
+
+// Pick aesthetic with memory penalty
+function pickAestheticWithMemory() {
+  let best = null;
+  let bestScore = -1;
+  for (let attempt = 0; attempt < 12; attempt++) {
+    const candidate = pick(AESTHETICS);
+    const hitCount = countOccurrences(recentAesthetics, candidate);
+    const score = Math.random() - hitCount * 0.4;
+    if (score > bestScore) {
+      bestScore = score;
+      best = candidate;
+    }
+  }
+  return best;
+}
+
+// Pick trend with memory penalty
+function pickTrendWithMemory() {
+  if (Math.random() > 0.35) return null;
+  let best = null;
+  let bestScore = -1;
+  for (let attempt = 0; attempt < 12; attempt++) {
+    const candidate = pick(TRENDS);
+    const hitCount = countOccurrences(recentTrends, candidate);
+    const score = Math.random() - hitCount * 0.6;
+    if (score > bestScore) {
+      bestScore = score;
+      best = candidate;
+    }
+  }
+  return best;
+}
+
+// Weighted pick for phrase density: 30% Sparse, 45% Medium, 25% Conversational
+function pickDensity() {
+  const r = Math.random();
+  let cumulative = 0;
+  for (let i = 0; i < DENSITY_WEIGHTS.length; i++) {
+    cumulative += DENSITY_WEIGHTS[i];
+    if (r < cumulative) return PHRASE_DENSITIES[i];
+  }
+  return PHRASE_DENSITIES[1]; // fallback to Medium
+}
+
+// Core seed generation (used by both single and collection modes)
+function generateSingleSeed(opts = {}) {
+  const { fixedPalette = null, fixedComposition = null } = opts;
+
+  // Animal — with anti-repeat memory
+  let animalKey, attempts = 0;
+  do { animalKey = pickAnimal(); attempts++; }
+  while (animalKey === lastAnimalKey && attempts < 20);
+  lastAnimalKey = animalKey;
+  trackMemory(recentAnimals, animalKey);
+
+  const animal = ANIMALS[animalKey];
+
+  // Angle — with memory
+  const angle = pickAngleWithMemory();
+  trackMemory(recentAngles, angle);
+
+  // Aesthetic — with memory
+  let aesthetic = pickAestheticWithMemory();
+  trackMemory(recentAesthetics, aesthetic);
+
+  // Contrast: 30% chance
+  let contrastNote = null;
+  if (Math.random() < 0.30) {
+    const combo = pick(CONTRAST_COMBOS);
+    // Only use combo if angle matches (avoid jarring mismatch)
+    if (combo.angle === angle) {
+      contrastNote = combo.note;
+      aesthetic = combo.aesthetic;
+    }
+  }
+
+  // Trend — with memory
+  const trend = pickTrendWithMemory();
+  if (trend) trackMemory(recentTrends, trend);
+
+  // Get archetype for animal
+  const archetype = getArchetype(animalKey);
+
+  // Composition
+  let composition;
+  if (fixedComposition) {
+    composition = fixedComposition;
+  } else {
+    const fits = COMPOSITIONS.filter(c => c.fits.includes(angle));
+    composition = fits.length ? pick(fits) : pick(COMPOSITIONS);
+  }
+
+  // Palette
+  const palette = fixedPalette || pick(PALETTES);
+
+  // Density
+  let density = pickDensity();
+
+  // Build seed object
+  let seed = {
+    animalKey,
+    animal,
+    angle,
+    aesthetic,
+    composition,
+    density,
+    palette,
+    trend,
+    contrastNote,
+    archetype,
+  };
+
+  // Apply commercial restraint
+  seed = applyRestraint(seed);
+
+  return seed;
+}
+
+function randomize() {
+  const seed = generateSingleSeed();
+
+  // Build display text
+  currentSeedText =
+`Animal: ${seed.animal.label}
+Emotional Angle: ${seed.angle}
+Visual Aesthetic: ${seed.aesthetic}
+Composition: ${seed.composition.label} — ${seed.composition.hint}
+Phrase Density: ${seed.density.label} (${seed.density.hint}) e.g. ${seed.density.example}
+Color Palette: ${seed.palette.join(", ")}` +
+(seed.trend        ? `\nTrend Injector: ${seed.trend}` : "") +
+(seed.contrastNote ? `\nContrast Note: ${seed.contrastNote}` : "") +
+(seed.archetype.humor !== "generic" ? `\nAnimal Archetype: ${seed.archetype.humor} / ${seed.archetype.tone} / energy: ${seed.archetype.energy}` : "") +
+(seed.restraintApplied ? `\nRestraint: ${seed.restraintApplied}` : "");
+
+  // Show collection info in seed if active
+  if (seed.collectionPalette) {
+    currentSeedText += `\n\n[COLLECTION MODE — fixed across line]`;
+    currentSeedText += `\nPalette: ${seed.collectionPalette}`;
+    currentSeedText += `\nComposition: ${seed.collectionComposition}`;
+    currentSeedText += `\nTypography: ${seed.collectionTypography}`;
+  }
+
+  const result = document.getElementById("result");
+  const card   = document.getElementById("card");
+  document.getElementById("placeholder").style.display = "none";
+  result.style.display = "flex";
+  card.className = "card" +
+    (seed.contrastNote ? " contrast-active" : "") +
+    (seed.trend        ? " trend-active"     : "");
+
+  let restraintNote = seed.restraintApplied
+    ? `<div class="output-block"><span class="output-label">Restraint Applied</span><span style="font-size:0.72rem;color:#4a7c59;font-style:italic;">${seed.restraintApplied}</span></div>`
+    : "";
+
+  result.innerHTML = `
+    <div class="seed-grid">
+      <div class="seed-item">
+        <span class="seed-label">Animal</span>
+        <span class="seed-value"><span class="badge ${seed.animal.tag}">${seed.animal.label}</span></span>
+        ${seed.archetype.humor !== "generic" ? `<span style="font-size:0.6rem;color:var(--muted);">${seed.archetype.humor} · ${seed.archetype.tone} tone</span>` : ""}
+      </div>
+      <div class="seed-item">
+        <span class="seed-label">Emotional Angle</span>
+        <span class="seed-value" style="color:var(--orange);">${seed.angle}</span>
+      </div>
+      <div class="seed-item">
+        <span class="seed-label">Visual Aesthetic</span>
+        <span class="seed-value">${seed.aesthetic}</span>
+      </div>
+      <div class="seed-item">
+        <span class="seed-label">Modes</span>
+        <span class="seed-value" style="font-size:0.7rem;">
+          ${seed.contrastNote ? `<span class="badge badge-contrast">CONTRAST</span>` : `<span style="color:var(--muted);">HARMONY</span>`}
+          ${seed.trend ? ` · <span class="badge badge-trend">TREND</span>` : ""}
+        </span>
+      </div>
+    </div>
+    <hr class="divider">
+    <div class="output-block">
+      <span class="output-label">Composition Archetype</span>
+      <span class="seed-value" style="font-size:0.82rem;">${seed.composition.label}</span>
+      <span style="font-size:0.68rem;color:var(--muted);margin-top:-0.1rem;">${seed.composition.hint}</span>
+    </div>
+    <div class="output-block">
+      <span class="output-label">Phrase Density</span>
+      <span class="seed-value" style="font-size:0.82rem;">${seed.density.label} <span style="color:var(--muted);font-size:0.7rem;font-weight:400;">${seed.density.hint}</span></span>
+      <span style="font-size:0.68rem;color:var(--muted);">e.g. ${seed.density.example}</span>
+    </div>
+    <hr class="divider">
+    <div class="output-block">
+      <span class="output-label">Color Palette</span>
+      <div class="badge-row">
+        ${seed.palette.map(c=>`<span style="font-size:0.68rem;padding:0.22rem 0.6rem;border:1px solid #2e2b25;border-radius:2px;color:#f0e6d0;">${c}</span>`).join("")}
+      </div>
+    </div>
+    ${seed.trend?`<div class="output-block">
+      <span class="output-label">Trend Injector</span>
+      <span class="seed-value"><span class="badge badge-trend">${seed.trend}</span></span>
+    </div>`:""}
+    ${seed.contrastNote?`<div class="output-block">
+      <span class="output-label">Contrast Logic</span>
+      <span style="font-size:0.72rem;color:#c084fc;font-style:italic;">${seed.contrastNote}</span>
+    </div>`:""}
+    ${restraintNote}
+    <hr class="divider">
+    <div class="output-block">
+      <span class="output-label">Seed — paste into ChatGPT prompt generator</span>
+      <div class="output-text">${currentSeedText}</div>
+    </div>
+  `;
+
+  document.getElementById("copyBtn").disabled = false;
+}
+
+function copySeed() {
+  navigator.clipboard.writeText(currentSeedText).then(() => {
+    const btn = document.getElementById("copyBtn");
+    btn.textContent = "Copied!";
+    btn.classList.add("copied");
+    setTimeout(() => { btn.textContent = "Copy Seed"; btn.classList.remove("copied"); }, 1800);
+  });
+}
+
+function copyPromptGenerator() {
+  navigator.clipboard.writeText(PROMPT_GENERATOR).then(() => {
+    const btn = document.getElementById("copyPromptBtn");
+    btn.textContent = "Copied!";
+    btn.classList.add("copied");
+    setTimeout(() => { btn.textContent = "Copy Prompt Generator"; btn.classList.remove("copied"); }, 1800);
+  });
+}
+</script>
+</body>
+</html>
