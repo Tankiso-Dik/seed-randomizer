@@ -37,7 +37,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -81,7 +81,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -125,7 +125,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -169,7 +169,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -213,7 +213,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -257,7 +257,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -301,7 +301,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -345,7 +345,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -389,7 +389,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -433,7 +433,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -477,7 +477,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -521,7 +521,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -565,7 +565,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -609,7 +609,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -653,7 +653,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -697,7 +697,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -741,7 +741,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -785,7 +785,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -829,7 +829,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -873,7 +873,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background" (or black if a dark aesthetic) so the designer can key it out.
+- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
 
 OUTPUT EXACTLY LIKE THIS:
 
