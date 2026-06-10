@@ -12,6 +12,8 @@ export default function Home() {
   const [selectedAngle, setSelectedAngle] = useState<string>("");
   const [selectedAesthetic, setSelectedAesthetic] = useState<string>("");
   const [selectedTheme, setSelectedTheme] = useState<string>("none");
+  const [selectedFramework, setSelectedFramework] = useState<string>("");
+  const [selectedArchetype, setSelectedArchetype] = useState<any>(null);
   const [selectedHumor, setSelectedHumor] = useState<string>("sarcastic");
   const [selectedComposition, setSelectedComposition] = useState<string>("");
   const [selectedRenderStyle, setSelectedRenderStyle] = useState<string>("flat");
@@ -21,6 +23,7 @@ export default function Home() {
 
   const handleAnimalChange = useCallback((newAnimalId: string) => {
     setSelectedAnimalId(newAnimalId);
+    setSelectedArchetype(ANIMALS_DATA[newAnimalId]?.archetypes[0]);
     const newAnimal = ANIMALS_DATA[newAnimalId];
     if (newAnimal) {
       setSelectedColor(newAnimal.colors[0]);
@@ -36,11 +39,13 @@ export default function Home() {
     const animal = ANIMALS_DATA[randomAnimalId];
     setSelectedAnimalId(randomAnimalId);
     
-    // We don't rely on useEffect here to avoid race conditions with setting state immediately
+    const randArc = animal.archetypes[Math.floor(Math.random() * animal.archetypes.length)];
+    setSelectedArchetype(randArc);
     setSelectedColor(animal.colors[Math.floor(Math.random() * animal.colors.length)]);
     setSelectedAngle(animal.angles[Math.floor(Math.random() * animal.angles.length)]);
     setSelectedAesthetic(animal.aesthetics[Math.floor(Math.random() * animal.aesthetics.length)]);
-    setSelectedTheme(THEMES[Math.floor(Math.random() * THEMES.length)].id);
+    setSelectedTheme(randArc.themes[Math.floor(Math.random() * randArc.themes.length)]);
+    setSelectedFramework(randArc.frameworks[Math.floor(Math.random() * randArc.frameworks.length)]);
     setSelectedHumor(HUMOR_STYLES[Math.floor(Math.random() * HUMOR_STYLES.length)].id);
     setSelectedComposition(animal.compositions[Math.floor(Math.random() * animal.compositions.length)]);
     setSelectedRenderStyle(RENDER_STYLES[Math.floor(Math.random() * RENDER_STYLES.length)].id);
@@ -48,10 +53,13 @@ export default function Home() {
 
   const handleRandomizeCurrent = useCallback(() => {
     if (!currentAnimal) return;
+    const randArc = currentAnimal.archetypes[Math.floor(Math.random() * currentAnimal.archetypes.length)];
+    setSelectedArchetype(randArc);
     setSelectedColor(currentAnimal.colors[Math.floor(Math.random() * currentAnimal.colors.length)]);
     setSelectedAngle(currentAnimal.angles[Math.floor(Math.random() * currentAnimal.angles.length)]);
     setSelectedAesthetic(currentAnimal.aesthetics[Math.floor(Math.random() * currentAnimal.aesthetics.length)]);
-    setSelectedTheme(THEMES[Math.floor(Math.random() * THEMES.length)].id);
+    setSelectedTheme(randArc.themes[Math.floor(Math.random() * randArc.themes.length)]);
+    setSelectedFramework(randArc.frameworks[Math.floor(Math.random() * randArc.frameworks.length)]);
     setSelectedHumor(HUMOR_STYLES[Math.floor(Math.random() * HUMOR_STYLES.length)].id);
     setSelectedComposition(currentAnimal.compositions[Math.floor(Math.random() * currentAnimal.compositions.length)]);
     setSelectedRenderStyle(RENDER_STYLES[Math.floor(Math.random() * RENDER_STYLES.length)].id);
@@ -62,15 +70,16 @@ export default function Home() {
   const currentHumor = HUMOR_STYLES.find(h => h.id === selectedHumor);
 
   const generatedPrompt = currentAnimal?.promptTemplate
-    .replace("[ARCHETYPE]", currentAnimal?.archetypes ? currentAnimal.archetypes[Math.floor(Math.random() * currentAnimal.archetypes.length)].arc : "")
-    .replace("[BUYER_IDENTITY]", currentAnimal?.archetypes ? currentAnimal.archetypes[Math.floor(Math.random() * currentAnimal.archetypes.length)].idty : "")
+    .replace("[ARCHETYPE]", selectedArchetype?.arc || "")
+    .replace("[BUYER_IDENTITY]", selectedArchetype?.idty || "")
+    .replace("[FRAMEWORK]", selectedFramework || "")
     .replace("[COLOR]", selectedColor)
     .replace("[ANGLE]", selectedAngle)
     .replace("[AESTHETIC]", selectedAesthetic)
     .replace("[COMPOSITION]", selectedComposition)
     .replace("[RENDER_STYLE_LABEL]", currentRenderStyle?.label || "")
     .replace("[RENDER_STYLE_INSTRUCTION]", currentRenderStyle?.instruction || "")
-    .replace("[THEME]", currentTheme?.label || "")
+    .replace("[THEME]", THEMES.find(t => t.id === selectedTheme)?.label || "")
     .replace("[HUMOR_STYLE]", currentHumor?.label || "") || "";
 
   const handleCopyPrompt = useCallback(() => {
@@ -91,20 +100,21 @@ export default function Home() {
       const randAesthetic = animal.aesthetics[Math.floor(Math.random() * animal.aesthetics.length)];
       const randComp = animal.compositions[Math.floor(Math.random() * animal.compositions.length)];
       const randRender = RENDER_STYLES[Math.floor(Math.random() * RENDER_STYLES.length)];
-      const randTheme = THEMES[Math.floor(Math.random() * THEMES.length)];
-      const randHumor = HUMOR_STYLES[Math.floor(Math.random() * HUMOR_STYLES.length)];
-
       const randArc = animal.archetypes[Math.floor(Math.random() * animal.archetypes.length)];
+      const randTheme = randArc.themes[Math.floor(Math.random() * randArc.themes.length)];
+      const randFramework = randArc.frameworks[Math.floor(Math.random() * randArc.frameworks.length)];
+      const randHumor = HUMOR_STYLES[Math.floor(Math.random() * HUMOR_STYLES.length)];
       const p = animal.promptTemplate
         .replace("[ARCHETYPE]", randArc.arc)
         .replace("[BUYER_IDENTITY]", randArc.idty)
+        .replace("[FRAMEWORK]", randFramework)
         .replace("[COLOR]", randColor)
         .replace("[ANGLE]", randAngle)
         .replace("[AESTHETIC]", randAesthetic)
         .replace("[COMPOSITION]", randComp)
         .replace("[RENDER_STYLE_LABEL]", randRender.label)
         .replace("[RENDER_STYLE_INSTRUCTION]", randRender.instruction)
-        .replace("[THEME]", randTheme.label)
+        .replace("[THEME]", THEMES.find(t => t.id === randTheme)?.label || randTheme)
         .replace("[HUMOR_STYLE]", randHumor.label);
       
       batchPrompts.push(`--- PROMPT ${i + 1} ---\n\n${p}\n\n`);
