@@ -49,7 +49,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -93,7 +93,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -137,7 +137,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -181,7 +181,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -225,7 +225,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -269,7 +269,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -313,7 +313,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -357,7 +357,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -401,7 +401,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -445,7 +445,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -489,7 +489,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -533,7 +533,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -577,7 +577,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -621,7 +621,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -665,7 +665,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -709,7 +709,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -753,7 +753,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -797,7 +797,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -841,7 +841,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
@@ -885,7 +885,7 @@ OUTPUT EXACTLY LIKE THIS:
 
 [SEO METADATA]
 Title: [Catchy Title]
-Main Tag: [The single most accurate descriptive tag for the intersection, e.g., 'Gamer Raccoon']
+Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
   },
