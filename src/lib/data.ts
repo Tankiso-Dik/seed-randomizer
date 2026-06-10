@@ -57,11 +57,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   crow: {
     id: "crow",
@@ -110,11 +111,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   possum: {
     id: "possum",
@@ -163,11 +165,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   raccoon: {
     id: "raccoon",
@@ -216,11 +219,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   capybara: {
     id: "capybara",
@@ -269,11 +273,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   axolotl: {
     id: "axolotl",
@@ -322,11 +327,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   frog: {
     id: "frog",
@@ -375,11 +381,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   bat: {
     id: "bat",
@@ -428,11 +435,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   moth: {
     id: "moth",
@@ -481,11 +489,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   pigeon: {
     id: "pigeon",
@@ -534,11 +543,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   rabbit: {
     id: "rabbit",
@@ -587,11 +597,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   guinea_pig: {
     id: "guinea_pig",
@@ -640,11 +651,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   goat: {
     id: "goat",
@@ -693,11 +705,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   gecko: {
     id: "gecko",
@@ -746,11 +759,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   vulture: {
     id: "vulture",
@@ -799,11 +813,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   shrimp: {
     id: "shrimp",
@@ -852,11 +867,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   goose: {
     id: "goose",
@@ -905,11 +921,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   sloth: {
     id: "sloth",
@@ -958,11 +975,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   red_panda: {
     id: "red_panda",
@@ -1011,11 +1029,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
   otter: {
     id: "otter",
@@ -1064,11 +1083,12 @@ OUTPUT EXACTLY LIKE THIS:
 [IMAGE PROMPT]
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
-[SEO METADATA]
+[SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
 Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
 };
 
