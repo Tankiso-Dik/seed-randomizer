@@ -1,6 +1,5 @@
 export interface AnimalConfig {
-  archetype: string;
-  buyerIdentity: string;
+  archetypes: { arc: string; idty: string }[];
   id: string;
   label: string;
   colors: string[];
@@ -14,8 +13,11 @@ export const ANIMALS_DATA: Record<string, AnimalConfig> = {
   pig: {
     id: "pig",
     label: "Pig",
-    archetype: "The Indulgent Hedonist",
-    buyerIdentity: "Someone who unapologetically loves snacking, relaxing in the mud, and refusing to do any actual work.",
+    archetypes: [
+      { arc: "The Indulgent Hedonist", idty: "Someone who unapologetically loves snacking, relaxing in the mud, and refusing to do any actual work." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Pink","Brown","Spotted"],
     angles: ["Lazy & unbothered","Always hungry","Muddy but happy"],
     aesthetics: ["Rustic vintage badge","Cottagecore sticker","Bold clean silhouette","Vintage diner mascot"],
@@ -52,19 +54,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   crow: {
     id: "crow",
     label: "Crow",
-    archetype: "The Goth Scholar",
-    buyerIdentity: "Someone who loves shiny things, true crime, spooky academia, and judging people from a distance.",
+    archetypes: [
+      { arc: "The Goth Scholar", idty: "Someone who loves shiny things, true crime, spooky academia, and judging people from a distance." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Black","Iridescent Black"],
     angles: ["Spooky gothic","Feral academia","Shiny object enthusiast","Ominous watcher"],
     aesthetics: ["Old school tattoo flash","Woodblock print","Simplified engraved","Tarot card illustration"],
@@ -101,19 +106,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   possum: {
     id: "possum",
     label: "Possum",
-    archetype: "The Tired One",
-    buyerIdentity: "Someone who is overstimulated, exhausted, surviving on caffeine, and uses 'I\'m fine' as their entire personality.",
+    archetypes: [
+      { arc: "The Tired One", idty: "Someone who is overstimulated, exhausted, surviving on caffeine, and uses 'I\'m fine' as their entire personality." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Gray and White","Grungy Gray"],
     angles: ["Tired millennial humor","Nocturnal survivor","Screaming internally","Feral lifestyle"],
     aesthetics: ["Worn screenprint graphic","Distressed mascot design","Retro vintage graphic tee","Grunge typography poster"],
@@ -150,19 +158,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   raccoon: {
     id: "raccoon",
     label: "Raccoon",
-    archetype: "The Chaotic Trash Panda",
-    buyerIdentity: "Someone with scrappy, unhinged gremlin energy who thrives in late-night chaos and proudly makes terrible decisions.",
+    archetypes: [
+      { arc: "The Chaotic Trash Panda", idty: "Someone with scrappy, unhinged gremlin energy who thrives in late-night chaos and proudly makes terrible decisions." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Gray with Black Mask","Dusty Brownish-Gray"],
     angles: ["Trash goblin","Chaotic little gremlin energy","Sad snack era","Sneaky"],
     aesthetics: ["Retro vintage graphic tee","Rustic vintage badge emblem","Bold clean silhouette","Grunge typography poster"],
@@ -199,19 +210,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   capybara: {
     id: "capybara",
     label: "Capybara",
-    archetype: "The Zen Master",
-    buyerIdentity: "Someone who is aggressively unbothered, chronically chill, and refuses to let modern stress affect their inner peace.",
+    archetypes: [
+      { arc: "The Zen Master", idty: "Someone who is aggressively unbothered, chronically chill, and refuses to let modern stress affect their inner peace." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Warm Brown","Tan"],
     angles: ["Unbothered","Cozy lifestyle","Chill mediator","Zen master"],
     aesthetics: ["National park poster style","Folk-art influenced","Woodblock print aesthetic","70s retro sunset graphic"],
@@ -248,19 +262,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   axolotl: {
     id: "axolotl",
     label: "Axolotl",
-    archetype: "The Sweet & Empty-Headed",
-    buyerIdentity: "Someone who is overwhelmingly cute but has absolutely zero thoughts going on behind their eyes.",
+    archetypes: [
+      { arc: "The Sweet & Empty-Headed", idty: "Someone who is overwhelmingly cute but has absolutely zero thoughts going on behind their eyes." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Pink","Melanoid (Black)","Golden"],
     angles: ["Blank stare","Smiling but empty","Watery doom","Cute but clueless"],
     aesthetics: ["Bold clean silhouette","Retro vintage graphic tee","Folk-art influenced sticker","Kawaii pastel vector"],
@@ -297,19 +314,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   frog: {
     id: "frog",
     label: "Frog",
-    archetype: "The Blissfully Detached",
-    buyerIdentity: "Someone who wants to retreat to the woods, avoid society, and live a derpy, simple, cottagecore life.",
+    archetypes: [
+      { arc: "The Blissfully Detached", idty: "Someone who wants to retreat to the woods, avoid society, and live a derpy, simple, cottagecore life." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Bright Green","Poison Dart Pattern","Muddy Brown"],
     angles: ["Pond life","Unblinking judge","Cottagecore pet aesthetic","Grumpy toad"],
     aesthetics: ["Cottagecore sticker","Woodblock print","Rustic vintage badge","Kawaii pastel vector"],
@@ -346,19 +366,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   bat: {
     id: "bat",
     label: "Bat",
-    archetype: "The Spooky Introvert",
-    buyerIdentity: "Someone who hates daylight, avoids social interaction, and considers Halloween to be a year-round lifestyle.",
+    archetypes: [
+      { arc: "The Spooky Introvert", idty: "Someone who hates daylight, avoids social interaction, and considers Halloween to be a year-round lifestyle." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Dark Brown","Black"],
     angles: ["Upside-down view","Spooky gothic pet vibes","Night shift","Fluffy darkness"],
     aesthetics: ["Old school tattoo flash","Simplified engraved","Distressed mascot design","Tarot card illustration"],
@@ -395,19 +418,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   moth: {
     id: "moth",
     label: "Moth",
-    archetype: "The Feral Light-Seeker",
-    buyerIdentity: "Someone drawn to shiny, destructive things, embracing weird alt-fashion, and constantly distracted.",
+    archetypes: [
+      { arc: "The Feral Light-Seeker", idty: "Someone drawn to shiny, destructive things, embracing weird alt-fashion, and constantly distracted." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Dusty Brown","Pale Luna Green","White"],
     angles: ["Lamp obsessed","Fluffy but erratic","Night flyer","Fuzzy cryptid"],
     aesthetics: ["Woodblock print aesthetic","Folk-art influenced","Worn screenprint graphic","Tarot card illustration"],
@@ -444,19 +470,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   pigeon: {
     id: "pigeon",
     label: "Pigeon",
-    archetype: "The Urban Survivor",
-    buyerIdentity: "Someone who feels overlooked, slightly trashy, but highly resilient and just trying to secure the bread.",
+    archetypes: [
+      { arc: "The Urban Survivor", idty: "Someone who feels overlooked, slightly trashy, but highly resilient and just trying to secure the bread." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["City Gray","White","Iridescent Neck"],
     angles: ["Bread crumb collector","Urban survivor","Cooing menace","Oblivious walker"],
     aesthetics: ["Retro vintage graphic tee","Worn screenprint graphic","Distressed mascot design","70s retro sunset graphic"],
@@ -493,19 +522,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   rabbit: {
     id: "rabbit",
     label: "Rabbit",
-    archetype: "The Anxious Over-Thinker",
-    buyerIdentity: "Someone who is highly caffeinated, perpetually nervous, easily startled, and trying their best.",
+    archetypes: [
+      { arc: "The Anxious Over-Thinker", idty: "Someone who is highly caffeinated, perpetually nervous, easily startled, and trying their best." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["White","Brown","Spotted"],
     angles: ["Nervous twitch","Fast but tired","Fluffy anger","Always late"],
     aesthetics: ["Vintage western emblem","Rustic vintage badge","Old school tattoo flash","Psychedelic retro cartoon"],
@@ -542,19 +574,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   guinea_pig: {
     id: "guinea_pig",
     label: "Guinea Pig",
-    archetype: "The Dramatic Potato",
-    buyerIdentity: "Someone who demands immediate attention, screams when hungry, and prefers staying home in their cozy corner.",
+    archetypes: [
+      { arc: "The Dramatic Potato", idty: "Someone who demands immediate attention, screams when hungry, and prefers staying home in their cozy corner." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Calico","Brown","White"],
     angles: ["Wheeking for snacks","Round potato","Constant panic","Staring blankly"],
     aesthetics: ["Bold clean silhouette art","Folk-art influenced sticker","Simplified engraved mascot","Kawaii pastel vector"],
@@ -591,19 +626,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   goat: {
     id: "goat",
     label: "Goat",
-    archetype: "The Screaming Menace",
-    buyerIdentity: "Someone with unbridled chaotic energy who yells at inconveniences and climbs over obstacles out of pure stubbornness.",
+    archetypes: [
+      { arc: "The Screaming Menace", idty: "Someone with unbridled chaotic energy who yells at inconveniences and climbs over obstacles out of pure stubbornness." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["White","Black","Brown and White"],
     angles: ["Headbutt enthusiast","Screaming","Will eat garbage","Mountain chaos"],
     aesthetics: ["Rustic vintage badge emblem","National park poster style","Woodblock print aesthetic","Heavy metal band logo style"],
@@ -640,19 +678,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   gecko: {
     id: "gecko",
     label: "Gecko",
-    archetype: "The Derpy Observer",
-    buyerIdentity: "Someone who is slightly awkward, stares blankly at situations, and clings to their comfort zone.",
+    archetypes: [
+      { arc: "The Derpy Observer", idty: "Someone who is slightly awkward, stares blankly at situations, and clings to their comfort zone." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Bright Green","Leopard Spotted","Crested Brown"],
     angles: ["Sticky fingers","Wall lurker","Blep","Brain empty"],
     aesthetics: ["Retro vintage graphic tee","Bold clean silhouette","Folk-art influenced","70s retro sunset graphic"],
@@ -689,19 +730,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   vulture: {
     id: "vulture",
     label: "Vulture",
-    archetype: "The Ominous Loner",
-    buyerIdentity: "Someone with a morbid sense of humor who patiently waits for things to fall apart while drinking their coffee.",
+    archetypes: [
+      { arc: "The Ominous Loner", idty: "Someone with a morbid sense of humor who patiently waits for things to fall apart while drinking their coffee." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Black with Red Head","Dusty Brown"],
     angles: ["Waiting patiently","Desert gothic","Sunbathing","Macabre but polite"],
     aesthetics: ["Vintage western emblem","Old school tattoo flash","National park poster style","Traditional American tattoo"],
@@ -738,19 +782,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   shrimp: {
     id: "shrimp",
     label: "Shrimp",
-    archetype: "The Post-Ironic Weirdo",
-    buyerIdentity: "Someone deeply immersed in absurdist Gen Z internet humor who uses nonsense memes to cope with reality.",
+    archetypes: [
+      { arc: "The Post-Ironic Weirdo", idty: "Someone deeply immersed in absurdist Gen Z internet humor who uses nonsense memes to cope with reality." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Pink","Translucent","Cherry Red"],
     angles: ["Deep sea weirdo","Small and angry","Krill issue","Posture check"],
     aesthetics: ["Woodblock print aesthetic","Worn screenprint graphic","Simplified engraved mascot","Vintage seafood tin label"],
@@ -787,19 +834,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   goose: {
     id: "goose",
     label: "Goose",
-    archetype: "The Agent of Chaos",
-    buyerIdentity: "Someone who wakes up choosing violence, loves causing minor inconveniences, and thrives on spite.",
+    archetypes: [
+      { arc: "The Agent of Chaos", idty: "Someone who wakes up choosing violence, loves causing minor inconveniences, and thrives on spite." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["White","Canadian Goose (Brown/Black)"],
     angles: ["Pure chaotic menace","Holding a weapon","Peace was never an option","Honking loudly"],
     aesthetics: ["Retro vintage graphic tee","Bold clean silhouette","Grunge typography poster","Woodblock print aesthetic"],
@@ -836,19 +886,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   sloth: {
     id: "sloth",
     label: "Sloth",
-    archetype: "The Proud Procrastinator",
-    buyerIdentity: "Someone whose ultimate goal is doing absolutely nothing and who actively refuses to participate in hustle culture.",
+    archetypes: [
+      { arc: "The Proud Procrastinator", idty: "Someone whose ultimate goal is doing absolutely nothing and who actively refuses to participate in hustle culture." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Brown","Mossy Green-Brown"],
     angles: ["Zero energy","Takes 3 business days to reply","Napping expert","Moving in slow motion"],
     aesthetics: ["70s retro sunset graphic","Rustic vintage badge","Cottagecore sticker","Flat screenprint vector"],
@@ -885,19 +938,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   red_panda: {
     id: "red_panda",
     label: "Red Panda",
-    archetype: "The Clumsy Introvert",
-    buyerIdentity: "Someone trying to look intimidating but actually just soft, easily overwhelmed, and prone to silly mistakes.",
+    archetypes: [
+      { arc: "The Clumsy Introvert", idty: "Someone trying to look intimidating but actually just soft, easily overwhelmed, and prone to silly mistakes." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Red/Orange with White Markings"],
     angles: ["Easily startled","Hands up in surrender","Too fluffy to function","Stressed but cute"],
     aesthetics: ["Kawaii pastel vector","Folk-art influenced sticker","Bold clean silhouette","Retro vintage graphic tee"],
@@ -934,19 +990,22 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
   otter: {
     id: "otter",
     label: "Otter",
-    archetype: "The Playful Companion",
-    buyerIdentity: "Someone who just wants to hold hands, float through life, and prioritize snacks and emotional support.",
+    archetypes: [
+      { arc: "The Playful Companion", idty: "Someone who just wants to hold hands, float through life, and prioritize snacks and emotional support." },
+      { arc: "The Chaos Survivor", idty: "Someone barely holding it together but finding humor in the absolute absurdity of modern life." },
+      { arc: "The Nihilist Cozy", idty: "Someone who has accepted the world is ending and decided to just get comfortable and drink tea." }
+    ],
     colors: ["Brown","Sleek Dark Brown"],
     angles: ["Holding a rock","Smooth operator","Floating completely relaxed","Water puppy"],
     aesthetics: ["National park poster style","Woodblock print aesthetic","Retro vintage graphic tee","Kawaii pastel vector"],
@@ -983,12 +1042,12 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering.
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
-Sub-Tags: [9 highly searched related tags]
+Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
+Supporting Tags: [9 highly searched related tags that overlap with the clusters]
 Description: [Short 2-sentence description]`
   },
 };

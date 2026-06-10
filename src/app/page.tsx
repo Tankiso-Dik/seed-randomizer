@@ -62,8 +62,8 @@ export default function Home() {
   const currentHumor = HUMOR_STYLES.find(h => h.id === selectedHumor);
 
   const generatedPrompt = currentAnimal?.promptTemplate
-    .replace("[ARCHETYPE]", currentAnimal?.archetype || "")
-    .replace("[BUYER_IDENTITY]", currentAnimal?.buyerIdentity || "")
+    .replace("[ARCHETYPE]", currentAnimal?.archetypes ? currentAnimal.archetypes[Math.floor(Math.random() * currentAnimal.archetypes.length)].arc : "")
+    .replace("[BUYER_IDENTITY]", currentAnimal?.archetypes ? currentAnimal.archetypes[Math.floor(Math.random() * currentAnimal.archetypes.length)].idty : "")
     .replace("[COLOR]", selectedColor)
     .replace("[ANGLE]", selectedAngle)
     .replace("[AESTHETIC]", selectedAesthetic)
@@ -94,9 +94,10 @@ export default function Home() {
       const randTheme = THEMES[Math.floor(Math.random() * THEMES.length)];
       const randHumor = HUMOR_STYLES[Math.floor(Math.random() * HUMOR_STYLES.length)];
 
+      const randArc = animal.archetypes[Math.floor(Math.random() * animal.archetypes.length)];
       const p = animal.promptTemplate
-        .replace("[ARCHETYPE]", animal.archetype)
-        .replace("[BUYER_IDENTITY]", animal.buyerIdentity)
+        .replace("[ARCHETYPE]", randArc.arc)
+        .replace("[BUYER_IDENTITY]", randArc.idty)
         .replace("[COLOR]", randColor)
         .replace("[ANGLE]", randAngle)
         .replace("[AESTHETIC]", randAesthetic)
