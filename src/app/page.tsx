@@ -47,7 +47,12 @@ export default function Home() {
     setSelectedColor(animal.colors[Math.floor(Math.random() * animal.colors.length)]);
     setSelectedAngle(animal.angles[Math.floor(Math.random() * animal.angles.length)]);
     setSelectedAesthetic(animal.aesthetics[Math.floor(Math.random() * animal.aesthetics.length)]);
-    setSelectedTheme(randArc.themes[Math.floor(Math.random() * randArc.themes.length)]);
+    // 30% chance of global mutation, 70% archetype coherence
+    const isMutation = Math.random() < 0.3;
+    const selectedThemeId = isMutation 
+      ? THEMES[Math.floor(Math.random() * THEMES.length)].id 
+      : randArc.themes[Math.floor(Math.random() * randArc.themes.length)];
+    setSelectedTheme(selectedThemeId);
     setSelectedFramework(randArc.frameworks[Math.floor(Math.random() * randArc.frameworks.length)]);
     setSelectedHumor(HUMOR_STYLES[Math.floor(Math.random() * HUMOR_STYLES.length)].id);
     setSelectedComposition(animal.compositions[Math.floor(Math.random() * animal.compositions.length)]);
@@ -61,7 +66,12 @@ export default function Home() {
     setSelectedColor(currentAnimal.colors[Math.floor(Math.random() * currentAnimal.colors.length)]);
     setSelectedAngle(currentAnimal.angles[Math.floor(Math.random() * currentAnimal.angles.length)]);
     setSelectedAesthetic(currentAnimal.aesthetics[Math.floor(Math.random() * currentAnimal.aesthetics.length)]);
-    setSelectedTheme(randArc.themes[Math.floor(Math.random() * randArc.themes.length)]);
+    // 30% chance of global mutation, 70% archetype coherence
+    const isMutation = Math.random() < 0.3;
+    const selectedThemeId = isMutation 
+      ? THEMES[Math.floor(Math.random() * THEMES.length)].id 
+      : randArc.themes[Math.floor(Math.random() * randArc.themes.length)];
+    setSelectedTheme(selectedThemeId);
     setSelectedFramework(randArc.frameworks[Math.floor(Math.random() * randArc.frameworks.length)]);
     setSelectedHumor(HUMOR_STYLES[Math.floor(Math.random() * HUMOR_STYLES.length)].id);
     setSelectedComposition(currentAnimal.compositions[Math.floor(Math.random() * currentAnimal.compositions.length)]);
@@ -104,7 +114,10 @@ export default function Home() {
       const randComp = animal.compositions[Math.floor(Math.random() * animal.compositions.length)];
       const randRender = RENDER_STYLES[Math.floor(Math.random() * RENDER_STYLES.length)];
       const randArc = animal.archetypes[Math.floor(Math.random() * animal.archetypes.length)];
-      const randTheme = randArc.themes[Math.floor(Math.random() * randArc.themes.length)];
+      const isMutation = Math.random() < 0.3;
+      const randTheme = isMutation 
+        ? THEMES[Math.floor(Math.random() * THEMES.length)].id 
+        : randArc.themes[Math.floor(Math.random() * randArc.themes.length)];
       const randFramework = randArc.frameworks[Math.floor(Math.random() * randArc.frameworks.length)];
       const randHumor = HUMOR_STYLES[Math.floor(Math.random() * HUMOR_STYLES.length)];
       const p = animal.promptTemplate

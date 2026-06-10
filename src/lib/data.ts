@@ -47,7 +47,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -55,13 +55,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   crow: {
@@ -101,7 +101,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -109,13 +109,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   possum: {
@@ -155,7 +155,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -163,13 +163,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   raccoon: {
@@ -209,7 +209,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -217,13 +217,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   capybara: {
@@ -263,7 +263,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -271,13 +271,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   axolotl: {
@@ -317,7 +317,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -325,13 +325,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   frog: {
@@ -371,7 +371,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -379,13 +379,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   bat: {
@@ -425,7 +425,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -433,13 +433,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   moth: {
@@ -479,7 +479,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -487,13 +487,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   pigeon: {
@@ -533,7 +533,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -541,13 +541,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   rabbit: {
@@ -587,7 +587,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -595,13 +595,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   guinea_pig: {
@@ -641,7 +641,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -649,13 +649,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   goat: {
@@ -695,7 +695,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -703,13 +703,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   gecko: {
@@ -749,7 +749,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -757,13 +757,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   vulture: {
@@ -803,7 +803,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -811,13 +811,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   shrimp: {
@@ -857,7 +857,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -865,13 +865,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   goose: {
@@ -911,7 +911,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -919,13 +919,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   sloth: {
@@ -965,7 +965,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -973,13 +973,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   red_panda: {
@@ -1019,7 +1019,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1027,13 +1027,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   otter: {
@@ -1073,7 +1073,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1081,13 +1081,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   llama: {
@@ -1127,7 +1127,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1135,13 +1135,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   fox: {
@@ -1181,7 +1181,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1189,13 +1189,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   turtle: {
@@ -1235,7 +1235,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1243,13 +1243,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   hippo: {
@@ -1289,7 +1289,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1297,13 +1297,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   shoebill: {
@@ -1343,7 +1343,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1351,13 +1351,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   narwhal: {
@@ -1397,7 +1397,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1405,13 +1405,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   polar_bear: {
@@ -1451,7 +1451,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1459,13 +1459,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
   wumpus: {
@@ -1505,7 +1505,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "Use a solid, pure white background. If the main character is mostly white, use a solid dark or bright green background instead. There must be zero scenery, zero shadows, and high contrast between the character and the background to allow for flawless AI background removal."
+- **BACKGROUND INSTRUCTION:** Do not blindly force a white background. If the selected [VISUAL AESTHETIC] relies on background context (like Frutiger Aero or Whimsigoth), generate a simple, atmospheric, complementary background that enhances the subject without clutter. If it's a Mascot or Badge design, use a clean isolated background.
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1513,13 +1513,13 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Solid pure white background (or solid high-contrast green if the character is white). Zero scenery, zero shadows, clean cut-out ready. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. [BACKGROUND CONTEXT OR ISOLATION BASED ON AESTHETIC]. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
-Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
-Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Main Tag: [1-3 word highly specific phrase representing the core search intent (e.g., 'tired possum', 'introvert raccoon', 'capybara meme'). Do not restrict to 1 word if a 2-3 word phrase is more accurate.]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT tags. Include a mix of: 1. Purchase Intent ('anxious friend gift', 'raccoon lover gift'). 2. Identity Claims ('socially exhausted', 'professional overthinker'). 3. Aesthetic Searches ('cottagecore animal', 'vintage possum'). NO single-word redundancies.]
+Description: [Write a 2-3 sentence description written IN THE TONE of the Buyer Identity. This must do conversion work, not just SEO. Make the buyer feel seen ("Because sometimes you're just a chaotic neutral energy trying to survive Tuesday..."). Weave the Main Tag naturally into the text.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   }
 };
