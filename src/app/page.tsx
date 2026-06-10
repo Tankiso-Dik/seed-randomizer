@@ -167,7 +167,28 @@ export default function Home() {
           </select>
         </div>
 
+        
         <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+          <label style={{ fontSize: "0.75rem", fontWeight: "bold", color: "var(--cream)", textTransform: "uppercase" }}>Animal Archetype</label>
+          <select 
+            value={selectedArchetype?.arc || ""} 
+            onChange={(e) => {
+              const newArc = currentAnimal.archetypes.find((a: any) => a.arc === e.target.value);
+              if (newArc) {
+                setSelectedArchetype(newArc);
+                setSelectedTheme(newArc.themes[0]);
+                setSelectedFramework(newArc.frameworks[0]);
+              }
+            }}
+            style={{ padding: "0.5rem", borderRadius: "4px", background: "var(--bg)", color: "var(--cream)", border: "1px solid var(--border)" }}
+          >
+            {currentAnimal.archetypes.map((arc: any) => (
+              <option key={arc.arc} value={arc.arc}>{arc.arc}</option>
+            ))}
+          </select>
+        </div>
+
+<div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
           <label style={{ fontSize: "0.75rem", fontWeight: "bold", color: "var(--cream)", textTransform: "uppercase" }}>Color / Markings</label>
           <select 
             value={selectedColor} 
@@ -222,7 +243,21 @@ export default function Home() {
           </select>
         </div>
 
+        
         <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+          <label style={{ fontSize: "0.75rem", fontWeight: "bold", color: "var(--cream)", textTransform: "uppercase" }}>Phrase Framework</label>
+          <select 
+            value={selectedFramework} 
+            onChange={(e) => setSelectedFramework(e.target.value)}
+            style={{ padding: "0.5rem", borderRadius: "4px", background: "var(--bg)", color: "var(--cream)", border: "1px solid var(--border)" }}
+          >
+            {selectedArchetype?.frameworks.map((f: string) => (
+              <option key={f} value={f}>{f}</option>
+            ))}
+          </select>
+        </div>
+
+<div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
           <label style={{ fontSize: "0.75rem", fontWeight: "bold", color: "var(--cream)", textTransform: "uppercase" }}>Humor / Phrase Style</label>
           <select 
             value={selectedHumor} 
