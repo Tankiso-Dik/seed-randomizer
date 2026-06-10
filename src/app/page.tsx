@@ -62,6 +62,8 @@ export default function Home() {
   const currentHumor = HUMOR_STYLES.find(h => h.id === selectedHumor);
 
   const generatedPrompt = currentAnimal?.promptTemplate
+    .replace("[ARCHETYPE]", currentAnimal?.archetype || "")
+    .replace("[BUYER_IDENTITY]", currentAnimal?.buyerIdentity || "")
     .replace("[COLOR]", selectedColor)
     .replace("[ANGLE]", selectedAngle)
     .replace("[AESTHETIC]", selectedAesthetic)
@@ -93,6 +95,8 @@ export default function Home() {
       const randHumor = HUMOR_STYLES[Math.floor(Math.random() * HUMOR_STYLES.length)];
 
       const p = animal.promptTemplate
+        .replace("[ARCHETYPE]", animal.archetype)
+        .replace("[BUYER_IDENTITY]", animal.buyerIdentity)
         .replace("[COLOR]", randColor)
         .replace("[ANGLE]", randAngle)
         .replace("[AESTHETIC]", randAesthetic)
