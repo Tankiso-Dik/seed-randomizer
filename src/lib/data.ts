@@ -58,10 +58,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   crow: {
     id: "crow",
@@ -111,10 +111,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   possum: {
     id: "possum",
@@ -164,10 +164,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   raccoon: {
     id: "raccoon",
@@ -217,10 +217,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   capybara: {
     id: "capybara",
@@ -270,10 +270,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   axolotl: {
     id: "axolotl",
@@ -323,10 +323,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   frog: {
     id: "frog",
@@ -376,10 +376,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   bat: {
     id: "bat",
@@ -429,10 +429,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   moth: {
     id: "moth",
@@ -482,10 +482,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   pigeon: {
     id: "pigeon",
@@ -535,10 +535,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   rabbit: {
     id: "rabbit",
@@ -588,10 +588,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   guinea_pig: {
     id: "guinea_pig",
@@ -641,10 +641,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   goat: {
     id: "goat",
@@ -694,10 +694,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   gecko: {
     id: "gecko",
@@ -747,10 +747,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   vulture: {
     id: "vulture",
@@ -800,10 +800,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   shrimp: {
     id: "shrimp",
@@ -853,10 +853,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   goose: {
     id: "goose",
@@ -906,10 +906,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   sloth: {
     id: "sloth",
@@ -959,10 +959,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   red_panda: {
     id: "red_panda",
@@ -1012,10 +1012,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
   otter: {
     id: "otter",
@@ -1065,10 +1065,10 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
-Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
-Search-Intent Clusters: [Generate 3 distinct 2-4 word search-intent clusters that a buyer would actually type (e.g., 'introvert cat shirt', 'antisocial cat humor', 'leave me alone cat aesthetic')]
-Supporting Tags: [9 highly searched related tags that overlap with the clusters]
-Description: [Short 2-sentence description]`
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]`
   },
 };
 
