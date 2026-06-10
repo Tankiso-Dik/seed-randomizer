@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
 import { ANIMALS_DATA, RENDER_STYLES, THEMES, HUMOR_STYLES } from "@/lib/data";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
   const [selectedAesthetic, setSelectedAesthetic] = useState<string>(currentAnimal?.aesthetics[0] || "");
   const [selectedTheme, setSelectedTheme] = useState<string>(currentAnimal?.archetypes[0]?.themes[0] || "none");
   const [selectedFramework, setSelectedFramework] = useState<string>(currentAnimal?.archetypes[0]?.frameworks[0] || "");
-  const [selectedArchetype, setSelectedArchetype] = useState<any>(currentAnimal?.archetypes[0] || null);
+  const [selectedArchetype, setSelectedArchetype] = useState<{ arc: string; idty: string; themes: string[]; frameworks: string[] } | null>(currentAnimal?.archetypes[0] || null);
   const [selectedHumor, setSelectedHumor] = useState<string>("sarcastic");
   const [selectedComposition, setSelectedComposition] = useState<string>(currentAnimal?.compositions[0] || "");
   const [selectedRenderStyle, setSelectedRenderStyle] = useState<string>("flat");
@@ -79,7 +79,6 @@ export default function Home() {
   }, [currentAnimal]);
 
   const currentRenderStyle = RENDER_STYLES.find(r => r.id === selectedRenderStyle);
-  const currentTheme = THEMES.find(t => t.id === selectedTheme);
   const currentHumor = HUMOR_STYLES.find(h => h.id === selectedHumor);
 
   const generatedPrompt = currentAnimal?.promptTemplate
@@ -103,7 +102,7 @@ export default function Home() {
   }, [generatedPrompt]);
 
   const handleCopyBatch = useCallback(() => {
-    let batchPrompts = [];
+    const batchPrompts: string[] = [];
     const randomAnimalKeys = Object.keys(ANIMALS_DATA);
     for (let i = 0; i < 10; i++) {
       const randomAnimalId = randomAnimalKeys[Math.floor(Math.random() * randomAnimalKeys.length)];
@@ -186,7 +185,7 @@ export default function Home() {
           <select 
             value={selectedArchetype?.arc || ""} 
             onChange={(e) => {
-              const newArc = currentAnimal.archetypes.find((a: any) => a.arc === e.target.value);
+              const newArc = currentAnimal.archetypes.find((a: { arc: string; idty: string; themes: string[]; frameworks: string[] }) => a.arc === e.target.value);
               if (newArc) {
                 setSelectedArchetype(newArc);
                 setSelectedTheme(newArc.themes[0]);
@@ -195,7 +194,7 @@ export default function Home() {
             }}
             style={{ padding: "0.5rem", borderRadius: "4px", background: "var(--bg)", color: "var(--cream)", border: "1px solid var(--border)" }}
           >
-            {currentAnimal.archetypes.map((arc: any) => (
+            {currentAnimal.archetypes.map((arc: { arc: string; idty: string; themes: string[]; frameworks: string[] }) => (
               <option key={arc.arc} value={arc.arc}>{arc.arc}</option>
             ))}
           </select>
