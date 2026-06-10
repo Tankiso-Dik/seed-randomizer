@@ -42,7 +42,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -55,7 +55,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -91,7 +91,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -104,7 +104,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -140,7 +140,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -153,7 +153,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -189,7 +189,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -202,7 +202,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -238,7 +238,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -251,7 +251,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -287,7 +287,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -300,7 +300,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -336,7 +336,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -349,7 +349,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -385,7 +385,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -398,7 +398,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -434,7 +434,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -447,7 +447,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -483,7 +483,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -496,7 +496,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -532,7 +532,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -545,7 +545,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -581,7 +581,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -594,7 +594,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -630,7 +630,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -643,7 +643,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -679,7 +679,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -692,7 +692,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -728,7 +728,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -741,7 +741,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -777,7 +777,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -790,7 +790,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -826,7 +826,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -839,7 +839,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -875,7 +875,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -888,7 +888,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -924,7 +924,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -937,7 +937,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
@@ -973,7 +973,7 @@ CRITICAL RULES:
 - **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
 - **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
-- **PHRASE TONE / INTERNAL MONOLOGUE:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity (e.g., 'I am no longer taking questions' instead of 'Tired Possum'). It must sound like something the buyer would text their friend. Strictly match the selected "[HUMOR_STYLE]" (2-8 words).
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use one of these 4 viral meme frameworks: 1) The "Reframe" (e.g., 'I\'m not lazy, I\'m on energy-saving mode'), 2) The "Confessional" (e.g., 'In my defense, I was left unsupervised'), 3) The "Rule of Three Subversion" (e.g., 'I came. I saw. I made it awkward'), or 4) The "Bold Label" (e.g., 'Professional Overthinker').
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
 - **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
@@ -986,7 +986,7 @@ OUTPUT EXACTLY LIKE THIS:
 [RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
-Title: [Catchy Title]
+Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
 Main Tag: [The single most accurate tag for the intersection (2-4 words MAX). Must be actual buyer search phrasing, NOT poetic or descriptive (e.g. 'Coffee Possum' or 'Skater Capybara')]
 Sub-Tags: [9 highly searched related tags]
 Description: [Short 2-sentence description]`
