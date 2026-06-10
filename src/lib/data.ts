@@ -60,7 +60,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -114,7 +114,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -168,7 +168,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -222,7 +222,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -276,7 +276,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -330,7 +330,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -384,7 +384,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -438,7 +438,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -492,7 +492,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -546,7 +546,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -600,7 +600,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -654,7 +654,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -708,7 +708,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -762,7 +762,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -816,7 +816,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -870,7 +870,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -924,7 +924,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -978,7 +978,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -1032,7 +1032,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -1086,7 +1086,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -1140,7 +1140,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -1194,7 +1194,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -1248,7 +1248,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -1302,7 +1302,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -1356,7 +1356,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -1410,7 +1410,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -1464,7 +1464,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   },
@@ -1518,7 +1518,7 @@ OUTPUT EXACTLY LIKE THIS:
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy, descriptive Title (~50 characters) that integrates the core joke/phrase and the Animal. DO NOT include product words like "T-shirt", "Sticker", or "Poster"]
 Main Tag: [1 SINGLE SPECIFIC WORD (TeePublic requirement) that represents the most crucial search term (e.g., 'introvert' or 'capybara').]
-Supporting Tags: [Comma separated list of 6-15 highly relevant tags. NO vague buzzwords. NO redundancies (e.g., if you use 'cat', do NOT use 'cats' or 'kitten').]
+Supporting Tags: [Comma separated list of 6-15 HIGH-INTENT long-tail keywords (3-4 words each). DO NOT use generic single words. Think like a human shopper. Use the formula 'Subject + Context/Style + Audience' (e.g., 'funny introvert raccoon meme', 'sarcastic trash panda gift', 'y2k aesthetic animal'). NO single-word redundancies.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors that provide high contrast against the design.]`
   }
