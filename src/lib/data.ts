@@ -37,7 +37,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -45,7 +45,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -81,7 +81,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -89,7 +89,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -125,7 +125,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -133,7 +133,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -169,7 +169,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -177,7 +177,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -213,7 +213,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -221,7 +221,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -257,7 +257,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -265,7 +265,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -301,7 +301,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -309,7 +309,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -345,7 +345,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -353,7 +353,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -389,7 +389,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -397,7 +397,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -433,7 +433,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -441,7 +441,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -477,7 +477,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -485,7 +485,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -521,7 +521,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -529,7 +529,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -565,7 +565,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -573,7 +573,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -609,7 +609,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -617,7 +617,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -653,7 +653,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -661,7 +661,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -697,7 +697,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -705,7 +705,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -741,7 +741,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -749,7 +749,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -785,7 +785,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -793,7 +793,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -829,7 +829,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -837,7 +837,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
@@ -873,7 +873,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE:** The phrase MUST strictly match the selected "[HUMOR_STYLE]" (2-8 words).
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND HACK:** Instruct: "isolated entirely on a pure, solid #ffffff white background (for easy 1-click transparent removal). Absolutely NO scenery, NO gradients, and NO background elements or colors."
+- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -881,7 +881,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Isolated entirely on a pure, solid #ffffff white background. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Purely transparent background with no background elements or colors. Ensure a white outer stroke for dark apparel contrast. No 3D, no glossy AI rendering, highly graphic.
 
 [SEO METADATA]
 Title: [Catchy Title]
