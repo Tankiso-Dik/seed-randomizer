@@ -8,14 +8,14 @@ export default function Home() {
   
   const currentAnimal = ANIMALS_DATA[selectedAnimalId];
 
-  const [selectedColor, setSelectedColor] = useState<string>("");
-  const [selectedAngle, setSelectedAngle] = useState<string>("");
-  const [selectedAesthetic, setSelectedAesthetic] = useState<string>("");
-  const [selectedTheme, setSelectedTheme] = useState<string>("none");
-  const [selectedFramework, setSelectedFramework] = useState<string>("");
-  const [selectedArchetype, setSelectedArchetype] = useState<any>(null);
+  const [selectedColor, setSelectedColor] = useState<string>(currentAnimal?.colors[0] || "");
+  const [selectedAngle, setSelectedAngle] = useState<string>(currentAnimal?.angles[0] || "");
+  const [selectedAesthetic, setSelectedAesthetic] = useState<string>(currentAnimal?.aesthetics[0] || "");
+  const [selectedTheme, setSelectedTheme] = useState<string>(currentAnimal?.archetypes[0]?.themes[0] || "none");
+  const [selectedFramework, setSelectedFramework] = useState<string>(currentAnimal?.archetypes[0]?.frameworks[0] || "");
+  const [selectedArchetype, setSelectedArchetype] = useState<any>(currentAnimal?.archetypes[0] || null);
   const [selectedHumor, setSelectedHumor] = useState<string>("sarcastic");
-  const [selectedComposition, setSelectedComposition] = useState<string>("");
+  const [selectedComposition, setSelectedComposition] = useState<string>(currentAnimal?.compositions[0] || "");
   const [selectedRenderStyle, setSelectedRenderStyle] = useState<string>("flat");
   
   const [copiedPrompt, setCopiedPrompt] = useState(false);
@@ -23,9 +23,12 @@ export default function Home() {
 
   const handleAnimalChange = useCallback((newAnimalId: string) => {
     setSelectedAnimalId(newAnimalId);
-    setSelectedArchetype(ANIMALS_DATA[newAnimalId]?.archetypes[0]);
     const newAnimal = ANIMALS_DATA[newAnimalId];
     if (newAnimal) {
+      const firstArc = newAnimal.archetypes[0];
+      setSelectedArchetype(firstArc);
+      setSelectedFramework(firstArc.frameworks[0]);
+      setSelectedTheme(firstArc.themes[0]);
       setSelectedColor(newAnimal.colors[0]);
       setSelectedAngle(newAnimal.angles[0]);
       setSelectedAesthetic(newAnimal.aesthetics[0]);

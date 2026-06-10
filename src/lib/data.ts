@@ -47,7 +47,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -55,7 +55,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -100,7 +100,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -108,7 +108,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -153,7 +153,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -161,7 +161,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -206,7 +206,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -214,7 +214,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -259,7 +259,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -267,7 +267,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -312,7 +312,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -320,7 +320,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -365,7 +365,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -373,7 +373,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -418,7 +418,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -426,7 +426,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -471,7 +471,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -479,7 +479,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -524,7 +524,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -532,7 +532,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -577,7 +577,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -585,7 +585,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -630,7 +630,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -638,7 +638,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -683,7 +683,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -691,7 +691,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -736,7 +736,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -744,7 +744,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -789,7 +789,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -797,7 +797,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -842,7 +842,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -850,7 +850,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -895,7 +895,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -903,7 +903,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -948,7 +948,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -956,7 +956,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -1001,7 +1001,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1009,7 +1009,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
@@ -1054,7 +1054,7 @@ CRITICAL RULES:
 - **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
 - **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
 - **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
-- **BACKGROUND INSTRUCTION:** Instruct: "purely transparent background with absolutely NO background colors, NO scenery, and NO background elements."
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
 
 OUTPUT EXACTLY LIKE THIS:
 
@@ -1062,7 +1062,7 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Purely transparent background with no background elements or colors. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA]
 Title: [Catchy Title that integrates the core joke/phrase + Animal + Aesthetic]
