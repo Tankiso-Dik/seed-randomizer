@@ -20,9 +20,9 @@ export const ANIMALS_DATA: Record<string, AnimalConfig> = {
     ],
     colors: ["Pink","Brown","Spotted"],
     angles: ["Lazy & unbothered","Always hungry","Muddy but happy"],
-    aesthetics: ["Rustic vintage badge","Cottagecore sticker","Bold clean silhouette","Vintage diner mascot"],
-    compositions: ["Circular badge","Bottom-heavy mascot","Small chest emblem"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Rustic vintage badge","Cottagecore sticker","Bold clean silhouette","Vintage diner mascot","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Pig
@@ -55,11 +55,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -74,9 +74,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Black","Iridescent Black"],
     angles: ["Spooky gothic","Feral academia","Shiny object enthusiast","Ominous watcher"],
-    aesthetics: ["Old school tattoo flash","Woodblock print","Simplified engraved","Tarot card illustration"],
-    compositions: ["Vertical stacked","Circular badge","Oversized face crop"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Old school tattoo flash","Woodblock print","Simplified engraved","Tarot card illustration","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Crow
@@ -109,11 +109,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -128,9 +128,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Gray and White","Grungy Gray"],
     angles: ["Tired millennial humor","Nocturnal survivor","Screaming internally","Feral lifestyle"],
-    aesthetics: ["Worn screenprint graphic","Distressed mascot design","Retro vintage graphic tee","Grunge typography poster"],
-    compositions: ["Oversized face crop","Diagonal motion","Bottom-heavy mascot"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Worn screenprint graphic","Distressed mascot design","Retro vintage graphic tee","Grunge typography poster","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Possum
@@ -163,11 +163,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -182,9 +182,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Gray with Black Mask","Dusty Brownish-Gray"],
     angles: ["Trash goblin","Chaotic little gremlin energy","Sad snack era","Sneaky"],
-    aesthetics: ["Retro vintage graphic tee","Rustic vintage badge emblem","Bold clean silhouette","Grunge typography poster"],
-    compositions: ["Circular badge","Small chest emblem","Wide retro banner"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Retro vintage graphic tee","Rustic vintage badge emblem","Bold clean silhouette","Grunge typography poster","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Raccoon
@@ -217,11 +217,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -236,9 +236,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Warm Brown","Tan"],
     angles: ["Unbothered","Cozy lifestyle","Chill mediator","Zen master"],
-    aesthetics: ["National park poster style","Folk-art influenced","Woodblock print aesthetic","70s retro sunset graphic"],
-    compositions: ["Circular badge","Wide retro banner","Vertical stacked"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["National park poster style","Folk-art influenced","Woodblock print aesthetic","70s retro sunset graphic","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Capybara
@@ -271,11 +271,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -290,9 +290,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Pink","Melanoid (Black)","Golden"],
     angles: ["Blank stare","Smiling but empty","Watery doom","Cute but clueless"],
-    aesthetics: ["Bold clean silhouette","Retro vintage graphic tee","Folk-art influenced sticker","Kawaii pastel vector"],
-    compositions: ["Small chest emblem","Circular badge","Oversized face crop"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Bold clean silhouette","Retro vintage graphic tee","Folk-art influenced sticker","Kawaii pastel vector","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Axolotl
@@ -325,11 +325,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -344,9 +344,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Bright Green","Poison Dart Pattern","Muddy Brown"],
     angles: ["Pond life","Unblinking judge","Cottagecore pet aesthetic","Grumpy toad"],
-    aesthetics: ["Cottagecore sticker","Woodblock print","Rustic vintage badge","Kawaii pastel vector"],
-    compositions: ["Vertical stacked","Small chest emblem","Crest / shield structure"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Cottagecore sticker","Woodblock print","Rustic vintage badge","Kawaii pastel vector","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Frog
@@ -379,11 +379,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -398,9 +398,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Dark Brown","Black"],
     angles: ["Upside-down view","Spooky gothic pet vibes","Night shift","Fluffy darkness"],
-    aesthetics: ["Old school tattoo flash","Simplified engraved","Distressed mascot design","Tarot card illustration"],
-    compositions: ["Diagonal motion","Crest / shield structure","Circular badge"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Old school tattoo flash","Simplified engraved","Distressed mascot design","Tarot card illustration","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Bat
@@ -433,11 +433,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -452,9 +452,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Dusty Brown","Pale Luna Green","White"],
     angles: ["Lamp obsessed","Fluffy but erratic","Night flyer","Fuzzy cryptid"],
-    aesthetics: ["Woodblock print aesthetic","Folk-art influenced","Worn screenprint graphic","Tarot card illustration"],
-    compositions: ["Wide retro banner","Circular badge","Small chest emblem"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Woodblock print aesthetic","Folk-art influenced","Worn screenprint graphic","Tarot card illustration","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Moth
@@ -487,11 +487,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -506,9 +506,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["City Gray","White","Iridescent Neck"],
     angles: ["Bread crumb collector","Urban survivor","Cooing menace","Oblivious walker"],
-    aesthetics: ["Retro vintage graphic tee","Worn screenprint graphic","Distressed mascot design","70s retro sunset graphic"],
-    compositions: ["Bottom-heavy mascot","Vertical stacked","Oversized face crop"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Retro vintage graphic tee","Worn screenprint graphic","Distressed mascot design","70s retro sunset graphic","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Pigeon
@@ -541,11 +541,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -560,9 +560,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["White","Brown","Spotted"],
     angles: ["Nervous twitch","Fast but tired","Fluffy anger","Always late"],
-    aesthetics: ["Vintage western emblem","Rustic vintage badge","Old school tattoo flash","Psychedelic retro cartoon"],
-    compositions: ["Circular badge","Diagonal motion","Crest / shield structure"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Vintage western emblem","Rustic vintage badge","Old school tattoo flash","Psychedelic retro cartoon","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Rabbit
@@ -595,11 +595,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -614,9 +614,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Calico","Brown","White"],
     angles: ["Wheeking for snacks","Round potato","Constant panic","Staring blankly"],
-    aesthetics: ["Bold clean silhouette art","Folk-art influenced sticker","Simplified engraved mascot","Kawaii pastel vector"],
-    compositions: ["Small chest emblem","Bottom-heavy mascot","Oversized face crop"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Bold clean silhouette art","Folk-art influenced sticker","Simplified engraved mascot","Kawaii pastel vector","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Guinea Pig
@@ -649,11 +649,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -668,9 +668,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["White","Black","Brown and White"],
     angles: ["Headbutt enthusiast","Screaming","Will eat garbage","Mountain chaos"],
-    aesthetics: ["Rustic vintage badge emblem","National park poster style","Woodblock print aesthetic","Heavy metal band logo style"],
-    compositions: ["Crest / shield structure","Circular badge","Vertical stacked"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Rustic vintage badge emblem","National park poster style","Woodblock print aesthetic","Heavy metal band logo style","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Goat
@@ -703,11 +703,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -722,9 +722,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Bright Green","Leopard Spotted","Crested Brown"],
     angles: ["Sticky fingers","Wall lurker","Blep","Brain empty"],
-    aesthetics: ["Retro vintage graphic tee","Bold clean silhouette","Folk-art influenced","70s retro sunset graphic"],
-    compositions: ["Diagonal motion","Wide retro banner","Small chest emblem"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Retro vintage graphic tee","Bold clean silhouette","Folk-art influenced","70s retro sunset graphic","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Gecko
@@ -757,11 +757,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -776,9 +776,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Black with Red Head","Dusty Brown"],
     angles: ["Waiting patiently","Desert gothic","Sunbathing","Macabre but polite"],
-    aesthetics: ["Vintage western emblem","Old school tattoo flash","National park poster style","Traditional American tattoo"],
-    compositions: ["Crest / shield structure","Circular badge","Vertical stacked"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Vintage western emblem","Old school tattoo flash","National park poster style","Traditional American tattoo","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Vulture
@@ -811,11 +811,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -830,9 +830,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Pink","Translucent","Cherry Red"],
     angles: ["Deep sea weirdo","Small and angry","Krill issue","Posture check"],
-    aesthetics: ["Woodblock print aesthetic","Worn screenprint graphic","Simplified engraved mascot","Vintage seafood tin label"],
-    compositions: ["Oversized face crop","Diagonal motion","Bottom-heavy mascot"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Woodblock print aesthetic","Worn screenprint graphic","Simplified engraved mascot","Vintage seafood tin label","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Shrimp
@@ -865,11 +865,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -884,9 +884,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["White","Canadian Goose (Brown/Black)"],
     angles: ["Pure chaotic menace","Holding a weapon","Peace was never an option","Honking loudly"],
-    aesthetics: ["Retro vintage graphic tee","Bold clean silhouette","Grunge typography poster","Woodblock print aesthetic"],
-    compositions: ["Circular badge","Bottom-heavy mascot","Oversized face crop"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Retro vintage graphic tee","Bold clean silhouette","Grunge typography poster","Woodblock print aesthetic","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Goose
@@ -919,11 +919,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -938,9 +938,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Brown","Mossy Green-Brown"],
     angles: ["Zero energy","Takes 3 business days to reply","Napping expert","Moving in slow motion"],
-    aesthetics: ["70s retro sunset graphic","Rustic vintage badge","Cottagecore sticker","Flat screenprint vector"],
-    compositions: ["Diagonal motion","Circular badge","Small chest emblem"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["70s retro sunset graphic","Rustic vintage badge","Cottagecore sticker","Flat screenprint vector","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Sloth
@@ -973,11 +973,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -992,9 +992,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Red/Orange with White Markings"],
     angles: ["Easily startled","Hands up in surrender","Too fluffy to function","Stressed but cute"],
-    aesthetics: ["Kawaii pastel vector","Folk-art influenced sticker","Bold clean silhouette","Retro vintage graphic tee"],
-    compositions: ["Small chest emblem","Vertical stacked","Oversized face crop"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["Kawaii pastel vector","Folk-art influenced sticker","Bold clean silhouette","Retro vintage graphic tee","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Red Panda
@@ -1027,11 +1027,11 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
@@ -1046,9 +1046,9 @@ Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set
     ],
     colors: ["Brown","Sleek Dark Brown"],
     angles: ["Holding a rock","Smooth operator","Floating completely relaxed","Water puppy"],
-    aesthetics: ["National park poster style","Woodblock print aesthetic","Retro vintage graphic tee","Kawaii pastel vector"],
-    compositions: ["Circular badge","Wide retro banner","Diagonal motion"],
-    promptTemplate: `You are an expert TeePublic t-shirt design concept generator and SEO copywriter. You are generating a t-shirt concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+    aesthetics: ["National park poster style","Woodblock print aesthetic","Retro vintage graphic tee","Kawaii pastel vector","Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
 
 DESIGN PARAMETERS:
 - Animal: Otter
@@ -1081,15 +1081,447 @@ OUTPUT EXACTLY LIKE THIS:
 (Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
 
 [IMAGE PROMPT]
-[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by a t-shirt printer, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a vector engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
 
 [SEO METADATA & UPLOAD INSTRUCTIONS]
 Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
-Main Tag: [1 single dominant 2-5 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat who wants to be alone'). This exactly matches the Redbubble UI requirement.]
 Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
 Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
 Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
   },
+  llama: {
+    id: "llama",
+    label: "Llama / Alpaca",
+    archetypes: [
+      { arc: "The Dramatic Diva", idty: "Someone who thrives on gossip and slightly overreacts to everything", themes: ["coffee","music","retro"], frameworks: ["The \"Confessional\" (e.g., 'In my defense, I was left unsupervised')", "The \"Bold Label\" (e.g., 'Professional Overthinker')"] },
+      { arc: "The Spitfire", idty: "Someone who has zero patience and will absolutely bite back", themes: ["halloween","skate","retro"], frameworks: ["The \"Reframe\" (e.g., 'I\'m not lazy, I\'m on energy-saving mode')"] },
+      { arc: "The Cottagecore Dreamer", idty: "Someone who just wants to knit sweaters and ignore modern society", themes: ["plants","baking","tarot"], frameworks: ["The \"Rule of Three Subversion\" (e.g., 'I came. I saw. I made it awkward')"] }
+    ],
+    colors: ["Fluffy White", "Brown", "Pastel Rainbow"],
+    angles: ["Spitting mad", "Majestic but confused", "Judging you"],
+    aesthetics: ["Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+
+DESIGN PARAMETERS:
+- Animal: Llama/Alpaca
+- Animal Archetype: [ARCHETYPE]
+- Buyer Identity: [BUYER_IDENTITY]
+- Hobby/Theme/Props: [THEME]
+- Color/Markings: [COLOR]
+- Emotional Angle: [ANGLE]
+- Humor/Phrase Style: [HUMOR_STYLE]
+- Phrase Framework: [FRAMEWORK]
+- Visual Aesthetic: [AESTHETIC]
+- Render Style: [RENDER_STYLE_LABEL]
+- Composition: [COMPOSITION]
+
+ANIMAL VIBE:
+Focus on themes of drama, spitting, majestic fluff, or extreme judgment.
+
+CRITICAL RULES:
+- **NICHE INTERSECTION:** The design MUST visually combine the Animal with the Hobby/Theme/Props listed above. Use the props naturally in the design.
+- **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
+- **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
+- **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
+- **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
+
+OUTPUT EXACTLY LIKE THIS:
+
+[RESEARCH & THINKING]
+(Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
+
+[IMAGE PROMPT]
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+
+[SEO METADATA & UPLOAD INSTRUCTIONS]
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
+  },
+  fox: {
+    id: "fox",
+    label: "Fox",
+    archetypes: [
+      { arc: "The Cunning Instigator", idty: "Someone who loves to stir the pot and watch the chaos unfold", themes: ["coffee","skate","gaming"], frameworks: ["The \"Confessional\" (e.g., 'In my defense, I was left unsupervised')"] },
+      { arc: "The Forest Spirit", idty: "A mystical introvert who belongs in a fairy tale", themes: ["tarot","plants","halloween"], frameworks: ["The \"Bold Label\" (e.g., 'Professional Overthinker')"] },
+      { arc: "The Exhausted Trickster", idty: "Someone whose brain runs too fast and is now permanently tired", themes: ["coffee","reading","music"], frameworks: ["The \"Reframe\" (e.g., 'I\'m not lazy, I\'m on energy-saving mode')"] }
+    ],
+    colors: ["Red", "Arctic White", "Silver"],
+    angles: ["Mischievous", "Sleepy", "Mystical"],
+    aesthetics: ["Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+
+DESIGN PARAMETERS:
+- Animal: Fox
+- Animal Archetype: [ARCHETYPE]
+- Buyer Identity: [BUYER_IDENTITY]
+- Hobby/Theme/Props: [THEME]
+- Color/Markings: [COLOR]
+- Emotional Angle: [ANGLE]
+- Humor/Phrase Style: [HUMOR_STYLE]
+- Phrase Framework: [FRAMEWORK]
+- Visual Aesthetic: [AESTHETIC]
+- Render Style: [RENDER_STYLE_LABEL]
+- Composition: [COMPOSITION]
+
+ANIMAL VIBE:
+Focus on themes of mischief, woodland magic, cleverness, or being hyperactive.
+
+CRITICAL RULES:
+- **NICHE INTERSECTION:** The design MUST visually combine the Animal with the Hobby/Theme/Props listed above. Use the props naturally in the design.
+- **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
+- **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
+- **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
+- **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
+
+OUTPUT EXACTLY LIKE THIS:
+
+[RESEARCH & THINKING]
+(Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
+
+[IMAGE PROMPT]
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+
+[SEO METADATA & UPLOAD INSTRUCTIONS]
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
+  },
+  turtle: {
+    id: "turtle",
+    label: "Turtle",
+    archetypes: [
+      { arc: "The Slow Processor", idty: "Someone who needs 3 business days to reply to a text", themes: ["gaming","napping","coffee"], frameworks: ["The \"Reframe\" (e.g., 'I\'m not lazy, I\'m on energy-saving mode')"] },
+      { arc: "The Ancient Introvert", idty: "An old soul who carries their house with them so they never have to socialize", themes: ["plants","reading","music"], frameworks: ["The \"Confessional\" (e.g., 'In my defense, I was left unsupervised')"] },
+      { arc: "The Stubborn Rock", idty: "Someone entirely unbothered by the chaos around them", themes: ["skate","camping","tarot"], frameworks: ["The \"Bold Label\" (e.g., 'Professional Overthinker')"] }
+    ],
+    colors: ["Green", "Galactic Purple", "Neon Radioactive"],
+    angles: ["Hiding in shell", "Slow and steady", "Unbothered"],
+    aesthetics: ["Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+
+DESIGN PARAMETERS:
+- Animal: Turtle
+- Animal Archetype: [ARCHETYPE]
+- Buyer Identity: [BUYER_IDENTITY]
+- Hobby/Theme/Props: [THEME]
+- Color/Markings: [COLOR]
+- Emotional Angle: [ANGLE]
+- Humor/Phrase Style: [HUMOR_STYLE]
+- Phrase Framework: [FRAMEWORK]
+- Visual Aesthetic: [AESTHETIC]
+- Render Style: [RENDER_STYLE_LABEL]
+- Composition: [COMPOSITION]
+
+ANIMAL VIBE:
+Focus on themes of being slow, hiding, ancient wisdom, or refusing to participate in society.
+
+CRITICAL RULES:
+- **NICHE INTERSECTION:** The design MUST visually combine the Animal with the Hobby/Theme/Props listed above. Use the props naturally in the design.
+- **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
+- **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
+- **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
+- **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
+
+OUTPUT EXACTLY LIKE THIS:
+
+[RESEARCH & THINKING]
+(Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
+
+[IMAGE PROMPT]
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+
+[SEO METADATA & UPLOAD INSTRUCTIONS]
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
+  },
+  hippo: {
+    id: "hippo",
+    label: "Pygmy Hippo (Moo Deng)",
+    archetypes: [
+      { arc: "The Chaotic Toddler", idty: "Someone who operates purely on emotion, screaming, and water", themes: ["gaming","coffee","music"], frameworks: ["The \"Confessional\" (e.g., 'In my defense, I was left unsupervised')"] },
+      { arc: "The Biting Menace", idty: "Small, cute, but will absolutely cause problems on purpose", themes: ["halloween","skate","retro"], frameworks: ["The \"Reframe\" (e.g., 'I\'m not lazy, I\'m on energy-saving mode')"] },
+      { arc: "The Slippery Introvert", idty: "Someone who slides away from responsibilities and taking baths", themes: ["plants","napping","tarot"], frameworks: ["The \"Rule of Three Subversion\" (e.g., 'I came. I saw. I made it awkward')"] }
+    ],
+    colors: ["Wet Pinkish-Grey", "Glossy Black", "Muted Purple"],
+    angles: ["Screaming with mouth wide open", "Biting something", "Looking fiercely moist"],
+    aesthetics: ["Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+
+DESIGN PARAMETERS:
+- Animal: Pygmy Hippo
+- Animal Archetype: [ARCHETYPE]
+- Buyer Identity: [BUYER_IDENTITY]
+- Hobby/Theme/Props: [THEME]
+- Color/Markings: [COLOR]
+- Emotional Angle: [ANGLE]
+- Humor/Phrase Style: [HUMOR_STYLE]
+- Phrase Framework: [FRAMEWORK]
+- Visual Aesthetic: [AESTHETIC]
+- Render Style: [RENDER_STYLE_LABEL]
+- Composition: [COMPOSITION]
+
+ANIMAL VIBE:
+Focus on themes of being dramatically moist, screaming, biting, or internet meme stardom.
+
+CRITICAL RULES:
+- **NICHE INTERSECTION:** The design MUST visually combine the Animal with the Hobby/Theme/Props listed above. Use the props naturally in the design.
+- **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
+- **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
+- **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
+- **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
+
+OUTPUT EXACTLY LIKE THIS:
+
+[RESEARCH & THINKING]
+(Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
+
+[IMAGE PROMPT]
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+
+[SEO METADATA & UPLOAD INSTRUCTIONS]
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
+  },
+  shoebill: {
+    id: "shoebill",
+    label: "Shoebill Stork",
+    archetypes: [
+      { arc: "The Ominous Stalker", idty: "Someone who just stares deeply into your soul instead of making small talk", themes: ["coffee","reading","music"], frameworks: ["The \"Bold Label\" (e.g., 'Professional Overthinker')"] },
+      { arc: "The Menacing Introvert", idty: "A giant bird that looks terrifying but is actually just socially awkward", themes: ["tarot","gaming","napping"], frameworks: ["The \"Confessional\" (e.g., 'In my defense, I was left unsupervised')"] },
+      { arc: "The Unbothered Ancient", idty: "A dinosaur-like entity that refuses to adapt to modern stress", themes: ["plants","camping","retro"], frameworks: ["The \"Rule of Three Subversion\" (e.g., 'I came. I saw. I made it awkward')"] }
+    ],
+    colors: ["Ash Grey", "Dark Charcoal", "Storm Blue"],
+    angles: ["Staring intensely forward", "Looming ominously", "Looking incredibly tall and confused"],
+    aesthetics: ["Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+
+DESIGN PARAMETERS:
+- Animal: Shoebill Stork
+- Animal Archetype: [ARCHETYPE]
+- Buyer Identity: [BUYER_IDENTITY]
+- Hobby/Theme/Props: [THEME]
+- Color/Markings: [COLOR]
+- Emotional Angle: [ANGLE]
+- Humor/Phrase Style: [HUMOR_STYLE]
+- Phrase Framework: [FRAMEWORK]
+- Visual Aesthetic: [AESTHETIC]
+- Render Style: [RENDER_STYLE_LABEL]
+- Composition: [COMPOSITION]
+
+ANIMAL VIBE:
+Focus on themes of intense staring, intimidating presence, prehistoric energy, and awkward silence.
+
+CRITICAL RULES:
+- **NICHE INTERSECTION:** The design MUST visually combine the Animal with the Hobby/Theme/Props listed above. Use the props naturally in the design.
+- **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
+- **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
+- **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
+- **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
+
+OUTPUT EXACTLY LIKE THIS:
+
+[RESEARCH & THINKING]
+(Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
+
+[IMAGE PROMPT]
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+
+[SEO METADATA & UPLOAD INSTRUCTIONS]
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
+  },
+  narwhal: {
+    id: "narwhal",
+    label: "Narwhal",
+    archetypes: [
+      { arc: "The Deep Sea Introvert", idty: "Someone who prefers the dark, cold depths of the ocean to human interaction", themes: ["gaming","coffee","music"], frameworks: ["The \"Confessional\" (e.g., 'In my defense, I was left unsupervised')"] },
+      { arc: "The Y2K Sea Unicorn", idty: "A majestic but slightly awkward creature that loves internet nostalgia", themes: ["retro","tarot","reading"], frameworks: ["The \"Bold Label\" (e.g., 'Professional Overthinker')"] },
+      { arc: "The Pointy Menace", idty: "Cute but fully armed and ready to poke you if you get too close", themes: ["halloween","skate","camping"], frameworks: ["The \"Reframe\" (e.g., 'I\'m not lazy, I\'m on energy-saving mode')"] }
+    ],
+    colors: ["Ocean Blue", "Bioluminescent Purple", "Ice White"],
+    angles: ["Swimming away from responsibilities", "Looking majestic but confused", "Poking something with its tusk"],
+    aesthetics: ["Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+
+DESIGN PARAMETERS:
+- Animal: Narwhal
+- Animal Archetype: [ARCHETYPE]
+- Buyer Identity: [BUYER_IDENTITY]
+- Hobby/Theme/Props: [THEME]
+- Color/Markings: [COLOR]
+- Emotional Angle: [ANGLE]
+- Humor/Phrase Style: [HUMOR_STYLE]
+- Phrase Framework: [FRAMEWORK]
+- Visual Aesthetic: [AESTHETIC]
+- Render Style: [RENDER_STYLE_LABEL]
+- Composition: [COMPOSITION]
+
+ANIMAL VIBE:
+Focus on themes of deep ocean isolation, being a real-life unicorn, pointing the tusk at problems, or deep-sea pressure.
+
+CRITICAL RULES:
+- **NICHE INTERSECTION:** The design MUST visually combine the Animal with the Hobby/Theme/Props listed above. Use the props naturally in the design.
+- **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
+- **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
+- **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
+- **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
+
+OUTPUT EXACTLY LIKE THIS:
+
+[RESEARCH & THINKING]
+(Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
+
+[IMAGE PROMPT]
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+
+[SEO METADATA & UPLOAD INSTRUCTIONS]
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
+  },
+  polar_bear: {
+    id: "polar_bear",
+    label: "Polar Bear 2026",
+    archetypes: [
+      { arc: "The Time Traveler", idty: "A bear from the future warning us about impending doom", themes: ["retro","gaming","coffee"], frameworks: ["The \"Confessional\" (e.g., 'In my defense, I was left unsupervised')"] },
+      { arc: "The Creepypasta Mascot", idty: "Something cute that feels incredibly ominous and out of place", themes: ["halloween","tarot","music"], frameworks: ["The \"Bold Label\" (e.g., 'Professional Overthinker')"] },
+      { arc: "The Glitch in the Matrix", idty: "An entity surviving purely on internet lore and anxiety", themes: ["reading","napping","skate"], frameworks: ["The \"Rule of Three Subversion\" (e.g., 'I came. I saw. I made it awkward')"] }
+    ],
+    colors: ["Glitch White", "Neon Blue", "Static Grey"],
+    angles: ["Staring blankly from 2026", "Looking displaced in time", "Ominously waving"],
+    aesthetics: ["Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+
+DESIGN PARAMETERS:
+- Animal: Polar Bear
+- Animal Archetype: [ARCHETYPE]
+- Buyer Identity: [BUYER_IDENTITY]
+- Hobby/Theme/Props: [THEME]
+- Color/Markings: [COLOR]
+- Emotional Angle: [ANGLE]
+- Humor/Phrase Style: [HUMOR_STYLE]
+- Phrase Framework: [FRAMEWORK]
+- Visual Aesthetic: [AESTHETIC]
+- Render Style: [RENDER_STYLE_LABEL]
+- Composition: [COMPOSITION]
+
+ANIMAL VIBE:
+Focus on themes of time travel, internet creepypasta, the year 2026, ominous cuteness, and glitches.
+
+CRITICAL RULES:
+- **NICHE INTERSECTION:** The design MUST visually combine the Animal with the Hobby/Theme/Props listed above. Use the props naturally in the design.
+- **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
+- **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
+- **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
+- **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
+
+OUTPUT EXACTLY LIKE THIS:
+
+[RESEARCH & THINKING]
+(Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
+
+[IMAGE PROMPT]
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+
+[SEO METADATA & UPLOAD INSTRUCTIONS]
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
+  },
+  wumpus: {
+    id: "wumpus",
+    label: "Wumpus (Discord)",
+    archetypes: [
+      { arc: "The Server Admin", idty: "Someone desperately trying to maintain order in a chaotic voice channel", themes: ["gaming","coffee","music"], frameworks: ["The \"Confessional\" (e.g., 'In my defense, I was left unsupervised')"] },
+      { arc: "The Lurker", idty: "A cute entity that reads every message but never replies", themes: ["reading","napping","tarot"], frameworks: ["The \"Bold Label\" (e.g., 'Professional Overthinker')"] },
+      { arc: "The Extremely Online Hermit", idty: "Someone whose entire social life exists in dark mode", themes: ["retro","plants","skate"], frameworks: ["The \"Reframe\" (e.g., 'I\'m not lazy, I\'m on energy-saving mode')"] }
+    ],
+    colors: ["Blurple", "Dark Mode Grey", "Neon Green"],
+    angles: ["Stressed at keyboard", "Sleeping in voice chat", "Peeking out from behind a screen"],
+    aesthetics: ["Whimsigoth","Y2K Cyber-Grunge","Frutiger Aero","Cottagecore Woodcut","Futuristic AI Dystopian","Handmade Analog Sketch"],
+    compositions: ["Large Center-Chest Graphic", "Small Pocket-Logo Style", "Typography-Heavy Front"],
+    promptTemplate: `You are an expert TeePublic apparel graphic concept generator and SEO copywriter. You are generating an apparel graphic concept exclusively for a specific person: [BUYER_IDENTITY]. Everything — the image, the phrase, the tags — must feel like it was made exactly for this person's psychological profile. Based on the provided parameters, generate a production-ready image generation prompt (for Midjourney/DALL-E) and SEO metadata. Do not add conversational filler.
+
+DESIGN PARAMETERS:
+- Animal: Wumpus
+- Animal Archetype: [ARCHETYPE]
+- Buyer Identity: [BUYER_IDENTITY]
+- Hobby/Theme/Props: [THEME]
+- Color/Markings: [COLOR]
+- Emotional Angle: [ANGLE]
+- Humor/Phrase Style: [HUMOR_STYLE]
+- Phrase Framework: [FRAMEWORK]
+- Visual Aesthetic: [AESTHETIC]
+- Render Style: [RENDER_STYLE_LABEL]
+- Composition: [COMPOSITION]
+
+ANIMAL VIBE:
+Focus on themes of Discord servers, being perpetually online, gaming stress, dark mode, and cute awkwardness.
+
+CRITICAL RULES:
+- **NICHE INTERSECTION:** The design MUST visually combine the Animal with the Hobby/Theme/Props listed above. Use the props naturally in the design.
+- **THUMBNAIL BLINDNESS:** The animal character MUST be the massive, dominant focal point of the image so it is instantly readable as a tiny 200px thumbnail on a phone. Keep background details minimal to avoid a muddy design.
+- **DEEP THINKING REQUIRED:** Before generating the image prompt or SEO, you MUST execute a "search and research" thinking step. Analyze the target audience for this exact niche intersection, evaluate the psychology of the humor style, and aggressively research what specific SEO keywords buyers actually type into the TeePublic search bar.
+- **TYPOGRAPHY INTEGRATION & STYLE:** You must provide the EXACT spelling of the phrase inside quotes in the image prompt (e.g. features the typography text "STAY WEIRD"). You MUST also explicitly describe the font style to match the aesthetic/humor (e.g., 'messy handwritten cursive', 'bold distressed 70s serif', or 'clean minimalist sans-serif'). The typography must be explicitly described as either wrapping around the character or stacked boldly underneath.
+- **PHRASE TONE & MEME FRAMEWORK:** The phrase MUST be written in the 1st-person internal monologue of the Buyer Identity. Strictly match the selected "[HUMOR_STYLE]" (2-8 words). You MUST structurally use this specific viral meme framework: [FRAMEWORK].
+- **NO AI ARTIFACTS:** ABSOLUTELY NO glossy AI sheen, NO photorealism, and NO 3D rendering. The design must be mindful, graphic, and highly intentional.
+- **BACKGROUND INSTRUCTION:** Instruct: "A simple, complementary background that supports the overall theme (e.g., a soft bokeh, a minimal prop, or clean solid color fill). Ensure the main character is still the clear focal point. Do NOT force a purely empty or transparent background, as this stifles creative composition."
+
+OUTPUT EXACTLY LIKE THIS:
+
+[RESEARCH & THINKING]
+(Write 1 detailed paragraph proving you have analyzed the niche audience, psychological appeal of the humor, and brainstormed the highest-converting TeePublic SEO keywords before building the prompt.)
+
+[IMAGE PROMPT]
+[RENDER_STYLE_INSTRUCTION] of a [MASCOT DESCRIPTION + PROPS/THEME INTEGRATION], designed as a [VISUAL AESTHETIC] with a [COMPOSITION] layout. The design features the bold typography text "[EXACT PHRASE]", neatly [TYPOGRAPHY PLACEMENT]. [COMPOSITION DETAILS]. Screenprint style, slight grain/ink texture, bold silhouette readability, centered composition. Designed by an expert illustrator, not rendered by a slick AI engine. Simple, complementary environment that enhances the subject without clutter. No 3D, no glossy AI rendering. --no mockup, --no 3d, --no photorealism, --no glossy, --no blurry, --no watermark, --no signature, --no gradients, --no realistic textures --ar 2:3 --stylize 200
+
+[SEO METADATA & UPLOAD INSTRUCTIONS]
+Title: [Catchy Title that integrates the core joke/phrase, the Animal, and MUST include the exact Main Tag]
+Main Tag: [1 single dominant 1-2 word keyword phrase representing natural search behavior (e.g., 'sarcastic cat'). This exactly matches the Redbubble UI requirement.]
+Supporting Tags: [9 highly searched related tags that overlap with the Main Tag. Do not duplicate the Main Tag or use irrelevant tag-stuffing.]
+Description: [Short 2-sentence description. You MUST seamlessly weave the exact Main Tag into the first sentence to reinforce algorithm relevance.]
+Recommended Garment Color: [Suggest 1-2 ideal t-shirt colors for the user to set as the default on TeePublic/Redbubble (e.g., 'Heather Grey', 'Black', 'Soft Pink'). Ensure the color provides high contrast against the design.]`
+  }
 };
 
 export const THEMES = [
