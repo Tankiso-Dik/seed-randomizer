@@ -1,0 +1,3 @@
+Input,Models,Alpha matting,Foreground threshold,Background threshold,Erosion size,Only mask,Post process mask,Arguments,Output,timestamp
+.gradio/flagged/Input/a08ce2e49ef890035414/Born-To-Dilly-Dally.jpg,u2net,true,240,10,40,false,true,,,2026-06-13 13:00:42.368187
+.gradio/flagged/Input/eed6fe686e2644feed80/Born-To-Dilly-Dally.jpg,birefnet-general,false,240,10,40,false,true,,.gradio/flagged/Output/354d5bd9406df7dcf99e/output.png,2026-06-13 13:13:49.792185

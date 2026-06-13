@@ -1,0 +1,227 @@
+{
+  "ANIMALS": [
+    {
+      "id": "capybara",
+      "label": "Capybara",
+      "cultural_vibes": [
+        "socially oblivious",
+        "zen master"
+      ],
+      "text_props": [
+        "wearing an oversized graphic tee with embedded text",
+        "holding a highly legible protest sign"
+      ],
+      "actions": [
+        "lounging completely unbothered"
+      ]
+    },
+    {
+      "id": "raccoon",
+      "label": "Raccoon",
+      "cultural_vibes": [
+        "chaotic group chat energy",
+        "terminal doomscrolling",
+        "goblin mode"
+      ],
+      "text_props": [
+        "spray-painting perfect typography on a wall",
+        "holding a crumpled warning label"
+      ],
+      "actions": [
+        "digging through trash",
+        "looking sleep-deprived"
+      ]
+    },
+    {
+      "id": "possum",
+      "label": "Possum",
+      "cultural_vibes": [
+        "do not perceive me",
+        "low social battery"
+      ],
+      "text_props": [
+        "holding a highly legible negative review sign"
+      ],
+      "actions": [
+        "crashing out",
+        "playing dead"
+      ]
+    },
+    {
+      "id": "goose",
+      "label": "Goose",
+      "cultural_vibes": [
+        "professional hater",
+        "waking up and choosing violence"
+      ],
+      "text_props": [
+        "holding a highly legible threat letter"
+      ],
+      "actions": [
+        "chasing something offscreen",
+        "honking menacingly"
+      ]
+    },
+    {
+      "id": "crow",
+      "label": "Crow",
+      "cultural_vibes": [
+        "ominous observer",
+        "dark academia"
+      ],
+      "text_props": [
+        "holding an ominous printed note",
+        "standing on a sign with text"
+      ],
+      "actions": [
+        "collecting shiny garbage"
+      ]
+    },
+    {
+      "id": "pig",
+      "label": "Pig",
+      "cultural_vibes": [
+        "rotting in bed",
+        "stubborn homebody"
+      ],
+      "text_props": [
+        "wearing a cozy apron with embroidered text"
+      ],
+      "actions": [
+        "rolling in mud",
+        "refusing to move"
+      ]
+    },
+    {
+      "id": "moth",
+      "label": "Moth",
+      "cultural_vibes": [
+        "aura farming",
+        "whimsigoth aesthetic"
+      ],
+      "text_props": [
+        "wearing a jacket with glowing text on the back"
+      ],
+      "actions": [
+        "staring into a bright light"
+      ]
+    },
+    {
+      "id": "pygmy_hippo",
+      "label": "Pygmy Hippo",
+      "cultural_vibes": [
+        "chaotic baby",
+        "unreasonable anger"
+      ],
+      "text_props": [
+        "biting a highly legible warning label"
+      ],
+      "actions": [
+        "wet and screaming"
+      ]
+    },
+    {
+      "id": "llama",
+      "label": "Llama",
+      "cultural_vibes": [
+        "major side-eye",
+        "not beating the allegations"
+      ],
+      "text_props": [
+        "holding a 1-star review sign"
+      ],
+      "actions": [
+        "spitting mad",
+        "judging silently"
+      ]
+    },
+    {
+      "id": "shoebill_stork",
+      "label": "Shoebill Stork",
+      "cultural_vibes": [
+        "dinosaur energy",
+        "menacing stare"
+      ],
+      "text_props": [
+        "holding a highly legible eviction notice"
+      ],
+      "actions": [
+        "standing completely still"
+      ]
+    },
+    {
+      "id": "polar_bear_2026",
+      "label": "Polar Bear 2026",
+      "cultural_vibes": [
+        "spooky/weird",
+        "viral cryptid"
+      ],
+      "text_props": [
+        "holding a glitched piece of paper with text"
+      ],
+      "actions": [
+        "time-traveling",
+        "staring ominously"
+      ]
+    },
+    {
+      "id": "wumpus",
+      "label": "Wumpus",
+      "cultural_vibes": [
+        "terminal brain rot",
+        "skibidi absurdity"
+      ],
+      "text_props": [
+        "holding an oversized chat bubble with text"
+      ],
+      "actions": [
+        "group chat lurking"
+      ]
+    },
+    {
+      "id": "fox",
+      "label": "Fox",
+      "cultural_vibes": [
+        "feral woodland menace",
+        "chaotic good"
+      ],
+      "text_props": [
+        "holding a clipboard with highly legible text"
+      ],
+      "actions": [
+        "screaming in the woods",
+        "running erratically"
+      ]
+    },
+    {
+      "id": "turtle",
+      "label": "Turtle",
+      "cultural_vibes": [
+        "ancient and tired",
+        "avoiding problems"
+      ],
+      "text_props": [
+        "wearing a custom shell sticker with text"
+      ],
+      "actions": [
+        "slow and steady hiding"
+      ]
+    }
+  ],
+  "DIRECTIONS": [
+    "Anxious",
+    "Chaotic",
+    "Detached",
+    "Apathetic",
+    "Exhausted",
+    "Nihilistic",
+    "Overwhelmed",
+    "Delusional",
+    "Unbothered",
+    "Existential",
+    "Overstimulated",
+    "Melancholic",
+    "Manic",
+    "Hyper-focused"
+  ]
+}

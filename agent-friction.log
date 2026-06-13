@@ -1,0 +1,2 @@
+2026-06-12T12:03:00.743Z - Tool Friction: Redbubble MCP probe returned empty HTML due to Datadome block. Successfully fell back to Teepublic probe.
+2026-06-12T14:25:00.000Z - Tool Friction: Teepublic probe received a 403 on the first try but successfully recovered via Crawlee automatic retries.
