@@ -1,124 +1,22 @@
 {
   "ANIMALS": [
-    {
-      "id": "possum",
-      "label": "Possum",
-      "cultural_vibes": ["do not perceive me", "low social battery"],
-      "text_props": ["holding a highly legible negative review sign"],
-      "actions": ["crashing out", "playing dead"]
-    },
-    {
-      "id": "sloth",
-      "label": "Sloth",
-      "cultural_vibes": ["moving at my own pace", "energy conservation"],
-      "text_props": ["wearing an oversized graphic tee with embedded text"],
-      "actions": ["hanging lazily", "ignoring responsibilities"]
-    },
-    {
-      "id": "bat",
-      "label": "Bat",
-      "cultural_vibes": ["night owl", "creature of the dark"],
-      "text_props": ["holding an ominous printed note"],
-      "actions": ["hanging upside down", "staring intensely"]
-    },
-    {
-      "id": "pig",
-      "label": "Pig",
-      "cultural_vibes": ["rotting in bed", "stubborn homebody"],
-      "text_props": ["wearing a cozy apron with embroidered text"],
-      "actions": ["rolling in mud", "refusing to move"]
-    },
-    {
-      "id": "turtle",
-      "label": "Turtle",
-      "cultural_vibes": ["ancient and tired", "avoiding problems"],
-      "text_props": ["wearing a custom shell sticker with text"],
-      "actions": ["slow and steady hiding"]
-    },
-    {
-      "id": "raccoon",
-      "label": "Raccoon",
-      "cultural_vibes": ["chaotic group chat energy", "terminal doomscrolling", "goblin mode"],
-      "text_props": ["spray-painting perfect typography on a wall", "holding a crumpled warning label"],
-      "actions": ["digging through trash", "looking sleep-deprived"]
-    },
-    {
-      "id": "crow",
-      "label": "Crow",
-      "cultural_vibes": ["ominous observer", "dark academia"],
-      "text_props": ["holding an ominous printed note", "standing on a sign with text"],
-      "actions": ["collecting shiny garbage"]
-    },
-    {
-      "id": "goose",
-      "label": "Goose",
-      "cultural_vibes": ["professional hater", "waking up and choosing violence"],
-      "text_props": ["holding a highly legible threat letter"],
-      "actions": ["chasing something offscreen", "honking menacingly"]
-    },
-    {
-      "id": "fox",
-      "label": "Fox",
-      "cultural_vibes": ["feral woodland menace", "chaotic good"],
-      "text_props": ["holding a clipboard with highly legible text"],
-      "actions": ["screaming in the woods", "running erratically"]
-    },
-    {
-      "id": "capybara",
-      "label": "Capybara",
-      "cultural_vibes": ["socially oblivious", "zen master"],
-      "text_props": ["wearing an oversized graphic tee with embedded text", "holding a highly legible protest sign"],
-      "actions": ["lounging completely unbothered"]
-    },
-    {
-      "id": "frog",
-      "label": "Frog",
-      "cultural_vibes": ["just sitting there", "mind empty"],
-      "text_props": ["sitting on a lilypad with carved text"],
-      "actions": ["staring blankly"]
-    },
-    {
-      "id": "otter",
-      "label": "Otter",
-      "cultural_vibes": ["playful but tired", "floating through life"],
-      "text_props": ["holding a smooth stone with text written on it"],
-      "actions": ["floating on its back"]
-    },
-    {
-      "id": "rabbit",
-      "label": "Rabbit",
-      "cultural_vibes": ["overstimulated", "always late"],
-      "text_props": ["holding a ticking clock with text on the face"],
-      "actions": ["twitching nervously", "ready to bolt"]
-    },
-    {
-      "id": "guinea_pig",
-      "label": "Guinea Pig",
-      "cultural_vibes": ["dramatic", "screaming for veggies"],
-      "text_props": ["standing behind a tiny podium with text"],
-      "actions": ["wheeking loudly", "looking deeply concerned"]
-    },
-    {
-      "id": "red_panda",
-      "label": "Red Panda",
-      "cultural_vibes": ["clumsy", "trying its best"],
-      "text_props": ["holding a "],
-      "actions": ["falling over", "looking surprised"]
-    },
-    {
-      "id": "pigeon",
-      "label": "Pigeon",
-      "cultural_vibes": ["city survivor", "always watching"],
-      "text_props": ["pecking at a discarded sign with text"],
-      "actions": ["strutting aggressively", "staring with one eye"]
-    },
-    {
-      "id": "goat",
-      "label": "Goat",
-      "cultural_vibes": ["demonic energy", "eating garbage"],
-      "text_props": ["chewing on a tin can with a label"],
-      "actions": ["standing on something unstable", "looking chaotic"]
-    }
+    { "id": "possum", "label": "Possum" },
+    { "id": "sloth", "label": "Sloth" },
+    { "id": "bat", "label": "Bat" },
+    { "id": "pig", "label": "Pig" },
+    { "id": "turtle", "label": "Turtle" },
+    { "id": "raccoon", "label": "Raccoon" },
+    { "id": "crow", "label": "Crow" },
+    { "id": "goose", "label": "Goose" },
+    { "id": "fox", "label": "Fox" },
+    { "id": "capybara", "label": "Capybara" },
+    { "id": "frog", "label": "Frog" },
+    { "id": "otter", "label": "Otter" },
+    { "id": "rabbit", "label": "Rabbit" },
+    { "id": "guinea_pig", "label": "Guinea Pig" },
+    { "id": "red_panda", "label": "Red Panda" },
+    { "id": "pigeon", "label": "Pigeon" },
+    { "id": "goat", "label": "Goat" }
   ],
   "DIRECTIONS": [
     "Exhausted / Weary",
