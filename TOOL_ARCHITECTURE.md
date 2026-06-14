@@ -37,6 +37,16 @@ This file is a shared, continuously-updated collaboration space for all reviewin
   - **NATIVE ANTIGRAVITY MCP:** The workflow now relies exclusively on the native `exa` MCP configured natively in the Antigravity CLI environment (using tools like `web_search_exa` and `web_fetch_exa`).
   - This guarantees the Exa searches operate in an environment where the API key is natively managed, preventing local STDIN script crashes, and allows the AI greater flexibility to dynamically construct its own `site:reddit.com` or `site:teepublic.com` queries as needed instead of relying on hardcoded backend routes.
 
+### Sequential Thinking MCP
+* **Capabilities:** Dynamic and reflective problem-solving tool that manages chained "thoughts" and hypothesis verification.
+* **Strategic Intent:** Forces the Prompt Maker (Agent 2) to construct its logic linearly and reflect on context before blurting out a final prompt. It prevents "zero-shot hallucination" by requiring explicit reasoning over the Research Context Brief, ensuring the final joke and composition perfectly align with the intended psychological hooks.
+* **Current Usage:** Integrated directly into `agent-2-prompt-maker.md` as a mandatory Step 1.
+
+### Tavily API (Deep Contextual Search)
+* **Capabilities:** AI-optimized web search designed specifically for LLMs.
+* **Strategic Intent:** Acts as a powerful companion to Exa. While Exa excels at semantic "vibes" and neural mapping of subreddits/TikTok, Tavily is exceptional at pulling structured, factual context and deep-diving into specific trends iteratively.
+* **Current Usage:** Deployed alongside Exa via the native Antigravity CLI as `tavily_search` / `tavily_research`. Agent 1 uses both APIs iteratively to build an airtight "Context Brief".
+
 ### Serper API (Market & Format Routing)
 * **Capabilities:** Fast, reliable Google Search API.
 * **Strategic Intent:** Replaces Google Trends scraping. Provides hard market data (pricing, cross-platform product saturation). Unlocks "Format Routing" to identify whether a niche is best for stickers, mugs, or shirts.
@@ -78,10 +88,11 @@ This file is a shared, continuously-updated collaboration space for all reviewin
 * **Current Usage/Corrections:** The MCP is instantiated using `StdioServerTransport()` and communicates strictly via standard I/O. All logging is routed to `stderr` to maintain protocol integrity.
 
 ### 🎭 Agent Skills & Orchestration Workflows
-* **Art Director (`agent-config.md`):** Drives Phases 1-4. Uses DuckDB for niche routing, Exa/Serper for format and cultural routing, and explicitly declares "Target Garment Color" prior to style assembly.
-* **Elite Creative Director (`qa-director.md`):** Operates Phase 5. Replaces the standard QA with a rigorous legal, visual, and SEO editor.
+* **Agent 1: Research Agent (`agent-1-research.md`):** Drives Phase 1. Uses the seed JSON data to execute deep cultural and market research iteratively across Exa and Tavily. Produces the "Context Brief".
+* **Agent 2: Prompt Maker (`agent-2-prompt-maker.md`):** Drives Phase 2-4. Uses `sequentialthinking` to construct the "Me Too" Identity Hook, generates phrases, and writes the Master Composition Template following the Flexible Core framework.
+* **Agent 3: QA Director (`agent-3-qa-director.md`):** Operates Phase 5. A rigorous legal, visual, and SEO editor.
   - **Strategic Intent:** Enforce strict POD-platform specific optimization before output.
-  - **Current Usage:** Consolidates MCP N-grams into a pure 1-2 word TeePublic Main Tag. Validates Art Director's color palette against the Target Garment Color to prevent bleeding/vanishing. Forces the DuckDB IP check on the final phrase.
+  - **Current Usage:** Verifies the Composition Sanity Check, audits the Master Template to ensure no style rules are broken, uses `web_search_exa` to check for trademark violations on the final phrase, and generates final 1-2 word Main Tags.
 
 ---
 

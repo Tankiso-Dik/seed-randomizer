@@ -15,8 +15,8 @@ seed-randomizer/
 │   └── seed-manager.js         # CLI tool to pull/update random seeds
 ├── data/
 │   └── database.json           # The raw seed JSON database
-├── agent-config.md             # The Master Workflow Skill (5-Phase Protocol)
-├── qa-director.md              # The QA Audit Skill
+├── ~/.agents/skills/seed-workflow/SKILL.md  # The Master Workflow Skill (5-Phase Protocol)
+└── ~/.agents/skills/qa-director/SKILL.md    # The QA Audit Skill
 └── README.md
 ```
 
@@ -36,7 +36,18 @@ Do not add complexity that has low ROI. We avoid:
 * **Headless Browsers (Puppeteer/Playwright)**: Replaced by Exa and Serper APIs to avoid Datadome/Cloudflare bot blocking.
 * **Python Microservices**: Deleted. The entire orchestrator is a single Node.js process using lightweight REST APIs and DuckDB.
 
-## 🤖 The Agent Review Pipeline (Dual-Track Relay Race)
+## 🤖 The Agent Pipelines
+
+We maintain two distinct agent pipelines for different stages of the project.
+
+### 1. The Design Generation Pipeline (Master Workflow)
+**Sequential 3-Agent Chain:** Used for creating new designs.
+- **Agent 1 (Research)** -> **Agent 2 (Prompt Maker)** -> **Agent 3 (QA Director)**
+- **Shared Memory:** `MASTER_WORKFLOW_CONTEXT.md`
+- **Goal:** Generate high-intent, printable designs.
+
+### 2. The Agent Review Pipeline (Dual-Track Relay Race)
+**Sequential 5-Agent Chain:** Used for reviewing system architecture and code.
 **Do NOT launch all agents simultaneously.**
 The review system operates as a sequential "relay race" over two distinct tracks. Agents must use their search MCPs to research tools (`duckdb`, `exa`, `natural`) and converge their findings into a shared ledger.
 
@@ -50,7 +61,7 @@ The review system operates as a sequential "relay race" over two distinct tracks
    - Agent 1 (Crawler Inspector) reviews APIs (Exa, Serper, Etsy), logs findings, its "Strategic Intent", and cross-domain dependencies in `TOOL_ARCHITECTURE.md`.
    - Agent 2 (MCP Backend Tester) reviews `index.js`, DuckDB caching, and logs. It manages the relationship with the `agy` config and checks if the tools map to the 5-Phase protocol perfectly. Passes consolidated report to Track 2.
 2. **Track 2: Agent Logic & Synthesis:**
-   - Agent 3 (Prompt Architect) reads the master workflow `agent-config.md`, the `qa-director.md` skill, and the JSON seed database (`data/database.json`). It cross-references `Qwen-MCP-and-Niche-Research.md` and `TOOL_ARCHITECTURE.md` to ensure the JSON seed traits and MCP responses correctly flow through the 5-Phase Execution Protocol without logic gaps or data loss before reaching the QA Director.
+   - Agent 3 (Prompt Architect) reads the master workflow `~/.agents/skills/seed-workflow/SKILL.md`, the `~/.agents/skills/qa-director/SKILL.md` skill, and the JSON seed database (`data/database.json`). It cross-references `Qwen-MCP-and-Niche-Research.md` and `TOOL_ARCHITECTURE.md` to ensure the JSON seed traits and MCP responses correctly flow through the 5-Phase Execution Protocol without logic gaps or data loss before reaching the QA Director.
    - Agent 4 (Final Synthesizer) reads `TOOL_ARCHITECTURE.md` and all reports to output the final system evaluation.
 3. **Track 3: Workspace & Operations Review:**
    - Agent 5 (Workspace & Operations Director) maintains the global health of the workspace. It checks the operational cohesion of the CLI (`bin/seed-manager.js`), log files, and the "5-Phase Protocol" skills. It ensures `TOOL_ARCHITECTURE.md` correctly informs the Antigravity CLI of all tools and properly monitors the coherence of Agents 1-4 across the pipeline.

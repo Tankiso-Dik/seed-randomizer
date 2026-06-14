@@ -27,8 +27,8 @@ Agents MUST pass detailed context to the next agent in line, forming a cohesive 
 ### Track 2: The Agent Logic & Synthesis Review
 *(Begins when Track 1 finishes)*
 3. **Skill & Prompt Architect (Agent 3)**
-   - **Focus:** Reads the master workflow `agent-config.md` (Art Director), the `qa-director.md` (Elite Creative Director) skill, and the JSON seed database (`data/database.json`).
-   - **Action:** Cross-references `Qwen-MCP-and-Niche-Research.md` and `TOOL_ARCHITECTURE.md`. Verifies that the JSON seed traits and MCP responses correctly flow through the 5-Phase Execution Protocol without logic gaps or data loss before reaching the QA Director. Specifically checks that "Base Garment Contrast", "IP Kill Switch", and "Main Tag Derivation" rules are intact. Updates the review chain.
+   - **Focus:** Reads the new sequential pipeline definitions (`agent-1-research.md`, `agent-2-prompt-maker.md`, `agent-3-qa-director.md`), the `MASTER-WORKFLOW.md`, and the JSON seed database (`data/database.json`).
+   - **Action:** Cross-references `Qwen-MCP-and-Niche-Research.md` and `TOOL_ARCHITECTURE.md`. Verifies that the JSON seed traits and MCP responses correctly flow through the new "Flexible Core" Execution Protocol without logic gaps or data loss before reaching the QA Director. Specifically checks that the "Me Too Identity Hook", "Master Composition Template", and "Phrase Generation Rules" are intact. Updates the review chain.
 4. **The Final Synthesizer (Agent 4)**
    - **Focus:** The master consolidation. Reads `TOOL_ARCHITECTURE.md` and the accumulated Track 1 & 2 reports.
    - **Action:** Produces the final, unified "System Evolution Blueprint" ensuring tools take the maximum burden off custom code.
@@ -38,7 +38,24 @@ Agents MUST pass detailed context to the next agent in line, forming a cohesive 
 5. **Workspace & Operations Director (Agent 5)**
    - **Focus:** Maintains the global health of the workspace against all system goals.
    - **Action:** 
-     1. Validates the cohesion of all CLI tools (`bin/seed-manager.js`), loggers (`usage_analytics.jsonl` / complaints), and skills (`agent-config.md` and `qa-director.md`).
+     1. Validates the cohesion of all CLI tools (`bin/seed-manager.js`), loggers (`usage_analytics.jsonl` / complaints), and local agent prompt files (`agent-1-research.md`, `agent-2-prompt-maker.md`, `agent-3-qa-director.md`).
      2. Cross-references `TOOL_ARCHITECTURE.md` to ensure the orchestrator (Antigravity CLI) correctly understands which tools exist and how to use them.
      3. Reviews the operational coherence of Agents 1-4 in the `review-power` pipeline, ensuring they are looking at the right files and pulling logic consistently.
      4. Finalizes the workspace state and signs off on the pipeline run.
+
+# 🎨 Design Generation Pipeline (The Master Workflow)
+
+This is the primary operational workflow for generating new designs. It uses a sequential three-agent chain to ensure maximum cultural resonance and technical printability.
+
+## 🛠️ The 3-Agent Design Chain
+1. **Agent 1: Research Agent** (`agent-1-research.md`)
+   - **Start Command:** `node bin/seed-manager.js get-random`
+   - **Context passing:** Writes to `MASTER_WORKFLOW_CONTEXT.md`
+2. **Agent 2: Prompt Maker** (`agent-2-prompt-maker.md`)
+   - **Focus:** Identity Hooks & Phrase Generation.
+   - **Context passing:** Reads from and appends to `MASTER_WORKFLOW_CONTEXT.md`
+3. **Agent 3: QA Director** (`agent-3-qa-director.md`)
+   - **Focus:** Technical Audit & IP Clearance.
+   - **Context passing:** Finalizes `MASTER_WORKFLOW_CONTEXT.md`
+
+**Usage:** Invoke these agents sequentially via Antigravity CLI (`agy`) for any new design task.
