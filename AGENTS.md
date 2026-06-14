@@ -28,7 +28,7 @@ Agents MUST pass detailed context to the next agent in line, forming a cohesive 
 *(Begins when Track 1 finishes)*
 3. **Skill & Prompt Architect (Agent 3)**
    - **Focus:** Reads the new sequential pipeline definitions (`agent-1-research.md`, `agent-2-prompt-maker.md`, `agent-3-qa-director.md`), the `MASTER-WORKFLOW.md`, and the JSON seed database (`data/database.json`).
-   - **Action:** Cross-references `Qwen-MCP-and-Niche-Research.md` and `TOOL_ARCHITECTURE.md`. Verifies that the JSON seed traits and MCP responses correctly flow through the new "Flexible Core" Execution Protocol without logic gaps or data loss before reaching the QA Director. Specifically checks that the "Me Too Identity Hook", "Master Composition Template", and "Phrase Generation Rules" are intact. Updates the review chain.
+   - **Action:** Cross-references `Qwen-MCP-and-Niche-Research.md` and `TOOL_ARCHITECTURE.md`. Verifies that the JSON seed traits and MCP responses correctly flow through the new "Flexible Core" Execution Protocol without logic gaps or data loss before reaching the QA Director. Specifically checks that the "Me Too Identity Hook", "Master Composition Template", and the new "Mandatory Search Validation" loop for SEO tags are fully intact. Updates the review chain.
 4. **The Final Synthesizer (Agent 4)**
    - **Focus:** The master consolidation. Reads `TOOL_ARCHITECTURE.md` and the accumulated Track 1 & 2 reports.
    - **Action:** Produces the final, unified "System Evolution Blueprint" ensuring tools take the maximum burden off custom code.

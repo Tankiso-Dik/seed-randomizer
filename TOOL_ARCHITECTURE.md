@@ -35,7 +35,7 @@ This file is a shared, continuously-updated collaboration space for all reviewin
 * **Current Usage & Integration:**
   - **DECOUPLED FROM `seed-mcp`:** We have fully removed the custom Exa probes (`exa_marketplace_probe`, `exa_gap_analysis_probe`, `exa_ip_probe`) from the local Node.js backend. 
   - **NATIVE ANTIGRAVITY MCP:** The workflow now relies exclusively on the native `exa` MCP configured natively in the Antigravity CLI environment (using tools like `web_search_exa` and `web_fetch_exa`).
-  - This guarantees the Exa searches operate in an environment where the API key is natively managed, preventing local STDIN script crashes, and allows the AI greater flexibility to dynamically construct its own `site:reddit.com` or `site:teepublic.com` queries as needed instead of relying on hardcoded backend routes.
+  - This guarantees the Exa searches operate in an environment where the API key is natively managed, preventing local STDIN script crashes, and allows the AI greater flexibility to dynamically construct its own `site:reddit.com` or `site:teepublic.com` queries as needed instead of relying on hardcoded backend routes. Agent 3 (QA Director) heavily leverages this to validate the SEO Main Tag for active real-world usage and catch oversaturated niches on Redbubble before publishing.
 
 ### Sequential Thinking MCP
 * **Capabilities:** Dynamic and reflective problem-solving tool that manages chained "thoughts" and hypothesis verification.
@@ -45,7 +45,7 @@ This file is a shared, continuously-updated collaboration space for all reviewin
 ### Tavily API (Deep Contextual Search)
 * **Capabilities:** AI-optimized web search designed specifically for LLMs.
 * **Strategic Intent:** Acts as a powerful companion to Exa. While Exa excels at semantic "vibes" and neural mapping of subreddits/TikTok, Tavily is exceptional at pulling structured, factual context and deep-diving into specific trends iteratively.
-* **Current Usage:** Deployed alongside Exa via the native Antigravity CLI as `tavily_search` / `tavily_research`. Agent 1 uses both APIs iteratively to build an airtight "Context Brief".
+* **Current Usage:** Deployed alongside Exa via the native Antigravity CLI as `tavily_search` / `tavily_research`. Agent 1 uses both APIs iteratively to build an airtight "Context Brief". Agent 3 (QA Director) now explicitly uses Tavily to validate the top 5 supporting tags, forcing it to prove the tags are actively trending N-grams before outputting the final SEO package.
 
 ### Serper API (Market & Format Routing)
 * **Capabilities:** Fast, reliable Google Search API.
@@ -148,8 +148,8 @@ This file is a shared, continuously-updated collaboration space for all reviewin
 
 **2. Core Rules Integrity:**
 - **Base Garment Contrast:** Fully intact. Phase 3 forces the declaration of "Target Garment Color" before selecting a palette, and Phase 5 rigorously checks the resulting contrast.
-- **IP Kill Switch:** Logically bulletproof. `agent-config.md` checks `ip_blacklist` proactively during Phase 1 to prevent reuse of dead concepts, and `qa-director.md` enforces a final clearance check via the native `web_search_exa` MCP + DuckDB in Phase 5, forcing a rewrite on failure.
-- **Main Tag Derivation:** Intact and aligned. Phase 5 enforces the 1-2 word limit using the highest-intent N-gram, strictly separating it from the 14 supporting broad/long-tail tags.
+- **IP Kill Switch & Search Validation:** Logically bulletproof. Phase 1 proactively checks `ip_blacklist`, and Phase 5 enforces a final clearance check via the native `web_search_exa` MCP. Phase 5 now also features a Mandatory Search Validation loop where Agent 3 must mathematically prove its proposed tags exist as active trends via Exa/Tavily before output.
+- **Main Tag Derivation:** Intact and aligned. Phase 5 enforces the TeePublic 2-3 word Niche Phrase limit, strictly separating it from the 14 supporting broad/long-tail tags, perfectly mirroring Redbubble's 15-tag hard limit.
 
 **3. Alignment with Track 1 Tool Observations:**
 - Track 1 confirmed Exa is decoupled from the Node.js backend and operates natively in the CLI. This perfectly supports the Art Director's Phase 1 "Deep Research Mandate" to construct flexible, dynamic queries (e.g., `site:reddit.com`) to determine the niche's *cultural narrative*, circumventing the static `cultural_vibes` from the database.
