@@ -13,10 +13,12 @@ function parseData() {
 function getRandom() {
   const data = parseData();
   const animals = data.ANIMALS;
-  const directions = data.DIRECTIONS;
   
   const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
-  const randomDirection = directions[Math.floor(Math.random() * directions.length)];
+  const animalDirections = randomAnimal.directions || [];
+  const randomDirection = animalDirections.length > 0
+    ? animalDirections[Math.floor(Math.random() * animalDirections.length)]
+    : "Detached / Unbothered";
   
   console.log(JSON.stringify({
     seed: {
@@ -28,19 +30,25 @@ function getRandom() {
 
 function updateDirection(oldDir, newDir) {
   const data = parseData();
-  const directions = data.DIRECTIONS;
+  let replacedCount = 0;
   
-  const index = directions.indexOf(oldDir);
-  if (index === -1) {
+  data.ANIMALS.forEach(animal => {
+    if (animal.directions) {
+      const index = animal.directions.indexOf(oldDir);
+      if (index !== -1) {
+        animal.directions[index] = newDir;
+        replacedCount++;
+      }
+    }
+  });
+  
+  if (replacedCount === 0) {
     console.error(`Direction "${oldDir}" not found in database.json.`);
     process.exit(1);
   }
   
-  // Replace the old direction with the new one
-  directions[index] = newDir;
-  
   fs.writeFileSync(dataPath, JSON.stringify(data, null, 2), 'utf-8');
-  console.log(JSON.stringify({ success: true, message: `Replaced "${oldDir}" with "${newDir}" in database.json.` }));
+  console.log(JSON.stringify({ success: true, message: `Replaced "${oldDir}" with "${newDir}" in database.json across ${replacedCount} animals.` }));
 }
 
 const command = process.argv[2];

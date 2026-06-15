@@ -1,29 +1,21 @@
 {
   "ANIMALS": [
-    { "id": "possum", "label": "Possum" },
-    { "id": "sloth", "label": "Sloth" },
-    { "id": "bat", "label": "Bat" },
-    { "id": "pig", "label": "Pig" },
-    { "id": "turtle", "label": "Turtle" },
-    { "id": "raccoon", "label": "Raccoon" },
-    { "id": "crow", "label": "Crow" },
-    { "id": "goose", "label": "Goose" },
-    { "id": "fox", "label": "Fox" },
-    { "id": "capybara", "label": "Capybara" },
-    { "id": "frog", "label": "Frog" },
-    { "id": "otter", "label": "Otter" },
-    { "id": "rabbit", "label": "Rabbit" },
-    { "id": "guinea_pig", "label": "Guinea Pig" },
-    { "id": "red_panda", "label": "Red Panda" },
-    { "id": "pigeon", "label": "Pigeon" },
-    { "id": "goat", "label": "Goat" }
-  ],
-  "DIRECTIONS": [
-    "Exhausted / Weary",
-    "Detached / Unbothered",
-    "Cynical / Sarcastic",
-    "Anxious / Overstimulated",
-    "Delusional / Absurd",
-    "Wholesome / Playful"
+    { "id": "possum", "label": "Possum", "directions": ["Exhausted / Weary", "Anxious / Overstimulated", "Delusional / Absurd"] },
+    { "id": "sloth", "label": "Sloth", "directions": ["Exhausted / Weary", "Detached / Unbothered"] },
+    { "id": "bat", "label": "Bat", "directions": ["Anxious / Overstimulated", "Detached / Unbothered", "Delusional / Absurd"] },
+    { "id": "pig", "label": "Pig", "directions": ["Wholesome / Playful", "Delusional / Absurd"] },
+    { "id": "turtle", "label": "Turtle", "directions": ["Exhausted / Weary", "Detached / Unbothered"] },
+    { "id": "raccoon", "label": "Raccoon", "directions": ["Delusional / Absurd", "Cynical / Sarcastic", "Exhausted / Weary"] },
+    { "id": "crow", "label": "Crow", "directions": ["Cynical / Sarcastic", "Detached / Unbothered"] },
+    { "id": "goose", "label": "Goose", "directions": ["Delusional / Absurd", "Cynical / Sarcastic"] },
+    { "id": "fox", "label": "Fox", "directions": ["Cynical / Sarcastic", "Detached / Unbothered"] },
+    { "id": "capybara", "label": "Capybara", "directions": ["Detached / Unbothered", "Wholesome / Playful"] },
+    { "id": "frog", "label": "Frog", "directions": ["Detached / Unbothered", "Wholesome / Playful", "Exhausted / Weary"] },
+    { "id": "otter", "label": "Otter", "directions": ["Wholesome / Playful", "Anxious / Overstimulated"] },
+    { "id": "rabbit", "label": "Rabbit", "directions": ["Anxious / Overstimulated", "Wholesome / Playful"] },
+    { "id": "guinea_pig", "label": "Guinea Pig", "directions": ["Anxious / Overstimulated", "Wholesome / Playful"] },
+    { "id": "red_panda", "label": "Red Panda", "directions": ["Wholesome / Playful", "Exhausted / Weary"] },
+    { "id": "pigeon", "label": "Pigeon", "directions": ["Delusional / Absurd", "Detached / Unbothered", "Exhausted / Weary"] },
+    { "id": "goat", "label": "Goat", "directions": ["Delusional / Absurd", "Cynical / Sarcastic"] }
   ]
 }
