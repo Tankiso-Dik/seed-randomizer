@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "agent-1-research": {
+      "prompt": "{file:./agent-1-research.md}",
+      "description": "The Research Agent. Pulls the seed and gathers deep cultural context."
+    },
+    "agent-2-prompt-maker": {
+      "prompt": "{file:./agent-2-prompt-maker.md}",
+      "description": "The Prompt Maker. Formulates the core concept, phrase, and Master Composition Template."
+    },
+    "agent-3-qa-director": {
+      "prompt": "{file:./agent-3-qa-director.md}",
+      "description": "The QA Director. Technical Audit, Trademark Search, and IP Clearance."
+    }
+  }
+}

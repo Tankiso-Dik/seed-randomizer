@@ -1,0 +1,32 @@
+---
+name: master-workflow
+description: Starts and consolidates the sequential 3-agent Design Generation Pipeline (Agent 1 -> Agent 2 -> Agent 3) for the seed-randomizer project.
+---
+
+# Master Workflow Orchestration Skill
+
+This skill starts, drives, and consolidates the **Design Generation Pipeline** (Master Workflow) for the `seed-randomizer` project. It automates the execution of the sequential three-agent chain: Agent 1 (Research), Agent 2 (Prompt Maker), and Agent 3 (QA Director).
+
+## 🚀 Execution Steps
+
+1. **Trigger Agent 1 (Research Agent):**
+   - Start the run by executing `node bin/seed-manager.js get-random` to pull a random seed.
+   - Run the research process defined in `agent-1-research.md`. Perform multiple sequential searches (as many as needed) in this exact order to extract the phrase humor framework, gather all SEO keywords, and establish a deeper connection of how these keywords connect:
+     1. **Exa MCP (`web_search_exa` with `highlights: true`, `summary: true`, and `include_domains: ["reddit.com", "tiktok.com", "tumblr.com"]`)** (first, multiple searches) to scan niche designs and communities.
+     2. **Serper MCP (`serper_search` with `num: 10` & `serper_shopping_probe`)** (second, multiple searches) to fetch search volumes, intent, and format routing data.
+     3. **Tavily MCP (`tavily_search` with `search_depth: "advanced"` and `include_answer: true`)** (third, multiple searches) to build a deep, contextual synthesis of the **Humor Framework** and compile a **Keyword Cohesion Web**.
+   - Write the Context Brief as a drop-in replacement into `MASTER_WORKFLOW_CONTEXT.md`.
+
+2. **Trigger Agent 2 (Prompt Maker):**
+   - Read the Context Brief from `MASTER_WORKFLOW_CONTEXT.md`.
+   - Run the Art Director prompt engineering flow defined in `agent-2-prompt-maker.md` using the `sequentialthinking` MCP tool.
+   - Append the generated phrases, composition prompts, and style choices to `MASTER_WORKFLOW_CONTEXT.md`.
+
+3. **Trigger Agent 3 (QA Director):**
+   - Read the compiled context in `MASTER_WORKFLOW_CONTEXT.md`.
+   - Run the final checks (including tag validation via `web_search_exa` and `tavily_research`) defined in `agent-3-qa-director.md`.
+   - Append the Executive Verdict, IP Clearance, and SEO packages to `MASTER_WORKFLOW_CONTEXT.md`.
+
+4. **Consolidation:**
+   - Read the final `MASTER_WORKFLOW_CONTEXT.md` ledger.
+   - Outputs the complete design concept, optimized prompt, and final SEO package directly to the user.

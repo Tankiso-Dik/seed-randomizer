@@ -8,7 +8,7 @@ To execute a full design generation run, orchestrate the following three agents 
 
 ### 🕵️‍♂️ Agent 1: The Research Agent (`agent-1-research.md`)
 *   **Trigger:** Provide the command `node bin/seed-manager.js get-random` to start the seed.
-*   **Role:** Performs deep cultural and market research using Exa and Serper MCPs based on the random animal/emotion seed.
+*   **Role:** Performs deep cultural and market research. Tells the agent to use Exa (first), then Serper, and then Tavily (multiple searches each) to extract the phrase humor framework, gather SEO keywords, and establish a deeper connection of how these keywords connect.
 *   **Deliverable:** Writes the **"Context Brief"** to `MASTER_WORKFLOW_CONTEXT.md`.
 
 ### 🧠 Agent 2: The Prompt Maker (`agent-2-prompt-maker.md`)

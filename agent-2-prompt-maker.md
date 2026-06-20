@@ -95,25 +95,25 @@ Apply the Confidence-to-Format routing from Agent 1.
 - **Format H (Looming Obsession):** Extreme close-up. Animal dominates the upper 80% of the canvas, peering down. Text is small, grounded at the very bottom (1-2 words max). Best for obsessive instincts (Moth->Lamp).
 
 ### 🖼️ STEP 5: THE MASTER COMPOSITION PROMPT TEMPLATE (The Anatomy)
-You must write the final Image Generation Prompt in this exact 6-part flow.
+You must write the final Image Generation Prompt in this exact 6-part flow. To ensure AI image generators can easily create the design without glitches or hallucinations, you MUST fully describe every single physical detail, avoiding vague adjectives. 
 
 **1. [The Medium & Format (Setting the Canvas)]**
 > *"A flat screenprint-style t-shirt graphic of a [Animal], designed as a [Insert chosen Format: e.g., Format C Grounded Mascot with Arched Banner / Format E Deadpan Side Profile]."*
 
-**2. [The Subject & Emotional Paradox (The "Me Too" Hook)]**
-> *"A [Animal] with [Specific Micro-Expression] and [Specific Posture Register], conveying a sense of [Emotional Paradox Type]."*
+**2. [The Subject & Emotional Paradox (The "Me Too" Hook - Fully Described)]**
+> *"A [Animal] with [Describe micro-expression in detail: specify shape/angle of eyes, position of eyelids, mouth shape, eyebrow lines] and [Describe posture register and position in detail: specify exact physical weight, body angle, slumping, and how it is sitting/standing/gesturing], conveying a sense of [Emotional Paradox Type]."*
 
-**3. [The Physical Weight, Static Geometry & Natural Asymmetry]**
-> *"[Static Geometry Rule: Describe a frozen state, NO motion verbs like 'melting' or 'falling']. The mascot [Describe posture register and natural asymmetry, e.g., head tilted 8 degrees, weight shifted to one side]. [Explicit Limb Separation: e.g., 'Two front arms dangle freely in the empty space, clearly separated from the torso. Thick, simple chunky paws, NO individual fingers']." *
+**3. [The Physical Weight, Static Geometry & Natural Asymmetry (Defeating AI Hallucinations)]**
+> *"[Static Geometry Rule: Describe a frozen state, NO active physics verbs like 'melting' or 'falling']. The mascot [Describe weight distribution and natural asymmetry, e.g., head tilted 8 degrees to the left, shoulders slouched forward]. [Explicit Limb & Digit Constraint: Specify exactly how many limbs are visible and separate them: e.g., 'Exactly two front paws and two back legs. Two front arms dangle limply in the negative space, clearly separated from the torso. Simple, chunky cartoon paws with NO individual fingers or toes. No extra limbs']." *
 
-**4. [The Typography & Text Isolation]**
-> *"The phrase '[Exact Phrase]' is rendered in FLAT, bold collegiate varsity block letters with a simple black outline. [Add Distressed Texture if desired]. Text is positioned [Where it goes per Format], completely separated from the subject by empty negative space. Text does NOT overlap the animal."*
+**4. [The Typography, Text Isolation, & Spelling Shield (Defeating AI Text Mistakes)]**
+> *"The text phrase "[EXACT PHRASE IN ALL-CAPS]" is written in a flat, bold [collegiate varsity block / clean sans-serif / retro geometric] font with a simple solid black outline. [Specify letter colors: e.g., 'Letters are solid cream with no patterns']. Text is positioned [Where it goes per Format], completely separated from the subject by empty negative space. Clean negative space boundary separates the text from the graphic. The text does not wrap around, overlap, or touch the animal. Plain flat 2D lettering only, no 3D text, no 3D extrusion, no drop shadows on text, no spelling mistakes."*
 
-**5. [The Rendering Shield (The Bold Mascot in Vintage Screen Print Style Lock)]**
-> *"Color palette: [Insert chosen Palette]. Flat colors only, bold color blocking, no gradients. Grounded simplified mascot anatomy (70% animal, 30% stylization). Thick, confident uniform black outlines. Stipple/halftone shading texture combined with visible screen print ink texture and deliberate alignment/texture imperfections to create an authentic vintage athletic screen print/patch feel. Background: [Per Format]."*
+**5. [The Rendering Shield & Color Cohesion (The Bold Mascot in Vintage Screen Print Style Lock)]**
+> *"Color palette: [Insert chosen Palette, e.g., cream, mustard yellow, charcoal black]. Flat colors only, bold color blocking, no gradients. The colors of the text match the [accent/base] color of the animal for visual harmony. Grounded simplified mascot anatomy (70% animal, 30% stylization). Thick, confident uniform black outlines. Stipple/halftone shading texture combined with visible screen print ink texture and deliberate alignment/texture imperfections to create an authentic vintage athletic screen print/patch feel. Background: [Per Format]."*
 
 **6. [The Negative Constraints (Cleaning the Edges)]**
-> *"No mockup, no shirt shown, isolated graphic only. [NO PROPS / State the ONE allowed Hero Prop and interaction type]. Avoid photorealism, realistic anatomy, realistic fur, over-detailed illustration, thin outlines, clean digital lines, watercolor, smooth gradients, glossy rendering. STRICTLY AVOID 3D text, 3D extrusion, drop shadows on text, isometric lettering, cursive fonts, overly melting or noodly anatomy, complex fingers/toes, mechanical props, text-heavy props, 3D props."*
+> *"No mockup, no shirt shown, isolated graphic only. [NO PROPS / State the ONE allowed Hero Prop and interaction type, e.g., 'One tiny red birthday hat sitting askew on the head is the only prop, no other objects']. Avoid photorealism, realistic anatomy, realistic fur, over-detailed illustration, thin outlines, clean digital lines, watercolor, smooth gradients, glossy rendering. STRICTLY AVOID 3D text, 3D extrusion, drop shadows on text, isometric lettering, cursive fonts, overly melting or noodly anatomy, complex fingers/toes, mechanical props, text-heavy props, 3D props."*
 
 ### 🚀 HANDOFF
 HALT. Append the Identity Hook, Phrase, Style Choices, Sanity Check results, and the Master Composition Prompt to the `MASTER_WORKFLOW_CONTEXT.md` file. Pass the run directly to **Agent 3 (The QA Director)**.
