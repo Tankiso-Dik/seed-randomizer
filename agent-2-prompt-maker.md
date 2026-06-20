@@ -84,7 +84,7 @@ Choose ONE based on the cultural vibe from Agent 1's research:
 
 **5. THE 8 PROVEN FORMATS MANDATE (CHOOSE ONE based on animal behavior & humor framework):**
 
-- **Format A (Suspicious Close-Up):** Tight crop to head and shoulders. Text placed BELOW subject. Background: PURE BLACK or PURE WHITE. Posture: The Composed, The Unraveling, or The Direct Address.
+- **Format A (Suspicious Close-Up):** Tight crop to head and shoulders. Text placed BELOW subject. Background: TRANSPARENT. Posture: The Composed, The Unraveling, or The Direct Address.
 - **Format B (Bold Text Frame):** Text forms a thick, continuous border. Animal is small and centered INSIDE the frame. Background: TRANSPARENT.
 - **Format C (Grounded Mascot + Arched Banner):** Mascot occupies LOWER 60% of 3:4 canvas in simple, grounded pose (The Collapsed, The Almost Standing, The Settled). Text is MASSIVE arched banner in UPPER 40%. Background: TRANSPARENT.
 - **Format D (Vertical Stack - Plea/Reframe) [HIGH ANATOMY RISK]:** Text ABOVE subject (2-4 words). Subject in MIDDLE in an active gesturing pose. Text BELOW subject (2-4 words). **Anatomy Override:** You MUST explicitly describe paws as "thick, simple, chunky paws pressed together, NO individual fingers."
@@ -97,7 +97,7 @@ Choose ONE based on the cultural vibe from Agent 1's research:
 You must write the final Image Generation Prompt in this exact 6-part flow. To ensure AI image generators can easily create the design without glitches or hallucinations, you MUST fully describe every single physical detail, avoiding vague adjectives. 
 
 **1. [The Medium & Format (Setting the Canvas)]**
-> *"A flat screenprint-style t-shirt graphic of a [Animal], designed as a [Insert chosen Format: e.g., Format C Grounded Mascot with Arched Banner / Format E Deadpan Side Profile]."*
+> *"A flat screenprint-style t-shirt graphic on a transparent background of a [Animal], designed as a [Insert chosen Format: e.g., Format C Grounded Mascot with Arched Banner / Format E Deadpan Side Profile]."*
 
 **2. [The Subject & Emotional Paradox (The "Me Too" Hook - Fully Described)]**
 > *"A [Animal] with [Describe micro-expression in detail: specify shape/angle of eyes, position of eyelids, mouth shape, eyebrow lines] and [Describe posture register and position in detail: specify exact physical weight, body angle, slumping, and how it is sitting/standing/gesturing], conveying a sense of [Emotional Paradox Type]."*
@@ -109,10 +109,10 @@ You must write the final Image Generation Prompt in this exact 6-part flow. To e
 > *"The text phrase "[EXACT PHRASE IN ALL-CAPS]" is written in a flat, bold [collegiate varsity block / clean sans-serif / retro geometric] font with a simple solid black outline. [Specify letter colors: e.g., 'Letters are solid cream with no patterns']. Text is positioned [Where it goes per Format], completely separated from the subject by empty negative space. Clean negative space boundary separates the text from the graphic. The text does not wrap around, overlap, or touch the animal. Plain flat 2D lettering only, no 3D text, no 3D extrusion, no drop shadows on text, no spelling mistakes."*
 
 **5. [The Rendering Shield & Color Cohesion (The Bold Mascot in Vintage Screen Print Style Lock)]**
-> *"Color palette: [Insert chosen Palette, e.g., cream, mustard yellow, charcoal black]. Flat colors only, bold color blocking, no gradients. The colors of the text match the [accent/base] color of the animal for visual harmony. Grounded simplified mascot anatomy (70% animal, 30% stylization). Thick, confident uniform black outlines. Stipple/halftone shading texture combined with visible screen print ink texture and deliberate alignment/texture imperfections to create an authentic vintage athletic screen print/patch feel. Background: [Per Format]."*
+> *"Color palette: [Insert chosen Palette, e.g., cream, mustard yellow, charcoal black]. Flat colors only, bold color blocking, no gradients. The colors of the text match the [accent/base] color of the animal for visual harmony. Grounded simplified mascot anatomy (70% animal, 30% stylization). Thick, confident uniform black outlines. Stipple/halftone shading texture combined with visible screen print ink texture and deliberate alignment/texture imperfections to create an authentic vintage athletic screen print/patch feel. Background: TRANSPARENT."*
 
 **6. [The Negative Constraints (Cleaning the Edges)]**
-> *"No mockup, no shirt shown, isolated graphic only. [NO PROPS / State the ONE allowed Hero Prop and interaction type, e.g., 'One tiny red birthday hat sitting askew on the head is the only prop, no other objects']. Avoid photorealism, realistic anatomy, realistic fur, over-detailed illustration, thin outlines, clean digital lines, watercolor, smooth gradients, glossy rendering. STRICTLY AVOID 3D text, 3D extrusion, drop shadows on text, isometric lettering, cursive fonts, overly melting or noodly anatomy, complex fingers/toes, mechanical props, text-heavy props, 3D props."*
+> *"No mockup, no shirt shown, isolated graphic only, transparent background. [NO PROPS / State the ONE allowed Hero Prop and interaction type, e.g., 'One tiny red birthday hat sitting askew on the head is the only prop, no other objects']. Avoid photorealism, realistic anatomy, realistic fur, over-detailed illustration, thin outlines, clean digital lines, watercolor, smooth gradients, glossy rendering. STRICTLY AVOID 3D text, 3D extrusion, drop shadows on text, isometric lettering, cursive fonts, overly melting or noodly anatomy, complex fingers/toes, mechanical props, text-heavy props, 3D props, solid background colors."*
 
 ### 🚀 HANDOFF
 HALT. Append the Identity Hook, Phrase, Style Choices, Sanity Check results, and the Master Composition Prompt to the `MASTER_WORKFLOW_CONTEXT.md` file. Pass the run directly to **Agent 3 (The QA Director)**.

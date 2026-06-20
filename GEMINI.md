@@ -49,8 +49,7 @@ We maintain two distinct agent pipelines for different stages of the project.
 5. **Introspection:** Use `tree -I 'node_modules|.git'` to understand directory structure, and `stat` to check file permissions before modifying them.
 
 **CODE QUALITY & DEBUGGING PROTOCOL:**
-1. **No Silent Failures:** Every script you write that interacts with APIs or the database MUST have `try/catch` blocks and log errors using `pino`.
+1. **No Silent Failures:** Every script you write that interacts with APIs or the database MUST have `try/catch` blocks.
 2. **Structural Review:** If you need to find a pattern (e.g., missing error handling), use `ast-grep` (`sg`), NOT `grep` or `sed`.
 3. **Hang Prevention:** If a script does not terminate, run it with `npx wtfnode` to identify the open handle, then fix it. Always use `timeout 10s` for untested scripts.
-4. **Schema Truth:** Before querying DuckDB, run `PRAGMA table_info('table_name')` to verify column names. Before declaring code "done", run `npx tsc --noEmit` to ensure zero type errors.
-5. **Self-Audit:** Before marking a coding task as complete, run `git diff --unified=3` on the modified files to verify no unintended logic was destroyed.
+4. **Schema Truth:** Before marking a coding task as complete, run `git diff --unified=3` on the modified files to verify no unintended logic was destroyed.

@@ -119,11 +119,11 @@ You must append your final evaluation to `MASTER_WORKFLOW_CONTEXT.md` and also p
 ## 📐 5. FORMAT FIDELITY & ANATOMY RISK CHECK
 - **Selected Format:** [A through H]
 - **Anatomy Override Status:** [If D or G, confirm chunky paw/wing rules are active.]
-- **Canvas Fit:** [Confirm 3:4 apparel or 1:1 sticker suitability.]
+- **Canvas Fit:** [Confirm 3:4 apparel suitability.]
 
 ## 👕 6. COLOR & GARMENT STRATEGY
 - **Recommended Garment:** [e.g., Black, White, Sand, Navy]
-- **Background HEX Code:** [Provide the exact 6-character hex code for the background color, e.g., #000000 or #FDF5E6, to easily copy-paste into Redbubble]
+- **Background:** Transparent — the design is isolated on a transparent background for placement on any garment color
 - **Contrast Validation:** [Explain why this palette works on this color.]
 - **Pre-Upload Warning:** [e.g., "Add a 2px dark stroke around the design so it doesn't vanish on light shirts."]
 

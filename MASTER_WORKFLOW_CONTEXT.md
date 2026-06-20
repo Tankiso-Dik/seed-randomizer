@@ -2,9 +2,8 @@
 
 ## Phase 1: Context Brief
 
-**The Seed (Animal + Emotion)**
+**The Seed**
 - **Animal:** Pig
-- **Direction:** Wholesome / Playful
 
 **The Cultural Vibe**
 The internet's perception of "pigs" in a wholesome/playful context splits into two lanes:
