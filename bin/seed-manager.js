@@ -4,67 +4,69 @@ const fs = require('fs');
 const path = require('path');
 
 const dataPath = path.join(__dirname, '..', 'data', 'database.json');
+const usedPath = path.join(__dirname, '..', 'data', 'used_seeds.json');
 
 function parseData() {
   const content = fs.readFileSync(dataPath, 'utf-8');
   return JSON.parse(content);
 }
 
+function getUsed() {
+  try {
+    const content = fs.readFileSync(usedPath, 'utf-8');
+    return JSON.parse(content);
+  } catch {
+    return { used: [] };
+  }
+}
+
+function saveUsed(used) {
+  fs.writeFileSync(usedPath, JSON.stringify(used, null, 2), 'utf-8');
+}
+
 function getRandom() {
   const data = parseData();
-  const animals = data.ANIMALS;
-  
-  const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
-  const animalDirections = randomAnimal.directions || [];
-  const randomDirection = animalDirections.length > 0
-    ? animalDirections[Math.floor(Math.random() * animalDirections.length)]
-    : "Detached / Unbothered";
-  
+  const used = getUsed();
+
+  const unused = data.ANIMALS.filter(a => !used.used.includes(a.id));
+  const pool = unused.length > 0 ? unused : data.ANIMALS;
+
+  const pick = pool[Math.floor(Math.random() * pool.length)];
+
+  used.used.push(pick.id);
+  saveUsed(used);
+
   console.log(JSON.stringify({
-    seed: {
-      animal: randomAnimal.label,
-      direction: randomDirection
-    }
+    seed: { animal: pick.label }
   }, null, 2));
 }
 
-function updateDirection(oldDir, newDir) {
+function resetUsed() {
+  saveUsed({ used: [] });
+  console.log(JSON.stringify({ success: true, message: 'Used seeds tracking reset.' }));
+}
+
+function status() {
   const data = parseData();
-  let replacedCount = 0;
-  
-  data.ANIMALS.forEach(animal => {
-    if (animal.directions) {
-      const index = animal.directions.indexOf(oldDir);
-      if (index !== -1) {
-        animal.directions[index] = newDir;
-        replacedCount++;
-      }
-    }
-  });
-  
-  if (replacedCount === 0) {
-    console.error(`Direction "${oldDir}" not found in database.json.`);
-    process.exit(1);
-  }
-  
-  fs.writeFileSync(dataPath, JSON.stringify(data, null, 2), 'utf-8');
-  console.log(JSON.stringify({ success: true, message: `Replaced "${oldDir}" with "${newDir}" in database.json across ${replacedCount} animals.` }));
+  const used = getUsed();
+  const total = data.ANIMALS.length;
+  const remaining = data.ANIMALS.filter(a => !used.used.includes(a.id));
+  console.log(`Total animals: ${total}`);
+  console.log(`Used: ${used.used.length}`);
+  console.log(`Remaining: ${remaining.length} — ${remaining.map(a => a.label).join(', ') || 'none (cycle complete)'}`);
 }
 
 const command = process.argv[2];
 
 if (command === 'get-random') {
   getRandom();
-} else if (command === 'update-direction') {
-  const oldDir = process.argv[3];
-  const newDir = process.argv[4];
-  if (!oldDir || !newDir) {
-    console.error("Usage: node seed-manager.js update-direction <old_direction> <new_direction>");
-    process.exit(1);
-  }
-  updateDirection(oldDir, newDir);
+} else if (command === 'reset-used') {
+  resetUsed();
+} else if (command === 'status') {
+  status();
 } else {
-  console.log("Usage: ");
-  console.log("  node seed-manager.js get-random");
-  console.log("  node seed-manager.js update-direction <old> <new>");
+  console.log("Usage:");
+  console.log("  node bin/seed-manager.js get-random");
+  console.log("  node bin/seed-manager.js reset-used");
+  console.log("  node bin/seed-manager.js status");
 }

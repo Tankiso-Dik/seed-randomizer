@@ -13,7 +13,7 @@ This skill starts, drives, and consolidates the **Design Generation Pipeline** (
    - Start the run by executing `node bin/seed-manager.js get-random` to pull a random seed.
    - Run the research process defined in `agent-1-research.md`. Perform multiple sequential searches (as many as needed) in this exact order to extract the phrase humor framework, gather all SEO keywords, and establish a deeper connection of how these keywords connect:
      1. **Exa MCP (`web_search_exa` with `highlights: true`, `summary: true`, and `include_domains: ["reddit.com", "tiktok.com", "tumblr.com"]`)** (first, multiple searches) to scan niche designs and communities.
-     2. **Serper MCP (`serper_search` with `num: 10` & `serper_shopping_probe`)** (second, multiple searches) to fetch search volumes, intent, and format routing data.
+     2. **Serper MCP (`serper_search` with `num: 10`)** (second, multiple searches) to fetch search volumes, intent, and format routing data. Also search `site:etsy.com "[animal]" shirt` or `site:redbubble.com "[animal]"` to gauge saturation.
      3. **Tavily MCP (`tavily_search` with `search_depth: "advanced"` and `include_answer: true`)** (third, multiple searches) to build a deep, contextual synthesis of the **Humor Framework** and compile a **Keyword Cohesion Web**.
    - Write the Context Brief as a drop-in replacement into `MASTER_WORKFLOW_CONTEXT.md`.
 
@@ -30,3 +30,9 @@ This skill starts, drives, and consolidates the **Design Generation Pipeline** (
 4. **Consolidation:**
    - Read the final `MASTER_WORKFLOW_CONTEXT.md` ledger.
    - Outputs the complete design concept, optimized prompt, and final SEO package directly to the user.
+   - Archive the run: extract the animal and phrase from the context, then:
+     ```bash
+     mkdir -p runs
+     DIR="runs/$(date +%Y-%m-%d)-<animal>-<phrase>"
+     mkdir -p "$DIR" && cp MASTER_WORKFLOW_CONTEXT.md "$DIR/"
+     ```

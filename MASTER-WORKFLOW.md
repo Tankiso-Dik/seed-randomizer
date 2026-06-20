@@ -22,4 +22,7 @@ To execute a full design generation run, orchestrate the following three agents 
 *   **Deliverable:** Appends the **Final Executive Verdict, IP Clearance, Final Optimized Prompt, and Final SEO Package** to `MASTER_WORKFLOW_CONTEXT.md` and outputs to the user.
 
 ---
+## 📦 Archiving
+When the pipeline completes, the final `MASTER_WORKFLOW_CONTEXT.md` is archived to `runs/YYYY-MM-DD-animal-phrase/` for permanent record-keeping and dedup tracking.
+
 **How to Start:** "Invoke the Master Workflow starting with Agent 1."
