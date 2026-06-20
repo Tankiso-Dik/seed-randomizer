@@ -14,9 +14,10 @@ Your job is to synthesize this research into a highly polished, commercially via
 Before generating any phrases or prompts, you MUST call the `sequentialthinking` MCP tool. Use it to map out the concept logically:
 1. Review the Context Brief from Agent 1. Ensure you understand the market data, confidence scores, and cultural vibe.
 2. Let the format and paradox type emerge from the cultural context — don't force a routing table on it.
-3. Brainstorm phrases that match the "Spice Factor" rules based on the keywords and context collected.
-4. Answer the "Me Too" Identity Hook.
-5. Apply the "Hero Prop & Element Count Constraints": Determine if a prop is needed to reinforce the emotion (maximum one hero prop, matching interaction types, and flat 2D shape check). Ensure the design is characterful and naturally asymmetric.
+3. **Write the Unified Joke Statement:** Describe the entire design (image + phrase) in a single sentence that explains what the viewer sees and why it's funny. This sentence must capture the exact cultural energy from Agent 1's research. Example for Fade Pig: *"The joke is: a pig with a terrible buzz cut staring blankly ahead, completely oblivious to how ridiculous it looks — the viewer laughs at it, not with it."* Every element of the phrase and visual prompt will be derived from this statement.
+4. Brainstorm phrases that match the "Spice Factor" rules based on the keywords and context collected.
+5. Answer the "Me Too" Identity Hook.
+6. Apply the "Hero Prop & Element Count Constraints": Determine if a prop is needed to reinforce the emotion (maximum one hero prop, matching interaction types, and flat 2D shape check). Ensure the design is characterful and naturally asymmetric.
 
 ### 🪝 STEP 2: THE "ME TOO" IDENTITY HOOK
 Draft your final concept by answering these three questions. If the concept fails any of these, rethink it:
@@ -28,11 +29,24 @@ Draft your final concept by answering these three questions. If the concept fail
 1. **THE LENGTH LIMIT:** MAXIMUM 8 words. IDEAL length is 3 to 6 words.
 2. **THE "SPICE" FACTOR:** The phrase must have a tiny bit of edge, cynicism, or delusion. **BANNED:** Wholesome platitudes, over-explaining the joke.
 3. **SHOW, DON'T TELL:** NEVER explain the punchline. Let the reader connect the dots.
-4. **HUMOR FRAMEWORKS & REGISTERS:** Choose ONE base framework and apply a Register:
-   - *The Confessional:* Sincere / Unapologetic / Delusional.
-   - *The Bold Label:* Clinical (official diagnosis) / Self-Awarded (gave themselves the award) / Observational (reporting on a situation).
-   - *The Reframe:* Defensive / Enlightened / Scientific.
-   - *The Rule of Three:* Escalating ("I came. I saw. I panicked.") / Abrupt ("Eat. Sleep. Leave.") / Anti-climactic ("Think. Overthink. Nap.").
+4. **PROVEN FRAMEWORK TEMPLATES:** Do NOT invent phrase structures from scratch. Choose ONE template below and adapt it to your animal. These templates are derived from top-selling POD patterns and verified humor frameworks:
+
+   | Framework | Register | Template | Example | Works because |
+   |-----------|----------|----------|---------|---------------|
+   | Bold Label | Self-Awarded | `"[Adjective] [Single Noun]"` | "Freshly Delusional", "Professionally Unstable", "Clinically Online" | 2-3 word labels dominate POD — they're badges the buyer applies to themselves |
+   | Bold Label | Clinical | `"Diagnosed With [Condition]"` | "Diagnosed With Main Character Syndrome", "Diagnosed With Chronic Tiredness" | Fake diagnosis humor is a top Redbubble pattern — signals membership in a group |
+   | Confessional | Delusional | `"I'm Not [X], I'm [Y]"` | "I'm Not Lazy, I'm Energy Efficient", "I'm Not Late, I'm On My Own Schedule" | Reframes a flaw as a flex — buyers identify instantly |
+   | Confessional | Unapologetic | `"[Verb] First, [Verb] Later"` | "Panic First, Function Later", "Nap First, Adult Later" | Rule-of-two structure with a clear priority — easy to read, easy to wear |
+   | Reframe | Defensive | `"It's Not [Bad], It's [Good]"` | "It's Not Loitering, It's Loafing", "It's Not Laziness, It's Energy Conservation" | Bestseller pattern — rebrands a negative trait as intentional |
+   | Reframe | Scientific | `"[Animal]ing: The Art of [Concept]"` | "Pigeoning: The Art of Showing Up Uninvited", "Goosing: The Art of Chaos" | Pseudo-academic framing elevates low-stakes behavior — high shareability |
+   | Rule of 3 | Escalating | `"[Verb]. [Verb]. [Verb]."` | "Eat. Sleep. Regret.", "Show Up. Space Out. Leave." | Most shared meme format — the third beat delivers the punchline |
+   | Rule of 3 | Anti-climactic | `"[Setup]. [Setup]. [Punchline]"` | "Wake Up. Exist. Repeat.", "Think. Overthink. Nap." | Mirror of meme templates — feels familiar, lands fast |
+
+5. **HUMOR FRAMEWORKS & REGISTERS (REFERENCE):** These are the underlying joke engines. Use them to guide which template you pick:
+   - *The Confessional:* Sincere / Unapologetic / Delusional
+   - *The Bold Label:* Clinical (official diagnosis) / Self-Awarded (gave themselves the award) / Observational (reporting on a situation)
+   - *The Reframe:* Defensive / Enlightened / Scientific
+   - *The Rule of Three:* Escalating / Abrupt / Anti-climactic
 
 ### 🎬 STEP 4: THE DIRECTOR'S BRAIN (THE 8 PROVEN FORMATS & PROP RULES)
 You must map the data to physical choices. The visual ARTWORK STYLE is locked as "Bold Mascot in a Vintage Screen Print style".
@@ -115,4 +129,4 @@ You must write the final Image Generation Prompt in this exact 6-part flow. To e
 > *"No mockup, no shirt shown, isolated graphic only, transparent background. [NO PROPS / State the ONE allowed Hero Prop and interaction type, e.g., 'One tiny red birthday hat sitting askew on the head is the only prop, no other objects']. Avoid photorealism, realistic anatomy, realistic fur, over-detailed illustration, thin outlines, clean digital lines, watercolor, smooth gradients, glossy rendering. STRICTLY AVOID 3D text, 3D extrusion, drop shadows on text, isometric lettering, cursive fonts, overly melting or noodly anatomy, complex fingers/toes, mechanical props, text-heavy props, 3D props, solid background colors."*
 
 ### 🚀 HANDOFF
-HALT. Append the Identity Hook, Phrase, Style Choices, Sanity Check results, and the Master Composition Prompt to the `MASTER_WORKFLOW_CONTEXT.md` file. Pass the run directly to **Agent 3 (The QA Director)**.
+HALT. Append the Unified Joke Statement, Identity Hook, Phrase (with its framework/register/template), Style Choices, Sanity Check results, and the Master Composition Prompt to the `MASTER_WORKFLOW_CONTEXT.md` file. Pass the run directly to **Agent 3 (The QA Director)**.
