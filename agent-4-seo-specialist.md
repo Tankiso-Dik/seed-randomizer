@@ -60,28 +60,32 @@ Evaluate all prospective and validated tags by plotting them on a 2x2 matrix:
     - Demand: Review counts on Serper/Etsy listings + Reddit mention volumes.
 
 ### 📐 STEP 2: PLATFORM-SPECIFIC OPTIMIZATION & TITLE FORMULAS
-Different platforms reward different metadata patterns. Derive your titles based on the top-performing competitor structures:
 
-**Title Formulas (Data-Driven):**
-*   **TeePublic:** `[Animal] [Phrase] | [Humor Type] Meme` (e.g. `"Tired Sloth I'm Not Lazy I'm Energy Efficient | Anti Hustle Meme"`). 
-    *   *Note:* Ensure the first part fits under 50 characters (6-9 words total) to prevent mobile truncation. No product words (like "t-shirt", "sticker"). Verify this against similar best-performing designs in your Exa scan.
-*   **Redbubble:** `[Phrase] - [Animal] [Format]` (e.g. `"I'm Not Lazy I'm Energy Efficient - Sloth Sticker"`). Product words are allowed here.
-*   **Etsy:** `[Phrase] [Animal] Shirt, [Audience] Gift, [Occasion]` (e.g. `"I'm Not Lazy I'm Energy Efficient Sloth Shirt, Burnout Gift, Work From Home"`). Font-load high-volume search terms; maximum 13 words.
+Derive your titles to balance keyword indexing with high human Click-Through Rate (CTR). Avoid looking like a spam bot.
 
-**Tag Prioritization Framework (The Tier Structure):**
-Arrange your final 15 tags according to this priority hierarchy to maximize platform indexes:
-*   **Tier 1 (Positions 1-3): HIGH INTENT**
-    *   `[animal] [phrase keyword]` (e.g. "tired sloth meme")
-    *   `[humor framework] [animal]` (e.g. "anti hustle sloth")
-    *   `[cultural vibe] [animal]` (e.g. "burnout sloth")
-*   **Tier 2 (Positions 4-8): MEDIUM INTENT**
-    *   `[animal] humor`
-    *   `[phrase structure]` (e.g. "reframe meme")
-    *   `[audience] gift` (e.g. "work from home gift")
-*   **Tier 3 (Positions 9-15): DISCOVERY**
-    *   `[related animal/concept]` (e.g. "capybara")
-    *   `[aesthetic descriptors]` (e.g. "cottagecore", "dark academia")
-    *   `[year / trending modifier]` (e.g. "2026 meme")
+**Title Formulas (Natural & High-CTR):**
+*   **TeePublic:** `[Core Joke Phrase] - [Animal] [Descriptor]`
+    *   *Rule:* Keep it clean and readable. No pipes (`|`). Under 50 characters. No product terms ("shirt", "sticker").
+    *   *Example:* `"I'm Not Lazy (Energy Efficient Sloth)"`
+*   **Redbubble:** `[Core Joke Phrase] ([Animal])`
+    *   *Rule:* Never include the product format (e.g. do not write "Sticker" or "T-Shirt") as Redbubble appends this automatically.
+    *   *Example:* `"I'm Not Lazy, I'm Energy Efficient (Sloth)"`
+*   **Etsy:** `[Core Joke Phrase] [Animal] Shirt, [Target Audience/Use Case] Gift, [Emotional Vibe] [Product Type]`
+    *   *Rule:* Max 13 words. Stuffed but readable, lead with the exact text printed on the shirt.
+    *   *Example:* `"I'm Not Lazy Sloth Shirt, Office Humor Gift, Anti Hustle Coworker Tee"`
+
+**Tag Prioritization Framework (Natural Search Intent):**
+Banish AI/academic classification tags (e.g. "reframe", "rule of 3", "joke statement"). Use terms humans actually search:
+
+*   **Tier 1 (Positions 1-3): DIRECT SEARCH MATCH**
+    *   `[animal] [core noun]` (e.g. "sloth meme", "tired sloth")
+    *   `[exact punchline keywords]` (e.g. "not lazy energy efficient")
+*   **Tier 2 (Positions 4-8): SITUATION & IDENTITY (Who & When)**
+    *   `[target audience/identity]` (e.g. "gift for coworker", "office humor")
+    *   `[situation/moment]` (e.g. "monday morning mood", "work from home")
+*   **Tier 3 (Positions 9-15): AESTHETIC & DISCOVERY**
+    *   `[style descriptors]` (e.g. "vintage mascot", "sarcastic quote")
+    *   `[related concepts]` (e.g. "burnout culture", "chronic fatigue")
 
 ### ✍️ STEP 3: CONVERSION-OPTIMIZED DESCRIPTION CRAFTING
 Write conversion-focused descriptions. Use the exact register established in Agent 1's Context Brief, and weave in your secondary search terms naturally.

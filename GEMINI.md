@@ -12,6 +12,7 @@ seed-randomizer/
 ├── agent-1-research.md         # Agent 1: Research Agent
 ├── agent-2-prompt-maker.md     # Agent 2: Prompt Maker
 ├── agent-3-qa-director.md      # Agent 3: QA Director
+├── agent-4-seo-specialist.md   # Agent 4: SEO Specialist
 └── MASTER_WORKFLOW_CONTEXT.md  # Shared context between agents
 ```
 
@@ -34,8 +35,8 @@ Do not add complexity that has low ROI. We avoid:
 We maintain two distinct agent pipelines for different stages of the project.
 
 ### 1. The Design Generation Pipeline (Master Workflow)
-**Sequential 3-Agent Chain:** Used for creating new designs.
-- **Agent 1 (Research)** -> **Agent 2 (Prompt Maker)** -> **Agent 3 (QA Director)**
+**Sequential 4-Agent Chain:** Used for creating new designs.
+- **Agent 1 (Research)** -> **Agent 2 (Prompt Maker)** -> **Agent 3 (QA Director)** -> **Agent 4 (SEO Specialist)**
 - **Shared Memory:** `MASTER_WORKFLOW_CONTEXT.md`
 - **Goal:** Generate high-intent, printable designs.
 
