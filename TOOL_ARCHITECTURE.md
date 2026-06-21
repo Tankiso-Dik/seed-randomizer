@@ -6,8 +6,8 @@ This file documents the tools available to the design pipeline agents and how th
 
 ### Exa API (`web_search_exa`)
 - **Capabilities:** Neural semantic search engine. Maps cultural queries to highly relevant URLs without exact keyword matches.
-- **Purpose:** Replaces headless browsers for scraping Reddit, TikTok, Tumblr, TeePublic, Redbubble. Extracts cultural "vibes", competitor titles, and marketplace saturation.
-- **Used By:** Agent 1 (deep cultural research on Reddit/TikTok/Tumblr subcultures), Agent 3 (trademark checks, tag validation, oversaturation checks).
+- **Purpose:** Pulls cultural "vibes", competitor titles, and marketplace saturation across Reddit, TikTok, Tumblr, TeePublic, and Redbubble.
+- **Used By:** Agent 1 (deep cultural research on Reddit/TikTok/Tumblr subcultures), Agent 3 (trademark checks, tag validation, oversaturation checks), Agent 4 (competitive landscaping).
 
 ### Serper API (`serper_search`)
 - **Capabilities:** Fast, reliable Google Search API.
@@ -24,13 +24,15 @@ This file documents the tools available to the design pipeline agents and how th
 - **Purpose:** Forces agents to construct logic linearly before outputting final prompts. Prevents "zero-shot hallucination" by requiring explicit reasoning over the research context.
 - **Used By:** Agent 2 (mandatory Step 1 — maps out concept before phrase/prompt generation), Agent 3 (mandatory Step 0 — audits context coherence across the pipeline).
 
-## The 3-Agent Pipeline
+## The 4-Agent Pipeline
 
 1. **Agent 1 (Research):** Runs `node bin/seed-manager.js get-random` to pull a seed animal. Performs deep cultural/market research using Exa → Serper → Tavily. Writes Context Brief to `MASTER_WORKFLOW_CONTEXT.md`.
 
 2. **Agent 2 (Prompt Maker):** Reads Context Brief. Uses `sequentialthinking` to brainstorm the "Me Too" Identity Hook. Generates phrases from the 8 Formats. Writes the Master Composition Prompt. Appends to `MASTER_WORKFLOW_CONTEXT.md`.
 
-3. **Agent 3 (QA Director):** Reads full pipeline context. Uses `sequentialthinking` for audit. Validates tags via `web_search_exa` and `tavily_search`. Checks IP/trademark. Enforces style rules (Bold Mascot, Vintage Screen Print, 8 Formats, Prop Rules). Generates final SEO package. Appends verdict to `MASTER_WORKFLOW_CONTEXT.md`.
+3. **Agent 3 (QA Director):** Reads full pipeline context. Uses `sequentialthinking` for audit. Checks IP/trademark. Enforces style rules (Bold Mascot, Vintage Screen Print, 8 Formats, Prop Rules). Appends verdict to `MASTER_WORKFLOW_CONTEXT.md`.
+
+4. **Agent 4 (SEO Specialist):** Reads validated context from Agent 3. Conducts deep keyword discovery and platform-specific mapping. Generates the final SEO package and writes consolidated output files to the `outputs/` folder.
 
 ## Archiving
 

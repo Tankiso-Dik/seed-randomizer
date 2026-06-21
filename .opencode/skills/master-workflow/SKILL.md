@@ -1,11 +1,11 @@
 ---
 name: master-workflow
-description: Starts and consolidates the sequential 3-agent Design Generation Pipeline (Agent 1 -> Agent 2 -> Agent 3) for the seed-randomizer project.
+description: Starts and consolidates the sequential 4-agent Design Generation Pipeline (Agent 1 -> Agent 2 -> Agent 3 -> Agent 4) for the seed-randomizer project.
 ---
 
 # Master Workflow Orchestration Skill
 
-This skill starts, drives, and consolidates the **Design Generation Pipeline** (Master Workflow) for the `seed-randomizer` project. It automates the execution of the sequential three-agent chain: Agent 1 (Research), Agent 2 (Prompt Maker), and Agent 3 (QA Director).
+This skill starts, drives, and consolidates the **Design Generation Pipeline** (Master Workflow) for the `seed-randomizer` project. It automates the execution of the sequential four-agent chain: Agent 1 (Research), Agent 2 (Prompt Maker), Agent 3 (QA Director), and Agent 4 (SEO Specialist).
 
 ## 🚀 Execution Steps
 
@@ -25,11 +25,16 @@ This skill starts, drives, and consolidates the **Design Generation Pipeline** (
 3. **Trigger Agent 3 (QA Director):**
    - Read the compiled context in `MASTER_WORKFLOW_CONTEXT.md`.
    - Run the final checks (including tag validation via `web_search_exa` and `tavily_research`) defined in `agent-3-qa-director.md`.
-   - Append the Executive Verdict, IP Clearance, and SEO packages to `MASTER_WORKFLOW_CONTEXT.md`.
+   - Append the Executive Verdict, IP Clearance, validated tags, and optimized prompt to `MASTER_WORKFLOW_CONTEXT.md`.
 
-4. **Consolidation:**
+4. **Trigger Agent 4 (SEO Specialist):**
+   - Read the final context (after Agent 3) from `MASTER_WORKFLOW_CONTEXT.md`.
+   - Run deep keyword discovery, competitive gap analysis, and platform-specific optimization defined in `agent-4-seo-specialist.md`.
+   - Append the polished SEO package and pipeline completion signal to `MASTER_WORKFLOW_CONTEXT.md`.
+
+5. **Consolidation:**
    - Read the final `MASTER_WORKFLOW_CONTEXT.md` ledger.
-   - Outputs the complete design concept, optimized prompt, and final SEO package directly to the user.
+   - Outputs the complete design concept, optimized prompt, and polished SEO package directly to the user.
    - Archive the run: extract the animal and phrase from the context, then:
      ```bash
      mkdir -p runs

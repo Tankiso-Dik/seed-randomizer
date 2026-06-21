@@ -76,7 +76,7 @@ Each MCP tool is: single-source, narrow, repeatable, comparable. Not aggregated.
 
 ## 🟣 2.2.4 Marketplace Pattern Probe (Redbubble / TeePublic)
 **Purpose:** competition mapping, visual trend awareness, validation layer.
-**Implementation:** Custom headless scraper using Puppeteer and `puppeteer-extra-plugin-stealth` to bypass Cloudflare. Cost-free, reliable, runs locally in the MCP server.
+**Implementation:** Queries POD platforms using Exa API (`web_search_exa`) to extract competitor designs, tags, and pricing signals without anti-bot blocks.
 
 ---
 
