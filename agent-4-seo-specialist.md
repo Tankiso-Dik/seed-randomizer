@@ -16,64 +16,85 @@ Read the entire `MASTER_WORKFLOW_CONTEXT.md` file. Extract:
 - The **Cultural Vibe** from Agent 1 — informs the tone of your descriptions
 - The **Color Palette** and **Garment Strategy** — for natural integration into descriptions
 
-### 🔍 STEP 1: DEEP KEYWORD DISCOVERY
+### 🔍 STEP 1: DEEP KEYWORD DISCOVERY (UPDATED)
 Agent 3 validated that the proposed tags are *real* (they return results, aren't dead, aren't oversaturated). Your job is to find the *best* tags — including ones Agent 3 didn't consider.
 
-1. **Competitive Landscape Scan (Exa):**
-   - Run `web_search_exa` with `site:teepublic.com "[animal]" t-shirt` — skim top 10 results, extract their tags and titles
-   - Run `web_search_exa` with `site:redbubble.com "[phrase keyword]"` — identify alternative phrasings and related tags
-   - Run `web_search_exa` with `site:etsy.com "[animal] [phrase keyword]"` — find high-performing keyword combinations
+**1. Competitive Landscape Scan (Exa with Advanced Params):**
+- Invoke `web_search_exa` with: `num_results: 20`, `sort: "relevance"`, `date_range: "2025..2026"`, `highlights: true`, `summary: true`, `include_domains: ["teepublic.com", "redbubble.com", "etsy.com"]`, `exclude_domains: ["pinterest.com"]`.
+  - Query 1: `site:teepublic.com "[animal] t-shirt" -sort:relevance sort:sales`
+  - Query 2: `site:redbubble.com "[phrase keyword]" -sort:relevance sort:trending`
+  - Query 3: `site:etsy.com "[animal] shirt" "bestseller"`
 
-2. **Trend & Semiferal Discovery (Tavily):**
-   - Run `tavily_search` with `"[animal] meme" OR "[animal] aesthetic 2026"` — surface fresh tag opportunities
-   - Run `tavily_search` with `"[phrase keyword] humor apparel"` — find related search terms beyond the core tag
+**2. Long-Tail Discovery (Tavily with Specific Filters):**
+- Invoke `tavily_search` with: `search_depth: "advanced"`, `max_results: 20`, `include_domains: ["reddit.com", "tiktok.com"]`, `search_filter: "2025..2026"`, `topic: "general"`.
+  - Query 1: `"[animal] meme" "meaning" OR "explained"` (finds semantic variations)
+  - Query 2: `"[animal] aesthetic" 2025..2026` (finds trending descriptors)
+  - Query 3: `"like [animal] energy" OR "[animal] vibes"` (finds colloquial phrases)
 
-3. **Competitive Gap Analysis:**
-   - Identify common tags across the top 5 similar listings (what are they all using?)
-   - Find underserved keyword combinations: high relevance + low competition
-   - Check for trendy misspellings or slang variations (e.g., "brainrot" vs "brain rot")
+**3. Competitor Metadata Extraction (NEW — CRITICAL):**
+For the top 5 competing listings in your search results, extract and analyze:
+  - **Title Formula**: Determine if they use `[Main Keyword] | [Secondary] | [Vibe]` vs. `[Animal] [Phrase] T-Shirt` or another format.
+  - **Tag Density**: Which tags appear in positions 1-3 vs 13-15?
+  - **Description Length**: Note their word count and keyword density.
+  - **Platform-Specific Patterns**:
+    - TeePublic: Do bestsellers use the word "meme" in their titles or tags?
+    - Redbubble: Do they include the product type (e.g. "sticker") or just keep the title as "design"?
+    - Etsy: Do they use the "gift for [audience]" keyword pattern?
 
-4. **Expand the Tag Pool:**
-   - Merge Agent 3's validated tags with your newly discovered tags
-   - Drop any tags that feel weak or too generic
-   - Prioritize long-tail N-grams (3-4 word phrases) over single broad words
-   - Ensure no tag duplicates or cannibalizes Agent 3's Main Tag
+**4. Semantic Expansion (NEW):**
+Use `sequentialthinking` to generate related search concepts based on the animal and emotional registers:
+  - If animal = "sloth" and vibe = "tired", expand search mapping to:
+    - *Synonyms:* exhausted, drained, burnt out, depleted.
+    - *Related behaviors:* napping, procrastinating, avoiding.
+    - *Cultural concepts:* anti-hustle, slow living, rest.
+  - Run `web_search_exa` (with `num_results: 10`) for each expansion direction to validate search volume and cultural relevance.
 
-### 📐 STEP 2: PLATFORM-SPECIFIC OPTIMIZATION
-Different platforms reward different metadata patterns. Optimize for the intended platform(s).
+**5. Gap Identification Matrix (NEW):**
+Evaluate all prospective and validated tags by plotting them on a 2x2 matrix:
+  - **High Competition + High Demand**: Saturated. Differentiate heavily or avoid.
+  - **Low Competition + High Demand**: GOLD MINE. Prioritize these tags (make them Tier 1/Tier 2).
+  - **High Competition + Low Demand**: Dead zones. Avoid completely.
+  - **Low Competition + Low Demand**: Test/use sparingly.
+  - *Metrics to gauge positions:*
+    - Competition: Result count returned from Exa.
+    - Demand: Review counts on Serper/Etsy listings + Reddit mention volumes.
 
-**TeePublic:**
-- **Main Tag:** Stick with Agent 3's validated tag unless your research found a clearly stronger alternative. If you change it, cite your data.
-- **Title:** 6-9 words (approx 50 chars). No product words. Front-load with the Main Tag.
-- **15 Tags:** Mix of broad intent and long-tail N-grams. Top 5 should be strongest.
-- **Description:** 60-100 words. Hook in sentence 1, vibe in sentences 2-3, keywords woven naturally.
+### 📐 STEP 2: PLATFORM-SPECIFIC OPTIMIZATION & TITLE FORMULAS
+Different platforms reward different metadata patterns. Derive your titles based on the top-performing competitor structures:
 
-**Redbubble:**
-- **Title:** 10-15 words. "Sticker" or "T-Shirt" can be included (RB allows product words).
-- **Tags:** 15 tags max. Leverage both broad and niche-specific tags.
-- **Description:** Can be shorter. Focus on the humor and who it's for.
+**Title Formulas (Data-Driven):**
+*   **TeePublic:** `[Animal] [Phrase] | [Humor Type] Meme` (e.g. `"Tired Sloth I'm Not Lazy I'm Energy Efficient | Anti Hustle Meme"`). 
+    *   *Note:* Ensure the first part fits under 50 characters (6-9 words total) to prevent mobile truncation. No product words (like "t-shirt", "sticker"). Verify this against similar best-performing designs in your Exa scan.
+*   **Redbubble:** `[Phrase] - [Animal] [Format]` (e.g. `"I'm Not Lazy I'm Energy Efficient - Sloth Sticker"`). Product words are allowed here.
+*   **Etsy:** `[Phrase] [Animal] Shirt, [Audience] Gift, [Occasion]` (e.g. `"I'm Not Lazy I'm Energy Efficient Sloth Shirt, Burnout Gift, Work From Home"`). Font-load high-volume search terms; maximum 13 words.
 
-**Etsy (if applicable):**
-- **Title:** Front-load with most searchable terms. 13 words max (mobile truncation).
-- **Tags:** 13 tags, use all character space wisely.
-- **Attributes:** Note any relevant Etsy attributes (humor, meme, animal).
+**Tag Prioritization Framework (The Tier Structure):**
+Arrange your final 15 tags according to this priority hierarchy to maximize platform indexes:
+*   **Tier 1 (Positions 1-3): HIGH INTENT**
+    *   `[animal] [phrase keyword]` (e.g. "tired sloth meme")
+    *   `[humor framework] [animal]` (e.g. "anti hustle sloth")
+    *   `[cultural vibe] [animal]` (e.g. "burnout sloth")
+*   **Tier 2 (Positions 4-8): MEDIUM INTENT**
+    *   `[animal] humor`
+    *   `[phrase structure]` (e.g. "reframe meme")
+    *   `[audience] gift` (e.g. "work from home gift")
+*   **Tier 3 (Positions 9-15): DISCOVERY**
+    *   `[related animal/concept]` (e.g. "capybara")
+    *   `[aesthetic descriptors]` (e.g. "cottagecore", "dark academia")
+    *   `[year / trending modifier]` (e.g. "2026 meme")
 
-### ✍️ STEP 3: TITLE & DESCRIPTION CRAFTING
-Write for humans, optimize for search. Use the exact tone established by Agent 1's Cultural Vibe.
+### ✍️ STEP 3: CONVERSION-OPTIMIZED DESCRIPTION CRAFTING
+Write conversion-focused descriptions. Use the exact register established in Agent 1's Context Brief, and weave in your secondary search terms naturally.
 
-**Title Formula:**
-> `[Main Tag] | [Secondary Hook] | [Emotion/Vibe]`
-
-Examples of good titles:
-- `Freshly Delusional Fade Pig | Buzz Cut Meme` (Main Tag + Animal + Meme)
-- `Professionally Unstable Possum | Ironic Humor` (Main Tag + Genre)
-
-**Description Structure:**
-1. **Hook (1 sentence):** Grab attention with the joke or cultural reference.
-2. **Vibe (2-3 sentences):** Explain the vibe and who this is for.
-3. **Details (1 sentence):** Mention the garment, format, or style seamlessly.
-4. **Keywords (woven naturally):** Don't stuff, but ensure the key search terms appear.
-5. **Close (1 sentence):** Platform-appropriate CTA if applicable.
+**Description Formula (Strict 5-Sentence Flow):**
+1.  **Sentence 1 (The Hook — 10-15 words):** Connect `[Animal] + [Phrase] + [Cultural Reference]`.
+    *   *Example:* `"This tired sloth knows you're not lazy, you're just energy efficient — a mood for anyone surviving 2026."`
+2.  **Sentences 2-3 (The Vibe — 20-30 words):** Connect `[Emotional Paradox] + [Target Audience] + [Use Case]`.
+    *   *Example:* `"Perfect for the chronically exhausted, professionally delusional, or anyone who's ever called in sick to avoid people. Wear it to work (ironically), to bed (seriously), or to your therapy appointment (supportively)."`
+3.  **Sentence 4 (The Details — 10-15 words):** Connect `[Format] + [Style] + [Quality]`.
+    *   *Example:* `"Bold mascot design with vintage screen print texture on premium garments."`
+4.  **Sentence 5 (The Keywords — 15-20 words):** Blend `[Main Tag] + [Secondary Tags]` naturally into a final closing statement.
+    *   *Example:* `"This anti-hustle humor design captures sloth energy, burnout culture, and the beautiful delusion of pretending you're fine."`
 
 ### 📦 STEP 4: FINAL SEO DELIVERABLE
 Append your complete SEO package to `MASTER_WORKFLOW_CONTEXT.md` under a clear header, then signal the pipeline is complete.
