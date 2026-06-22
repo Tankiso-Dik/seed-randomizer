@@ -27,6 +27,10 @@
     "agent-5-etsy-png-specialist": {
       "prompt": "{file:./agent-5-etsy-png-specialist.md}",
       "description": "Standalone Etsy PNG Listing Optimizer. Creates complete Etsy digital download listings for PNG t-shirt designs in the animal+meme niche."
+    },
+    "agent-6-stress-tester": {
+      "prompt": "{file:./agent-6-stress-tester.md}",
+      "description": "Pipeline QA & Stress Tester. Audits and corrects search parameter errors in Agents 1, 4, and 5 prompts to ensure tool execution safety."
     }
   }
 }
