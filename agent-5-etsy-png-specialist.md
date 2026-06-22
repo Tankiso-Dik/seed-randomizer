@@ -479,6 +479,56 @@ Using all research and Agent 1/4 inputs, create:
 
 ---
 
+### 📦 STEP 2: CONSOLIDATE OUTPUT FILE
+
+After generating the package, you MUST write the final Etsy listing package to a standalone consolidated output file inside the design's folder:
+
+1. **Derive the `<basename>`** from the TeePublic title concept in the `MASTER_WORKFLOW_CONTEXT.md` (or the Title in your output package):
+   - Lowercase the title
+   - Replace all non-alphanumeric characters (except hyphens and spaces) with an empty string
+   - Replace spaces with hyphens
+   - Collapse multiple hyphens into one
+   - Strip leading/trailing hyphens
+   - Example: `"Freshly Delusional Fade Pig | Buzz Cut Meme"` -> `freshly-delusional-fade-pig-buzz-cut-meme`
+
+2. **Ensure the directory** `outputs/<basename>/` exists. Create it if it doesn't.
+
+3. **Write the consolidated file** to `outputs/<basename>/etsy-listing.md` with this exact structure:
+
+   ```markdown
+   # Etsy Listing: <Title>
+
+   ## 💰 Price Strategy
+   - **Personal Use:** <Price>
+   - **Commercial License:** <Price>
+
+   ## 🏆 Etsy SEO Metadata
+
+   ### Title
+   `<Title>`
+
+   ### 13 Tags
+   `tag1, tag2, tag3, tag4, tag5, tag6, tag7, tag8, tag9, tag10, tag11, tag12, tag13`
+
+   ### Description
+   ```
+   [Full description text]
+   ```
+
+   ## 📋 Technical Details & Spec File Attributes
+   [From your Technical Specs section]
+
+   ## 🖼️ Listing Images Checklist
+   [From your Images Checklist section]
+   ```
+
+4. **Note the output path** in your final message:
+   ```
+   📁 **Etsy Output file:** outputs/<basename>/etsy-listing.md
+   ```
+
+---
+
 ## 🔗 FINAL DELIVERABLE
 
 The Etsy PNG Listing Package is complete and optimized for:
