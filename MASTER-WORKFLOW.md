@@ -27,6 +27,13 @@ To execute a full design generation run, orchestrate the following four agents i
 *   **Deliverable:** Appends the **Final SEO & Metadata Package** to `MASTER_WORKFLOW_CONTEXT.md`, creates a consolidated markdown file in `outputs/`, and signals pipeline complete.
 
 ---
+## 🎨 Standalone Etsy Workflow
+
+### 🛍️ Agent 5: Etsy PNG Listing Specialist (`agent-5-etsy-png-specialist.md`)
+*   **Role:** Standalone digital product optimizer. It takes the deliverables from Agent 1 (Context Brief) and Agent 4 (SEO Package) and generates complete, high-converting digital download listings optimized specifically for Etsy's algorithm.
+*   **Deliverable:** Creates the Etsy PNG Listing Package (optimized titles, all 13 niche tags, scannable product description, pricing strategy, category attributes, and listing images checklist).
+
+---
 ## 📦 Archiving
 When the pipeline completes, the final `MASTER_WORKFLOW_CONTEXT.md` is archived to `runs/YYYY-MM-DD-animal-phrase/` for permanent record-keeping and dedup tracking.
 

@@ -19,6 +19,14 @@
     "agent-3-qa-director": {
       "prompt": "{file:./agent-3-qa-director.md}",
       "description": "The QA Director. Technical Audit, Trademark Search, and IP Clearance."
+    },
+    "agent-4-seo-specialist": {
+      "prompt": "{file:./agent-4-seo-specialist.md}",
+      "description": "The SEO & Metadata Specialist. Takes the design-approved package from Agent 3 and produces optimized, platform-specific SEO metadata."
+    },
+    "agent-5-etsy-png-specialist": {
+      "prompt": "{file:./agent-5-etsy-png-specialist.md}",
+      "description": "Standalone Etsy PNG Listing Optimizer. Creates complete Etsy digital download listings for PNG t-shirt designs in the animal+meme niche."
     }
   }
 }
