@@ -486,21 +486,16 @@ Using all research and Agent 1/4 inputs, create:
 
 ---
 
-### 📦 STEP 2: CONSOLIDATE OUTPUT FILE
+### 📦 STEP 2: WRITE OUTPUT AND ARCHIVE DESIGN FOLDER
 
-After generating the package, you MUST write the final Etsy listing package to a standalone consolidated output file inside the design's folder:
+After generating the package, you MUST write the final Etsy listing package to a standalone file inside the design's folder in `outputs/`, and then rename the folder to mark it as archived:
 
-1. **Derive the `<basename>`** from the TeePublic title concept in the `MASTER_WORKFLOW_CONTEXT.md` (or the Title in your output package):
-   - Lowercase the title
-   - Replace all non-alphanumeric characters (except hyphens and spaces) with an empty string
-   - Replace spaces with hyphens
-   - Collapse multiple hyphens into one
-   - Strip leading/trailing hyphens
-   - Example: `"Freshly Delusional Fade Pig | Buzz Cut Meme"` -> `freshly-delusional-fade-pig-buzz-cut-meme`
+1. **Locate the target design folder in `outputs/`:**
+   - Scan the `outputs/` directory to find the folder that matches your title slug or animal/phrase.
+   - The folder will have a name like `outputs/[Index]-[title-slug]/` (e.g. `outputs/0002-freshly-delusional-fade-pig-buzz-cut-meme/`).
+   - If the folder is already marked as completed (e.g., ends in `-completed` or `-archived`), use that folder. Let's refer to this folder path as `<design-folder>`.
 
-2. **Ensure the directory** `outputs/<basename>/` exists. Create it if it doesn't.
-
-3. **Write the consolidated file** to `outputs/<basename>/etsy-listing.md` with this exact structure:
+2. **Write the consolidated file** to `<design-folder>/etsy-listing.md` with this exact structure:
 
    ```markdown
    # Etsy Listing: <Title>
@@ -529,9 +524,14 @@ After generating the package, you MUST write the final Etsy listing package to a
    [From your Images Checklist section]
    ```
 
-4. **Note the output path** in your final message:
+3. **Archive the folder (Rename):**
+   - Once the `etsy-listing.md` file is successfully written, rename the `<design-folder>` by appending `-completed` to its name (e.g. rename `outputs/0002-freshly-delusional-fade-pig-buzz-cut-meme` to `outputs/0002-freshly-delusional-fade-pig-buzz-cut-meme-completed`).
+   - Execute this rename using a shell command (e.g., `mv outputs/OLD_NAME outputs/NEW_NAME`).
+   - If the folder already ends in `-completed` or `-archived`, do not rename it.
+
+4. **Note the final output path** in your final message:
    ```
-   📁 **Etsy Output file:** outputs/<basename>/etsy-listing.md
+   📁 **Etsy Output file:** outputs/<new-folder-name>/etsy-listing.md
    ```
 
 ---

@@ -156,20 +156,26 @@ The 4-Agent Design Pipeline (Agent 1 → Agent 2 → Agent 3 → Agent 4) has su
 ### 📦 STEP 5: CONSOLIDATE OUTPUT FILE
 After appending your deliverable to the context file, create a standalone consolidated output file with the final prompt and SEO metadata.
 
-1. **Derive the filename** from the TeePublic title:
+1. **Determine the next sequential index:**
+   - Scan the `outputs/` folder (using `list_dir` or another tool) to inspect existing folders.
+   - Filter for folders starting with a 4-digit index (e.g. `0001-`, `0002-`).
+   - Find the highest prefix number. If no folders exist, set the index to `0001`. Otherwise, increment the highest prefix by 1 (e.g. if the highest is `0002`, the next is `0003`).
+
+2. **Derive the clean `<title-slug>`** from the TeePublic title:
    - Lowercase the title
    - Replace all non-alphanumeric characters (except hyphens and spaces) with an empty string
    - Replace spaces with hyphens
    - Collapse multiple hyphens into one
    - Strip leading/trailing hyphens
-   - Append `.md`
-   - Example: `"Freshly Delusional Fade Pig | Buzz Cut Meme"` → `freshly-delusional-fade-pig-buzz-cut-meme.md`
+   - Example: `"Freshly Delusional Fade Pig | Buzz Cut Meme"` → `freshly-delusional-fade-pig-buzz-cut-meme`
 
-2. **Ensure the directory** `outputs/` exists. Create it if it doesn't.
+3. **Set the `<basename>`** as `[Index]-[title-slug]` (e.g. `0002-freshly-delusional-fade-pig-buzz-cut-meme`) and set the `<filename>` as `[Index]-[title-slug].md`.
 
-3. **Create the design folder** at `outputs/<basename>/` (where `<basename>` is the filename without `.md`).
+4. **Ensure the directory** `outputs/` exists. Create it if it doesn't.
 
-4. **Write the consolidated file** to `outputs/<basename>/<filename>` with this exact structure:
+5. **Create the design folder** at `outputs/<basename>/`.
+
+6. **Write the consolidated file** to `outputs/<basename>/<filename>` with this exact structure:
 
    ```markdown
    # <Title>
