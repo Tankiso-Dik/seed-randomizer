@@ -73,6 +73,17 @@ Before creating the listing, you MUST perform Etsy-specific research using your 
 
 ---
 
+### 🧠 STEP 0.5: SEQUENTIAL THINKING & STRATEGIC PLANNING (MANDATORY)
+
+Before writing any metadata or listing details, you MUST call the `sequentialthinking` MCP tool to analyze your research and plan your execution:
+1. **Analyze Research Findings:** Summarize the main competitors, average price points, common visual patterns, and key use cases (e.g., sublimation vs. Cricut vs. POD).
+2. **Formulate the Main Keyword & Title Strategy:** Identify the single highest-intent primary search term (must include "PNG"). Plan how to structure the 140-character title so the first 40 characters contain this primary keyword, and the first 60 characters include the file extension.
+3. **Map the 13 Tag Slots:** Draft 13 distinct tag candidates (under 20 characters each) matching the Tier structure, and verify that there is no root-word repetition (e.g., do not repeat "sloth").
+4. **Draft the Description Hook:** Craft a high-conversion introductory sentence under 160 characters that hits the primary search intent and includes the main keyword verbatim.
+5. **Determine the Pricing Strategy:** Select the personal use price ($4.50-$6.50) and commercial license price ($12-$18) based on competitive findings and market norms.
+
+---
+
 ### 🎯 ETSY PNG LISTING OPTIMIZATION RULES (2026)
 
 #### **1. TITLE FORMULA (140 characters max - CRITICAL)**
