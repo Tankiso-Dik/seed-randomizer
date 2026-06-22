@@ -15,11 +15,15 @@ Our competitive scans confirm that the 'anxious frog' and 'overstimulated cowboy
 - **Main Tag:** anxious frog
 - **Title:** Anxious Frog Panic First Function Later | Burnout Meme
 - **15 Tags:** anxious frog, overthinking, overstimulated, burnout humor, work from home, college student, corporate burnout, panic attack, all panic no disco, funny frog, vintage screenprint, bold mascot, retro athletic, relatable meme, stress management
+- **Recommended Garment:** Vintage Black / Charcoal / Dark Navy
+- **Background Treatment HEX:** #FDFBF7
 - **Description:** This anxious frog knows you're not failing, you're just going to panic first and function later — a daily mood. Perfect for the chronically overwhelmed, professionally overstimulated, or anyone who's ever had a mini-breakdown before answering a simple email. Wear it to your next Zoom meeting (off-camera), to bed (for stress-sleeping), or while pacing around your living room. Featuring a bold mascot illustration of a distressed frog in a vintage stipple screenprint style on premium apparel. Embrace the beautiful chaos of overthinking with this relatable anxious frog design, ideal for tired students, WFH workers, and burnt-out millennials.
 
 ### Redbubble (Variant)
 - **Title:** Panic First Function Later - Anxious Frog Vintage Screen Print
 - **Tags:** anxious frog, overthinking, overstimulated, burnout humor, work from home, college student, corporate burnout, panic attack, all panic no disco, funny frog, vintage screenprint, bold mascot, retro athletic, relatable meme, stress management
+- **Recommended Garment:** Vintage Black / Charcoal / Dark Navy
+- **Background Treatment HEX:** #FDFBF7
 - **Description:** This anxious frog knows you're not failing, you're just going to panic first and function later — a daily mood. Perfect for the chronically overwhelmed, professionally overstimulated, or anyone who's ever had a mini-breakdown before answering a simple email. Wear it to your next Zoom meeting (off-camera), to bed (for stress-sleeping), or while pacing around your living room. Featuring a bold mascot illustration of a distressed frog in a vintage stipple screenprint style on premium apparel. Embrace the beautiful chaos of overthinking with this relatable anxious frog design, ideal for tired students, WFH workers, and burnt-out millennials.
 
 ### Competitive Differentiation
