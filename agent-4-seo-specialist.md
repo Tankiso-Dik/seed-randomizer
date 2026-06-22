@@ -16,30 +16,29 @@ Read the entire `MASTER_WORKFLOW_CONTEXT.md` file. Extract:
 - The **Cultural Vibe** from Agent 1 — informs the tone of your descriptions
 - The **Color Palette** and **Garment Strategy** — for natural integration into descriptions
 
-### 🔍 STEP 1: DEEP KEYWORD DISCOVERY (UPDATED)
-Agent 3 validated that the proposed tags are *real* (they return results, aren't dead, aren't oversaturated). Your job is to find the *best* tags — including ones Agent 3 didn't consider.
+### 🔍 STEP 1: DEEP KEYWORD DISCOVERY & COMPETITIVE INTELLIGENCE
 
-**1. Competitive Landscape Scan (Exa with Advanced Params):**
-- Invoke `web_search_exa` with: `num_results: 20`, `sort: "relevance"`, `date_range: "2025..2026"`, `highlights: true`, `summary: true`, `include_domains: ["teepublic.com", "redbubble.com", "etsy.com"]`, `exclude_domains: ["pinterest.com"]`.
+Agent 3 validated that the proposed tags are *real* (they return results, aren't dead, aren't oversaturated). Your job is to find the *best* tags — including ones Agent 3 didn't consider — and perform a gap analysis.
+
+**1. Competitive Intelligence Scan (Exa with Advanced Params):**
+- Invoke `exa_search` with: `num_results: 20`, `sort: "relevance"`, `date_range: "2025..2026"`, `highlights: true`, `summary: true`, `include_domains: ["teepublic.com", "redbubble.com", "etsy.com"]`, `exclude_domains: ["pinterest.com"]`.
   - Query 1: `site:teepublic.com "[animal] t-shirt" -sort:relevance sort:sales`
   - Query 2: `site:redbubble.com "[phrase keyword]" -sort:relevance sort:trending`
   - Query 3: `site:etsy.com "[animal] shirt" "bestseller"`
 
-**2. Long-Tail Discovery (Tavily with Specific Filters):**
+**2. Competitor Metadata Extraction & Gap Audit (MANDATORY):**
+For the top 5 competing listings in your search results, extract and analyze:
+  - **Main Tag & Title Formula**: What are they using as their main tag? What is their title structure?
+  - **Tag Density**: Which tags appear in positions 1-3 vs 13-15?
+  - **Description Length**: Note their word count and keyword density.
+  - **Identify Gaps**: What tags, formats, or angles are they NOT using? Use a different Main Tag if top results are saturated. Emphasize your unique gap angle in the description.
+
+**3. Long-Tail Discovery (Tavily with Specific Filters):**
 - Invoke `tavily_search` with: `search_depth: "advanced"`, `max_results: 20`, `include_domains: ["reddit.com", "tiktok.com"]`, `search_filter: "2025..2026"`, `topic: "general"`.
   - Query 1: `"[animal] meme" "meaning" OR "explained"` (finds semantic variations)
   - Query 2: `"[animal] aesthetic" 2025..2026` (finds trending descriptors)
   - Query 3: `"like [animal] energy" OR "[animal] vibes"` (finds colloquial phrases)
-
-**3. Competitor Metadata Extraction (NEW — CRITICAL):**
-For the top 5 competing listings in your search results, extract and analyze:
-  - **Title Formula**: Determine if they use `[Main Keyword] | [Secondary] | [Vibe]` vs. `[Animal] [Phrase] T-Shirt` or another format.
-  - **Tag Density**: Which tags appear in positions 1-3 vs 13-15?
-  - **Description Length**: Note their word count and keyword density.
-  - **Platform-Specific Patterns**:
-    - TeePublic: Do bestsellers use the word "meme" in their titles or tags?
-    - Redbubble: Do they include the product type (e.g. "sticker") or just keep the title as "design"?
-    - Etsy: Do they use the "gift for [audience]" keyword pattern?
+  - *Goal:* Find specific 3-4 word long-tail phrases that target lower competition and higher conversion.
 
 **4. Semantic Expansion (NEW):**
 Use `sequentialthinking` to generate related search concepts based on the animal and emotional registers:
@@ -47,7 +46,7 @@ Use `sequentialthinking` to generate related search concepts based on the animal
     - *Synonyms:* exhausted, drained, burnt out, depleted.
     - *Related behaviors:* napping, procrastinating, avoiding.
     - *Cultural concepts:* anti-hustle, slow living, rest.
-  - Run `web_search_exa` (with `num_results: 10`) for each expansion direction to validate search volume and cultural relevance.
+  - Run `exa_search` (with `num_results: 10`) for each expansion direction to validate search volume and cultural relevance.
 
 **5. Gap Identification Matrix (NEW):**
 Evaluate all prospective and validated tags by plotting them on a 2x2 matrix:
@@ -61,44 +60,53 @@ Evaluate all prospective and validated tags by plotting them on a 2x2 matrix:
 
 ### 📐 STEP 2: PLATFORM-SPECIFIC OPTIMIZATION & TITLE FORMULAS
 
-Derive your titles to balance keyword indexing with high human Click-Through Rate (CTR). Avoid looking like a spam bot.
+Derive your titles and tags to maximize both keyword indexing and human Click-Through Rate (CTR).
 
-**Title Formulas (Natural & High-CTR):**
-*   **TeePublic:** `[Core Joke Phrase] - [Animal] [Descriptor]`
-    *   *Rule:* Keep it clean and readable. No pipes (`|`). Under 50 characters. No product terms ("shirt", "sticker").
-    *   *Example:* `"I'm Not Lazy (Energy Efficient Sloth)"`
-*   **Redbubble:** `[Core Joke Phrase] ([Animal])`
-    *   *Rule:* Never include the product format (e.g. do not write "Sticker" or "T-Shirt") as Redbubble appends this automatically.
-    *   *Example:* `"I'm Not Lazy, I'm Energy Efficient (Sloth)"`
-*   **Etsy:** `[Core Joke Phrase] [Animal] Shirt, [Target Audience/Use Case] Gift, [Emotional Vibe] [Product Type]`
+**Title Formulas (Platform-Specific):**
+*   **TeePublic:** `[Animal] [Phrase] | [Humor Type] Meme`
+    *   *Rule:* Must contain the Main Tag verbatim. Keep it between 6-9 words, ~50 characters max to prevent mobile truncation. No product terms ("shirt", "t-shirt", "sticker").
+    *   *Example:* `"Tired Sloth I'm Not Lazy I'm Energy Efficient | Anti Hustle Humor"`
+*   **Redbubble:** `[Phrase] - [Animal] [Style] Design`
+    *   *Rule:* Never include the product format (e.g. do not write "Sticker" or "T-Shirt") as Redbubble appends this automatically. 10-15 words is acceptable.
+    *   *Example:* `"I'm Not Lazy I'm Energy Efficient - Sloth Vintage Screen Print"`
+*   **Etsy:** `[Phrase] [Animal] Shirt, [Audience] Gift, [Occasion]`
     *   *Rule:* Max 13 words. Stuffed but readable, lead with the exact text printed on the shirt.
-    *   *Example:* `"I'm Not Lazy Sloth Shirt, Office Humor Gift, Anti Hustle Coworker Tee"`
+    *   *Example:* `"I'm Not Lazy I'm Energy Efficient Sloth Shirt, Burnout Gift, Work From Home"`
 
-**Tag Prioritization Framework (Natural Search Intent):**
+**Tag Prioritization Framework & Platform Rules:**
 Banish AI/academic classification tags (e.g. "reframe", "rule of 3", "joke statement"). Use terms humans actually search:
 
-*   **Tier 1 (Positions 1-3): DIRECT SEARCH MATCH**
-    *   `[animal] [core noun]` (e.g. "sloth meme", "tired sloth")
-    *   `[exact punchline keywords]` (e.g. "not lazy energy efficient")
-*   **Tier 2 (Positions 4-8): SITUATION & IDENTITY (Who & When)**
-    *   `[target audience/identity]` (e.g. "gift for coworker", "office humor")
-    *   `[situation/moment]` (e.g. "monday morning mood", "work from home")
-*   **Tier 3 (Positions 9-15): AESTHETIC & DISCOVERY**
-    *   `[style descriptors]` (e.g. "vintage mascot", "sarcastic quote")
-    *   `[related concepts]` (e.g. "burnout culture", "chronic fatigue")
+*   **Tier 1 (Positions 1-3): HIGH INTENT / DIRECT SEARCH MATCH**
+    *   `[animal] [phrase keyword]` (e.g. "tired sloth meme")
+    *   `[humor framework] [animal]` (e.g. "anti hustle sloth")
+    *   `[cultural vibe] [animal]` (e.g. "burnout sloth")
+*   **Tier 2 (Positions 4-8): SITUATION, AUDIENCE & STYLE (Who, When & Style)**
+    *   Style Descriptors: "vintage screen print", "bold mascot", "retro athletic"
+    *   Target Audience/Identity: "work from home", "college student", "millennial humor"
+    *   Behavior/Moment: "procrastination", "napping", "avoiding responsibilities"
+*   **Tier 3 (Positions 9-15): DISCOVERY**
+    *   Related animals: "capybara", "otter" (if thematically related)
+    *   Aesthetics: "cottagecore", "dark academia"
+    *   Year/trend: "2026 meme", "gen z humor"
+
+**Strict Tag Constraints:**
+*   **Sweet Spot Limit:** Use **10-14 tags total** (sweet spot for index weight).
+*   **NO Redundant Tags:** Do not repeat the same root word (e.g. do not use both "cat" and "cats").
+*   **NO Vague Buzzwords:** Do not use "gift", "present", or generic tags.
+*   **Keyword Repetition Strategy:** Ensure the exact Main Tag is repeated verbatim in Title, Main Tag, Description, and Tags to hammer home relevance.
 
 ### ✍️ STEP 3: CONVERSION-OPTIMIZED DESCRIPTION CRAFTING
-Write conversion-focused descriptions. Use the exact register established in Agent 1's Context Brief, and weave in your secondary search terms naturally.
+Write conversion-focused descriptions (60-100 words total). Use the exact register established in Agent 1's Context Brief, and weave in your secondary search terms naturally.
 
 **Description Formula (Strict 5-Sentence Flow):**
-1.  **Sentence 1 (The Hook — 10-15 words):** Connect `[Animal] + [Phrase] + [Cultural Reference]`.
+1.  **Sentence 1 (The Hook — ~15 words):** Connect `[Animal] + [Phrase] + [Cultural Reference]`.
     *   *Example:* `"This tired sloth knows you're not lazy, you're just energy efficient — a mood for anyone surviving 2026."`
-2.  **Sentences 2-3 (The Vibe — 20-30 words):** Connect `[Emotional Paradox] + [Target Audience] + [Use Case]`.
+2.  **Sentences 2-3 (The Vibe — ~25 words):** Connect `[Emotional Paradox] + [Target Audience] + [Use Case]`.
     *   *Example:* `"Perfect for the chronically exhausted, professionally delusional, or anyone who's ever called in sick to avoid people. Wear it to work (ironically), to bed (seriously), or to your therapy appointment (supportively)."`
-3.  **Sentence 4 (The Details — 10-15 words):** Connect `[Format] + [Style] + [Quality]`.
+3.  **Sentence 4 (Style/Details — ~15 words):** Connect `[Format] + [Style] + [Quality]`.
     *   *Example:* `"Bold mascot design with vintage screen print texture on premium garments."`
-4.  **Sentence 5 (The Keywords — 15-20 words):** Blend `[Main Tag] + [Secondary Tags]` naturally into a final closing statement.
-    *   *Example:* `"This anti-hustle humor design captures sloth energy, burnout culture, and the beautiful delusion of pretending you're fine."`
+4.  **Sentence 5 (SEO Keywords — ~20 words):** Wrote the `[Main Tag] + [Secondary Tags]` woven naturally into a final call-to-action.
+    *   *Example:* `"This anti-hustle humor design captures sloth energy, burnout culture, and the beautiful delusion of pretending you're fine. Perfect for tired millennials and gen z alike."`
 
 ### 📦 STEP 4: FINAL SEO DELIVERABLE
 Append your complete SEO package to `MASTER_WORKFLOW_CONTEXT.md` under a clear header, then signal the pipeline is complete.

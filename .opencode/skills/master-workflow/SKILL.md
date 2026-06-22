@@ -12,7 +12,7 @@ This skill starts, drives, and consolidates the **Design Generation Pipeline** (
 1. **Trigger Agent 1 (Research Agent):**
    - Start the run by executing `node bin/seed-manager.js get-random` to pull a random seed.
    - Run the research process defined in `agent-1-research.md`. Perform multiple sequential searches (as many as needed) in this exact order to extract the phrase humor framework, gather all SEO keywords, and establish a deeper connection of how these keywords connect:
-     1. **Exa MCP (`web_search_exa` with `highlights: true`, `summary: true`, and `include_domains: ["reddit.com", "tiktok.com", "tumblr.com"]`)** (first, multiple searches) to scan niche designs and communities.
+     1. **Exa MCP (`exa_search` with `highlights: true`, `summary: true`, and `include_domains: ["reddit.com", "tiktok.com", "tumblr.com"]`)** (first, multiple searches) to scan niche designs and communities.
      2. **Serper MCP (`serper_search` with `num: 20`, `type: "shopping"`, `gl: "us"`, `hl: "en"`, `location: "United States"`)** (second, multiple searches) to fetch search volumes, intent, and format routing data. Also search `site:etsy.com "[animal]" shirt` or `site:redbubble.com "[animal]"` to gauge saturation.
      3. **Tavily MCP (`tavily_search` with `search_depth: "advanced"` and `include_answer: true`)** (third, multiple searches) to build a deep, contextual synthesis of the **Humor Framework** and compile a **Keyword Cohesion Web**.
    - Write the Context Brief as a drop-in replacement into `MASTER_WORKFLOW_CONTEXT.md`.
@@ -24,7 +24,7 @@ This skill starts, drives, and consolidates the **Design Generation Pipeline** (
 
 3. **Trigger Agent 3 (QA Director):**
    - Read the compiled context in `MASTER_WORKFLOW_CONTEXT.md`.
-   - Run the final checks (including tag validation via `web_search_exa` and `tavily_research`) defined in `agent-3-qa-director.md`.
+   - Run the final checks (including tag validation via `exa_search` and `tavily_search`) defined in `agent-3-qa-director.md`.
    - Append the Executive Verdict, IP Clearance, validated tags, and optimized prompt to `MASTER_WORKFLOW_CONTEXT.md`.
 
 4. **Trigger Agent 4 (SEO Specialist):**

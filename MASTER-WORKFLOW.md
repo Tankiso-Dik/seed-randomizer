@@ -18,7 +18,7 @@ To execute a full design generation run, orchestrate the following four agents i
 
 ### ⚖️ Agent 3: The QA Director (`agent-3-qa-director.md`)
 *   **Trigger:** Receives notification [agent-2-prompt-maker](file:///home/tankisompela/Projects/seed-randomizer/agent-2-prompt-maker.md) has finished.
-*   **Role:** Reads the full context from `MASTER_WORKFLOW_CONTEXT.md`. Runs the final IP check via `web_search_exa`. Rigorously audits the prompt to ensure NO gradients/3D are present.
+*   **Role:** Reads the full context from `MASTER_WORKFLOW_CONTEXT.md`. Runs the final IP check via `exa_search`. Rigorously audits the prompt to ensure NO gradients/3D are present.
 *   **Deliverable:** Appends the **Final Executive Verdict, IP Clearance, and Final Optimized Prompt** to `MASTER_WORKFLOW_CONTEXT.md` and hands off to Agent 4.
 
 ### 🛍️ Agent 4: The SEO Specialist (`agent-4-seo-specialist.md`)

@@ -16,4 +16,4 @@ This is the primary operational workflow for generating new designs. It uses a s
    - **Focus:** Deep keyword research, platform-specific metadata optimization, competitive gap analysis.
    - **Context passing:** Reads final context from Agent 3, appends polished SEO package, signals pipeline complete.
 
-**Usage:** Invoke these agents sequentially for any new design task. The agents use the available MCP tools (`web_search_exa`, `serper_search`, `tavily_search`, `sequentialthinking`) for research, brainstorming, and validation.
+**Usage:** Invoke these agents sequentially for any new design task. The agents use the available MCP tools (`exa_search`, `serper_search`, `tavily_search`, `sequentialthinking`) for research, brainstorming, and validation.

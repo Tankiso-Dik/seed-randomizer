@@ -17,9 +17,9 @@ seed-randomizer/
 ```
 
 ## 🛠️ Tool Stack & What We Use It For
-1. **Market & Culture (`Exa API`)**: Queries `site:reddit.com`, `site:tiktok.com`, `site:teepublic.com` for cultural vibes and trademark strikes. Available as the `web_search_exa` MCP tool.
+1. **Market & Culture (`Exa API`)**: Queries `site:reddit.com`, `site:tiktok.com`, `site:teepublic.com` for cultural vibes and trademark strikes. Available as the `exa_search` MCP tool.
 2. **Google Search (`Serper API`)**: Gets hard market data, pricing, and marketplace saturation. Available as the `serper_search` MCP tool.
-3. **Deep Context (`Tavily API`)**: AI-optimized web search for deep trend research. Available as the `tavily_search` / `tavily_research` MCP tool.
+3. **Deep Context (`Tavily API`)**: AI-optimized web search for deep trend research. Available as the `tavily_search` MCP tool.
 4. **Structured Reasoning (`sequentialthinking`)**: Forces agents to construct logic linearly before outputting final prompts.
 
 ## 🛑 What NOT to Add (The ROI Sweet Spot)

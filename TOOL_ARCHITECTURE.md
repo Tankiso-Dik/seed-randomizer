@@ -4,7 +4,7 @@ This file documents the tools available to the design pipeline agents and how th
 
 ## Tool Stack
 
-### Exa API (`web_search_exa`)
+### Exa API (`exa_search`)
 - **Capabilities:** Neural semantic search engine. Maps cultural queries to highly relevant URLs without exact keyword matches.
 - **Purpose:** Pulls cultural "vibes", competitor titles, and marketplace saturation across Reddit, TikTok, Tumblr, TeePublic, and Redbubble.
 - **Used By:** Agent 1 (deep cultural research on Reddit/TikTok/Tumblr subcultures), Agent 3 (trademark checks, tag validation, oversaturation checks), Agent 4 (competitive landscaping).

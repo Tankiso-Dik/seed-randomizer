@@ -9,10 +9,10 @@ The system is highly modular and avoids fragile DOM scraping in favor of resilie
 
 ## 🚀 Quick Start
 
-Invoke the 3-agent Design Pipeline defined in `AGENTS.md` sequentially. The agents use the available MCP tools (`web_search_exa`, `serper_search`, `tavily_search`, `sequentialthinking`) for research and validation.
+Invoke the 4-agent Design Pipeline defined in `AGENTS.md` sequentially. The agents use the available MCP tools (`exa_search`, `serper_search`, `tavily_search`, `sequentialthinking`) for research and validation.
 
 ## 🧭 Project Rules & Navigation
 Please see `GEMINI.md` for strict architectural guidelines, including:
 * The required **Hybrid Tool Stack** (DuckDB, Zod, Pino, Axios, Exa, Serper).
 * **What NOT to build** (No heavy job queues, no Python microservices, no headless browsers/Crawlee, no vector DBs).
-* The **3-Agent Design Pipeline** (Research -> Prompt Maker -> QA Director).
+* The **4-Agent Design Pipeline** (Research -> Prompt Maker -> QA Director -> SEO Specialist).
