@@ -58,6 +58,10 @@ Evaluate all prospective and validated tags by plotting them on a 2x2 matrix:
     - Competition: Result count returned from Exa.
     - Demand: Review counts on Serper/Etsy listings + Reddit mention volumes.
 
+**6. Amazon & Etsy Backdoor Discovery (No API Required):**
+- **Amazon Bullet-Point Mining:** Run `exa_search` on `site:amazon.com "[animal] [phrase]"` with `highlights: true`. Extract the exact phrases competitors use in their Amazon product descriptions and weave the best ones into your TeePublic/Redbubble descriptions.
+- **Etsy Autocomplete via Serper:** Run `serper_search` for `site:etsy.com "[animal] gift"`. Parse the `relatedSearches` and `peopleAlsoAsk` arrays from the JSON response. Use these exact phrases as Tier 2 and Tier 3 tags, as they represent high-intent Etsy buyer searches.
+
 ### 📐 STEP 2: PLATFORM-SPECIFIC OPTIMIZATION & TITLE FORMULAS
 
 Derive your titles and tags to maximize both keyword indexing and human Click-Through Rate (CTR).
