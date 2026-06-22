@@ -31,9 +31,9 @@ Before finalizing the SEO metadata foundation, you MUST validate the proposed ta
 
 **1. Validate the Main Tag (Multi-Platform Check):**
 - Run `exa_search` with parameters `max_results: 50` for these queries:
-  - Query 1: `site:teepublic.com "[Main Tag]"`
-  - Query 2: `site:redbubble.com "[Main Tag]"`
-  - Query 3: `site:reddit.com "[Main Tag] meme"`
+  - Query 1: `"[Main Tag]" teepublic`
+  - Query 2: `"[Main Tag]" redbubble`
+  - Query 3: `"[Main Tag]" reddit meme`
 - **PASS Criteria**: 
   - 20-500 results on TeePublic/Redbubble COMBINED.
   - At least 5 Reddit discussions showing cultural relevance.
@@ -54,15 +54,15 @@ Before finalizing the SEO metadata foundation, you MUST validate the proposed ta
 
 **3. Supporting Tags Validation:**
 - For each of the top 5 supporting tags, run `exa_search` with parameters `max_results: 10` and query:
-  - Query: `site:teepublic.com "[tag]" "[animal]"`
+  - Query: `"[tag]" "[animal]" teepublic`
 - **PASS**: Tag appears in combination with the animal (proves relevance).
 - **FAIL**: Tag exists but never with this animal (irrelevant; must replace with a validated alternative).
 
 **4. Phrase Market Validation (UPDATED):**
 - Run `exa_search` with parameters `max_results: 30` for these queries:
-  - Query 1: `site:redbubble.com "[exact phrase]"`
-  - Query 2: `site:teepublic.com "[exact phrase]"`
-  - Query 3: `site:etsy.com "[phrase keywords]"`
+  - Query 1: `"[exact phrase]" redbubble`
+  - Query 2: `"[exact phrase]" teepublic`
+  - Query 3: `"[phrase keywords]" etsy`
 - **PASS**: 3-30 results (proves concept exists but isn't saturated).
 - **WARNING**: 0-2 results (untested, but could be blue ocean).
   - **Action**: Check if a similar STRUCTURE exists (e.g., if "I'm not X, I'm Y" structure has results).

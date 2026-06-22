@@ -26,9 +26,9 @@ Agent 3 validated that the proposed tags are *real* (they return results, aren't
 
 **1. Competitive Intelligence Scan (Exa):**
 - Invoke `exa_search` with parameters `max_results: 20` and the following queries:
-  - Query 1: `site:teepublic.com "[animal] t-shirt"`
-  - Query 2 (Fallback): `site:redbubble.com "[animal] meme"` (If specific phrase search `site:redbubble.com "[phrase keyword]"` yields 0 results)
-  - Query 3: `site:etsy.com "[animal] shirt" bestseller`
+  - Query 1: `"[animal] t-shirt" teepublic`
+  - Query 2 (Fallback): `"[animal] meme" redbubble` (If specific phrase search `"[phrase keyword]" redbubble` yields 0 results)
+  - Query 3: `"[animal] shirt" bestseller etsy`
 
 **2. Competitor Metadata Extraction & Gap Audit (MANDATORY):**
 For the top 5 competing listings in your search results, extract and analyze:
@@ -64,7 +64,7 @@ Evaluate all prospective and validated tags by plotting them on a 2x2 matrix:
     - Demand: Review counts on Serper/Etsy listings + Reddit mention volumes.
 
 **6. Amazon & Etsy Backdoor Discovery (No API Required):**
-- **Amazon Bullet-Point Mining:** Run `exa_search` with `max_results: 5` on `site:amazon.com "[animal] [phrase]"` to extract the exact phrases competitors use in their Amazon product descriptions. Weave the best ones into your TeePublic/Redbubble descriptions.
+- **Amazon Bullet-Point Mining:** Run `exa_search` with `max_results: 5` on `"[animal] [phrase]" amazon` to extract the exact phrases competitors use in their Amazon product descriptions. Weave the best ones into your TeePublic/Redbubble descriptions.
 - **Etsy Autocomplete via Serper:** Run `serper_search` with `max_results: 10` for `"[animal] png etsy" OR "[animal] sublimation png"`. Extract high-intent keywords and related search phrases from the titles, URLs, and snippets of the top search results to build your tag directory.
 
 ### 📐 STEP 2: PLATFORM-SPECIFIC OPTIMIZATION & TITLE FORMULAS

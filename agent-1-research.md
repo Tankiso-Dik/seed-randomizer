@@ -16,18 +16,18 @@ You are the Lead Market Researcher and Context Gatherer for a premium Gen Z/Mill
 
       **A. Cultural Vibe Extraction (Exa MCP):**
       - Invoke `exa_search` with parameters `max_results: 15` and the following queries:
-        - Query 1 (Primary - Subreddit): `site:reddit.com/r/[relevant_subreddit] "[animal]" ("relatable" OR "mood" OR "literally me")`
-        - Query 1b (Fallback - 0 results): `site:reddit.com "[animal]" ("relatable" OR "mood" OR "literally me" OR "vibes")` — drop specific subreddit if Query 1 returns 0 results
-        - Query 2: `site:tiktok.com "[animal] core" OR "[animal] meme" 2026`
-        - Query 3: `site:tumblr.com "[animal]" ("identity" OR "personality")`
-        - Query 3b (Fallback - 0 results): `"[animal] personality" OR "[animal] vibes" meme` — drop site restriction if Query 3 returns 0
+        - Query 1 (Primary - Reddit): `"[animal]" ("relatable" OR "mood" OR "literally me") reddit`
+        - Query 1b (Fallback - 0 results): `"[animal]" ("relatable" OR "mood" OR "literally me" OR "vibes")` — drop site/subreddit keywords if Query 1 returns 0 results
+        - Query 2: `"[animal] core" OR "[animal] meme" 2026 tiktok`
+        - Query 3: `"[animal]" ("identity" OR "personality") tumblr`
+        - Query 3b (Fallback - 0 results): `"[animal] personality" OR "[animal] vibes" meme` — drop site/subreddit keywords if Query 3 returns 0
       - **Extract**: Specific behaviors, phrases, inside jokes, and emotional associations.
 
      **B. Marketplace Intelligence (Serper MCP):**
      - Invoke `serper_search` with parameters `max_results: 20` and the following queries:
-       - Query 1: `site:teepublic.com "[animal] t-shirt"`
-       - Query 2: `site:redbubble.com "[animal] sticker"`
-       - Query 3: `site:etsy.com "[animal] shirt" bestseller`
+       - Query 1: `"[animal] t-shirt" teepublic`
+       - Query 2: `"[animal] sticker" redbubble`
+       - Query 3: `"[animal] shirt" bestseller etsy`
      - **Extract**: Top 5 listings, their phrases, price points, and review counts (as demand signals).
 
      **C. Phrase Template Mining & Long-Tail Keyword Discovery (Tavily MCP):**
@@ -42,12 +42,12 @@ You are the Lead Market Researcher and Context Gatherer for a premium Gen Z/Mill
 
      **D. Competitive Gap Analysis (Exa MCP):**
      - Invoke `exa_search` with parameters `max_results: 15` and the following queries:
-       - Query 1: `site:teepublic.com "[animal] t-shirt"`
-       - Query 2: `site:redbubble.com "[animal] t-shirt"` OR `site:redbubble.com "[animal] meme"` (Fallback to broad niche if no results for specific phrase)
+       - Query 1: `"[animal] t-shirt" teepublic`
+       - Query 2: `"[animal] t-shirt" redbubble` OR `"[animal] meme" redbubble` (Fallback to broad niche if no results for specific phrase)
      - **Extract**: Analyze the top 10 listings on TeePublic/Redbubble. Extract their **Main Tags**, **Titles**, and **Top 3 tags**. Identify gaps: what themes, behaviors, formats, or keyword combos are they NOT doing?
 
      **E. Amazon & Etsy Backdoor Intelligence (No API Required):**
-     - **Amazon Product Mining:** Invoke `exa_search` with `query: "site:amazon.com \"[animal] t-shirt\" funny"` and `max_results: 5`. Extract the H1 titles and highlighted bullet points to see what keywords top Amazon sellers are using.
+     - **Amazon Product Mining:** Invoke `exa_search` with `query: "\"[animal] t-shirt\" funny amazon"` and `max_results: 5`. Extract the H1 titles and highlighted bullet points to see what keywords top Amazon sellers are using.
      - **Amazon Demand Signals:** Invoke `serper_search` with `query: "[animal] funny shirt"` and `max_results: 5`. Extract star ratings and review counts from Amazon listings to validate market demand.
      - **Etsy Autocomplete Extraction:** Invoke `serper_search` with `query: "[animal] png etsy" OR "[animal] sublimation png"` and `max_results: 10`. Extract high-intent buyer terms and related search phrases from the titles, URLs, and snippets of the top search results to build your tag directory.
      

@@ -1,3 +1,6 @@
 {
-  "used": ["pig"]
+  "used": [
+    "pig",
+    "frog"
+  ]
 }

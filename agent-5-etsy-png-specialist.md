@@ -31,9 +31,9 @@ Your job is to adapt all of this specifically for **Etsy PNG digital downloads**
 Before creating the listing, you MUST perform Etsy-specific research using your MCP tools. Since exact phrase queries for unique/new meme concepts may return 0 results, use this tiered fallback search protocol:
 
 **1. Etsy PNG Competitor Analysis (Exa):**
-- **Query 1 (Exact Match):** `site:etsy.com "[animal] '[phrase keyword]' png"`
-- **Query 2 (Fallback - Broad Niche):** If Query 1 has 0 results, search: `site:etsy.com "[animal] meme png" bestseller`
-- **Query 3 (Fallback - Vibe Niche):** If Query 2 has 0 results, search: `site:etsy.com "funny [animal] png"`
+- **Query 1 (Exact Match):** `"[animal] '[phrase keyword]' png" etsy`
+- **Query 2 (Fallback - Broad Niche):** If Query 1 has 0 results, search: `"[animal] meme png" bestseller etsy`
+- **Query 3 (Fallback - Vibe Niche):** If Query 2 has 0 results, search: `"funny [animal] png" etsy`
 - Parameters: `max_results: 15`
 - Extract from the top 10 listings:
   - Their exact title structures (note how they use separators like `|` or `,`)
@@ -57,7 +57,7 @@ Before creating the listing, you MUST perform Etsy-specific research using your 
   - Bundle upselling formats (e.g., "Whole Shop Bundle", "Google Drive Monthly Access")
 
 **4. Humor Meme PNG Niche Analysis (Exa):**
-- **Query:** `site:etsy.com "mental health png" OR "girly pop png" OR "funny animal png" bestseller`
+- **Query:** `"mental health png" OR "girly pop png" OR "funny animal png" bestseller etsy`
 - Parameters: `max_results: 10`
 - Analyze what makes these viral meme/humor designs sell (e.g., bold mascot styles, pastel colors, snarky text quotes).
 
