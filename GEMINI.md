@@ -13,6 +13,7 @@ seed-randomizer/
 ├── agent-2-prompt-maker.md     # Agent 2: Prompt Maker
 ├── agent-3-qa-director.md      # Agent 3: QA Director
 ├── agent-4-seo-specialist.md   # Agent 4: SEO Specialist
+├── agent-5-etsy-png-specialist.md # Agent 5: Etsy PNG Listing Specialist (Standalone)
 └── MASTER_WORKFLOW_CONTEXT.md  # Shared context between agents
 ```
 
@@ -39,6 +40,11 @@ We maintain two distinct agent pipelines for different stages of the project.
 - **Agent 1 (Research)** -> **Agent 2 (Prompt Maker)** -> **Agent 3 (QA Director)** -> **Agent 4 (SEO Specialist)**
 - **Shared Memory:** `MASTER_WORKFLOW_CONTEXT.md`
 - **Goal:** Generate high-intent, printable designs.
+
+### 2. The Etsy PNG Listing Pipeline (Etsy Workflow)
+**Standalone 1-Agent Pipeline:** Used for creating optimized digital download listings.
+- **Agent 5 (Etsy PNG Specialist)**: Ingests Context Brief (Agent 1) + SEO Package (Agent 4) to generate high-converting Etsy listings.
+- **Goal:** Optimize listings for sublimation, clipart, and digital downloads on Etsy.
 
 ## 🛡️ Agent-First Linux Tooling Stack & Safety Rules
 

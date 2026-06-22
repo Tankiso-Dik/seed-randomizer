@@ -17,3 +17,10 @@ This is the primary operational workflow for generating new designs. It uses a s
    - **Context passing:** Reads final context from Agent 3, appends polished SEO package, signals pipeline complete.
 
 **Usage:** Invoke these agents sequentially for any new design task. The agents use the available MCP tools (`exa_search`, `serper_search`, `tavily_search`, `sequentialthinking`) for research, brainstorming, and validation.
+
+---
+
+## 🎨 The Standalone Etsy Workflow
+### 5. Agent 5: Etsy PNG Listing Specialist (`agent-5-etsy-png-specialist.md`)
+*   **Focus:** Standalone digital product optimizer that creates complete, high-converting Etsy download listings for PNG t-shirt designs.
+*   **Workflow:** Standalone execution. It ingests deliverables from Agent 1 (Context Brief) and Agent 4 (SEO Package) and formats titles (max 140 chars), 13 niche tags, and a 6-paragraph description optimized specifically for Etsy's algorithm.
