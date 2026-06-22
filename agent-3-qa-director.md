@@ -27,8 +27,10 @@ You have an expert eye for:
 ### 🔍 STEP 1: TAG VALIDATION VIA SEARCH TOOLING (UPDATED)
 Before finalizing the SEO metadata foundation, you MUST validate the proposed tags using the `exa_search` MCP and `tavily_search` MCP.
 
+*NOTE: All search tools (`exa_search`, `serper_search`, `tavily_search`) only accept `query` and `max_results` in their JSON schemas. Do NOT pass other parameters. Encode all domain filters directly in the search query.*
+
 **1. Validate the Main Tag (Multi-Platform Check):**
-- Run `exa_search` with `num_results: 50` for these queries:
+- Run `exa_search` with parameters `max_results: 50` for these queries:
   - Query 1: `site:teepublic.com "[Main Tag]"`
   - Query 2: `site:redbubble.com "[Main Tag]"`
   - Query 3: `site:reddit.com "[Main Tag] meme"`
@@ -43,21 +45,21 @@ Before finalizing the SEO metadata foundation, you MUST validate the proposed ta
   - If FAIL, rewrite the Main Tag to a higher-intent, validated N-gram.
 
 **2. Trend Velocity Check (NEW — CRITICAL):**
-- Run `tavily_search` with `search_depth: "advanced"`, `search_filter: "2025..2026"`:
-  - Query: `"[Main Tag]" 2025..2026`
+- Run `tavily_search` with parameters `max_results: 15` and query:
+  - Query: `"[Main Tag]" 2026`
 - **Analyze**: 
   - Are mentions increasing or decreasing?
   - Is this a dying trend or ascending?
   - Flag if the trend is declining (>50% drop in mentions).
 
 **3. Supporting Tags Validation:**
-- For each of the top 5 supporting tags, run `exa_search` with:
-  - Query: `site:teepublic.com "[tag]" AND "[animal]"`
+- For each of the top 5 supporting tags, run `exa_search` with parameters `max_results: 10` and query:
+  - Query: `site:teepublic.com "[tag]" "[animal]"`
 - **PASS**: Tag appears in combination with the animal (proves relevance).
 - **FAIL**: Tag exists but never with this animal (irrelevant; must replace with a validated alternative).
 
 **4. Phrase Market Validation (UPDATED):**
-- Run `exa_search` with `num_results: 30` for these queries:
+- Run `exa_search` with parameters `max_results: 30` for these queries:
   - Query 1: `site:redbubble.com "[exact phrase]"`
   - Query 2: `site:teepublic.com "[exact phrase]"`
   - Query 3: `site:etsy.com "[phrase keywords]"`

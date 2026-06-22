@@ -20,11 +20,13 @@ Read the entire `MASTER_WORKFLOW_CONTEXT.md` file. Extract:
 
 Agent 3 validated that the proposed tags are *real* (they return results, aren't dead, aren't oversaturated). Your job is to find the *best* tags — including ones Agent 3 didn't consider — and perform a gap analysis.
 
-**1. Competitive Intelligence Scan (Exa with Advanced Params):**
-- Invoke `exa_search` with: `num_results: 20`, `sort: "relevance"`, `date_range: "2025..2026"`, `highlights: true`, `summary: true`, `include_domains: ["teepublic.com", "redbubble.com", "etsy.com"]`, `exclude_domains: ["pinterest.com"]`.
-  - Query 1: `site:teepublic.com "[animal] t-shirt" -sort:relevance sort:sales`
-  - Query 2: `site:redbubble.com "[phrase keyword]" -sort:relevance sort:trending`
-  - Query 3: `site:etsy.com "[animal] shirt" "bestseller"`
+*NOTE: All search tools (`exa_search`, `serper_search`, `tavily_search`) only accept `query` and `max_results` in their JSON schemas. Do NOT pass other parameters. Encode all domain filters directly in the search query.*
+
+**1. Competitive Intelligence Scan (Exa):**
+- Invoke `exa_search` with parameters `max_results: 20` and the following queries:
+  - Query 1: `site:teepublic.com "[animal] t-shirt"`
+  - Query 2 (Fallback): `site:redbubble.com "[animal] meme"` (If specific phrase search `site:redbubble.com "[phrase keyword]"` yields 0 results)
+  - Query 3: `site:etsy.com "[animal] shirt" bestseller`
 
 **2. Competitor Metadata Extraction & Gap Audit (MANDATORY):**
 For the top 5 competing listings in your search results, extract and analyze:
@@ -33,11 +35,11 @@ For the top 5 competing listings in your search results, extract and analyze:
   - **Description Length**: Note their word count and keyword density.
   - **Identify Gaps**: What tags, formats, or angles are they NOT using? Use a different Main Tag if top results are saturated. Emphasize your unique gap angle in the description.
 
-**3. Long-Tail Discovery (Tavily with Specific Filters):**
-- Invoke `tavily_search` with: `search_depth: "advanced"`, `max_results: 20`, `include_domains: ["reddit.com", "tiktok.com"]`, `search_filter: "2025..2026"`, `topic: "general"`.
-  - Query 1: `"[animal] meme" "meaning" OR "explained"` (finds semantic variations)
-  - Query 2: `"[animal] aesthetic" 2025..2026` (finds trending descriptors)
-  - Query 3: `"like [animal] energy" OR "[animal] vibes"` (finds colloquial phrases)
+**3. Long-Tail Discovery (Tavily):**
+- Invoke `tavily_search` with parameters `max_results: 20` and the following queries:
+  - Query 1: `site:reddit.com OR site:tiktok.com "[animal] meme" ("meaning" OR "explained")`
+  - Query 2: `site:reddit.com OR site:tiktok.com "[animal] aesthetic" 2026`
+  - Query 3: `site:reddit.com OR site:tiktok.com "like [animal] energy" OR "[animal] vibes"`
   - *Goal:* Find specific 3-4 word long-tail phrases that target lower competition and higher conversion.
 
 **4. Semantic Expansion (NEW):**
@@ -46,7 +48,7 @@ Use `sequentialthinking` to generate related search concepts based on the animal
     - *Synonyms:* exhausted, drained, burnt out, depleted.
     - *Related behaviors:* napping, procrastinating, avoiding.
     - *Cultural concepts:* anti-hustle, slow living, rest.
-  - Run `exa_search` (with `num_results: 10`) for each expansion direction to validate search volume and cultural relevance.
+  - Run `exa_search` (with parameters `max_results: 10`) for each expansion direction to validate search volume and cultural relevance.
 
 **5. Gap Identification Matrix (NEW):**
 Evaluate all prospective and validated tags by plotting them on a 2x2 matrix:
@@ -59,8 +61,8 @@ Evaluate all prospective and validated tags by plotting them on a 2x2 matrix:
     - Demand: Review counts on Serper/Etsy listings + Reddit mention volumes.
 
 **6. Amazon & Etsy Backdoor Discovery (No API Required):**
-- **Amazon Bullet-Point Mining:** Run `exa_search` on `site:amazon.com "[animal] [phrase]"` with `highlights: true`. Extract the exact phrases competitors use in their Amazon product descriptions and weave the best ones into your TeePublic/Redbubble descriptions.
-- **Etsy Autocomplete via Serper:** Run `serper_search` for `site:etsy.com "[animal] gift"`. Parse the `relatedSearches` and `peopleAlsoAsk` arrays from the JSON response. Use these exact phrases as Tier 2 and Tier 3 tags, as they represent high-intent Etsy buyer searches.
+- **Amazon Bullet-Point Mining:** Run `exa_search` with `max_results: 5` on `site:amazon.com "[animal] [phrase]"` to extract the exact phrases competitors use in their Amazon product descriptions. Weave the best ones into your TeePublic/Redbubble descriptions.
+- **Etsy Autocomplete via Serper:** Run `serper_search` with `max_results: 10` for `"[animal] png etsy" OR "[animal] sublimation png"`. Extract high-intent keywords and related search phrases from the titles, URLs, and snippets of the top search results to build your tag directory.
 
 ### 📐 STEP 2: PLATFORM-SPECIFIC OPTIMIZATION & TITLE FORMULAS
 
