@@ -42,13 +42,15 @@ Before creating the listing, you MUST perform Etsy-specific research using your 
   - Key use cases they target
 
 **2. Etsy Buyer Search Term Mining (Serper):**
-- **Query:** `"[animal] png etsy" OR "[animal] sublimation png"` (do NOT use `site:etsy.com` here to ensure related search indexing)
-- Parameters: standard search query
+- **Query 1 (Primary):** `"[animal] png etsy" OR "[animal] sublimation png"` (do NOT use `site:etsy.com` here to ensure broader indexing)
+- **Query 2 (Fallback - 0 results):** `"[animal] clipart" OR "funny [animal] png"` (widen if Query 1 returns no results)
+- Parameters: `max_results: 10` (only `query` and `max_results` are valid schema params)
 - Since `relatedSearches` may be omitted in the parsed tool output, extract high-intent buyer terms directly from the titles, URLs, and snippets of the top search results (e.g., "retro [animal] png", "distressed animal clipart", "DTF transfer design").
 
 **3. PNG Buyer Intent Discovery (Tavily):**
-- **Query:** `site:etsy.com "[animal] png" AND ("sublimation" OR "DTF" OR "transparent background")`
-- Parameters: standard search query
+- **Query 1 (Primary):** `site:etsy.com "[animal] png" AND ("sublimation" OR "DTF" OR "transparent background")`
+- **Query 2 (Fallback - 0 results):** `"[animal] png" sublimation DTF` (drop `site:etsy.com` and AND operator if Query 1 yields no results)
+- Parameters: `max_results: 10` (only `query` and `max_results` are valid schema params)
 - Extract technical specs and commercial preferences:
   - File requirements (DPI, formats, colors)
   - Specific crafting software mentioned (Cricut, Silhouette, Canva)

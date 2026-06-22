@@ -22,6 +22,8 @@ Agent 3 validated that the proposed tags are *real* (they return results, aren't
 
 *NOTE: All search tools (`exa_search`, `serper_search`, `tavily_search`) only accept `query` and `max_results` in their JSON schemas. Do NOT pass other parameters. Encode all domain filters directly in the search query.*
 
+*Snippet Keyword Mining: The tool output may not include structured fields like `relatedSearches`. Extract all keywords, demand signals, and competitive metadata DIRECTLY from the **titles, URLs, and snippets** of each result. Treat every snippet as a keyword goldmine. If a search returns 0 results, widen immediately by dropping the most restrictive operator and retry.*
+
 **1. Competitive Intelligence Scan (Exa):**
 - Invoke `exa_search` with parameters `max_results: 20` and the following queries:
   - Query 1: `site:teepublic.com "[animal] t-shirt"`
@@ -49,6 +51,7 @@ Use `sequentialthinking` to generate related search concepts based on the animal
     - *Related behaviors:* napping, procrastinating, avoiding.
     - *Cultural concepts:* anti-hustle, slow living, rest.
   - Run `exa_search` (with parameters `max_results: 10`) for each expansion direction to validate search volume and cultural relevance.
+  - **Fallback**: If an expansion direction returns 0 results, drop the most restrictive term and retry with a broader version of the query. If still 0, discard that expansion direction and move to the next.
 
 **5. Gap Identification Matrix (NEW):**
 Evaluate all prospective and validated tags by plotting them on a 2x2 matrix:
