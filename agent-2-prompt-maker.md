@@ -18,6 +18,7 @@ Before generating any phrases or prompts, you MUST call the `sequentialthinking`
 4. Brainstorm phrases that match the "Spice Factor" rules based on the keywords and context collected.
 5. Answer the "Me Too" Identity Hook.
 6. Apply the "Hero Prop & Element Count Constraints": Determine if a prop is needed to reinforce the emotion (maximum one hero prop, matching interaction types, and flat 2D shape check). Ensure the design is characterful and naturally asymmetric.
+7. **The Cohesion Guardrail (Banish Cobbled Ingredients):** Explicitly verify that the elements (animal, prop, expression, and phrase) are not just "cobbled up" together from a list of research keywords (e.g. throwing a random cowboy hat on a frog because those were search tags). Every element must be unified. Ask yourself: Does the prop directly serve or interact with the joke? Does the posture/expression directly illustrate the specific feeling in the phrase? (e.g., if the phrase is about overstimulation, the cowboy hat should sit askew or look slightly too large, reinforcing the look of a frog that is paralyzed by its role/environment). If the visual details do not actively reinforce the text, rethink the layout.
 
 ### 🪝 STEP 2: THE "ME TOO" IDENTITY HOOK
 Draft your final concept by answering these three questions. If the concept fails any of these, rethink it:
@@ -29,7 +30,15 @@ Draft your final concept by answering these three questions. If the concept fail
 1. **THE LENGTH LIMIT:** MAXIMUM 8 words. IDEAL length is 3 to 6 words.
 2. **THE "SPICE" FACTOR:** The phrase must have a tiny bit of edge, cynicism, or delusion. **BANNED:** Wholesome platitudes, over-explaining the joke.
 3. **SHOW, DON'T TELL:** NEVER explain the punchline. Let the reader connect the dots.
-4. **PROVEN FRAMEWORK TEMPLATES:** Do NOT invent phrase structures from scratch. Choose ONE template below and adapt it to your animal. These templates are derived from top-selling POD patterns and verified humor frameworks:
+4. **PROVEN FRAMEWORK TEMPLATES (WITH ORGANIC ESCAPE HATCH):** You should generally choose ONE template from the table below. However, if Phase 1 research uncovers a raw cultural phrase, theme, or meme concept (e.g., "bringing home the bacon" or "LOCKED IN"), you may bypass the standard templates to synthesize a custom phrase. Do NOT simply copy-paste a raw phrase verbatim if it doesn't align with the visual posture or if the AI lacks the context of the original meme's expression. Instead, take inspiration from the concept and phrase, and craft a synthesized phrase that directly correlates with the specific research, visual expression, and posture we have designed. It must satisfy these constraints:
+   - **Length Limit:** Strictly 8 words or less (a 9-word phrase is acceptable ONLY if it contains a short parenthetical).
+   - **Zero Platitudes:** Must not contain generic motivational text or standard greetings (must pass the Pinterest Test).
+   - **Structural Cleanliness:** Must read clearly as a flat typographic layout on a t-shirt (e.g., standard text + sub-text or parenthetical reframe).
+   - **IP Clearance:** Must pass the trademark check with zero active apparel blocks.
+   
+   If you use the Escape Hatch, you must explicitly cite it in your report (e.g., "Synthesized custom phrase using the Organic Escape Hatch inspired by the 'bringing home the bacon' corporate idiom").
+
+   The standard templates are:
 
    | Framework | Register | Template | Example | Works because |
    |-----------|----------|----------|---------|---------------|

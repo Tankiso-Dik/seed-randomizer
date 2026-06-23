@@ -87,6 +87,8 @@ Before finalizing the SEO metadata foundation, you MUST validate the proposed ta
 - **Register Alignment:** Does the prompt actually reflect the declared Paradox Type, Micro-Expression, and Phrase Register? Flag mismatches.
 - **Word Count:** Is it 8 words or less? If no, REWRITE.
 - **The "Pinterest" Test:** Does it sound like a wholesome farmhouse sign or generic greeting card? If yes, REWRITE to be more cynical and internet-native.
+- **Phrase Template Audit:** Check if the phrase utilizes one of the 8 Proven Templates. If it does not, verify that it qualifies for the **Organic Escape Hatch exception** (synthesized phrase inspired by a high-intent raw phrase/theme from research, strictly 8 words or less or 9 with a parenthetical, zero platitudes, structurally clean t-shirt typography, and IP cleared). Verify that the phrase was not just copied verbatim blindly, but was custom-synthesized or verified to directly correlate with the visual setup.
+- **Cohesion Audit (The "Cobbled Ingredients" Test):** Check that the visual prompt and phrase are not just a collection of random keywords cobbled together. The animal's expression, posture, and prop must directly support and visually illustrate the theme of the phrase. If they are disconnected (e.g., the prop has nothing to do with the humor or register of the text), flag it and REWRITE to unify the concept.
 
 **3. Image Prompt Engineering Check (The Bold Mascot Lens)**
 - **3a. Pose & Expression Detail Verification (CRITICAL):** Audit the prompt to ensure the animal's expression (shape/angle of eyes, eyelids, mouth position, eyebrows) and physical posture (slouching, weight distribution, exact position) are described with extreme detail. Reject vague descriptions like "a sad sloth" and force a detailed write-up.
@@ -117,9 +119,9 @@ Before finalizing the SEO metadata foundation, you MUST validate the proposed ta
   - **Keyword Repetition Strategy**: Check that this exact Main Tag is repeated verbatim across: Title + Main Tag + Description + Tags.
 - **Tag Count & Content Audit**:
   - TeePublic sweet spot is **10-14 tags total** (NO more, NO less).
-  - NO redundant tags (do not repeat the same root word, e.g. "cat" and "cats").
-  - NO vague tags (e.g. "gift", "present").
-  - Stop when you run out of relevant, high-intent tags.
+  - NO redundant tags (do not repeat the same root word, e.g. do not use both "cat" and "cats").
+  - **BANNED TAGS (Strictly Fail if present):** Terminate any tags containing "vector", "illustration", "clipart", "png", "svg", "digital art", "drawing", "graphic", "design", "artwork", "cute", "cartoon", "funny", "cool", "kawaii", "t-shirt", "shirt", "sticker", "hoodie", "apparel", "gift", "present", "merch".
+  - **Etsy Autocomplete Check:** Verify that the supporting tags are rooted in actual high-intent buyer search queries (sourced from the Phase 1 Etsy/Serper research) rather than copy-pasting generic recommended tags scraped from TeePublic listings.
 - **Handoff Foundation**: Present these audited and validated tags cleanly under Section 7 so Agent 4 has a bulletproof metadata foundation.
 
 ---
