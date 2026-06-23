@@ -34,14 +34,29 @@ Agent 3 validated that the proposed tags are *real* (they return results, aren't
 
 *Snippet Keyword Mining: The tool output may not include structured fields like `relatedSearches`. Extract all keywords, demand signals, and competitive metadata DIRECTLY from the **titles, URLs, and snippets** of each result. Treat every snippet as a keyword goldmine. If a search returns 0 results, widen immediately by dropping the most restrictive operator and retry.*
 
-**1. Autocomplete Access Limits & Backdoor Indexing Scans (Serper, Exa, and Curl):**
-- **The Autocomplete Block:** Direct programmatic HTTP requests to the private autocomplete API endpoints of Redbubble (`/search/autocomplete`) and TeePublic (`/v1/autocomplete`) are blocked with a `403 Forbidden` status code by Cloudflare/Incapsula bot protection layers. Eagerly loaded MCP tools do not have direct API keys or cookie access to bypass these challenges.
-- **The Google Autocomplete Bypasses (MANDATORY):**
-  - *Google suggestqueries curl bypass:* To get live, unblocked, organic search queries, run `run_command` with `curl -s "https://suggestqueries.google.com/complete/search?client=firefox&q=[query]"` where `[query]` represents platform search queries like `teepublic+[animal]`, `redbubble+[vibe]`, or `funny+[animal]+shirt`. Parse the JSON array output to extract the suggestions Google autocompletes for actual buyers.
-- **Platform Index Scan (Serper & Exa):** Google indexes the landing/shop pages of these platforms. To bypass Cloudflare and pull search-prioritized collection tags, run the following:
-  - *Redbubble Shop Index Scan (Serper):* Invoke `serper_search` with parameters `max_results: 10` and query: `site:redbubble.com/shop/ "[vibe keyword] [animal]"` (e.g. `site:redbubble.com/shop/ "overstimulated frog"`). This retrieves the exact search-landing category collections Redbubble's search engine currently prioritizes.
-  - *TeePublic Shirt Index Scan (Serper):* Invoke `serper_search` with parameters `max_results: 10` and query: `site:teepublic.com/t-shirt/ "[vibe keyword] [animal]"` (e.g. `site:teepublic.com/t-shirt/ "overstimulated frog"`). This pulls the exact titles, URLs, and snippets of bestselling competitor shirts.
-  - *Broad Competitor Scan (Exa):* Invoke `exa_search` with parameters `max_results: 20` and query: `"[animal] t-shirt" teepublic` and `"[animal] shirt" bestseller etsy`.
+**1. Google Autocomplete Curl Backdoor (MANDATORY — Raw Buyer Queries):**
+Redbubble and TeePublic autocomplete APIs are blocked by Cloudflare (403). Bypass via Google suggestqueries:
+- **Command:** `run_command` with `curl -s "https://suggestqueries.google.com/complete/search?client=firefox&q=[query]"`
+- **Parse:** JSON array element `[1]` contains suggestion strings. If empty array, skip that query.
+- **Critical constraints (tested):** Max 2-3 words. No platform prefixes (teepublic/redbubble/etsy). No `site:` operator. Raw buyer terms only.
+
+Run these query patterns in order of priority:
+
+| Query Pattern | Example | What it feeds | Reliability (tested) |
+|---|---|---|---|
+| `[animal] shirt` | `frog shirt`, `sloth shirt` | Subject/Animal pillar, product terms | 100% — always 10 suggestions |
+| `[vibe] [animal]` | `overstimulated frog`, `ADHD frog` | Emotion/Vibe pillar, phrase validation | ~80% — gold when it hits |
+| `[vibe] shirt` | `ADHD shirt`, `goblincore shirt` | Identity/Audience pillar, aesthetic tags | ~94% — broad vibe discovery |
+| `[animal] sticker` | `frog sticker`, `red panda sticker` | Redbubble sticker tags | 100% — always 10 suggestions |
+| `[audience] gift` | `ADHD gift`, `anxiety gift` | Gift tags (Tier 3) | 100% — gift term discovery |
+
+- **Fallback:** If `[vibe] [animal]` returns empty, try `[vibe] shirt` instead. If that's also empty, the vibe is too niche — skip it.
+- **Do NOT** run platform-prefixed queries (`teepublic+frog`) — these fail on niche animals and return mostly platform Q&A noise ("is teepublic safe") on popular ones.
+
+- **Platform Index Scan (Serper & Exa):** Google indexes landing/shop pages directly. These DO work with `site:` operators and are a separate data source from the curl backdoor:
+  - *Redbubble Shop (Serper):* `serper_search` with `max_results: 10` and query: `site:redbubble.com/shop/ "[vibe keyword] [animal]"`.
+  - *TeePublic Shirts (Serper):* `serper_search` with `max_results: 10` and query: `site:teepublic.com/t-shirt/ "[vibe keyword] [animal]"`.
+  - *Broad Competitor Scan (Exa):* `exa_search` with `max_results: 20` and query: `"[animal] t-shirt" teepublic` and `"[animal] shirt" bestseller etsy`.
 
 **2. Competitor Metadata Extraction & Gap Audit (MANDATORY):**
 For the top 5 competing listings in your search results, extract and analyze:
@@ -111,6 +126,28 @@ Compare the tags scraped from TeePublic/Redbubble listings against the high-inte
 - **Target Identity/Audience Pillar:** Tags identifying the buyer persona (e.g., "introvert", "work from home", "adhd").
 
 *If any pillar has 0 tags:* You have a disconnect! You MUST run an additional targeted search (using Exa/Tavily/Serper) to discover relevant keywords for that missing pillar (e.g., search `"[prop] funny stickers redbubble"` or `"[audience] gifts etsy"`). Delete any generic tag noise (like "vector", "cute", "gift"). Verify that every tag mapping to a visual feature is actually present in the design prompt (no phantom props).
+
+**9. Data Synthesis & Tag Weighting (AGENCY NOTE):**
+You have collected data from four sources. Not all are equally reliable. Weight them as follows when building the final tag set:
+
+| Source | Weight | Why |
+|--------|--------|-----|
+| **Google suggestqueries curl** | **Primary (40%)** | Raw buyer search terms. These are what real people type into Google. Highest signal-to-noise for tag ideas. |
+| **Serper competitor scan** | **Secondary (30%)** | Real TeePublic/Redbubble listings with proven sales. Validates that a tag exists in the wild. |
+| **Exa broad competitor scan** | **Secondary (20%)** | Broader landscape. Good for gap analysis and saturation checking. |
+| **Tavily long-tail discovery** | **Tertiary (10%)** | Cultural context and phrase inspiration. Useful for description hooks, less so for direct tags. |
+| **Etsy Autocomplete via Serper** | **Context only** | Not used for tags directly. Gives digital-product market signals for PNG/sticker framing. |
+
+**How to use the curl suggestions as tags:**
+- The Google suggestqueries results are comma-separated search terms. These are **not** always ready-to-use tags. You must filter them through the Tag Authenticity Audit (Step 3):
+  - **Keep:** Terms that describe the animal, emotion, identity, aesthetic, or product context (e.g. `"overstimulated frog shirt"`, `"ADHD frog meme"`, `"goblincore shirt"`, `"frog stickers cute"`)
+  - **Crop:** You may shorten multi-word suggestions if the core 2-3 word phrase is more tag-like (e.g. `"overstimulated frog shirt"` → `"overstimulated frog"` as a tag)
+  - **Discard:** Platform navigation noise (`"is teepublic safe"`), unrelated biology (`"anxiety frog in throat"`), or product specs (`"burnout shirt meaning"`)
+- **Cross-pollinate:** If `[vibe] shirt` returned `"ADHD shirt frog"` and `[animal] shirt` returned `"frog shirt funny"`, blend them into a tag like `"funny ADHD frog shirt"` or keep the strongest version.
+
+**You have agency in tag selection.** The curl data is a suggestion engine, not a rulebook. If you find a strong keyword from the Serper competitor scan that didn't appear in curl results, use it — the curl data is one signal among many. Conversely, if the curl data surfaces a genuinely novel search term that no competitor is using and it passes the Authenticity Audit, prioritize it even if it wasn't in Agent 3's foundation. Your goal is the discoverable tag set, not strict adherence to any single source.
+
+**Signal triage rule:** If the curl backdoor returns empty for a query pattern, do NOT rerun it with variations. Move to the next source (Serper/Exa). The suggestqueries endpoint either has data for a concept or it doesn't — retrying wastes time.
 
 ### 📐 STEP 2: PLATFORM-SPECIFIC OPTIMIZATION & TITLE FORMULAS
 
