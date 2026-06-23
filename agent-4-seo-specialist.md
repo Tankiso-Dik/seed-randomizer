@@ -83,17 +83,30 @@ Before selecting or validating your tag set, you must use the `sequentialthinkin
          - *Situational Burnout:* `"surviving corporate meetings"`, `"unhinged office gift"`, `"emails that make me want to cry"`, `"wfh uniform"`, `"screaming in target parking lot"`.
          - *Neurodivergent/ADHD Coping:* `"mentally ill but cozy"`, `"my brain has 50 open tabs"`, `"sorry i was late my keys were in the fridge"`, `"introvert survival gear"`, `"overstimulated in public"`.
          - *Subculture & Aesthetic markers:* `"weirdly specific shirt"`, `"graphic designer who hates graphics"`, `"anti hustle lifestyle"`, `"highly functional but deeply stressed"`, `"goblincore aesthetic"`, `"trash animal appreciation club"`.
-- **The Sequential Thinking Tag Audit Routine:**
-  - Call the `sequentialthinking` tool to list all prospective tags.
-  - For each tag, perform a mental validation: *"If I were a chronically online Gen Z buyer who wants to wear this design to express my current state, would I type '[Tag]' into a search box? Or did an AI/artist put it here to cover metadata filters?"*
-  - Categorize each kept tag as: [Direct Subject/Slogan] or [Unconventional Vibe/Situation]. Discard all Mechanical tags.
+- **The Sequential Thinking Tag Validation (Structured 5-Step Rubric):**
+  Call the `sequentialthinking` tool and validate EVERY tag through this chain:
+  1. **Search Intent Check:** What is the buyer's intent when they type this? (product, feeling, gift, or identity?). Discard if the intent is "AI/artist metadata coverage" rather than "I want to buy this."
+  2. **Competition Check:** Roughly how many results would this return? >10,000 = saturated. <500 = underserved goldmine. Discard oversaturated tags unless heavily differentiated.
+  3. **Conversion Match:** Does this tag match the design's emotional register? Would someone searching this actually buy THIS design? (e.g. "gift for programmer" + sloth = weak match. "gift for tired coworker" + sloth = strong match.)
+  4. **Uniqueness Check:** Is this tag used by 100+ competing listings? If yes, can you differentiate with a longer-tail variation? (e.g. "sloth shirt" → "tired sloth anti-work shirt")
+  5. **Final Decision:** Only accept tags that pass all 4 checks. If a tag fails, generate 3 alternatives and re-validate. Categorize kept tags as: [Direct Subject/Slogan] or [Unconventional Vibe/Situation].
 
-**4. Long-Tail Discovery (Tavily):**
-- Invoke `tavily_search` with parameters `max_results: 20` and the following queries:
-  - Query 1: `site:reddit.com OR site:tiktok.com "[animal] meme" ("meaning" OR "explained")`
-  - Query 2: `site:reddit.com OR site:tiktok.com "[animal] aesthetic" 2026`
-  - Query 3: `site:reddit.com OR site:tiktok.com "like [animal] energy" OR "[animal] vibes"`
-  - *Goal:* Find specific 3-4 word long-tail phrases that target lower competition and higher conversion.
+**4. Long-Tail & Unconventional Discovery (Tavily):**
+- Invoke `tavily_search` with parameters `max_results: 20` for the following groups:
+  - **Meme & Culture (existing):**
+    - `site:reddit.com OR site:tiktok.com "[animal] meme" ("meaning" OR "explained")`
+    - `site:reddit.com OR site:tiktok.com "[animal] aesthetic" 2026`
+    - `site:reddit.com OR site:tiktok.com "like [animal] energy" OR "[animal] vibes"`
+  - **Identity Statements (NEW):**
+    - `site:reddit.com OR site:tiktok.com "I'm the type of person who" "[animal]" OR "[vibe]" OR "burnout" OR "introvert"`
+    - *Goal:* Extract self-identifying phrases buyers use to describe themselves. These map to Identity/Audience pillar tags.
+  - **Unmet Needs / Complaint Mining (NEW):**
+    - `site:reddit.com "I wish there was a shirt that" OR "why isn't there a shirt for" OR "I need a shirt that"`
+    - *Goal:* Find exact pain points buyers are actively searching to solve. These are zero-competition tag opportunities.
+  - **Slang / Colloquial Mining (NEW):**
+    - `"[animal] energy" OR "[animal] mode" OR "[animal] behavior" slang`
+    - *Goal:* Find culturally-resonant short phrases ("sloth mode", "raccoon energy", "trash panda", "chaos goblin", "gremlin mode") that POD sellers miss.
+  - *Fallback:* If any query returns 0 results, widen by dropping the most restrictive operator and retry. If still 0, skip.
 
 **5. Semantic Expansion (NEW):**
 Use `sequentialthinking` to generate related search concepts based on the animal and emotional registers:
@@ -172,9 +185,9 @@ Banish AI/academic classification tags (e.g. "reframe", "rule of 3", "joke state
     *   `[animal] [phrase keyword]` (e.g. "tired sloth meme", "overstimulated frog")
     *   `[humor framework] [animal]` (e.g. "anti hustle sloth", "corporate burnout pig")
 *   **Tier 2 (Positions 6-10): RELATED LONG-TAIL & SITUATION**
-    *   Style Descriptors: "vintage screen print", "bold mascot", "retro athletic"
-    *   Target Audience/Identity: "work from home", "college student", "millennial humor"
-    *   Behavior/Moment: "procrastination", "napping", "avoiding responsibilities"
+    *   Situation/Place: "work from home", "zoom call top", "Monday morning", "Sunday scaries", "meeting that could have been an email"
+    *   Target Audience/Identity: "work from home", "college student", "millennial humor", "neurodivergent", "anxiety warrior"
+    *   Behavior/Moment: "procrastination", "overstimulated at work", "surviving corporate", "mentally checked out"
 *   **Tier 3 (Positions 11-15): DISCOVERY, CATEGORY & GIFT MODIFIERS**
     *   Gift terms (convert at 2-3x rate): `[niche] gift for [person]` (e.g. "programmer gift", "coworker birthday present")
     *   Aesthetics & Trends: "cottagecore", "goblincore", "2026 meme", "gen z humor"
