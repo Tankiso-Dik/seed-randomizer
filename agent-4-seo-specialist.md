@@ -189,7 +189,7 @@ Banish AI/academic classification tags (e.g. "reframe", "rule of 3", "joke state
     *   Target Audience/Identity: "work from home", "college student", "millennial humor", "neurodivergent", "anxiety warrior"
     *   Behavior/Moment: "procrastination", "overstimulated at work", "surviving corporate", "mentally checked out"
 *   **Tier 3 (Positions 11-15): DISCOVERY, CATEGORY & GIFT MODIFIERS**
-    *   Gift terms (convert at 2-3x rate): `[niche] gift for [person]` (e.g. "programmer gift", "coworker birthday present")
+    *   **Gift terms (MANDATORY — min 2 per platform):** `[niche] gift for [person]` (e.g. "guinea pig owner gift", "cavy lover birthday", "pet humor gift for coworker"). Gift terms convert at 2-3x. If you didn't find any via curl, synthesize them from the animal + audience pillar.
     *   Aesthetics & Trends: "cottagecore", "goblincore", "2026 meme", "gen z humor"
 
 **Strict Tag Constraints & Platform Differences:**
@@ -198,6 +198,7 @@ Banish AI/academic classification tags (e.g. "reframe", "rule of 3", "joke state
 *   **BANNED TAGS (Strictly Banned across all platforms):** 
     *   *Artist/Design terms:* "vector", "illustration", "clipart", "png", "svg", "digital art", "drawing", "graphic", "design", "artwork".
     *   *Generic descriptors:* "cute", "cartoon", "funny", "cool", "kawaii", "vintage", "retro" (unless part of a validated N-gram like "vintage screen print").
+    *   *Nuance — Community nicknames are NOT banned:* Terms like "cavy" (guinea pig), "peeg", "furry potato", "trash panda" (raccoon), "danger noodle" (snake) are community insider language, NOT taxonomic filler. They pass the Human Search test if the community actually uses them. Apply the 2 AM test: would an owner of this animal type this? If yes, keep it. If it's a biologist's classification, discard.
     *   *Product terms:* "t-shirt", "shirt", "sticker", "hoodie", "apparel", "gift", "present", "merch" (unless part of a validated multi-word gift tag in Tier 3).
 *   **NO Redundant Tags:** Do not repeat the same root word (e.g. do not use both "cat" and "cats").
 *   **Keyword Repetition Strategy:** Ensure the exact Main Tag is repeated verbatim in Title, Main Tag, Description, and Tags to hammer home relevance.
@@ -231,7 +232,7 @@ Your output must include:
 - **Main Tag:** `...`
 - **Rationale:** Why this tag? Cite validation data from Agent 3 and your discovery research.
 - **Title:** `...`
-- **15 Supporting Tags:** `comma, separated, n-grams, no, fluff`
+- **10-14 Supporting Tags:** `comma, separated, n-grams, no, fluff`
 - **Recommended Garment:** [Garment color, e.g. Vintage Black / Charcoal / Sand]
 - **Background Treatment HEX:** [HEX code from color palette, e.g. #F5F0E8]
 - **Description:**
@@ -241,7 +242,7 @@ Your output must include:
 
 ### 🎨 REDBUBBLE METADATA (Variant — if applicable)
 - **Title:** `...`
-- **Tags:** `...`
+- **Tags:** `...` *(include at least 1 sticker-specific tag from the curl `[animal] sticker` query, e.g. "guinea pig death nap sticker")*
 - **Recommended Garment:** [Garment color]
 - **Background Treatment HEX:** [HEX code]
 - **Media Configuration:** Design & Illustration, Digital Art *(Recommended: Select these two media types on Redbubble for vintage screenprinted mascot designs)*
