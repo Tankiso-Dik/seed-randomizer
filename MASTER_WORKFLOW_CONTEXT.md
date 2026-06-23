@@ -375,23 +375,28 @@ Pass the run directly to Agent 4 (The SEO & Metadata Specialist) to finalize the
 ## Phase 4: Final SEO & Metadata Package
 
 ### 🔍 SEARCH LANDSCAPE SUMMARY
-Competitive scan found **2 existing competitors** on Redbubble for "death napping" guinea pig (WheeklysaurusCo, KatsGuineapigs) but **ZERO on TeePublic**. Both competitors use mechanical single-word tags (`cute`, `kawaii`, `cartoon`, `drawings`) and neither uses the arched banner format, collegiate varsity font, or the "(IT'S FINE, I DO THIS)" sub-text. The gold mine gaps are: `death napping guinea pig`, `guinea pig death nap`, `cavy humor`, `macabre cute`, and `guinea pig dark humor` — all with zero competition in the 2-4 word long-tail space. The phrase "death napping" has validated community presence across TikTok, Reddit, and Instagram (2022-2026). Google suggest confirms `guinea pig death napping` as an active search term.
+Competitive scan found **2 existing competitors** on Redbubble (WheeklysaurusCo, KatsGuineapigs) and **1 on TeePublic** (Kats_guineapigs — "Guinea Pig Time for a Death Nap") for death napping guinea pig designs. All use generic single-word tags (`cute`, `kawaii`, `cartoon`, `drawings`, `funny animals`) and none use: arched banner format, collegiate varsity font, sub-text parenthetical, `macabre cute` aesthetic, or gift-oriented long-tail keywords. **Gold mine gaps discovered**: `death napping guinea pig`, `guinea pig death nap`, `cavy humor`, `guinea pig dark humor`, `guinea pig parent gift`, `cavy lover gift` — all with zero competition in 2-4 word long-tail space. Google suggest validates `death napping guinea pigs` as an active search autocomplete. "Cavy" confirmed as organic community language (used by TikTok Shop, Cavy Whisperer brand, Redbubble tag sets) — NOT mechanical filler.
 
 ### 🏆 TEEPUBLIC METADATA
 - **Main Tag:** `death napping guinea pig`
-- **Rationale:** Agent 3 validated this exact 3-word phrase (0 results on TeePublic, blue ocean). Extended research confirms: "guinea pig death napping" appears in Google suggest, has TikTok content (762k+ views), and Reddit community posts. Zero POD merchandise competing on this exact phrase. No banned terms present.
+- **Rationale:** Agent 3 validated this exact 3-word phrase (blue ocean). Extended research confirms: Google suggest autocompletes "death napping guinea pigs", TikTok content (762k+ views), Reddit community threads, zero POD merchandise on this exact phrase. No banned terms. Pairs naturally with Tier 3 gift tags.
 - **Title:** `Death Napping Guinea Pig | Macabre Cute Meme`
-- **12 Supporting Tags:** `death napping guinea pig, guinea pig death nap, cavy humor, guinea pig meme, furry potato, guinea pig dark humor, death napping piggy, wheek, macabre cute, pet sleep humor, rodent humor, the horrors persist`
+- **13 Tiered Supporting Tags** (10-14 range ✓):
+  - **Tier 1 (4 — Highest Intent / Direct Search):** `death napping guinea pig`, `guinea pig death nap`, `cavy humor`, `guinea pig meme`
+  - **Tier 2 (6 — Long-Tail & Situation):** `furry potato`, `guinea pig dark humor`, `death napping piggy`, `wheek`, `macabre cute`, `pet sleep humor`
+  - **Tier 3 (3 — Discovery & Gift; 2 gift tags ✓):** `guinea pig parent gift`, `cavy lover gift`, `the horrors persist`
 - **Recommended Garment:** Black (primary), Charcoal Heather (secondary), Navy (tertiary)
 - **Background Treatment HEX:** #F5F0E8 (Cream)
 - **Description:**
   ```
-  This spherical guinea pig is absolutely dead to the world — flat on its back, legs in the air, zero cares given. Every guinea pig owner knows the moment of panic: walking past the cage, seeing your furry potato frozen in a position that looks alarmingly like death, then the relieved laughter when it twitches. This is for the ones who cope with existential dread through dark humor and unconditional love for tiny rotund creatures. Bold collegiate varsity block lettering with vintage screen print texture on premium garments. A death napping guinea pig design for cavy lovers, pet parents, and anyone who appreciates macabre cute humor.
+  This spherical guinea pig is absolutely dead to the world — flat on its back, legs in the air, zero cares given. Every guinea pig owner knows the moment of panic: walking past the cage, seeing your furry potato frozen in a position that looks alarmingly like death, then the relieved laughter when it twitches. This macabre cute cavy design is for the ones who cope with existential dread through dark humor and unconditional love for tiny rotund creatures. Bold collegiate varsity block lettering with vintage screen print texture on premium garments. An unforgettable guinea pig parent gift or cavy lover gift for anyone who appreciates community-specific inside jokes.
   ```
 
 ### 🎨 REDBUBBLE METADATA (Variant)
 - **Title:** `Death Napping Guinea Pig - Cavy Dark Humor`
-- **Tags:** `death napping guinea pig, guinea pig death nap, cavy humor, guinea pig meme, furry potato, guinea pig dark humor, death napping piggy, wheek, pet sleep humor, guinea pig parent humor, macabre cute, small pet humor, rodent humor, the horrors persist, cavy parent`
+- **Tags (15 total, 60/40 split):**
+  - **60% Specific Long-Tail (9 tags):** `death napping guinea pig`, `guinea pig death nap`, `cavy humor`, `guinea pig meme`, `furry potato`, `guinea pig dark humor`, `death napping piggy`, `macabre cute`, `pet sleep humor`
+  - **40% Broader / Gift / Sticker (6 tags):** `guinea pig parent gift`, `cavy lover gift`, `guinea pig sticker` ✓, `wheek`, `the horrors persist`, `cavy parent`
 - **Recommended Garment:** Black (primary), Charcoal Heather (secondary), Navy (tertiary)
 - **Background Treatment HEX:** #F5F0E8 (Cream)
 - **Media Configuration:** Design & Illustration, Digital Art *(Recommended: Select these two media types on Redbubble for vintage screenprinted mascot designs)*
@@ -401,23 +406,23 @@ Competitive scan found **2 existing competitors** on Redbubble for "death nappin
   
   The bold collegiate varsity block text reads "DEATH NAPPING" in an arched banner with "(IT'S FINE, I DO THIS)" below, all in a vintage screen print style against a cream backdrop.
   
-  Perfect for guinea pig lovers, furry potato parents, and anyone who appreciates community-specific dark humor. Works as a shirt, sticker, or art print for fellow members of the "I nearly had a heart attack but it was just a nap" club.
+  Perfect as a sticker on your laptop, a shirt for casual wear, or a gift for fellow guinea pig parents. Works for furry potato lovers, cavy enthusiasts, and anyone who appreciates community-specific dark humor. Members of the "I nearly had a heart attack but it was just a nap" club will immediately recognize themselves.
   ```
 
 ### 🗂️ TAG-DESIGN COHESION MATRIX
 - **Subject/Animal Pillar:** `death napping guinea pig`, `guinea pig death nap`, `cavy humor`, `furry potato`, `wheek`, `cavy parent`
 - **Emotion/Meme Vibe Pillar:** `guinea pig meme`, `macabre cute`, `guinea pig dark humor`, `death napping piggy`, `the horrors persist`
-- **Visual/Prop Pillar:** (No props — pose IS the hero. The prompt specifies: "Zero props. The posture IS the hero." The description naturally covers the pose in all pillar tags.)
-- **Target Identity/Audience Pillar:** `guinea pig parent humor`, `pet sleep humor`, `small pet humor`, `rodent humor`
-*(Check: Every visual element has a corresponding search pattern. No phantom props. No cobbled-together filler. The `the horrors persist` tag connects to the broader meme ecosystem without claiming it as the design's phrase.)*
+- **Visual/Prop Pillar:** (No props — pose IS the hero. The prompt specifies zero props. All pillar tags anchor to the posture and design format.)
+- **Target Identity/Audience Pillar:** `guinea pig parent gift`, `cavy lover gift`, `pet sleep humor`, `guinea pig sticker` (Redbubble)
+*(Check: Every visual element has a corresponding search pattern. No phantom props. No cobbled-together filler. `the horrors persist` connects to the broader meme ecosystem without claiming it as the design's phrase. Gift tags were validated via TeePublic/Etsy gift search patterns — `guinea pig parent gift` and `cavy lover gift` have active listings and buyer intent.)*
 
 ### 📋 COMPETITIVE DIFFERENTIATION NOTES
-- **WheeklysaurusCo** (Redbubble) tags: `guinea pig, cute, deathnapping, kawaii, drawings` — generic, mechanical. No arched banner, no varsity font, no sub-text. Our tags use 2-4 word specific long-tail phrases.
-- **KatsGuineapigs** (Redbubble) tags: `guinea pig, cavy, death nap, cartoon, funny animals` — shallow, broad. Their title is "Guinea Pig Time for a Death Nap" — passive, descriptive. Our title is more aggressive and distinctive.
-- **Our Gap Advantage:** First to use: arched banner format + collegiate varsity font + sub-text parenthetical + "macabre cute" aesthetic keyword + "death napping" as the UNIFIED concept (not just description). Our unconventional vibe tags (`guinea pig dark humor`, `macabre cute`, `the horrors persist`) have zero competition.
-- **Seasonal Recommendation:** Halloween 2026 is the perfect launch window — "death napping" aligns with macabre October humor while being a year-round guinea pig insider joke. Consider cross-listing as a Halloween gift for guinea pig lovers.
+- **Kats_guineapigs** (TeePublic/Redbubble): "Guinea Pig Time for a Death Nap" — title is passive/descriptive. Tags: `guinea pig, cavy, death nap, cartoon, funny animals` — shallow single words. No arched banner, no sub-text, no gift targeting.
+- **WheeklysaurusCo** (Redbubble): "Death napping Guinea Pig (Pebbles)" — photo-referenced, personal. Tags: `guinea pig, cute, deathnapping, kawaii, drawings` — mechanical, generic. No format distinction.
+- **Our Gap Advantage:** First to use: arched banner + collegiate varsity font + parenthetical sub-text + "macabre cute" aesthetic keyword + death napping as a unified label (not description). **First to target gift intent** with `guinea pig parent gift` and `cavy lover gift` tags. **First to include sticker-specific search** on Redbubble. Unconventional vibe tags (`guinea pig dark humor`, `macabre cute`, `the horrors persist`) remain zero competition.
+- **Seasonal Recommendation:** Halloween 2026 is the ideal launch window — "death napping" aligns perfectly with macabre October humor while being a year-round guinea pig insider joke. List as a Halloween gift for guinea pig lovers to capture seasonal gift search traffic.
 
 ## ✅ PIPELINE COMPLETE
 The 4-Agent Design Pipeline (Agent 1 → Agent 2 → Agent 3 → Agent 4) has successfully concluded. The design is approved and the SEO metadata is optimized for platform-specific discoverability.
 
-📁 **Output folder:** outputs/0005-death-napping-guinea-pig-macabre-cute-meme/
+📁 **Output folder:** outputs/0006-death-napping-guinea-pig-macabre-cute-meme/
