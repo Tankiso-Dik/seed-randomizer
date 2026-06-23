@@ -488,7 +488,7 @@ Using all research and Agent 1/4 inputs, create:
 
 ### 📦 STEP 2: WRITE OUTPUT AND ARCHIVE DESIGN FOLDER
 
-After generating the package, you MUST write the final Etsy listing package to a standalone file inside the design's folder in `outputs/`, and then rename the folder to mark it as archived:
+After generating the package, you MUST write the final Etsy listing package to a standalone file inside the design's folder in `outputs/`, create a customer-facing thank-you README file, and then rename the folder to mark it as archived:
 
 1. **Locate the target design folder in `outputs/`:**
    - Scan the `outputs/` directory to find the folder that matches your title slug or animal/phrase.
@@ -524,14 +524,53 @@ After generating the package, you MUST write the final Etsy listing package to a
    [From your Images Checklist section]
    ```
 
-3. **Archive the folder (Rename):**
-   - Once the `etsy-listing.md` file is successfully written, rename the `<design-folder>` by appending `-completed` to its name (e.g. rename `outputs/0002-freshly-delusional-fade-pig-buzz-cut-meme` to `outputs/0002-freshly-delusional-fade-pig-buzz-cut-meme-completed`).
+3. **Write the customer-facing thank-you README file** to `<design-folder>/Thank-You-README.txt` with the following content (you can copy this template exactly):
+
+   ```text
+   Thank you so much for your purchase from BeanToePets! 🐾
+
+   We are thrilled to support your creative projects and crafting journey. Below is the essential information regarding your digital download.
+
+   --------------------------------------------------
+   🛍️ YOUR PURCHASE DETAILS & DIRECTIONS
+   --------------------------------------------------
+   This file is a high-resolution PNG format digital download. 
+   You can use it for:
+   - Sublimation printing (mugs, tumblers, apparel)
+   - DTF (Direct to Film) & DTG (Direct to Garment) printing
+   - Cricut & Silhouette vinyl crafting
+   - Scrapbooking, stickers, and digital designs
+
+   --------------------------------------------------
+   📐 IMAGE DIMENSIONS & SPECIFICATIONS (Placeholder)
+   --------------------------------------------------
+   - Resolution: 300 DPI (High-quality print resolution)
+   - Dimensions: 3000 x 3000 pixels (Square aspect ratio)
+     *Note: These dimensions are placeholders. If you require custom sizing or different file formats (such as SVG, EPS, or DXF), please don't hesitate to reach out!*
+   - Background: Transparent (No solid white background)
+   - Color Profile: sRGB (Best for screen-to-print color translation)
+
+   --------------------------------------------------
+   🔗 GET IN TOUCH & VISIT US
+   --------------------------------------------------
+   We love seeing what you create! If you have any questions, encounter issues with your download, or need help with custom adjustments, please contact us on Etsy.
+
+   Visit our shop for more animal meme designs, clipart, and digital downloads:
+   👉 Shop Name: BeanToePets
+   👉 Shop Link: https://www.etsy.com/shop/BeanToePets?ref=seller-platform-mcnav
+
+   Thank you again for supporting BeanToePets! Happy crafting! ✨
+   ```
+
+4. **Archive the folder (Rename):**
+   - Once both `etsy-listing.md` and `Thank-You-README.txt` are successfully written, rename the `<design-folder>` by appending `-completed` to its name (e.g. rename `outputs/0002-freshly-delusional-fade-pig-buzz-cut-meme` to `outputs/0002-freshly-delusional-fade-pig-buzz-cut-meme-completed`).
    - Execute this rename using a shell command (e.g., `mv outputs/OLD_NAME outputs/NEW_NAME`).
    - If the folder already ends in `-completed` or `-archived`, do not rename it.
 
-4. **Note the final output path** in your final message:
+5. **Note the final output paths** in your final message:
    ```
    📁 **Etsy Output file:** outputs/<new-folder-name>/etsy-listing.md
+   📄 **Customer README file:** outputs/<new-folder-name>/Thank-You-README.txt
    ```
 
 ---
@@ -572,5 +611,6 @@ Before finalizing, verify:
 - [ ] File specifications clearly stated
 - [ ] Download instructions included
 - [ ] Copyright notice present
+- [ ] Thank-You-README.txt file created in the design folder with BeanToePets shop name and link, plus placeholder dimensions
 
 If ANY item is missing, revise before output.
