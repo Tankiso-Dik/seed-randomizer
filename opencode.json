@@ -31,6 +31,22 @@
     "agent-6-stress-tester": {
       "prompt": "{file:./agent-6-stress-tester.md}",
       "description": "Pipeline QA & Stress Tester. Audits and corrects search parameter errors in Agents 1, 4, and 5 prompts to ensure tool execution safety."
+    },
+    "agent-7-pipeline-retro": {
+      "prompt": "{file:./agent-7-pipeline-retro.md}",
+      "description": "Pipeline Retrospective Analyst. Reviews MASTER_WORKFLOW_CONTEXT.md and agent traces to identify critical issues, improvement opportunities, and unexpected wins across the 4-agent design pipeline. Run after any full pipeline run to audit system quality."
+    }
+  },
+  "command": {
+    "stress-test": {
+      "description": "Run the pipeline QA and stress tester (Agent 6) to audit search query parameters and verify tool execution safety.",
+      "template": "Please run the agent-6-stress-tester agent to audit search query structures, mock-execute queries to test validations, and optimize the prompts for Agent 1, 4, and 5.",
+      "agent": "agent-6-stress-tester"
+    },
+    "retro": {
+      "description": "Run the pipeline retrospective analyst (Agent 7) to inspect the current run's artifacts and identify system issues.",
+      "template": "Please run the agent-7-pipeline-retro agent to read MASTER_WORKFLOW_CONTEXT.md and produce a detailed retrospective report assessing all four pipeline agents.",
+      "agent": "agent-7-pipeline-retro"
     }
   }
 }

@@ -11,7 +11,7 @@ Competitive scan found 2 existing competitors on Redbubble (WheeklysaurusCo, Kat
 
 ### TeePublic
 - **Main Tag:** `death napping guinea pig`
-- **Title:** `Death Napping Guinea Pig | Macabre Cute Meme`
+- **Title:** ``Death Napping Guinea Pig | Macabre Cute Meme``
 - **13 Tags** (10-14 range ✓ — tiered below):
   - *Tier 1 (Highest Intent / Direct Search):* `death napping guinea pig`, `guinea pig death nap`, `cavy humor`, `guinea pig meme`
   - *Tier 2 (Long-Tail & Situation):* `furry potato`, `guinea pig dark humor`, `death napping piggy`, `wheek`, `macabre cute`, `pet sleep humor`

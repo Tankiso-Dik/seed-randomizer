@@ -28,10 +28,14 @@ function getRandom() {
   const data = parseData();
   const used = getUsed();
 
-  const unused = data.ANIMALS.filter(a => !used.used.includes(a.id));
-  const pool = unused.length > 0 ? unused : data.ANIMALS;
+  // ponytail: auto-reset used pool on exhaustion to prevent infinite JSON file growth and ensure cyclic uniqueness
+  let unused = data.ANIMALS.filter(a => !used.used.includes(a.id));
+  if (unused.length === 0) {
+    used.used = [];
+    unused = data.ANIMALS;
+  }
 
-  const pick = pool[Math.floor(Math.random() * pool.length)];
+  const pick = unused[Math.floor(Math.random() * unused.length)];
 
   used.used.push(pick.id);
   saveUsed(used);

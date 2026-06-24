@@ -37,7 +37,7 @@ Your job is to adapt all of this specifically for **Etsy PNG digital downloads**
 
 Before creating the listing, you MUST perform Etsy-specific research using your MCP tools. Since exact phrase queries for unique/new meme concepts may return 0 results, use this tiered fallback search protocol:
 
-**1. Etsy PNG Competitor Analysis (Exa):**
+**1. Etsy PNG Competitor Analysis (Use `exa_exa_search`):**
 - **Query 1 (Exact Match):** `"[animal] '[phrase keyword]' png" etsy`
 - **Query 2 (Fallback - Broad Niche):** If Query 1 has 0 results, search: `"[animal] meme png" bestseller etsy`
 - **Query 3 (Fallback - Vibe Niche):** If Query 2 has 0 results, search: `"funny [animal] png" etsy`
@@ -48,13 +48,13 @@ Before creating the listing, you MUST perform Etsy-specific research using your 
   - Pricing strategy (personal vs. commercial options)
   - Key use cases they target
 
-**2. Etsy Buyer Search Term Mining (Serper):**
+**2. Etsy Buyer Search Term Mining (Use `serper_serper_search`):**
 - **Query 1 (Primary):** `"[animal] png etsy" OR "[animal] sublimation png"` (do NOT use `site:etsy.com` here to ensure broader indexing)
 - **Query 2 (Fallback - 0 results):** `"[animal] clipart" OR "funny [animal] png"` (widen if Query 1 returns no results)
 - Parameters: `max_results: 10` (only `query` and `max_results` are valid schema params)
 - Since `relatedSearches` may be omitted in the parsed tool output, extract high-intent buyer terms directly from the titles, URLs, and snippets of the top search results (e.g., "retro [animal] png", "distressed animal clipart", "DTF transfer design").
 
-**3. PNG Buyer Intent Discovery (Tavily):**
+**3. PNG Buyer Intent Discovery (Use `tavily_tavily_search`):**
 - **Query 1 (Primary):** `site:etsy.com "[animal] png" AND ("sublimation" OR "DTF" OR "transparent background")`
 - **Query 2 (Fallback - 0 results):** `"[animal] png" sublimation DTF` (drop `site:etsy.com` and AND operator if Query 1 yields no results)
 - Parameters: `max_results: 10` (only `query` and `max_results` are valid schema params)
@@ -63,7 +63,7 @@ Before creating the listing, you MUST perform Etsy-specific research using your 
   - Specific crafting software mentioned (Cricut, Silhouette, Canva)
   - Bundle upselling formats (e.g., "Whole Shop Bundle", "Google Drive Monthly Access")
 
-**4. Humor Meme PNG Niche Analysis (Exa):**
+**4. Humor Meme PNG Niche Analysis (Use `exa_exa_search`):**
 - **Query:** `"mental health png" OR "girly pop png" OR "funny animal png" bestseller etsy`
 - Parameters: `max_results: 10`
 - Analyze what makes these viral meme/humor designs sell (e.g., bold mascot styles, pastel colors, snarky text quotes).
