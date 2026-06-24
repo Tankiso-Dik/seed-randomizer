@@ -31,13 +31,12 @@ Read the entire `MASTER_WORKFLOW_CONTEXT.md` file. Extract:
 
 Agent 3 validated that the proposed tags are *real* (they return results, aren't dead, aren't oversaturated). Your job is to find the *best* tags — including ones Agent 3 didn't consider — and perform a gap analysis.
 
-*NOTE: All search tools (`exa_exa_search`, `serper_serper_search`, `tavily_tavily_search`) only accept `query` and `max_results` in their JSON schemas. Do NOT pass other parameters. Encode all domain filters directly in the search query.*
+**🚨 LEVERAGE THE DISCOVERY ENGINE CACHE FIRST (CRITICAL):**
+Agent 1 has already prepared, cached, and compiled the 14 standard research queries (Exa, Serper, and Tavily) into `MASTER_WORKFLOW_CONTEXT.md` Context Brief and the local database. You **do not** need to execute these standard queries over the network or call the MCP search tools manually for them. Use the Context Brief and inspect the local animal knowledge profile `knowledge/<animal>.json` for the compiled data (pricing, registered slang, keywords, target main tags, etc.) to save time and tokens.
 
-*Snippet Keyword Mining: The tool output may not include structured fields like `relatedSearches`. Extract all keywords, demand signals, and competitive metadata DIRECTLY from the **titles, URLs, and snippets** of each result. Treat every snippet as a keyword goldmine. If a search returns 0 results, widen immediately by dropping the most restrictive operator and retry.*
-
-**1. Google Autocomplete Search Cache (MANDATORY — Raw Buyer Queries):**
-Use the cached suggestqueries tool instead of raw curl — it caches results and deduplicates across Agents 1, 3, 4, and 5:
-- **Command:** `node bin/search.js cache "[query]"`
+**1. Google Autocomplete Search Cache (MANDATORY — Raw Buyer Queries & Tag Validation):**
+To validate candidate tags, search for additional terms, or query Google Autocomplete suggest queries, use the cached suggestqueries tool instead of raw curl. It automatically checks the database cache first to prevent duplicate API request costs and speed up lookups:
+- **Command:** `node bin/search.js suggest "[query]"`
 - **Returns:** JSON suggestions array. If empty `[]`, skip that query.
 - **Critical constraints:** Max 2-3 words per query. No platform prefixes. No `site:` operator. Raw buyer terms only.
 
@@ -92,10 +91,10 @@ Before selecting or validating your tag set, you must use the `sequentialthinkin
   **For Register Tags (40% — feeling, no animal):**
   1. **Source Check:** Does this term appear in Agent 1's Register Vocabulary? If not, can you extract it from the Cultural Vibe section? If it comes from nowhere, discard.
   2. **Animal Name Check:** Does this tag contain the animal name or a direct synonym? If yes, it's not a register tag. Move it to Best-Fit or discard.
-    3. **Search Validation:** Run `node bin/search.js cache "[register term] shirt"` to validate. Empty results means this feeling isn't a real search term — drop it.
+    3. **Search Validation:** Run `node bin/search.js suggest "[register term] shirt"` to validate. Empty results means this feeling isn't a real search term — drop it.
     4. **Evidence Mandate (APPEND RAW OUTPUT IN PHASE 4):** Include the suggestions array in your Phase 4 output under a "Search Evidence" section. Format: `Search for "[query]" returned [N] suggestions: [suggestion1, ...]`. If empty: "Search returned 0 suggestions — term dropped."
-   4. **Animal+Register Cross-Check:** Run `node bin/search.js cache "[register term] [animal]"` AND `site:teepublic.com "[register term] [animal]"` through Serper. If the combo returns suggestions OR shows existing listings, the register-animal connection is validated. If the combo returns empty everywhere, the feeling doesn't culturally attach to this animal in apparel search — keep the register tag alone but note no commercial connection exists.
-    6. **Final Decision:** Pass = all checks pass AND search returned suggestions.
+   4. **Animal+Register Cross-Check:** Run `node bin/search.js suggest "[register term] [animal]"` AND `site:teepublic.com "[register term] [animal]"` through Serper (which is cached for the animal). If the combo returns suggestions OR shows existing listings, the register-animal connection is validated. If the combo returns empty everywhere, the feeling doesn't culturally attach to this animal in apparel search — keep the register tag alone but note no commercial connection exists.
+     6. **Final Decision:** Pass = all checks pass AND search returned suggestions.
 
    **Search Failsafe Override (for ALL tag types):**
    If a tag fails search validation (returns 0 suggestions) BUT a Serper or Exa search for `"[tag] shirt"` shows 500+ existing platform listings, the tag is still valid. Document the exemption: `"Search returned 0 suggestions but [source] shows [N] listings — kept via failsafe override."` Without platform proof, failed search = discard.
@@ -103,22 +102,22 @@ Before selecting or validating your tag set, you must use the `sequentialthinkin
   **For Best-Fit Tags (30% — highest-confidence from research):**
    1. **Source Check:** What source produced this tag? High weight (curl 40%, Serper 30%) = stronger signal. Low weight (Tavily 10%) = weaker — only keep if it passes all other checks strongly. At least 60% of Best-Fit tags must come from high-weight sources (curl or Serper).
   2. **Specificity Floor:** Minimum 2 words per tag. Prefer 3-4 word phrases. Single-word tags like `otter`, `meme`, `funny` are banned here — they belong in Proven Territory or nowhere. A Best-Fit tag should be specific enough that a buyer knows exactly what design they'll get.
-   3. **Search Validation (MANDATORY)**: Run `node bin/search.js cache "[Best-Fit tag] shirt"`. It MUST return at least one suggestion. If empty (e.g. `procrastination goose` returns `[]`), it's a dead search path. Discard or refine it (e.g., refine `procrastination goose` to `dilly dally goose` which has active suggestions).
-    4. **Evidence Mandate (APPEND RAW OUTPUT IN PHASE 4):** State: `Search for "[Best-Fit tag]" returned [N] suggestions: [list].` If empty, drop the tag.
+  3. **Search Validation (MANDATORY)**: Run `node bin/search.js suggest "[Best-Fit tag] shirt"`. It MUST return at least one suggestion. If empty (e.g. `procrastination goose` returns `[]`), it's a dead search path. Discard or refine it (e.g., refine `procrastination goose` to `dilly dally goose` which has active suggestions).
+  4. **Evidence Mandate (APPEND RAW OUTPUT IN PHASE 4):** State: `Search for "[Best-Fit tag]" returned [N] suggestions: [list].` If empty, drop the tag.
   5. **Competition Check:** <500 results = blue ocean (gold). 500-10,000 = healthy. >10,000 = saturated — only keep if heavily differentiated.
   6. **Conversion Match:** Does this tag match the design's specific subject or phrase? "overstimulated frog" + anxious frog = strong. "overstimulated frog" + corporate pig = weak.
   7. **Animal+Register Combo Check:** Animal+register combos (e.g. `quiet quitting pig`, `ADHD otter`, `burnout sloth`) are NATURAL Best-Fit candidates — they combine the register vocabulary with the animal, exactly what this bucket is for. If the register cross-check (step 4 of register validation) found that `[register term] [animal]` has search demand, that combo should land here in Best-Fit. At least half of Best-Fit tags should be animal+register combos.
   8. **Uniqueness Check:** Is this tag used by 100+ competing listings? If yes, can you differentiate with a longer-tail variation?
-  9. **Final Decision:** Pass = source confidence is high AND curl validation passes with >0 suggestions AND competition is healthy or differentiated AND specificity is 2+ words.
- 
+  9. **Final Decision:** Pass = source confidence is high AND search validation passes with >0 suggestions AND competition is healthy or differentiated AND specificity is 2+ words.
+
   **For Proven Territory Tags (30% — moderate competition, established demand):**
-   1. **Demand Proof:** Run `serper_serper_search` or `exa_exa_search` for this term. Do existing listings appear? If 0 results, there's no proven demand — discard.
-    2. **Search Validation (MANDATORY):** Run `node bin/search.js cache "[Proven Territory tag] shirt"`. It must return suggestions, proving established category search volume. **EVIDENCE MANDATE (APPEND RAW OUTPUT IN PHASE 4):** State: `Search for "[Proven Territory tag]" returned [N] suggestions: [list].` If empty, drop the tag.
+  1. **Demand Proof:** Run `serper_serper_search` or `exa_exa_search` for this term. Do existing listings appear? If 0 results, there's no proven demand — discard.
+  2. **Search Validation (MANDATORY):** Run `node bin/search.js suggest "[Proven Territory tag] shirt"`. It must return suggestions, proving established category search volume. **EVIDENCE MANDATE (APPEND RAW OUTPUT IN PHASE 4):** State: `Search for "[Proven Territory tag]" returned [N] suggestions: [list].` If empty, drop the tag.
   3. **Competition Sweet Spot:** Is competition moderate? Minimum ~500 results (proves demand exists), maximum ~10,000 (not oversaturated). Below 500 = too niche for "proven". Above 10,000 = too saturated.
   4. **Animal+Register Combo Check:** If you find `[animal] [register term]` or `[register term] [animal]` combos with 500-10k results, those are ideal proven territory candidates — they combine the animal with the register while having established volume. Prefer these over generic category terms when available.
   5. **Intent Check:** Is the intent "product", "category", or "identity"? Someone searching this knows what they want. If intent is "feeling", it belongs in Register.
   6. **Differentiation Check:** Can your design stand out in the results for this tag? (distinct visual, unique phrase, different animal than the top results)
-  7. **Final Decision:** Pass = existing listings exist AND curl validation passes AND competition is moderate AND design can differentiate.
+  7. **Final Decision:** Pass = existing listings exist AND search validation passes AND competition is moderate AND design can differentiate.
 
 **4. Long-Tail & Unconventional Discovery (Tavily):**
 - Invoke `tavily_tavily_search` with parameters `max_results: 20` for the following groups:
@@ -381,6 +380,9 @@ Your output must include:
 - [What gap your metadata fills]
 - [Any timing/seasonal recommendations]
 
+### 🧹 BANNED PRODUCT TERMS FILTER (CRITICAL)
+Before finalizing your tags, run a hard regex-style sweep across all three buckets (Register, Best-Fit, Proven). You MUST REMOVE any tag containing the words `shirt`, `tee`, `t-shirt`, `sticker`, `mug`, or `hoodie`. TeePublic and Redbubble append these automatically, so including them wastes tag space and damages SEO ranking.
+
 ### 🗄️ PIPELINE LOGGING
 Before logging any details to the database, you MUST validate your complete set of tags using the validation CLI:
 - Run `node bin/tags.js validate --register "<comma-separated register tags>" --best-fit "<comma-separated best-fit tags>" --proven "<comma-separated proven tags>" --main-tag "<main tag>" --animal "<animal>"`
@@ -395,6 +397,14 @@ After tag validation passes, log the SEO output to the DB:
 
 ## ✅ PIPELINE COMPLETE
 The 4-Agent Design Pipeline (Agent 1 → Agent 2 → Agent 3 → Agent 4) has successfully concluded. The design is approved and the SEO metadata is optimized for platform-specific discoverability.
+
+### 🗄️ PIPELINE LOGGING & FINAL VERIFICATION
+Log Operational Friction & Retrospective Notes: Leave an entry in the systemized friction registry before verification:
+- `node bin/pipeline.js friction log --worked "<what worked well and went smoothly during this step>" --differently "<what you did differently or would change next time>" --tools "<what search, tag validation, or database tools gave you issues, or 'none'>" --agent 4`
+
+Before finalizing, you MUST run the verification command to ensure the final context contains all required markdown sections:
+- `node bin/pipeline.js verify-step 4`
+If the command fails (exits with code 1), inspect the error message (e.g. missing SEO & Metadata Package section, or missing Title/Tags/Description fields, or missing friction log), correct your markdown context or output files, and re-run until it passes.
 
 ### 📦 STEP 5: CONSOLIDATE OUTPUT FILE
 After appending your deliverable to the context file, create a standalone consolidated output file with the final prompt and SEO metadata.

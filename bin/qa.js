@@ -7,15 +7,11 @@
 'use strict';
 
 const db = require('./db');
+const repo = require('../lib/RunRepository');
+const QAValidator = require('../lib/QAValidator');
 
-const REQUIRED = [
-  'ip_safety', 'meme_fidelity',
-  'cohesion_animal_expression', 'cohesion_expression_phrase',
-  'cohesion_phrase_prop', 'cohesion_prop_posture', 'cohesion_register',
-  'prop_count', 'format_fidelity', 'anatomy_risk'
-];
-
-const ALL = [...REQUIRED, 'phrase_market_validation', 'color_contrast', 'taste_score', 'shareability'];
+const REQUIRED = QAValidator.getRequiredChecks();
+const ALL = QAValidator.getAllChecks();
 
 function usage() {
   console.log(`
@@ -46,11 +42,7 @@ function parseArgs(argv) {
 
 async function cmdInit() {
   const run = await db.requireActiveRun();
-  const d = await db.getDb();
-  for (const name of ALL) {
-    d.run("INSERT OR IGNORE INTO qa_checks (run_id, check_name, status) VALUES (?, ?, 'pending')", [run.id, name]);
-  }
-  db.save();
+  await repo.initQA(run.id, ALL);
   console.log(`QA checklist initialized for run ${run.id} (${run.animal})`);
 }
 
@@ -61,21 +53,13 @@ async function cmdCheck(a) {
   const status = a.status;
   if (!['pass', 'fail', 'warn'].includes(status)) die('--status must be pass, fail, or warn');
   const run = await db.requireActiveRun();
-  const d = await db.getDb();
-  d.run("INSERT OR REPLACE INTO qa_checks (run_id, check_name, status, note, created_at) VALUES (?, ?, ?, ?, datetime('now'))",
-    [run.id, name, status, a.note || '']);
-  db.save();
+  await repo.updateQACheck(run.id, name, status, a.note || '');
   console.log(`qa ${name}: ${status}${a.note ? ' — ' + a.note : ''}`);
 }
 
 async function cmdStatus() {
   const run = await db.requireActiveRun();
-  const d = await db.getDb();
-  const stmt = d.prepare("SELECT check_name, status, note FROM qa_checks WHERE run_id = ? ORDER BY check_name");
-  stmt.bind([run.id]);
-  const rows = [];
-  while (stmt.step()) rows.push(stmt.getAsObject());
-  stmt.free();
+  const rows = await repo.getQAChecks(run.id);
   if (rows.length === 0) { console.log('No QA checks for this run. Run: qa init'); return; }
   const icon = { pass: '✅', fail: '❌', warn: '⚠️', pending: '⬜' };
   console.log(`\nQA Status — Run ${run.id} (${run.animal}):`);
@@ -86,23 +70,18 @@ async function cmdStatus() {
 
 async function cmdVerify() {
   const run = await db.requireActiveRun();
-  const d = await db.getDb();
-  const stmt = d.prepare("SELECT check_name, status FROM qa_checks WHERE run_id = ? AND check_name IN (" +
-    REQUIRED.map(() => '?').join(',') + ")");
-  stmt.bind([run.id, ...REQUIRED]);
-  const results = {};
-  while (stmt.step()) {
-    const r = stmt.getAsObject();
-    results[r.check_name] = r.status;
+  const results = await repo.getRequiredQACheckStatuses(run.id, REQUIRED);
+  const verifyResult = QAValidator.verify(results);
+  if (verifyResult.pass) {
+    console.log('✅ All required QA checks pass');
+    process.exit(0);
+  } else {
+    for (const fail of verifyResult.failures) {
+      console.error(`❌ ${fail.name}: ${fail.status}`);
+    }
+    console.error('\n❌ QA verification failed — required checks not all passing');
+    process.exit(1);
   }
-  stmt.free();
-  let allPass = true;
-  for (const name of REQUIRED) {
-    const s = results[name] || 'missing';
-    if (s !== 'pass') { allPass = false; console.error(`❌ ${name}: ${s}`); }
-  }
-  if (allPass) { console.log('✅ All required QA checks pass'); process.exit(0); }
-  else { console.error('\n❌ QA verification failed — required checks not all passing'); process.exit(1); }
 }
 
 function die(msg) { console.error(msg); process.exit(1); }

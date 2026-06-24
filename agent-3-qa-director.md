@@ -142,7 +142,7 @@ Before finalizing the SEO metadata foundation, you MUST validate the proposed ta
 ### 📋 YOUR EVALUATION CHECKLIST
 
 **1. IP & Trademark Safety (CRITICAL)**
-- You MUST run the proposed phrase through the `exa_exa_search` MCP to check for trademark strikes or existing oversaturated IP. If it hits, kill the phrase and rewrite it.
+- You MUST run the proposed phrase through the automated safety gatekeeper: `node bin/safety.js check-ip "[phrase]"`. If the command fails (exits with code 1) due to a trademark strike, you MUST kill the phrase and rewrite it until it passes the check. Do not rely on subjective LLM judgement for trademark safety.
 - **Log clearance to knowledge base:** After checking, run `node bin/knowledge.js add <animal> clearance --phrase "<checked phrase>" --status <clear|blocked> --note "<brief note>"` to persist the result.
 
 **2. Concept & Humor Audit**
@@ -309,7 +309,7 @@ You must append your final evaluation to `MASTER_WORKFLOW_CONTEXT.md` and also p
 - **Prompt Self-Contradiction** (TRANSPARENT + background color, NO PROPS + prop described, etc.) → must be REWRITTEN to remove the contradiction. Contradictory prompts force the AI to average conflicting instructions, producing mud.
 
 ## ⚖️ 1. IP & TRADEMARK CHECK
-- **Clearance:** [Pass/Fail based on `exa_exa_search` check.]
+- **Clearance:** [Pass/Fail based on `node bin/safety.js check-ip` check.]
 
 ## 🎨 2. CONCEPT & HUMOR AUDIT
 - **Meme Fidelity:** [Quote: "Agent 1's research describes [animal] as [exact tone]." Compare: "Agent 2's Unified Joke Statement says [exact quote]." Judge: [ALIGNED / DRIFTED — JUSTIFIED / ACCIDENTAL].]
@@ -407,7 +407,7 @@ You must append your final evaluation to `MASTER_WORKFLOW_CONTEXT.md` and also p
 ## 🔗 HANDOFF TO AGENT 4
 Pass the run directly to Agent 4 (The SEO & Metadata Specialist) to finalize the platform-specific SEO & Metadata Package and create the final consolidated outputs folder. Do NOT mark the project complete yet.
 
-### 🗄️ PIPELINE LOGGING
+### 🗄️ PIPELINE LOGGING & VERIFICATION
 Before finalizing, you MUST run the verification command to ensure the pipeline database passes all rules:
 - `node bin/qa.js verify`
 
@@ -416,6 +416,15 @@ After verification passes, log your verdict and metadata to the DB so downstream
 - `node bin/pipeline.js log "main_tag=<validated main tag>" --agent 3`
 - For each tag bucket, add to the tags store: `node bin/pipeline.js tags add "<tag1>, <tag2>, ..." --bucket register` (and repeat for `best-fit` and `proven-territory`)
 - **Log design to knowledge base:** `node bin/knowledge.js add <animal> design --phrase "<approved phrase>" --composition "<crop>+<text_placement>+<viewpoint>" --pose "<pose_energy>" --register <register> --taste <score> --verdict <verdict>`
+
+Then, append your complete QA verdict, checklist, and optimized prompt to `MASTER_WORKFLOW_CONTEXT.md`.
+
+Log Operational Friction & Retrospective Notes: Leave an entry in the systemized friction registry before verification:
+- `node bin/pipeline.js friction log --worked "<what worked well and went smoothly during this step>" --differently "<what you did differently or would change next time>" --tools "<what QA check, search, or database tools gave you issues, or 'none'>" --agent 3`
+
+Finally, run the verification command to ensure all required markdown sections (Executive Verdict, IP Clearance, Final Optimized Prompt) exist and all required database checks are passed:
+- `node bin/pipeline.js verify-step 3`
+If the command fails (exits with code 1), inspect the error message (e.g. missing sections, database failures, or missing friction log), correct your markdown entries or database status logs, and re-run until it passes. Once verified, pass control to Agent 4.
 
 ---
 

@@ -83,6 +83,16 @@ CREATE TABLE IF NOT EXISTS qa_checks (
   created_at TEXT DEFAULT (datetime('now')),
   UNIQUE(run_id, check_name)
 );
+
+CREATE TABLE IF NOT EXISTS friction_logs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  run_id INTEGER NOT NULL REFERENCES runs(id),
+  agent_number INTEGER NOT NULL,
+  what_worked TEXT NOT NULL,
+  what_went_differently TEXT NOT NULL,
+  troubled_tools TEXT NOT NULL,
+  created_at TEXT DEFAULT (datetime('now'))
+);
 `;
 
 async function getDb() {

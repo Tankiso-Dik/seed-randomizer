@@ -32,14 +32,12 @@ Run three distinct audits and produce a single structured report at the end. Do 
 - Look for any invalid parameters (such as `num_results`, `sort`, `date_range`, `highlights`, `summary`, `include_domains`, `exclude_domains`, `search_depth`, `search_filter`, `topic`).
 
 #### **STEP 3: RUN MOCK QUERIES**
-- Execute test calls using `exa_exa_search`, `serper_serper_search`, and `tavily_tavily_search` with various animal and meme phrases to verify they return rich results without throwing validation or API errors.
+- Execute test calls using the internal CLI wrappers (`node bin/search.js suggest`, etc.) to verify they return rich results without throwing validation errors.
 
 #### **STEP 4: CORRECT AND OPTIMIZE PROMPTS** (IF NEEDED)
-- For any invalid parameters found, modify the agent's prompt file to:
-  - Keep only schema-valid parameters (`query`, `max_results`).
-  - Move all domain filters (e.g., `site:teepublic.com`), date restrictions (e.g., `2026`), and advanced terms directly into the `query` string.
-  - Add tiered fallback search paths so the agent never gets stuck on unique or new search terms that return 0 results.
-  - Include direct snippet keyword mining instructions to extract search tags even if structural properties like `relatedSearches` are omitted from the tool output.
+- For any invalid CLI parameters found, modify the agent's prompt file to:
+  - Keep only schema-valid parameters for the specific CLI command.
+  - Move all domain filters and advanced terms directly into the `query` string where applicable.
 
 ---
 
@@ -57,10 +55,10 @@ Read `agent-4-seo-specialist.md` and evaluate:
 - Count the Register tag rules: does it ever allow animal names in register tags? Flag any contradiction.
 - Check the Best-Fit bucket: does it require at least half of Best-Fit tags to be animal+register combos? If the rule exists but is ambiguous, flag the ambiguity.
 
-**B. Curl suggestqueries Validation:**
-- Does the prompt's curl command syntax match the actual Etsy/Google suggestqueries API? Test the exact curl commands from Agent 4's prompt by running them.
-- If curl commands fail, flag the exact line and the fix.
-- Does the prompt handle the case where suggestqueries returns 0 suggestions gracefully? (It should instruct the agent to widen or discard, not stall.)
+**B. CLI `node bin/search.js suggest` Validation:**
+- Does the prompt's `node bin/search.js suggest` syntax match the actual CLI? Test the exact commands from Agent 4's prompt by running them.
+- If commands fail, flag the exact line and the fix.
+- Does the prompt handle the case where the CLI returns 0 suggestions gracefully? (It should instruct the agent to widen or discard, not stall.)
 
 **C. Tag Source Chain:**
 - Agent 4 says to start from Agent 1's Register Vocabulary and Seed-Specific Search Language.
@@ -184,7 +182,7 @@ After analyzing both agents, synthesize:
 Audit whether the design pipeline actually produces coherent designs — does the final prompt trace back to Agent 1's research without drift, or does each agent reinterpret and dilute the original idea?
 
 #### **STEP 10: READ THE LATEST PIPELINE OUTPUT**
-Read `MASTER_WORKFLOW_CONTEXT.md` (the most recent completed pipeline run).
+Read `MASTER_WORKFLOW_CONTEXT.md` (or the most recent `PIPELINE_RETRO_*.md` file if the context is currently archived/empty).
 
 #### **STEP 11: TRACE THE CHAIN (Agent 1 → Agent 2 → Agent 3 → Agent 4 → Agent 5 if present)**
 For each hop, evaluate:
@@ -221,7 +219,7 @@ For each hop, evaluate:
 Audit whether the final design prompt actually follows the extensive rule matrices, format guidance, and conditional requirements defined in Agent 2's prompt and enforced by Agent 3. This is NOT about drift between agents — it's about whether the rules Agent 2 is supposed to follow were actually followed, and whether Agent 3 properly held the design to those rules.
 
 #### **STEP 12: EXTRACT THE FINAL PROMPT**
-Read MASTER_WORKFLOW_CONTEXT.md and extract the final image prompt from Agent 3's Section 4 (Optimized Image Prompt). Also extract Agent 2's original phrase, format choice, expression cluster, posture, palette, and typography choice — all the declared decisions that the rules matrices govern.
+Read `MASTER_WORKFLOW_CONTEXT.md` (or the recent `PIPELINE_RETRO_*.md`) and extract the final image prompt from Agent 3's Section 4 (Optimized Image Prompt). Also extract Agent 2's original phrase, format choice, expression cluster, posture, palette, and typography choice — all the declared decisions that the rules matrices govern.
 
 #### **STEP 13: AUDIT AGAINST EVERY RULE MATRIX**
 

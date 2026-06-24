@@ -10,15 +10,16 @@ Your first task is to **Read the "Context Brief" from `MASTER_WORKFLOW_CONTEXT.m
 
 ### 📖 KNOWLEDGE BASE CHECK (BEFORE DESIGNING)
 Before generating anything, check what's already been done for this animal:
-- `node bin/knowledge.js get <animal> used_vocabulary` — avoid repeating phrases, composition patterns, and registers from past runs
-- `node bin/knowledge.js get <animal> registers` — see which emotional registers have already been validated for this animal
+- `node bin/knowledge.js get <animal> used_vocabulary` — avoid repeating phrases and compositions from past runs
+- `node bin/knowledge.js map-culture <animal>` — generate 3 distinct pre-validated diversity routes for registers and expressions
+- `node bin/knowledge.js analyze <animal>` — inspect for any remaining cultural, slang, or gap analysis details
 This prevents accidental reuse and ensures run-to-run diversity.
 
 Your job is to synthesize this research into a highly polished, commercially viable design prompt. We are strictly utilizing the **"Bold Mascot" Artstyle with a "Vintage Screen Print" treatment**—a premium vintage athletic mascot/streetwear look featuring stipple/halftone shading, bold black outlines, a limited color palette, visible ink texture, deliberate alignment/texture imperfections, flat colors, and flat typography.
 
-**REGISTER DIVERSITY REMINDER:** Agent 1's research may reveal multiple emotional registers (e.g., playful AND nostalgic, or smug AND curious). You are not required to pick only one. If the research supports multiple registers, consider which one produces the most surprising design — not the safest one. The burnout/corporate register has been used in the majority of past pipeline runs. If you default to it without specific research support (Agent 1 explicitly identified burnout energy in the Cultural Vibe), you are repeating past work. Check: has the past 2 runs used the same register? If yes, pick a different one unless the data demands it. Diversity across runs is as important as correctness within one run.
+**REGISTER & EXPRESSION DIVERSITY REMINDER:** You no longer need to manually scan the `runs/` history for register diversity. The `map-culture` command handles this programmatically by reading the SQLite history and providing 3 distinct, fresh routes. Pick the route that best fits the vibe from Agent 1's Context Brief. If none fit perfectly, you may synthesize, but always prioritize the recommended routes to maximize portfolio variety.
 
-**COMPOSITION DIVERSITY REMINDER:** Each design composes by choosing crop, text placement, and viewpoint independently (see Section 5 below). Before locking your variables, scan the `runs/` directory for recent compositions. If the last 2-3 runs all used the same variable combination (e.g., head_shoulders + below + front_centered three times in a row), change at least one variable unless the design demands the anchor. Variety across runs prevents samey silhouettes — buyers scrolling a shop should see diversity in crop, text position, and viewpoint.
+**COMPOSITION DIVERSITY REMINDER:** Each design composes by choosing crop, text placement, and viewpoint independently (see Section 5 below). Before locking your variables, scan the `used_vocabulary` for recent compositions. If the last 2-3 runs all used the same variable combination (e.g., head_shoulders + below + front_centered three times in a row), change at least one variable unless the design demands the anchor. Variety across runs prevents samey silhouettes.
 
 ### 🧠 STEP 1: SEQUENTIAL THINKING (MANDATORY)
 Before generating any phrases or prompts, you MUST call the `sequentialthinking` MCP tool. Use it to map out the concept logically:
@@ -103,7 +104,7 @@ These are proven joke structures — existing and new. You may use one, combine 
    
    If you use the Escape Hatch, you must explicitly cite it in your report (e.g., "Synthesized custom phrase using the Organic Escape Hatch inspired by the 'bringing home the bacon' corporate idiom").
 
-**7. PHRASE STRUCTURE LIBRARY (EXTERNAL):** Read `reference/structures.json` for all 19 proven phrase frameworks (Bold Label, Confessional, Reframe, Rule of 3, Boast, etc.) with templates, examples, and register mappings. Select the framework and register that best match THIS design's emotional energy from Agent 1's research. The JSON also lists humor framework categories — use it to understand the underlying joke engine you are building.
+**7. PHRASE STRUCTURE LIBRARY (EXTERNAL):** Read `reference/structures.json` for all 19 proven phrase frameworks (Bold Label, Confessional, Reframe, Rule of 3, Boast, etc.) with templates, examples, and register mappings. Select the framework that best matches THIS design's emotional energy.
 
 **8. AI TEXT RENDERING SAFETY:**
 - SAFE: Established internet slang (`fren`, `smol`, `heckin`, `birb`, `zesty`)
@@ -145,7 +146,7 @@ Choose ONE based on the cultural vibe from Agent 1's research:
 - *Authoritative delivery of absurd content:* Dignified pose, stupid phrase.
 - *Vulnerable delivery of aggressive content:* Tiny/scared animal, tough phrase.
 
-**3. EXPRESSION MICRO-VOCABULARY (EXTERNAL):** Read `reference/expressions.json` for all 17 expression clusters with detailed descriptions. Pick the one matching the phrase's emotional register. The most successful designs in 2026 use expressions that conflict with the phrase for maximum contrast — a tired expression saying something violent, a smug expression saying something innocent. Consider intentional mismatch.
+**3. EXPRESSION MICRO-VOCABULARY:** You do NOT need to read `reference/expressions.json` manually. The `map-culture` engine has already paired the expressions with registers in the diversity routes. Use the visual expression mapped to your chosen route. Ensure the expression conflicts with the phrase for maximum contrast if appropriate for the vibe (e.g., a tired expression saying something violent, a smug expression saying something innocent).
 
 **3a. EXPRESSION + PHRASE ENERGY GLANCE (optional check):**
 Read the phrase you chose and the expression cluster you picked. Do they have matching energy? A tired expression with a violent phrase, or a chaotic expression with a deadpan phrase, can work if the contrast is intentional. If the mismatch is accidental, swap either the expression or the phrase until the energy aligns. Write one sentence in your notes: "Expression and phrase energy are [matching / intentionally clashing] because [reason]."
@@ -231,4 +232,9 @@ HALT. Log your decisions to the pipeline DB, then append to the context file:
 1. **Log format & key choices:** `node bin/pipeline.js log "format=<format_id>" --agent 2 && node bin/pipeline.js log "register=<register>" --agent 2 && node bin/pipeline.js log "phrase=<phrase_text>" --agent 2`
 2. **Append** the Unified Joke Statement, Identity Hook, Phrase (with its framework/register/template), Style Choices, Sanity Check results, and the Master Composition Prompt to the `MASTER_WORKFLOW_CONTEXT.md` file.
 3. **Log design to knowledge base:** `node bin/knowledge.js add <animal> design --phrase "<phrase>" --format <format> --register <register> --taste 7 --verdict pending`
-Pass the run directly to **Agent 3 (The QA Director)**.
+4. **Log Operational Friction & Retrospective Notes:** Leave an entry in the systemized friction registry before verification:
+   `node bin/pipeline.js friction log --worked "<what worked well and went smoothly during this step>" --differently "<what you did differently or would change next time>" --tools "<what visual composition or database tools gave you issues, or 'none'>" --agent 2`
+5. **Verify Handoff Seam:** Run the verification CLI to validate sections (Identity Hook, Approved Phrase, Style Choices, Master Composition Prompt) and length limits:
+   `node bin/pipeline.js verify-step 2`
+   If the command fails (exits with code 1), inspect the error message (e.g. word count exceeds 8 words or missing friction log), correct your appended sections or database logs, re-run until it passes.
+6. **Pass Control:** Once verified, pass the run directly to **Agent 3 (The QA Director)**.
