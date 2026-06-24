@@ -167,8 +167,7 @@ function addDesign(data, a) {
     if (!validText.includes(parts[1])) die(`Invalid text_placement "${parts[1]}". Valid: ${validText.join(', ')}.`);
     if (!validView.includes(parts[2])) die(`Invalid viewpoint "${parts[2]}". Valid: ${validView.join(', ')}.`);
   }
-  const validPoses = ['composed', 'collapsed', 'gesturing', 'action', 'peering'];
-  if (a.pose && !validPoses.includes(a.pose)) die(`Invalid --pose "${a.pose}". Valid: ${validPoses.join(', ')}.`);
+  // pose is now a flexible descriptor, so we do not restrict to a strict enum.
   data.design_history.push({
     run_id: data.run_count + 1, phrase: a.phrase,
     composition: a.composition || null,
@@ -179,7 +178,12 @@ function addDesign(data, a) {
   });
   if (!data.used_vocabulary.phrases.includes(a.phrase)) data.used_vocabulary.phrases.push(a.phrase);
   if (a.composition && !data.used_vocabulary.compositions.includes(a.composition)) data.used_vocabulary.compositions.push(a.composition);
-  if (a.pose && !data.used_vocabulary.pose_energies.includes(a.pose)) data.used_vocabulary.pose_energies.push(a.pose);
+  if (a.pose) {
+    const poses = a.pose.split(',').map(p => p.trim()).filter(Boolean);
+    for (const p of poses) {
+      if (!data.used_vocabulary.pose_energies.includes(p)) data.used_vocabulary.pose_energies.push(p);
+    }
+  }
   if (a.register && !data.used_vocabulary.registers.includes(a.register)) data.used_vocabulary.registers.push(a.register);
   data.run_count++;
   data.last_run = new Date().toISOString().slice(0, 10);

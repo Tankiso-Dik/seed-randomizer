@@ -175,15 +175,18 @@ Before finalizing the SEO metadata foundation, you MUST validate the proposed ta
 - **3f. Typography, Case & Spelling Check (CRITICAL):** Ensure the text is STRICTLY FLAT. The text must be enclosed in double quotes exactly as Agent 2 designed it (e.g. `"HEAD EMPTY ONLY FLOAT"` or `"head empty only float"` or `"Head Empty Only Float"`). Verify the prompt explicitly says "no spelling mistakes" and specifies one of the font choices with a rationale that matches the phrase's register. If the font choice contradicts the phrase energy (clinical monospace for a chaotic phrase, hand-drawn for a bold label) with no intentional contrast explained, FLAG IT and suggest a better font. If the prompt asks for "3D letters," "drop shadow," "extrusion," "cursive," or "isometric text," REWRITE it immediately.
 
 **4. Composition Variable & Pose Energy Validation (The Hard Gate)**
-- **4a. 4-Variable Coherence:** Read Agent 2's chosen composition (crop + text placement + viewpoint + pose_energy). Verify all 4 variables are declared and the combination makes physical sense. Cross-reference with `reference/composition.json`:
-  - Check the `invalid_combinations` table. Your 4-variable combo must NOT appear there.
+- **4a. 4-Variable Coherence:** Read Agent 2's chosen composition (crop + text placement + viewpoint + pose_energy). Pose energy is now a flexible, comma-separated list of descriptors. Verify all 4 variables are declared and the combination makes physical sense. Cross-reference with `reference/composition.json`:
+  - Check the `invalid_combinations` table. Your 4-variable combo must NOT appear there (if pose energy is a blended list, check each individual descriptor).
   - Check `viewpoint.compatible_crops` — does the viewpoint allow the chosen crop?
-  - Check `pose_energy.compatible_viewpoints` — does the pose allow the chosen viewpoint?
-  - Check `pose_energy.compatible_crops` — does the pose allow the chosen crop?
+  - Check `pose_energy` descriptors' compatible viewpoints/crops — does the chosen viewpoint/crop match at least one of the pose energy descriptors?
   - Check `text_placement.compatible_crops` — does the text placement allow the chosen crop?
   - If any dependency is violated, REWRITE the composition choice.
-- **4b. Anatomy Risk Override:** **CRITICAL FLAG FOR `action_diagonal` VIEWPOINT:** If viewpoint is `action_diagonal` or pose_energy is `action` or `gesturing`, verify the prompt explicitly describes chunky, simple paws or clearly separated wings/limbs. If not, REWRITE to prevent finger-melting.
+- **4b. Anatomy Risk Override:** **CRITICAL FLAG FOR `action_diagonal` VIEWPOINT:** If viewpoint is `action_diagonal` or pose_energy involves `action` or `gesturing`, verify the prompt explicitly describes chunky, simple paws or clearly separated wings/limbs. If not, REWRITE to prevent finger-melting.
 - **4c. Context-Driven Choices:** Verify Agent 2's composition variables each make sense given the cultural context from Agent 1. Did Agent 2 start from pose_energy and build upward, or default to the anchor? Flag forced/default choices that should have been customized. If all 4 variables match the anchor defaults with no customization, flag as "missed composition diversity opportunity" — the agent did not engage with the decision framework.
+- **4d. Constraint Tiers Audit:** Read the constraint tiers from `reference/composition.json`. Categorize any deviations:
+  - **Hard Constraints (Must never break):** If the prompt violates a hard constraint (e.g., 3D lettering, text overlapping, non-3:4 ratio), you MUST fail/rewrite it.
+  - **Anchor Constraints (Best practice defaults):** If the prompt deviates from an anchor constraint (e.g., custom phrase structure, custom palette, blended pose energy), check if the agent documented a creative justification. If yes, pass it. If no, flag it.
+  - **Soft Guidelines (Helpful suggestions):** Do not penalize or flag deviations from soft guidelines.
 
 **5. 🦴 PHYSICAL LOGISTICS AUDIT (CRITICAL — SAVES IMAGE CREDITS)**
 Read the final prompt's pose description, then cross-reference with `reference/composition.json` → `anatomy_logistics.counted_limbs_by_pose`:
@@ -426,7 +429,7 @@ Before making any judgment or rewrite, you must cross-reference the pipeline's o
 
 1. **Validate "Bold Mascot with Vintage Screen Print" Style Execution**: The prompt MUST specify "Flat colors ONLY, NO gradients, NO 3D typography, NO drop shadows." It must include "stipple/halftone shading, visible ink texture, deliberate alignment/texture imperfections" and "thick bold outlines." If it includes "restrained engraving," "photorealistic," or "3D," flag it as a Style Clash and rewrite it.
 2. **Enforce Hero Prop & Element Constraints**: The design must contain at most 1 hero prop from the approved list (sunglasses, tiny hat, flat sign, hanging tag word) and no banned props (mechanical, 3D, text-heavy, full scenes, groups).
-3. **Composition Validity**: Validate the crop, text placement, viewpoint, and pose_energy variables are all declared and their combination passes the `invalid_combinations` table in `reference/composition.json`. Check all 4 variable dependencies (pose→viewpoint, viewpoint→crop, text_placement→crop).
+3. **Composition Validity**: Validate the crop, text placement, viewpoint, and pose_energy variables are all declared and their combination passes the `invalid_combinations` table in `reference/composition.json`. Support flexible, comma-separated pose energy descriptors (checking compatibility for any of them) and validate rules against the Hard, Anchor, and Soft constraint tiers.
 4. **Physical Logistics & Anatomy**: Cross-reference the described pose with `reference/composition.json` → `anatomy_logistics.counted_limbs_by_pose`. Verify limb counts match what the pose can physically show. Check for common AI execution traps from the `common_ai_execution_traps` table. A prompt with impossible anatomy (belly-down + all 4 limbs) must be REJECTED — it will waste image credits.
 5. **Prompt Self-Contradiction Check**: Scan the entire prompt for contradictions (TRANSPARENT + background color, NO PROPS + prop described, flat colors + gradients, face_only crop + full body described, aspect ratio stated twice). Every contradiction must be resolved before the prompt can pass.
 6. **Strict Platform Compliance**: 

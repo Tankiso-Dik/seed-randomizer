@@ -159,31 +159,35 @@ Read the phrase you chose and the expression cluster you picked. Do they have ma
 - **Wings/Feathers:** Bold, simplified blocky shapes. NO individual detailed feathers.
 - **Tails:** Short, thick, or tucked. NO long, thin, curling tails.
 
+**Constraint Tiers (How to Treat Rules):**
+Before choosing your design variables, read the constraint tiers in `reference/composition.json`:
+- 🔴 **Hard Constraints (POD/Technical Rules):** Canvas ratio (3:4), Transparent background, Flat 2D lettering (No 3D/shadows), Text isolation (15% buffer), Limb count matches pose, Limb separation for high-risk. These MUST be followed strictly. No exceptions are allowed.
+- 🟡 **Anchors (Best Practices / Starting Points):** Predefined palettes, predefined structures, 8-word limit, single registers, pose-energy defaults. These are defaults. You are encouraged to deviate from or combine them (e.g. blend two registers, synthesize a custom phrase structure, mix palettes, use multiple pose energies) when the cultural context demands it, provided you document your creative reasoning.
+- 🟢 **Soft Guidelines (General Defaults):** Emotional paradox type, search results count ranges. These can be broken freely without justification.
+
 **5. COMPOSITION VARIABLES (4 Independent Choices — Start with Pose, Build Upward)**
 
 Read `reference/composition.json` for the full variable reference, invalid combination table, and decision framework.
 
 **THE WRONG WAY (don't do this):** Start from the anchor (`head_shoulders + below + front_centered`) and only change things when you feel like it. This produces samey designs.
 
-**THE RIGHT WAY:** Start from the **pose energy** (what is the animal DOING?), then pick viewpoint, crop, and text placement in order. Each choice constrains the next. Never default — justify every choice.
+**THE RIGHT WAY:** Start from the **pose energy** (what is the animal physically doing?), then pick viewpoint, crop, and text placement in order. Each choice constrains the next. Never default — justify every choice.
 
-**Step 1 — Pose Energy (NEW variable):** What is the animal physically doing?
+**Step 1 — Pose Energy (Flexible Descriptors):** What is the animal physically doing?
+Instead of a rigid single pick, `pose` is a flexible, comma-separated list of descriptors. Real animal postures often blend energies. For example:
+- A sloth melting off a tree limb can be `collapsed, gesturing`.
+- A goose pointing a wing accusingly while standing tall can be `composed, gesturing`.
+- A cat leaping in panic but frozen mid-air can be `action, gesturing`.
 
-| Pose | What It Means | Works With |
-|------|--------------|------------|
-| `composed` | Upright, structural. Sitting or standing with dignity. | front_centered or side_profile; any crop except face_only+collapsed |
-| `collapsed` | Boneless heap. Lying flat, no structural integrity. | full_body crop only; front_centered or side_profile |
-| `gesturing` | Active paws — pressing together, reaching, pleading. | front_centered viewpoint only; head_shoulders or full_body crop only |
-| `action` | Mid-motion — running, flying, lunging. HIGH RISK. | action_diagonal viewpoint + full_body crop only |
-| `peering` | Looking down from above. | peering_down viewpoint only |
+You can use the vocabulary descriptors (`composed`, `collapsed`, `gesturing`, `action`, `peering`) as anchors, or combine them with custom descriptive words to accurately fit the animal's behavior.
 
-**Step 2 — Viewpoint:** Pick what matches the pose. `action_diagonal` only works with `pose=action`. `peering_down` only works with `pose=peering`. `side_profile` only works with `crop=full_body`.
+**Step 2 — Viewpoint:** Pick what matches the pose. `action_diagonal` only works with `pose` involving `action`. `peering_down` only works with `pose` involving `peering`. `side_profile` only works with `crop=full_body`.
 
 **Step 3 — Crop:** Pick what fits the viewpoint and makes the joke visible. If the body language IS the joke, use `full_body`. If only the face matters, use `face_only`. Most things use `head_shoulders`.
 
 **Step 4 — Text Placement:** Pick what fits the remaining canvas space. If the animal dominates the upper canvas, text must be `small_bottom`. If the pose is diagonal, text goes in `negative_space`. Default is `below`. `arches_face` only works with `crop=face_only`.
 
-**YOUR COMPOSITION = 4 variables, each chosen with a reason. Document as:** `crop=full_body, text=below, view=front_centered, pose=collapsed`.
+**YOUR COMPOSITION = 4 variables, each chosen with a reason. Document as:** `crop=full_body, text=below, view=front_centered, pose=collapsed` (or comma-separated descriptors, e.g. `pose=collapsed, gesturing`).
 
 **⚠️ BEFORE LOCKING: CHECK THESE**
 
