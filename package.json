@@ -1,5 +1,13 @@
 {
   "name": "seed-randomizer-new",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "bin": {
+    "pipeline": "./bin/pipeline.js",
+    "search": "./bin/search.js",
+    "context": "./bin/context.js"
+  },
+  "dependencies": {
+    "sql.js": "^1.14.1"
+  }
 }

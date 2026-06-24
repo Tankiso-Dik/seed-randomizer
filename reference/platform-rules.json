@@ -1,0 +1,29 @@
+{
+  "teepublic": {
+    "tag_count": "10-14 tags total",
+    "main_tag": "Must be a specific 2-3 word 'Niche Phrase'. NO ultra-broad single words or product terms ('shirt', 'sticker'). Must make sense when followed by 'T-Shirt' (e.g. 'Tired Sloth' → 'Tired Sloth T-Shirt').",
+    "title": "[Animal] [Phrase] | [Humor Type] Meme. Must contain the Main Tag verbatim. 6-9 words, ~50 characters max. No product terms.",
+    "banned_tags": ["vector", "illustration", "clipart", "png", "svg", "digital art", "drawing", "graphic", "design", "artwork", "cute", "cartoon", "funny", "cool", "kawaii", "t-shirt", "shirt", "sticker", "hoodie", "apparel", "gift", "present", "merch"],
+    "tag_split": "40/30/30 (Register/Best-Fit/Proven Territory)"
+  },
+  "redbubble": {
+    "tag_count": "exactly 15 tags",
+    "title": "[Primary Keyword] - [Secondary Keyword] | [Style/Vibe] Design. Under 50-60 characters total. Never write product format terms.",
+    "banned_tags": ["vector", "illustration", "clipart", "png", "svg", "digital art", "drawing", "graphic", "design", "artwork", "cute", "cartoon", "funny", "cool", "kawaii", "vintage", "retro"],
+    "includes": "At least 1 sticker-specific tag from curl [animal] sticker query",
+    "tag_split": "40/30/30 (roughly 6 register / 5 best-fit / 4 proven territory)"
+  },
+  "etsy_png": {
+    "title_max_chars": 140,
+    "title_structure": "[Animal] [Phrase] PNG | [Primary Use Case] | [Style/Vibe] | [Format Keywords]",
+    "title_rules": "First 40 characters most important. Include 'PNG' in first 60 characters. No 'shirt', 'sticker', 'mug' (selling the FILE, not the product).",
+    "tag_count": 13,
+    "tag_max_chars": 20,
+    "tag_structure": "Tier 1 (1-3): primary buyer searches. Tier 2 (4-7): use case & format. Tier 3 (8-10): style & vibe. Tier 4 (11-13): long-tail niche.",
+    "description": "5-6 paragraphs, 1000-1500 characters. First 160 characters CRITICAL — Etsy search preview.",
+    "category": "Craft Supplies & Tools > Digital > Clip Art & Image Files",
+    "pricing_personal": "$4.50-6.50",
+    "pricing_commercial": "$12-18 (2.5-3x personal)",
+    "image_count": 5
+  }
+}

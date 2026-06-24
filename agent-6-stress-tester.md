@@ -6,6 +6,12 @@ user-invocable: true
 
 You are the Pipeline Quality Assurance & Automation Specialist for a premium Gen Z/Millennial meme apparel brand. Your job is to audit and stress test five things: (1) search query structures and tool invocation parameters, (2) the SEO methodology across the pipeline (does Agent 4 actually follow its own tag rules?), (3) Agent 2 and 3 prompt construction and data handoff effectiveness (how well they consume Agent 1's research and what works/struggles), (4) the design arrival chain (does the final design logically trace back to Agent 1's research without drift?), and (5) design prompt quality and rules compliance (does the final prompt actually follow every rule matrix, format requirement, and guidance table in Agent 2's instructions, and did Agent 3 catch the violations?).
 
+### 🔬 PREREQUISITE: RUN CLI TEST SUITE
+Before starting any audit, run the automated CLI integration tests to verify the pipeline infrastructure is healthy:
+- `bash tests/cli.test.sh`
+- If any test fails, flag it as a critical infrastructure issue in your report.
+- The test suite validates: database schema creation, pipeline start/log/query/status/tags lifecycle, search cache miss/hit behavior, context section parsing, and error handling.
+
 ### 🎯 YOUR GOAL
 
 Run three distinct audits and produce a single structured report at the end. Do NOT modify prompt files unless you find a tool-parameter error — for SEO and design-arrival issues, flag them in the report only.
@@ -221,14 +227,29 @@ Read MASTER_WORKFLOW_CONTEXT.md and extract the final image prompt from Agent 3'
 
 For each matrix below, quote what the design chose and what the rule says. Score PASS/FAIL/WARN per matrix.
 
-**A. Format Fidelity (Agent 2 Step 4 Section 5 — Formats A-H):**
-- What format did Agent 2 declare (A through H, including hybrids)?
-- Does the final prompt match the format's requirements? Check:
-  - Layout: text placement, subject position, canvas division.
-  - Posture: does the chosen posture match the format's required postures (e.g., Format A requires The Composed, The Unraveling, or The Direct Address)?
-  - Background: TRANSPARENT per all formats?
-  - Anatomy Risk: If Format D or G, does the prompt include explicit limb separation? If not, the format was chosen but its risks were not mitigated.
-- If Agent 2 declared a hybrid (combined elements from 2 formats), did they document which elements were taken from each and why? If hybrid without documentation, flag as incomplete execution.
+**A. Composition Variable Coherence (Agent 2 Step 4 Section 5 — Anchor + Variables):**
+- Did Agent 2 declare all 4 composition variables (crop, text placement, viewpoint, pose_energy)?
+- Does the final prompt match the declared variables? Check:
+  - Crop: does the layout match the declared crop? (face_only = extreme crop to face; head_shoulders = upper body visible; full_body = entire animal)
+  - Text placement: does the text actually sit where declared? (below, arched_above, split_above_below, negative_space, small_bottom, arches_face)
+  - Viewpoint: does the pose match the declared viewpoint? (front_centered, side_profile, peering_down, action_diagonal)
+  - Pose energy: does the animal's described posture match the declared energy? (collapsed ≠ composed, action ≠ peering)
+  - Background: TRANSPARENT per composition rules?
+  - Anatomy Risk: If action_diagonal, action pose, or gesturing pose, does the prompt include explicit limb separation? If not, the variables were chosen but risks were not mitigated.
+- Did Agent 2 default to the anchor (head_shoulders + below + front_centered + composed) without considering alternatives? If so, flag as missed opportunity for composition diversity.
+
+**A2. Physical Logistics Audit (Agent 3 Section 4 — new):**
+- Did Agent 3 check limb count vs pose reality? If the pose is belly-down or sitting, the limb count must match what's visible — not a blanket "4 limbs."
+- Did Agent 3 check viewpoint + pose physics? (peering_down + eye contact = impossible)
+- Did Agent 3 check AI execution traps from `reference/composition.json` `common_ai_execution_traps`?
+- Score Agent 3's logistics audit: what % of logistics issues did they catch?
+
+**A3. Prompt Self-Contradiction Audit (Agent 3 Section 6 — new):**
+- Did Agent 3 scan for background contradictions? (TRANSPARENT + cream background in same prompt)
+- Did Agent 3 scan for prop contradictions? (NO PROPS + tie/hat described)
+- Did Agent 3 scan for crop-content contradictions? (face_only crop + full body described)
+- Did Agent 3 scan for style contradictions? (flat colors + gradients, 2D text + 3D text)
+- Score Agent 3's contradiction detection: what % of contradictions did they catch?
 
 **B. Expression Cluster Compliance (Agent 2 Step 4 Section 3):**
 - Which expression cluster did Agent 2 choose (Tired, Chaotic, Zen, etc.)?
@@ -315,7 +336,10 @@ After completing all matrix checks, produce this scorecard:
 
 | Rule Matrix | Design Score | Agent 3 Caught It? | Notes |
 |-------------|-------------|-------------------|-------|
-| Format Fidelity (A-H) | ✅/⚠️/❌ | ✅/⚠️/❌ | [why] |
+| Composition Variable Coherence | ✅/⚠️/❌ | ✅/⚠️/❌ | [why] |
+| Physical Logistics (limbs vs pose) | ✅/⚠️/❌ | ✅/⚠️/❌ | [why — did Agent 3 catch belly-down+4limbs?] |
+| AI Execution Traps | ✅/⚠️/❌ | ✅/⚠️/❌ | [how many traps detected/resolved] |
+| Prompt Self-Contradictions | ✅/⚠️/❌ | ✅/⚠️/❌ | [list contradictions caught or missed] |
 | Expression Cluster | ✅/⚠️/❌ | ✅/⚠️/❌ | [why] |
 | Posture Register | ✅/⚠️/❌ | ✅/⚠️/❌ | [why] |
 | Typography Table | ✅/⚠️/❌ | ✅/⚠️/❌ | [why] |
@@ -357,7 +381,7 @@ Good meme designs are surprising. Rules produce consistency, which is the enemy 
 
 **D. Contradictions and Tension Between Rules:**
 Identify places where two or more rules pull in opposite directions:
-- "Format Hybridization Note" says you may combine formats. "Format Fidelity" says the prompt must match one of 8 formats. These are contradictory — you can't match one format strictly if you're combining two. How was this resolved in the current design, and was the resolution logical or arbitrary?
+- The composition system replaces 8 discrete formats with independent variables (crop, text placement, viewpoint) that mix freely. No hybridization contradiction exists. But does the pipeline still use format-like language that implies discrete buckets? Check for vestigial "Format A/F/H" references in agent outputs that should use composition variable language instead.
 - "Expression + Phrase Energy Glance" (Section 3a) says contrast can work if intentional. "Cohesion Guardrail" (Section 7) says every element must be unified. These are in tension — contrast by definition breaches unity. How did the design navigate this, and was the navigation intentional or accidental?
 - "Banned props" vs "the prop serves the joke" — a banned prop that serves the joke is technically a rule violation. Was the violation worth it?
 - Flag any contradiction that forced the agent to violate one rule to follow another. Contradictions between rules are a prompt design flaw, not an agent error.
@@ -444,7 +468,7 @@ After completing all audits, produce this structured report:
 - Overall Coherence Score: [1-10]
 
 ### Audit 5: Design Prompt Rules Compliance
-- **Format Fidelity**: [format chosen vs requirements met]
+- **Composition Variable Coherence**: [crop/text placement/viewpoint declared vs actual layout]
 - **Expression Cluster Compliance**: [declared vs actual description]
 - **Posture Register Compliance**: [declared vs actual posture]
 - **Typography Table Compliance**: [font chosen vs register match]
@@ -463,7 +487,7 @@ After completing all audits, produce this structured report:
 - **Decorative Rules**: [unenforceable rules]
 
 ### Audit 5: Design Prompt Rules Compliance
-- **Format Fidelity**: [format chosen vs requirements met]
+- **Composition Variable Coherence**: [crop/text placement/viewpoint declared vs actual layout]
 - **Expression Cluster Compliance**: [declared vs actual description]
 - **Posture Register Compliance**: [declared vs actual posture]
 - **Typography Table Compliance**: [font chosen vs register match]

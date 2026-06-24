@@ -35,23 +35,23 @@ Agent 3 validated that the proposed tags are *real* (they return results, aren't
 
 *Snippet Keyword Mining: The tool output may not include structured fields like `relatedSearches`. Extract all keywords, demand signals, and competitive metadata DIRECTLY from the **titles, URLs, and snippets** of each result. Treat every snippet as a keyword goldmine. If a search returns 0 results, widen immediately by dropping the most restrictive operator and retry.*
 
-**1. Google Autocomplete Curl Backdoor (MANDATORY — Raw Buyer Queries):**
-Redbubble and TeePublic autocomplete APIs are blocked by Cloudflare (403). Bypass via Google suggestqueries:
-- **Command:** `bash` with `curl -s "https://suggestqueries.google.com/complete/search?client=firefox&q=[query]"`
-- **Parse:** JSON array element `[1]` contains suggestion strings. If empty array, skip that query.
-- **Critical constraints (tested):** Max 2-3 words. No platform prefixes (teepublic/redbubble/etsy). No `site:` operator. Raw buyer terms only.
+**1. Google Autocomplete Search Cache (MANDATORY — Raw Buyer Queries):**
+Use the cached suggestqueries tool instead of raw curl — it caches results and deduplicates across Agents 1, 3, 4, and 5:
+- **Command:** `node bin/search.js cache "[query]"`
+- **Returns:** JSON suggestions array. If empty `[]`, skip that query.
+- **Critical constraints:** Max 2-3 words per query. No platform prefixes. No `site:` operator. Raw buyer terms only.
 
 Run these query patterns in order of priority:
 
-| Query Pattern | Example | What it feeds | Reliability (tested) |
-|---|---|---|---|
-| `[animal] shirt` | `frog shirt`, `sloth shirt` | Best-Fit (animal-specific product terms) | 100% — always 10 suggestions |
-| `[vibe] [animal]` | `overstimulated frog`, `ADHD frog` | Best-Fit (emotion/vibe + animal) | ~80% — gold when it hits |
-| `[register term] shirt` | `quiet quitting shirt`, `doomscrolling shirt` | Register validation — proves people search for this feeling | Variable — if empty, the register term isn't a real search. Drop it. |
-| `[register term] gift` | `ADHD gift`, `corporate burnout gift` | Register + gift cross-check | ~94% — gift term discovery |
-| `[vibe] shirt` | `ADHD shirt`, `goblincore shirt` | Best-Fit / Proven Territory (broad vibe) | ~94% — broad vibe discovery |
-| `[animal] sticker` | `frog sticker`, `red panda sticker` | Redbubble sticker tags | 100% — always 10 suggestions |
-| `[audience] gift` | `ADHD gift`, `anxiety gift` | Gift tags | 100% — gift term discovery |
+| Query Pattern | Example | What it feeds |
+|---|---|---|
+| `[animal] shirt` | `frog shirt`, `sloth shirt` | Best-Fit (animal-specific product terms) |
+| `[vibe] [animal]` | `overstimulated frog`, `ADHD frog` | Best-Fit (emotion/vibe + animal) |
+| `[register term] shirt` | `quiet quitting shirt`, `doomscrolling shirt` | Register validation — proves people search for this feeling |
+| `[register term] gift` | `ADHD gift`, `corporate burnout gift` | Register + gift cross-check |
+| `[vibe] shirt` | `ADHD shirt`, `goblincore shirt` | Best-Fit / Proven Territory (broad vibe) |
+| `[animal] sticker` | `frog sticker`, `red panda sticker` | Redbubble sticker tags |
+| `[audience] gift` | `ADHD gift`, `anxiety gift` | Gift tags |
 
 - **Fallback:** If `[vibe] [animal]` returns empty, try `[vibe] shirt` instead. If that's also empty, the vibe is too niche — skip it.
 - **Do NOT** run platform-prefixed queries (`teepublic+frog`) — these fail on niche animals and return mostly platform Q&A noise ("is teepublic safe") on popular ones.
@@ -92,19 +92,19 @@ Before selecting or validating your tag set, you must use the `sequentialthinkin
   **For Register Tags (40% — feeling, no animal):**
   1. **Source Check:** Does this term appear in Agent 1's Register Vocabulary? If not, can you extract it from the Cultural Vibe section? If it comes from nowhere, discard.
   2. **Animal Name Check:** Does this tag contain the animal name or a direct synonym? If yes, it's not a register tag. Move it to Best-Fit or discard.
-   3. **Curl Validation:** Run `[register term] shirt` through the curl backdoor. Does it return suggestions? If empty, this feeling isn't a real search term — drop it and find another register term that validates.
-   4. **Curl Evidence Mandate (APPEND RAW OUTPUT IN PHASE 4):** After running each curl query, include the raw JSON `[1]` suggestions array in your Phase 4 output under a dedicated "Curl Evidence" section. Format: `Curl for "[register term] shirt" returned [N] suggestions: [suggestion1, suggestion2, ...]`. If it returned empty, state "Curl returned 0 suggestions — register term dropped." This prevents unverifiable claims.
-  4. **Animal+Register Cross-Check:** Run `[register term] [animal]` through curl AND `site:teepublic.com "[register term] [animal]"` through Serper. If the combo returns suggestions OR shows existing listings, the register-animal connection is validated — this term is a strong register pick and you should check if the combo deserves a spot in Best-Fit. If the combo returns empty everywhere, the feeling doesn't culturally attach to this animal in apparel search — keep the register tag (the feeling alone still works) but note that no commercial connection exists yet.
-   6. **Final Decision:** Pass = all checks pass AND curl returned suggestions.
+    3. **Search Validation:** Run `node bin/search.js cache "[register term] shirt"` to validate. Empty results means this feeling isn't a real search term — drop it.
+    4. **Evidence Mandate (APPEND RAW OUTPUT IN PHASE 4):** Include the suggestions array in your Phase 4 output under a "Search Evidence" section. Format: `Search for "[query]" returned [N] suggestions: [suggestion1, ...]`. If empty: "Search returned 0 suggestions — term dropped."
+   4. **Animal+Register Cross-Check:** Run `node bin/search.js cache "[register term] [animal]"` AND `site:teepublic.com "[register term] [animal]"` through Serper. If the combo returns suggestions OR shows existing listings, the register-animal connection is validated. If the combo returns empty everywhere, the feeling doesn't culturally attach to this animal in apparel search — keep the register tag alone but note no commercial connection exists.
+    6. **Final Decision:** Pass = all checks pass AND search returned suggestions.
 
-   **Curl Failsafe Override (for ALL tag types):**
-   If a tag fails curl validation (returns 0 suggestions) BUT a Serper or Exa search for `"[tag]" shirt` shows 500+ existing platform listings (Etsy/Teepublic/Redbubble), the tag is still valid — platform demand exists even if Google suggestqueries doesn't index it. Document the exemption in your notes: `"Curl returned 0 suggestions but [source] shows [N] listings — kept via failsafe override."` Without platform proof, failed curl = discard. Use Serper or Exa to find `"[tag]" site:teepublic.com OR site:etsy.com` to check for the 500+ platform listings.
+   **Search Failsafe Override (for ALL tag types):**
+   If a tag fails search validation (returns 0 suggestions) BUT a Serper or Exa search for `"[tag] shirt"` shows 500+ existing platform listings, the tag is still valid. Document the exemption: `"Search returned 0 suggestions but [source] shows [N] listings — kept via failsafe override."` Without platform proof, failed search = discard.
 
   **For Best-Fit Tags (30% — highest-confidence from research):**
    1. **Source Check:** What source produced this tag? High weight (curl 40%, Serper 30%) = stronger signal. Low weight (Tavily 10%) = weaker — only keep if it passes all other checks strongly. At least 60% of Best-Fit tags must come from high-weight sources (curl or Serper).
   2. **Specificity Floor:** Minimum 2 words per tag. Prefer 3-4 word phrases. Single-word tags like `otter`, `meme`, `funny` are banned here — they belong in Proven Territory or nowhere. A Best-Fit tag should be specific enough that a buyer knows exactly what design they'll get.
-  3. **Curl Validation (MANDATORY)**: Run `[Best-Fit tag]` or `[Best-Fit tag] shirt` through the suggestqueries curl backdoor. It MUST return at least one suggestion in element `[1]`. If the suggestqueries output is completely empty (e.g. `procrastination goose` returns `[]`), it represents a dead search path that no human buyer types. You MUST discard it or refine it (e.g., refine `procrastination goose` to `dilly dally goose` which has active autocomplete suggestions).
-   4. **Curl Evidence Mandate (APPEND RAW OUTPUT IN PHASE 4):** In your Phase 4 output, you must state: `Curl for "[Best-Fit tag]" returned [N] suggestions: [list them].` If it returned empty, drop the tag.
+   3. **Search Validation (MANDATORY)**: Run `node bin/search.js cache "[Best-Fit tag] shirt"`. It MUST return at least one suggestion. If empty (e.g. `procrastination goose` returns `[]`), it's a dead search path. Discard or refine it (e.g., refine `procrastination goose` to `dilly dally goose` which has active suggestions).
+    4. **Evidence Mandate (APPEND RAW OUTPUT IN PHASE 4):** State: `Search for "[Best-Fit tag]" returned [N] suggestions: [list].` If empty, drop the tag.
   5. **Competition Check:** <500 results = blue ocean (gold). 500-10,000 = healthy. >10,000 = saturated — only keep if heavily differentiated.
   6. **Conversion Match:** Does this tag match the design's specific subject or phrase? "overstimulated frog" + anxious frog = strong. "overstimulated frog" + corporate pig = weak.
   7. **Animal+Register Combo Check:** Animal+register combos (e.g. `quiet quitting pig`, `ADHD otter`, `burnout sloth`) are NATURAL Best-Fit candidates — they combine the register vocabulary with the animal, exactly what this bucket is for. If the register cross-check (step 4 of register validation) found that `[register term] [animal]` has search demand, that combo should land here in Best-Fit. At least half of Best-Fit tags should be animal+register combos.
@@ -112,8 +112,8 @@ Before selecting or validating your tag set, you must use the `sequentialthinkin
   9. **Final Decision:** Pass = source confidence is high AND curl validation passes with >0 suggestions AND competition is healthy or differentiated AND specificity is 2+ words.
  
   **For Proven Territory Tags (30% — moderate competition, established demand):**
-  1. **Demand Proof:** Run `serper_serper_search` or `exa_exa_search` for this term. Do existing listings appear? If 0 results, there's no proven demand — discard.
-   2. **Curl Validation (MANDATORY):** Run `[Proven Territory tag]` or `[Proven Territory tag] shirt` through curl suggestqueries. It must return suggestions in element `[1]`, proving established category search volume. **CURL EVIDENCE MANDATE (APPEND RAW OUTPUT IN PHASE 4):** In your Phase 4 output, state: `Curl for "[Proven Territory tag]" returned [N] suggestions: [list them].` If empty, drop the tag.
+   1. **Demand Proof:** Run `serper_serper_search` or `exa_exa_search` for this term. Do existing listings appear? If 0 results, there's no proven demand — discard.
+    2. **Search Validation (MANDATORY):** Run `node bin/search.js cache "[Proven Territory tag] shirt"`. It must return suggestions, proving established category search volume. **EVIDENCE MANDATE (APPEND RAW OUTPUT IN PHASE 4):** State: `Search for "[Proven Territory tag]" returned [N] suggestions: [list].` If empty, drop the tag.
   3. **Competition Sweet Spot:** Is competition moderate? Minimum ~500 results (proves demand exists), maximum ~10,000 (not oversaturated). Below 500 = too niche for "proven". Above 10,000 = too saturated.
   4. **Animal+Register Combo Check:** If you find `[animal] [register term]` or `[register term] [animal]` combos with 500-10k results, those are ideal proven territory candidates — they combine the animal with the register while having established volume. Prefer these over generic category terms when available.
   5. **Intent Check:** Is the intent "product", "category", or "identity"? Someone searching this knows what they want. If intent is "feeling", it belongs in Register.
@@ -190,7 +190,13 @@ You have collected data from four sources. Not all are equally reliable. Weight 
 
 **You have agency in tag selection.** The curl data is a suggestion engine, not a rulebook. If you find a strong keyword from the Serper competitor scan that didn't appear in curl results, use it — the curl data is one signal among many. Conversely, if the curl data surfaces a genuinely novel search term that no competitor is using and it passes the Authenticity Audit, prioritize it even if it wasn't in Agent 3's foundation. Your goal is the discoverable tag set, not strict adherence to any single source.
 
-**Signal triage rule:** If the curl backdoor returns empty for a query pattern, do NOT rerun it with variations. Move to the next source (Serper/Exa). The suggestqueries endpoint either has data for a concept or it doesn't — retrying wastes time.
+**Signal triage rule:** If search cache returns empty for a query pattern, do NOT rerun it with variations. Move to the next source (Serper/Exa). The suggestqueries endpoint either has data for a concept or it doesn't — retrying wastes time.
+
+**LOG KEYWORDS & GAPS TO KNOWLEDGE BASE**: After your keyword research, persist your findings:
+- `node bin/knowledge.js add <animal> keyword --phrase "<validated keyword>" --competition <high|medium|low> --suggestions <N>` for each validated keyword
+- `node bin/knowledge.js add <animal> gap --text "<gap description>" --still-open` for each market gap discovered
+- `node bin/knowledge.js add <animal> competitor --tag "<common tag>"` and `node bin/knowledge.js add <animal> competitor --note "<observation>"` for competitor patterns
+- `node bin/knowledge.js add <animal> register --name <register> --platform-demand --confidence 80` for each validated register term with platform demand
 
 ### 📐 STEP 2: PLATFORM-SPECIFIC OPTIMIZATION & TITLE FORMULAS
 
@@ -328,8 +334,8 @@ Your output must include:
 ### 🔍 SEARCH LANDSCAPE SUMMARY
 [1-2 sentences: what your competitive scan found — trending tags, underserved keywords, gaps your metadata exploits]
 
-### 🔎 CURL EVIDENCE
-[Complete raw JSON `[1]` arrays from every curl suggestqueries call. Format each as: `Curl for "[query]" → [suggestion1, suggestion2, ...]`. Include all queries: register term validation, Best-Fit validation, Proven Territory validation, seed-specific search language queries.]
+### 🔎 SEARCH EVIDENCE
+[Suggestions arrays from every search cache call. Format each as: `Search for "[query]" → [suggestion1, suggestion2, ...]`. Include all queries: register term validation, Best-Fit validation, Proven Territory validation, seed-specific search language queries.]
 
 ### 🏆 TEEPUBLIC METADATA
 - **Main Tag:** `...`
@@ -374,6 +380,18 @@ Your output must include:
 - [What top similar listings are doing with their metadata]
 - [What gap your metadata fills]
 - [Any timing/seasonal recommendations]
+
+### 🗄️ PIPELINE LOGGING
+Before logging any details to the database, you MUST validate your complete set of tags using the validation CLI:
+- Run `node bin/tags.js validate --register "<comma-separated register tags>" --best-fit "<comma-separated best-fit tags>" --proven "<comma-separated proven tags>" --main-tag "<main tag>" --animal "<animal>"`
+- **Rigorously resolve all validation failures**: If the command exits with code 1, modify your tag selections to address the specific errors (e.g., adjust ratio, remove banned/product terms in register tags, shorten tags > 20 chars, etc.) and re-validate until the CLI outputs a clean PASS (exit code 0).
+
+After tag validation passes, log the SEO output to the DB:
+- `node bin/pipeline.js log "teepublic_title=<title>" --agent 4`
+- `node bin/pipeline.js log "redbubble_title=<title>" --agent 4`
+- For each platform's tags: `node bin/pipeline.js tags add "<tag1>, <tag2>, ..." --platform teepublic`
+- `node bin/pipeline.js tags add "<tag1>, <tag2>, ..." --platform redbubble`
+- `node bin/knowledge.js add <animal> keyword --phrase "<main tag>" --competition <level> --suggestions <N> --main-tag` to persist the main tag
 
 ## ✅ PIPELINE COMPLETE
 The 4-Agent Design Pipeline (Agent 1 → Agent 2 → Agent 3 → Agent 4) has successfully concluded. The design is approved and the SEO metadata is optimized for platform-specific discoverability.

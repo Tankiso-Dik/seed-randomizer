@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Vintage Athletic",
+    "vibe": "streetwear",
+    "colors": ["cream base", "charcoal black", "burnt orange/terracotta accent"],
+    "best_registers": ["bold labels", "boastful"],
+    "best_on": "dark tees"
+  },
+  {
+    "name": "Cozy Nostalgic",
+    "vibe": "comfort/vintage",
+    "colors": ["sage green", "rust brown", "warm cream"],
+    "best_registers": ["confessional", "nostalgic", "exhausted"],
+    "best_on": "dark/muted tees"
+  },
+  {
+    "name": "High Contrast",
+    "vibe": "modern/meme",
+    "colors": ["white base", "solid black graphic", "one neon accent (lime, hot pink)"],
+    "best_registers": ["panic", "exclamation", "chaotic"],
+    "best_on": "light tees"
+  },
+  {
+    "name": "Retro Arcade",
+    "vibe": "playful",
+    "colors": ["navy base", "bright yellow", "cyan"],
+    "best_registers": ["playful", "mischievous", "curious"],
+    "best_on": "dark tees"
+  },
+  {
+    "name": "Muted Earth",
+    "vibe": "earthy/clinical",
+    "colors": ["olive", "mushroom/beige", "charcoal"],
+    "best_registers": ["clinical", "deadpan", "bored/apathetic"],
+    "best_on": "varied tees"
+  },
+  {
+    "name": "Girly Chaos",
+    "vibe": "coquette + chaos",
+    "colors": ["cream base", "hot pink accent", "charcoal graphic"],
+    "best_registers": ["playful+unhinged"],
+    "best_on": "light tees"
+  }
+]

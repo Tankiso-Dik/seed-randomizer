@@ -1,0 +1,18 @@
+{
+  "burnout/exhausted": ["quiet quitting", "overworked", "anti hustle", "desk job", "work fatigue", "corporate drone", "zoom fatigue", "performance review dread", "Sunday scaries", "meeting that could have been an email", "doomscrolling", "mentally checked out", "chronic fatigue", "overstimulated", "brain empty", "goblin mode", "rot mode"],
+  "smug/self-satisfied": ["main character energy", "actually genius", "told you so", "vindicated", "superior", "I'm the best", "big brain", "galaxy brain", "living rent free"],
+  "furious/rage": ["seeing red", "done with this", "final straw", "absolutely livid", "seething", "furious", "not today", "I will burn this to the ground"],
+  "terrified/panicked": ["oh no", "fight or flight", "screaming internally", "pure panic", "yikes", "new fear unlocked", "anxiety", "the horror"],
+  "proud/triumphant": ["main character", "vindicated", "proved them wrong", "actually did it", "success", "victory", "elite", "top tier", "W"],
+  "delighted/joyful": ["living my best life", "thriving", "unbothered", "pure joy", "ecstatic", "bliss", "cozy", "content"],
+  "nostalgic/longing": ["miss the old days", "remember when", "take me back", "simpler times", "longing", "wistful", "back when"],
+  "disgusted/repulsed": ["ew", "no thank you", "hard pass", "absolutely not", "gross", "repulsed", "nah", "not it"],
+  "curious/inquisitive": ["wait what", "hmm", "interesting", "tell me more", "curious", "intrigued", "I need to know"],
+  "bored/apathetic": ["meh", "whatever", "don't care", "not it", "pass", "skip", "unbothered", "idle"],
+  "confused/baffled": ["huh", "what", "confused", "lost", "no idea", "clueless", "I don't get it"],
+  "jealous/envious": ["why them", "unfair", "I want that", "jealous", "envious", "covetous", "why not me"],
+  "guilty/ashamed": ["oops", "my bad", "sorry not sorry", "regret", "oof", "yikes", "my fault"],
+  "hopeful/optimistic": ["this is it", "finally", "manifesting", "good vibes", "hope", "maybe", "could be"],
+  "resentful/bitter": ["I remember", "noted", "never forget", "grudge", "bitter", "resentful", "I'll be back"],
+  "playful/mischievous": ["hehe", "oops", "teehee", "gotcha", "prank", "mischief", "chaos goblin", "impish"]
+}

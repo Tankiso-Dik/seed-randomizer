@@ -1,0 +1,352 @@
+{
+  "anchor": {
+    "description": "Mascot centered on canvas. Text in a clean horizontal line separated by negative space. 3:4 portrait canvas. Transparent background.",
+    "canvas_ratio": "3:4",
+    "background": "TRANSPARENT"
+  },
+  "variables": {
+    "crop": {
+      "description": "How much of the animal is visible in the frame.",
+      "default": "head_shoulders",
+      "options": [
+        {
+          "id": "face_only",
+          "description": "Extreme crop to the face only. Forehead to chin fills the frame. Best for animals with famous internet nicknames or highly expressive faces.",
+          "ideal_for": ["symmetrical faces", "iconic animal expressions", "famous nicknames"],
+          "anatomy_risk": "low",
+          "visible_anatomy": ["face", "ears", "eyes", "nose/muzzle"]
+        },
+        {
+          "id": "head_shoulders",
+          "description": "Head and shoulders/upper chest visible. Tight crop, no full body. Best for composed postures and direct address.",
+          "ideal_for": ["most designs", "direct eye contact", "composed/formal poses"],
+          "anatomy_risk": "low",
+          "visible_anatomy": ["face", "ears", "neck", "upper chest", "front limbs at edge"]
+        },
+        {
+          "id": "full_body",
+          "description": "Entire animal visible from head to tail/feet. Best for collapsed poses, side profiles, action poses, or when the body language IS the joke.",
+          "ideal_for": ["collapsed postures", "side profiles", "action poses", "standing poses", "body-language humor"],
+          "anatomy_risk": "varies",
+          "visible_anatomy": ["entire body", "all limbs", "tail", "head"]
+        }
+      ]
+    },
+    "text_placement": {
+      "description": "Where the phrase sits relative to the mascot.",
+      "default": "below",
+      "options": [
+        {
+          "id": "below",
+          "description": "Text in a clean horizontal line below the mascot. Clean negative space separates them. The standard — keeps focus on the animal.",
+          "canvas_split": "mascot upper ~70%, text lower ~15-20%",
+          "max_lines": 2,
+          "compatible_crops": ["head_shoulders", "face_only", "full_body"]
+        },
+        {
+          "id": "arched_above",
+          "description": "Text is a massive arched banner in the upper portion of the canvas. Mascot sits in the lower portion. Best for boastful or declarative phrases that need visual weight.",
+          "canvas_split": "text arched upper ~35%, mascot lower ~55%",
+          "max_lines": 1,
+          "compatible_crops": ["head_shoulders", "full_body"]
+        },
+        {
+          "id": "split_above_below",
+          "description": "Short text above the mascot (2-4 words), mascot in the middle, main text below. Best for plea/reframe structures where the animal is caught between two statements.",
+          "canvas_split": "text upper ~15%, mascot middle ~50%, text lower ~20%",
+          "max_lines": "2 (one above, one below)",
+          "compatible_crops": ["head_shoulders", "full_body"]
+        },
+        {
+          "id": "negative_space",
+          "description": "Text integrated into the open space around a dynamic action pose. No fixed text position — it fills the gaps.",
+          "canvas_split": "dynamic — text fills voids around diagonal pose",
+          "max_lines": 2,
+          "compatible_crops": ["full_body"]
+        },
+        {
+          "id": "small_bottom",
+          "description": "Text is small and grounded at the very bottom of the canvas. Mascot dominates the upper 80%. Best when the animal IS the joke and the text is just a label.",
+          "canvas_split": "mascot upper ~80%, text bottom ~10%",
+          "max_lines": 2,
+          "compatible_crops": ["full_body", "head_shoulders"]
+        },
+        {
+          "id": "arches_face",
+          "description": "Text arches above and below the head, framing the face. Best for symmetrical close-up face compositions.",
+          "canvas_split": "text arches upper ~20%, face middle ~50%, text lower ~15%",
+          "max_lines": "2 (one arch above, one below)",
+          "compatible_crops": ["face_only"]
+        }
+      ]
+    },
+    "viewpoint": {
+      "description": "The camera angle relative to the animal.",
+      "default": "front_centered",
+      "options": [
+        {
+          "id": "front_centered",
+          "description": "Animal faces the viewer directly. Eye contact. Confrontational or inviting. Best for composed, direct, or pleading poses.",
+          "compatible_crops": ["face_only", "head_shoulders", "full_body"],
+          "compatible_poses": ["composed", "direct_address", "collapsed", "unraveling", "smug", "terrified", "guilty", "hopeful", "suspicious"]
+        },
+        {
+          "id": "side_profile",
+          "description": "Clean side view of the full body. Animal is in profile. Best for weird/niche animals, deadpan labels, or showing body shape. Only one eye is visible. Only the near-side limbs are fully visible.",
+          "compatible_crops": ["full_body"],
+          "compatible_poses": ["composed", "standing", "walking", "swimming", "collapsed", "bored"]
+        },
+        {
+          "id": "peering_down",
+          "description": "Animal is above the viewer, looking down. Mascot dominates the upper canvas. Best for obsessive or looming energy. Typically shows the underside of the chin/jaw and the top of the head/ears.",
+          "compatible_crops": ["full_body", "head_shoulders"],
+          "compatible_poses": ["peering", "hovering", "looming"]
+        },
+        {
+          "id": "action_diagonal",
+          "description": "Animal is in mid-motion on a diagonal axis. Running, flying, lunging. HIGH ANATOMY RISK — requires explicit limb separation in the prompt. Wings/limbs must be fully extended and frozen in mid-action.",
+          "compatible_crops": ["full_body"],
+          "compatible_poses": ["action", "sprinting", "lunging", "flying"]
+        }
+      ]
+    },
+    "pose_energy": {
+      "description": "Free-text comma-separated energy descriptors for what the animal is physically doing. Use one or multiple. Most real postures blend 2+ energies — document them honestly rather than force-fitting into one bucket.",
+      "default": "composed",
+      "descriptor_vocabulary": [
+        {
+          "id": "composed",
+          "description": "Upright, structural dignity. Sitting or standing with posture. Eye contact possible.",
+          "suggests_viewpoints": ["front_centered", "side_profile"],
+          "suggests_crops": ["head_shoulders", "full_body", "face_only"],
+          "posture_registers": ["The Composed", "The Settled", "The Smug", "The Proud", "The Direct Address"],
+          "combines_well_with": ["peering", "collapsed"]
+        },
+        {
+          "id": "collapsed",
+          "description": "Boneless, zero structural integrity. Lying flat, slumped, melting in place. No upright support.",
+          "suggests_viewpoints": ["front_centered", "side_profile"],
+          "suggests_crops": ["full_body"],
+          "posture_registers": ["The Collapsed", "The Unraveling"],
+          "combines_well_with": ["composed", "gesturing"]
+        },
+        {
+          "id": "gesturing",
+          "description": "Active paws or limbs reaching, pressing together, or held up expressively. Animal communicating through limb position.",
+          "suggests_viewpoints": ["front_centered"],
+          "suggests_crops": ["head_shoulders", "full_body"],
+          "anatomy_risk": "high — paws need explicit chunky-shape constraints in the prompt",
+          "posture_registers": ["The Direct Address", "The Hopeful", "The Guilty", "The Unraveling", "The Suspicious"]
+        },
+        {
+          "id": "action",
+          "description": "Mid-motion, dynamic. Running, flying, lunging, pouncing. Diagonal energy.",
+          "suggests_viewpoints": ["action_diagonal"],
+          "suggests_crops": ["full_body"],
+          "anatomy_risk": "high — limbs must be frozen and explicitly separated from body",
+          "posture_registers": ["The Playful", "The Terrified", "The Angry/Furious", "The Delighted"]
+        },
+        {
+          "id": "peering",
+          "description": "Looking down from above. Animal is above the viewer. Chin/underside visible.",
+          "suggests_viewpoints": ["peering_down"],
+          "suggests_crops": ["full_body", "head_shoulders"],
+          "posture_registers": ["The Composed", "The Settled", "The Smug", "The Suspicious"],
+          "combines_well_with": ["composed"]
+        }
+      ],
+      "dependency_note": "If your pose_energy includes 'action' or 'gesturing' or if the pose description involves active limbs, anatomy overrides are REQUIRED regardless of which other energies are present. If your pose_energy includes 'collapsed', full_body crop is STRONGLY suggested. If your pose_energy includes 'peering', peering_down viewpoint is STRONGLY suggested."
+    }
+  },
+  "invalid_combinations": [
+    {
+      "variables": ["crop=face_only", "viewpoint=side_profile"],
+      "reason": "A face-only crop in side profile shows only the side of the head — no expression, no eye contact, no character.",
+      "fix": "Use crop=full_body with viewpoint=side_profile, or crop=face_only with viewpoint=front_centered."
+    },
+    {
+      "variables": ["crop=face_only", "viewpoint=action_diagonal"],
+      "reason": "A diagonal action pose with just a face floating on the canvas reads as a crop error — there's no body to show the action.",
+      "fix": "Use crop=full_body with viewpoint=action_diagonal."
+    },
+    {
+      "variables": ["crop=face_only", "pose_energy=collapsed"],
+      "reason": "A collapsed/boneless pose has no meaning when only the face is visible — the body language IS the joke.",
+      "fix": "Use crop=full_body with pose_energy=collapsed."
+    },
+    {
+      "variables": ["crop=face_only", "pose_energy=gesturing"],
+      "reason": "Gesturing requires visible paws/limbs. A face-only crop hides the gesture.",
+      "fix": "Use crop=head_shoulders or full_body with pose_energy=gesturing."
+    },
+    {
+      "variables": ["crop=face_only", "pose_energy=action"],
+      "reason": "Action requires a visible body. A face-only crop eliminates the action context.",
+      "fix": "Use crop=full_body with viewpoint=action_diagonal and pose_energy=action."
+    },
+    {
+      "variables": ["text_placement=arches_face", "crop=full_body"],
+      "reason": "Arches of text around a face don't work when the face is a small fraction of the canvas — the text arcs would overlap the body.",
+      "fix": "Use crop=face_only with text_placement=arches_face, or use a different text placement."
+    },
+    {
+      "variables": ["text_placement=arches_face", "crop=head_shoulders"],
+      "reason": "Arches of text around a head+shoulders crop will arc through empty space where the body should be, creating a visual gap.",
+      "fix": "Use crop=face_only with text_placement=arches_face."
+    },
+    {
+      "variables": ["text_placement=negative_space", "crop=face_only"],
+      "reason": "A face-only crop has no negative space around the body for text to fill.",
+      "fix": "Use crop=full_body with text_placement=negative_space."
+    },
+    {
+      "variables": ["text_placement=negative_space", "crop=head_shoulders"],
+      "reason": "A tight crop leaves minimal negative space around the subject — not enough area for flowing text.",
+      "fix": "Use crop=full_body with text_placement=negative_space."
+    },
+    {
+      "variables": ["viewpoint=side_profile", "pose_energy=gesturing"],
+      "reason": "In side profile, only one front limb is fully visible. A gesturing pose (both paws pressed together, reaching out) requires both limbs visible from the front.",
+      "fix": "Use viewpoint=front_centered with pose_energy=gesturing."
+    },
+    {
+      "variables": ["viewpoint=peering_down", "text_placement=below"],
+      "reason": "When the animal is peering down from above occupying the upper 80% of the canvas, text placed 'below' would sit well below the canvas center, creating too much negative space. Use text_placement=small_bottom instead.",
+      "fix": "Use text_placement=small_bottom with viewpoint=peering_down."
+    },
+    {
+      "variables": ["viewpoint=action_diagonal", "text_placement=below"],
+      "reason": "A diagonal action pose's body is already occupying the lower canvas. Text placed below would overlap or be forced off the canvas edge.",
+      "fix": "Use text_placement=negative_space with viewpoint=action_diagonal."
+    }
+  ],
+  "anatomy_logistics": {
+    "counted_limbs_by_pose": {
+      "collapsed_on_belly_front": "Exactly 2 front legs visible splayed to sides. Back legs are HIDDEN under the body — do NOT describe them as separate or visible. Describing 4 separate limbs when the animal is belly-down forces the AI to grow extra limbs through the body.",
+      "collapsed_on_belly_side": "Exactly 2 front legs + both back legs visible (side view). All 4 limbs splayed. Each leg separated from the body with visible negative space gaps.",
+      "collapsed_on_back": "Exactly 4 limbs visible splayed upward. Belly is the focal point. Back legs are ABOVE the body in the air, front legs are above the head. Each leg separated — no merged anatomy.",
+      "collapsed_on_side": "Exactly 3-4 limbs visible depending on angle. Near-side front and back legs fully visible, far-side limbs partially or fully visible. Each clearly separated.",
+      "standing_front": "Exactly 4 legs visible. Front two and back two. Head above body. Tail visible if applicable.",
+      "standing_side": "Exactly 4 legs visible in profile. Near-side legs fully visible, far-side legs partially visible behind near-side. Do NOT describe far-side legs as separate if they would naturally be hidden.",
+      "sitting_front": "Exactly 2 front legs visible. Back legs are TUCKED under the body — NOT visible as separate limbs. Describing 4 limbs when the animal is sitting forces the AI to show back legs emerging unnaturally from the sides.",
+      "sitting_side": "Both front legs visible. One or both back legs visible depending on angle. Far-side back leg may be hidden behind the body — do NOT require it to be visible.",
+      "flying_diagonal": "Wings fully extended, frozen in mid-flap. Each wing clearly separated from the body. Back legs trailing. Front legs/feet tucked. NO merging between wings and body."
+    },
+    "common_ai_execution_traps": [
+      {
+        "trap": "Belly-down pose + 'all 4 limbs splayed'",
+        "why_it_fails": "When an animal lies on its belly, the back legs are UNDER the body, not visible. Asking for all 4 limbs while the animal is on its belly forces the AI to add a 5th limb or grow back legs out of the belly.",
+        "fix": "Specify: 'Exactly 2 front legs visible splayed out to the sides. Back legs are tucked under the belly and NOT visible as separate limbs.'"
+      },
+      {
+        "trap": "Sitting pose + 'all 4 legs visible'",
+        "why_it_fails": "When sitting, back legs fold under the body. They are not separately visible limbs. The AI either adds legs to the sides of the body or creates melting anatomy.",
+        "fix": "Specify: 'Exactly 2 front legs visible. Back legs folded under the body, not separately visible.'"
+      },
+      {
+        "trap": "Side profile + 'both eyes visible'",
+        "why_it_fails": "In a true side profile, only one eye is visible. Asking for both eyes forces a 3/4 turn, which is not a side profile.",
+        "fix": "Specify: 'A clean side profile. Exactly one eye visible, the far eye is hidden behind the head.'"
+      },
+      {
+        "trap": "Peering down + 'eye contact with viewer'",
+        "why_it_fails": "When peering down from above, the animal's face is angled downward. The eyes are looking down, not at the viewer. Direct eye contact is physically impossible from this angle.",
+        "fix": "Specify: 'Eyes looking downward past the viewer. No direct eye contact with the camera.'"
+      },
+      {
+        "trap": "Full body + 'face dominates the frame'",
+        "why_it_fails": "A full-body crop by definition shows the entire animal. The face is a small portion of the canvas. Asking the face to dominate contradicts the crop.",
+        "fix": "Pick one: either crop=face_only (face dominates) or crop=full_body (whole animal visible, face is proportionally small)."
+      },
+      {
+        "trap": "Transparent background + 'background color specified'",
+        "why_it_fails": "Saying 'Background: TRANSPARENT' but also specifying a solid background color confuses the AI, which may render a colored background behind a transparent cutout.",
+        "fix": "If background is TRANSPARENT, do NOT specify any background color. If a colored background is desired, change to a solid color and remove 'TRANSPARENT'."
+      },
+      {
+        "trap": "Text frame border + 'text below'",
+        "why_it_fails": "A text frame border surrounds the animal on all 4 sides. Adding separate text below creates two text elements, which exceeds the max-2-elements rule and fights for visual weight.",
+        "fix": "Either use a text frame border (no separate text element) OR place text below (no frame border). Do not combine both."
+      },
+      {
+        "trap": "'No props' + prop described in detail",
+        "why_it_fails": "The prompt says 'NO PROPS' then describes an accessory (tie, hat, glasses). An accessory IS a prop. This contradiction confuses the AI.",
+        "fix": "If the animal wears/carries an object, it is a prop. Remove the 'NO PROPS' statement or remove the prop description."
+      },
+      {
+        "trap": "Exact limb count + pose that hides limbs",
+        "why_it_fails": "Demanding 'exactly 4 limbs visible' in a pose that naturally hides 2 of them forces the AI to hallucinate extra body parts. The AI will insert limbs where they do not belong rather than fail the 'exactly' constraint.",
+        "fix": "Match limb counts to the reality of the pose. If only 2 front legs are visible, say 'exactly 2 front legs visible'. Do not assert counts for body parts the pose cannot show."
+      },
+      {
+        "trap": "'All 4 limbs splayed in different directions' for any pose",
+        "why_it_fails": "Vague directionality. The AI picks random limb angles, often creating asymmetrical spaghetti anatomy. Every limb needs a specific spatial relationship to the body and other limbs.",
+        "fix": "Describe each limb's position relative to the body: 'Front left leg splayed out to the left at 45 degrees. Front right leg splayed to the right at 30 degrees. Back legs [specific position].'"
+      }
+    ]
+  },
+  "safety_rules": {
+    "high_anatomy_risk": {
+      "conditions": ["action_diagonal viewpoint", "split_above_below with gesturing paws", "pose_energy=action", "pose_energy=gesturing"],
+      "required_override": "If active paws/limbs are visible: 'Thick, simple, chunky paws pressed together, NO individual fingers. Each limb clearly separated from the body with visible negative space gaps.' If mid-motion: 'Wings/limbs fully extended and frozen in mid-action, clearly separated from body. No merging.'"
+    },
+    "text_isolation": "Text must never overlap or touch the mascot. Minimum 15% negative space buffer between mascot and text boundary.",
+    "max_elements": "Maximum 2 visual elements (mascot + text). No decorative flourishes or extra elements.",
+    "no_3d_text": "Flat 2D lettering only. No 3D extrusion, drop shadows, isometric text, or gradients.",
+    "canvas_ratio": "3:4 portrait oriented. Always.",
+    "background": "TRANSPARENT. No solid backgrounds, no gradient backgrounds."
+  },
+  "constraint_tiers": {
+    "hard": {
+      "description": "Breaking these causes real failures (cost, platform rejection, AI hallucinations). Never override.",
+      "rules": [
+        "canvas_ratio: 3:4 portrait — POD platforms reject non-standard ratios",
+        "text_isolation: minimum 15% negative space between text and mascot — touching text prints as mud at small sizes",
+        "flat_2d_lettering: no 3D text, no drop shadows, no extrusion — AI renders 3D text illegibly every time",
+        "transparent_background: POD requirement — colored backgrounds break mockup pipelines",
+        "limb_count_matches_pose: writing 'all 4 limbs' for a belly-down pose guarantees a 5th leg",
+        "limb_separation_for_high_risk: action_diagonal and gesturing poses require explicit limb separation — the AI WILL merge body and motion limbs otherwise",
+        "no_trademarked_phrases: legal risk, DMCA takedowns",
+        "max_3_colors_plus_outline: POD screen print cost — each additional color doubles production cost"
+      ],
+      "enforcement": "Agent 3 MUST reject prompts that violate hard constraints. No exceptions."
+    },
+    "anchor": {
+      "description": "Best practices. Deviate only when the design context demands it AND you document why. The system default is the anchor — deviating requires active justification.",
+      "rules": [
+        "pose_energy_start: start thinking from what the animal is doing, then pick viewpoint, crop, text_placement — most designs benefit from this dependency order, but if a concept arrives as a specific crop (face-only of an expression), starting there is fine",
+        "single_posture_register: most real postures blend 2+ energies — document multiple descriptors if honest, do NOT force-fit one label",
+        "single_phrase_structure_label: novel combinations that don't match a template should be labeled 'custom synthesis' instead of force-labeled to a structure",
+        "word_count_under_8: a 10-word phrase that reads cleanly on a shirt is fine — the rule exists to prevent wall-of-text, not to enforce an exact count",
+        "font_matches_register: intentional contrast (monospace for a chaotic phrase) is a valid creative choice",
+        "expression_matches_phrase_energy: intentional contrast (tired expression + violent phrase) is the most popular 2026 pattern",
+        "palette_from_6_presets: blending palettes or inventing a custom one is fine if colors harmonize",
+        "pose_references_posture_registers: use reference/postures.json for vocabulary, not as a pick-one menu"
+      ],
+      "enforcement": "Agent 3 FLAGS violations and requires justification. Does NOT reject automatically — a reasoned override passes."
+    },
+    "soft": {
+      "description": "Guidelines that exist as helpful defaults. Freely breakable when context supports it.",
+      "rules": [
+        "single_paradox_type: animals feel complex emotions — a single label is reductive, use multiple descriptors if honest",
+        "proven_structures_from_19_templates: templates are starting points, not cages — custom structures that emerge from research often outperform templates",
+        "low_search_results_means_obscure: obscurity is a data point, not a failure — blue ocean is valuable",
+        "high_search_results_means_saturated: saturation is a factor, not a hard fail — a unique angle within a saturated niche still sells",
+        "tags_must_include_animal: register-only tags often convert better than animal-inclusive tags"
+      ],
+      "enforcement": "Agent 3 notes deviations but does not flag them. They become data for Agent 6's retrospective."
+    }
+  },
+  "decision_framework": {
+    "step_1": "READ reference/postures.json. REFERENCE ONLY — do not pick a pose yet. Just understand what postures exist.",
+    "step_2": "Identify the core emotional register from Agent 1's research. This governs everything.",
+    "step_3": "Pick pose_energy FIRST. This is the anchor decision — is the animal collapsing, gesturing, composed, in motion, or peering down? The pose is the physical manifestation of the emotional register. An exhausted register gets collapsed energy. A smug register gets composed energy. A chaotic register gets action energy.",
+    "step_4": "Pick the viewpoint that serves the pose. A collapsed animal on the floor works from front_centered or side_profile. An action pose demands action_diagonal. A peering pose demands peering_down.",
+    "step_5": "Pick the crop that fits the viewpoint. side_profile requires full_body. face_only only works with front_centered. head_shoulders works with front_centered or peering_down.",
+    "step_6": "Pick the text placement that fits the remaining canvas space. If the animal is in the upper canvas (peering_down), text must be small_bottom. If action fills the canvas diagonally, text goes in negative_space. By default, text goes below.",
+    "step_7": "Check your composition against the invalid_combinations table. If any combination appears there, change one of your choices.",
+    "step_8": "Check anatomy_logistics.counted_limbs_by_pose for your chosen pose. Ensure the limb count in the prompt matches what the pose can actually show. If the pose hides limbs, do NOT demand them visible.",
+    "step_9": "Check anatomy_logistics.common_ai_execution_traps for your chosen layout. If any trap applies, rewrite the prompt to avoid it.",
+    "step_10": "Document your composition as: crop=__, text=__, view=__, pose=__."
+  }
+}

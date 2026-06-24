@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Bold collegiate varsity block",
+    "best_for": "Authority, confidence, classic streetwear",
+    "matches_registers": ["bold labels", "boastful", "confident"],
+    "example_pairing": "'Certified Cobra Chicken' needs varsity block — the font says 'official', the content says 'absurd'"
+  },
+  {
+    "name": "Heavy clean sans-serif",
+    "best_for": "Modern, direct, readable",
+    "matches_registers": ["reframe", "confessional", "clinical", "unapologetic"],
+    "example_pairing": "'Sorry I'm Late / Avoiding Non-Preferred Tasks' needs clean sans-serif — clinical precision matches the therapy-speak register"
+  },
+  {
+    "name": "Wide retro geometric",
+    "best_for": "Playful, off-kilter, vintage",
+    "matches_registers": ["absurd", "rule-of-3", "playful", "mischievous", "confused"],
+    "example_pairing": "'Honk. Hiss. Cause Problems.' needs wide geometric — the wobbly spacing mirrors the chaos"
+  },
+  {
+    "name": "Uneven hand-drawn distressed",
+    "best_for": "Raw, chaotic, irregular",
+    "matches_registers": ["unhinged", "internet slang", "exhausted/deadpan", "panic", "angry/rage"],
+    "example_pairing": "'OH NO' in distressed lettering sells the panic visually — the letters look as unhinged as the feeling"
+  },
+  {
+    "name": "Uniform block monospace",
+    "best_for": "Clinical, detached, robotic",
+    "matches_registers": ["clinical", "hyper-deadpan", "guilty/ashamed", "bored/apathetic"],
+    "example_pairing": "'Diagnosed With Main Character Syndrome' in monospace is the joke — fake medical certificate energy"
+  },
+  {
+    "name": "Chunky slab serif",
+    "best_for": "Heavy, grounded, statement",
+    "matches_registers": ["proud/triumphant", "smug/self-satisfied", "resentful/bitter"],
+    "example_pairing": "'I Told You So' in slab serif feels permanent and final — unwelcome advice engraved in stone"
+  },
+  {
+    "name": "Condensed all-caps impact",
+    "best_for": "Urgent, loud, in-your-face",
+    "matches_registers": ["panic", "accusation", "furious/rage", "exclamation"],
+    "example_pairing": "'NOPE' in condensed impact leaves no room for discussion — the font is the rejection"
+  },
+  {
+    "name": "Bouncy irregular mixed-case",
+    "best_for": "Playful, unserious, social media-native",
+    "matches_registers": ["playful/mischievous", "confused/baffled", "curious/inquisitive"],
+    "example_pairing": "'Wait What' in bouncy mixed-case reads as genuine bafflement — the font tilts mirror the mental confusion"
+  }
+]

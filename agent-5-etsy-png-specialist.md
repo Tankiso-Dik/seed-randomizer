@@ -33,40 +33,35 @@ Your job is to adapt all of this specifically for **Etsy PNG digital downloads**
 
 ---
 
-### 🔍 STEP 0: ETSY-SPECIFIC RESEARCH & KEYWORD MAPPING (TIERED SEARCH PROTOCOL)
+### 🔍 STEP 0: ETSY-SPECIFIC RESEARCH & KEYWORD MAPPING
 
-Before creating the listing, you MUST perform Etsy-specific research using your MCP tools. Since exact phrase queries for unique/new meme concepts may return 0 results, use this tiered fallback search protocol:
+Before creating the listing, you MUST perform Etsy-specific research. Use the same search cache as Agents 1, 3, and 4 to benefit from cached results:
 
 **1. Etsy PNG Competitor Analysis (Use `exa_exa_search`):**
-- **Query 1 (Exact Match):** `"[animal] '[phrase keyword]' png" etsy`
-- **Query 2 (Fallback - Broad Niche):** If Query 1 has 0 results, search: `"[animal] meme png" bestseller etsy`
-- **Query 3 (Fallback - Vibe Niche):** If Query 2 has 0 results, search: `"funny [animal] png" etsy`
-- Parameters: `max_results: 15`
-- Extract from the top 10 listings:
-  - Their exact title structures (note how they use separators like `|` or `,`)
-  - All visible tags in snippet/highlights (look for keywords like "sublimation", "DTF", "clipart", "sticker")
-  - Pricing strategy (personal vs. commercial options)
-  - Key use cases they target
+- **Query 1:** `"[animal] '[phrase keyword]' png" etsy`
+- **Query 2 (Fallback):** `"[animal] meme png" bestseller etsy`
+- **Query 3 (Fallback):** `"funny [animal] png" etsy`
+- Extract from top 10 listings: title structures, tags in highlights, pricing, key use cases.
 
 **2. Etsy Buyer Search Term Mining (Use `serper_serper_search`):**
-- **Query 1 (Primary):** `"[animal] png etsy" OR "[animal] sublimation png"` (do NOT use `site:etsy.com` here to ensure broader indexing)
-- **Query 2 (Fallback - 0 results):** `"[animal] clipart" OR "funny [animal] png"` (widen if Query 1 returns no results)
-- Parameters: `max_results: 10` (only `query` and `max_results` are valid schema params)
-- Since `relatedSearches` may be omitted in the parsed tool output, extract high-intent buyer terms directly from the titles, URLs, and snippets of the top search results (e.g., "retro [animal] png", "distressed animal clipart", "DTF transfer design").
+- **Query 1:** `"[animal] png etsy" OR "[animal] sublimation png"`
+- **Query 2 (Fallback):** `"[animal] clipart" OR "funny [animal] png"`
+- Extract high-intent buyer terms from titles, URLs, and snippets.
 
 **3. PNG Buyer Intent Discovery (Use `tavily_tavily_search`):**
-- **Query 1 (Primary):** `site:etsy.com "[animal] png" AND ("sublimation" OR "DTF" OR "transparent background")`
-- **Query 2 (Fallback - 0 results):** `"[animal] png" sublimation DTF` (drop `site:etsy.com` and AND operator if Query 1 yields no results)
-- Parameters: `max_results: 10` (only `query` and `max_results` are valid schema params)
-- Extract technical specs and commercial preferences:
-  - File requirements (DPI, formats, colors)
-  - Specific crafting software mentioned (Cricut, Silhouette, Canva)
-  - Bundle upselling formats (e.g., "Whole Shop Bundle", "Google Drive Monthly Access")
+- **Query 1:** `site:etsy.com "[animal] png" AND ("sublimation" OR "DTF" OR "transparent background")`
+- **Query 2 (Fallback):** `"[animal] png" sublimation DTF`
+- Extract: DPI, formats, colors, crafting software (Cricut, Silhouette, Canva).
 
-**4. Humor Meme PNG Niche Analysis (Use `exa_exa_search`):**
+**4. Buyers also search:** Check cached suggestqueries for Etsy-specific keywords: `node bin/search.js cache "[animal] png"` and `node bin/search.js cache "[phrase keyword] png"` to validate search demand.
+
+**LOG ETSY FINDINGS TO KNOWLEDGE BASE**: After research, persist your Etsy-specific discoveries:
+- `node bin/knowledge.js add <animal> keyword --phrase "<keyword>" --suggestions <N>` for validated Etsy keywords
+- `node bin/knowledge.js add <animal> register --name <register> --platform-demand --confidence 90` for Etsy demand confirmation
+
+**5. Humor Meme PNG Niche Analysis (Use `exa_exa_search`):**
 - **Query:** `"mental health png" OR "girly pop png" OR "funny animal png" bestseller etsy`
-- Parameters: `max_results: 10`
-- Analyze what makes these viral meme/humor designs sell (e.g., bold mascot styles, pastel colors, snarky text quotes).
+- Analyze what makes viral meme/humor designs sell (bold mascot styles, pastel colors, snarky text quotes).
 
 ---
 
@@ -574,6 +569,12 @@ After generating the package, you MUST write the final Etsy listing package to a
    ```
 
 ---
+
+### 🗄️ PIPELINE LOGGING
+After writing the deliverable, log the Etsy metadata to the DB:
+- `node bin/pipeline.js log "etsy_title=<title>" --agent 5`
+- `node bin/pipeline.js tags add "<tag1>, <tag2>, ..." --platform etsy`
+- `node bin/knowledge.js add <animal> keyword --phrase "<main etsy keyword>" --suggestions <N> --main-tag` to persist the Etsy keyword
 
 ## 🔗 FINAL DELIVERABLE
 

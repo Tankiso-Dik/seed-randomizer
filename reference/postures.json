@@ -1,0 +1,22 @@
+[
+  { "id": "collapsed", "name": "The Collapsed", "description": "Boneless heap / limbs splayed at unnatural angles / chin on the floor / zero structural integrity / looks like they melted in place.", "energy": "exhausted, defeated, zen" },
+  { "id": "composed", "name": "The Composed", "description": "Sitting upright with perfect posture / paws neatly together / chin slightly raised / dignified and proper / holding a formal pose.", "energy": "dignified, smug, formal" },
+  { "id": "unraveling", "name": "The Unraveling", "description": "Slowly sliding down / one paw holding head up / other paw limp / gradual structural failure mid-pose / not yet collapsed but visibly failing.", "energy": "exhausted, struggling, overwhelmed" },
+  { "id": "direct_address", "name": "The Direct Address", "description": "Facing forward / making eye contact with viewer / no angle, no pretense / confrontational or inviting, depending on expression.", "energy": "confrontational, inviting, honest" },
+  { "id": "almost_standing", "name": "The Almost Standing", "description": "Back legs fully extended / front legs barely supporting / rear higher than front / halfway between sitting and standing / looks like they gave up halfway up.", "energy": "uncertain, awkward, trying" },
+  { "id": "settled", "name": "The Settled", "description": "Comfortably planted / weight evenly distributed / no tension in limbs / firmly occupying space / looks like they live there.", "energy": "content, comfortable, at home" },
+  { "id": "smug", "name": "The Smug", "description": "Chin raised high / chest slightly puffed / one eyebrow up / leaning back slightly / maximally full of themselves.", "energy": "smug, confident, superior" },
+  { "id": "terrified", "name": "The Terrified", "description": "Cowering low to ground / paws tucked in / ears flat / body angled away from viewer / trying to disappear.", "energy": "afraid, anxious, overwhelmed" },
+  { "id": "proud", "name": "The Proud", "description": "Chest out / chin high / standing tall / weight on back legs, front legs slightly off ground / triumphant stance.", "energy": "triumphant, victorious, confident" },
+  { "id": "delighted", "name": "The Delighted", "description": "Body wiggling or bouncing / weight shifting from paw to paw / tail up / whole body engaged / can't contain the joy.", "energy": "joyful, excited, happy" },
+  { "id": "disgusted", "name": "The Disgusted", "description": "Head pulled back / nose wrinkled / body angled away / one paw up as if warding off / recoiling.", "energy": "disgusted, repulsed, offended" },
+  { "id": "curious", "name": "The Curious", "description": "Lean forward / head tilted / one paw hovering / weight on front legs / ready to investigate.", "energy": "curious, inquisitive, interested" },
+  { "id": "bored", "name": "The Bored", "description": "Weight on one side / slight slouch / head drooping / one paw dangling / utterly uninterested in everything.", "energy": "bored, apathetic, uninterested" },
+  { "id": "confused", "name": "The Confused", "description": "Head tilted severely / one ear up one down / body slightly turned / weight uneven / trying to process something.", "energy": "confused, baffled, puzzled" },
+  { "id": "angry", "name": "The Angry/Furious", "description": "Low to ground / weight on front legs / head lowered / shoulders hunched / ready to pounce or confront.", "energy": "angry, furious, aggressive" },
+  { "id": "playful", "name": "The Playful", "description": "Play bow position (front down, rear up) / tail high / weight on front paws / invited engagement.", "energy": "playful, mischievous, inviting" },
+  { "id": "guilty", "name": "The Guilty", "description": "Head down / eyes looking up / body curled small / paws tucked / trying to be invisible.", "energy": "guilty, ashamed, sorry" },
+  { "id": "hopeful", "name": "The Hopeful", "description": "Sitting up tall / paws lifted slightly off ground / ears perked / eyes wide / waiting expectantly.", "energy": "hopeful, optimistic, expectant" },
+  { "id": "resentful", "name": "The Resentful/Bitter", "description": "Sitting stiffly / arms crossed if possible / weight shifted away from viewer / looking sideways / cold posture.", "energy": "resentful, bitter, cold" },
+  { "id": "suspicious", "name": "The Suspicious", "description": "Body angled sideways / one eye toward viewer / head lowered / weight on back legs / ready to bolt or judge.", "energy": "suspicious, wary, judging" }
+]
